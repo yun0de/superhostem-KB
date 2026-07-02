@@ -4104,6 +4104,40 @@ section {
   margin-bottom: 0;
 }
 
+.kb-article-mini-checklist {
+  display: grid;
+  gap: 10px;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kb-article-mini-checklist li {
+  display: grid;
+  gap: 3px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, hsl(var(--primary)) 24%, hsl(var(--border)));
+  border-radius: 14px;
+  background: color-mix(in srgb, hsl(var(--card)) 82%, hsl(var(--primary)) 6%);
+}
+
+.kb-article-mini-checklist span {
+  color: hsl(var(--primary));
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.kb-article-mini-checklist strong {
+  color: hsl(var(--foreground));
+}
+
+.kb-article-mini-checklist small {
+  color: hsl(var(--muted-foreground));
+  line-height: 1.55;
+}
+
 .kb-ubyport-flow {
   display: grid;
   gap: 10px;
