@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tiskový vzor formuláře pro evidenci hosta a místní poplatek z pobytu. Zdarma ke stažení od Superhostem.cz.">
+    <meta property="og:title" content="Vzor formuláře pro místní poplatek z pobytu">
+    <meta property="og:description" content="Otevřete, vytiskněte nebo stáhněte PDF formulář pro evidenci hosta při krátkodobém ubytování.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vzor-formular-mistni-poplatek-z-pobytu.html">
+    <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vzor-formular-mistni-poplatek-z-pobytu.html">
+    <title>Vzor formuláře pro místní poplatek z pobytu | Superhostem.cz</title>
+    <script>
+      (() => {
+        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const isDark = preference === "dark" || (preference === "system" && systemDark);
+        document.documentElement.classList.toggle("dark", isDark);
+        document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <style>
+      .form-page {
+        min-height: 100vh;
+        padding: 34px 20px 64px;
+        background: #f4f7f6;
+      }
+
+      .dark .form-page {
+        background: #0b1220;
+      }
+
+      .form-toolbar {
+        display: flex;
+        width: min(100%, 880px);
+        margin: 0 auto 20px;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .form-toolbar__back {
+        color: #0f766e;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .form-toolbar__actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .form-action {
+        display: inline-flex;
+        min-height: 44px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #0f766e;
+        border-radius: 7px;
+        background: #0f766e;
+        padding: 10px 16px;
+        color: #fff;
+        font: inherit;
+        font-weight: 850;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .form-action--secondary {
+        background: transparent;
+        color: #0f766e;
+      }
+
+      .paper {
+        width: min(100%, 880px);
+        margin: 0 auto;
+        border: 1px solid #d8dedb;
+        border-radius: 8px;
+        background: #fff;
+        padding: 44px 48px 38px;
+        color: #18211d;
+        box-shadow: 0 22px 55px rgba(15, 40, 34, 0.1);
+      }
+
+      .paper__brand {
+        margin-bottom: 30px;
+        color: #0f766e;
+        font-size: 14px;
+        font-weight: 900;
+        letter-spacing: 0;
+      }
+
+      .paper h1 {
+        margin: 0 0 10px;
+        color: #121a17;
+        font-size: 30px;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
+      .paper__intro {
+        margin: 0 0 28px;
+        color: #51605a;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      .fields {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 22px;
+      }
+
+      .field {
+        min-width: 0;
+      }
+
+      .field--full {
+        grid-column: 1 / -1;
+      }
+
+      .field__label {
+        margin-bottom: 18px;
+        color: #2d3934;
+        font-size: 13px;
+        font-weight: 800;
+        line-height: 1.35;
+      }
+
+      .field__line {
+        height: 1px;
+        background: #66736d;
+      }
+
+      .paper__notice {
+        margin-top: 30px;
+        border-top: 1px solid #d8dedb;
+        padding-top: 18px;
+        color: #58655f;
+        font-size: 11px;
+        line-height: 1.55;
+      }
+
+      .paper__notice strong {
+        color: #25312c;
+      }
+
+      @media (max-width: 680px) {
+        .form-page {
+          padding: 20px 12px 40px;
+        }
+
+        .form-toolbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .form-toolbar__actions,
+        .form-action {
+          width: 100%;
+        }
+
+        .paper {
+          padding: 30px 22px;
+        }
+
+        .paper h1 {
+          font-size: 25px;
+        }
+
+        .fields {
+          grid-template-columns: 1fr;
+        }
+
+        .field--full {
+          grid-column: auto;
+        }
+      }
+
+      @page {
+        size: A4;
+        margin: 13mm;
+      }
+
+      @media print {
+        html,
+        body,
+        .form-page {
+          margin: 0;
+          padding: 0;
+          background: #fff !important;
+        }
+
+        .form-toolbar {
+          display: none;
+        }
+
+        .paper {
+          width: 100%;
+          margin: 0;
+          border: 0;
+          border-radius: 0;
+          padding: 0;
+          box-shadow: none;
+        }
+
+        .paper__brand,
+        .paper h1,
+        .paper__intro,
+        .field__label,
+        .paper__notice,
+        .paper__notice strong {
+          color: #000 !important;
+        }
+
+        .field__line {
+          background: #000;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="form-page">
+      <div class="form-toolbar">
+        <a class="form-toolbar__back" href="./jak-funguje-poplatek-z-pobytu.html">Zpět k návodu</a>
+        <div class="form-toolbar__actions">
+          <a class="form-action form-action--secondary" href="../assets/forms/vzor-formular-mistni-poplatek-z-pobytu.pdf" download>Stáhnout PDF</a>
+          <button class="form-action" type="button" onclick="window.print()">Vytisknout formulář</button>
+        </div>
+      </div>
+
+      <article class="paper">
+        <div class="paper__brand">Superhostem.cz</div>
+        <h1>Vzor formuláře pro místní poplatek z pobytu</h1>
+        <p class="paper__intro">Vyplňuje každý ubytovaný host samostatně, nejen osoba, která rezervaci vytvořila.</p>
+
+        <div class="fields">
+          <div class="field field--full">
+            <div class="field__label">Název / označení ubytování</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field field--full">
+            <div class="field__label">Adresa ubytování</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Datum příjezdu</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Datum odjezdu</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field field--full">
+            <div class="field__label">Jméno a příjmení hosta</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Datum narození</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Státní příslušnost</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field field--full">
+            <div class="field__label">Adresa trvalého pobytu</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Zpoplatněné noci</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Důvod osvobození, pokud existuje</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Podpis hosta</div>
+            <div class="field__line"></div>
+          </div>
+          <div class="field">
+            <div class="field__label">Datum</div>
+            <div class="field__line"></div>
+          </div>
+        </div>
+
+        <p class="paper__notice"><strong>Upozornění:</strong> Toto je praktický vzor, nikoli oficiální formulář obce. Rozsah evidence, způsob ohlášení a další podmínky si ověřte podle aktuálních pravidel obce, ve které se ubytování nachází.</p>
+      </article>
+    </main>
+  </body>
+</html>
