@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="What can I find in the reservation details? – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="What can I find in the reservation details?" />
-    <meta property="og:description" content="What can I find in the reservation details? – guide for short-term rental hosts on Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <meta name="description" content="Open one stay and choose your task: check details, send a form, verify a message or inspect a report." />
+    <meta property="og:title" content="What to do in reservation details" />
+    <meta property="og:description" content="Open one stay and choose your task: check details, send a form, verify a message or inspect a report." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-vsechno-najdu-v-detailu-rezervace.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="What can I find in the reservation details?" />
-    <meta name="twitter:description" content="What can I find in the reservation details? – guide for short-term rental hosts on Superhostem.cz." />
-    <title>What can I find in the reservation details?</title>
+    <meta name="twitter:title" content="What to do in reservation details" />
+    <meta name="twitter:description" content="Open one stay and choose your task: check details, send a form, verify a message or inspect a report." />
+    <title>What to do in reservation details | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"What to do in reservation details","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-vsechno-najdu-v-detailu-rezervace.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,215 +103,20 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Reservation management and calendar</p>
-          <h1 class="kb-article-title">What can I find in the reservation details?</h1>
-          <p class="kb-article-lead">Reservation detail is the workspace for one specific stay. You can verify data, copy the guest message, check submitted forms, and quickly see the next step.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./index.html#knihovna">Library</a>
-            <a href="./jak-funguje-email-forwarding.html">Next article →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>When to open reservation detail</h2>
-
-<ul>
-<li>when you want to verify that the reservation belongs to the right property and dates</li>
-<li>when you need to edit guest name, guest count, guest language, or price</li>
-<li>when you want to send the guest a registration link or check the message text</li>
-<li>when you need to check whether guests completed the domovní kniha form</li>
-<li>when you need to see which emails the system sent for this reservation</li>
-<li>when you need to handle Ubyport reporting for foreign guests</li>
-<li>when you want to create an invoice or check the reservation price</li>
-</ul>
-
-<h2>What to check at the top</h2>
-
-<p>The top part gives you the quick reservation summary: guest, check-in, check-out, relative time to arrival, and property name. It also includes the action for syncing the reservation source.</p>
-
-<ol>
-<li>verify guest and property</li>
-<li>check check-in and check-out dates</li>
-<li>check whether the reservation is cancelled</li>
-<li>if data does not match, use source sync</li>
-</ol>
-
-<aside class="kb-article-callout">
-  If the system finds missing profile or property data, it shows a warning above the content. These fields are usually needed for reports, exports, or follow-up administration.
-</aside>
-
-<h2>How to read the reservation workflow</h2>
-
-<p>The workflow shows the current phase of the reservation and who needs to act next.</p>
-
-<ul>
-<li><strong>Reservation import</strong> means the reservation already exists in Superhostem.</li>
-<li><strong>Prepare guest message</strong> is the host step where you copy or edit the message with the link.</li>
-<li><strong>Guest registration</strong> means the guest is filling in the form or has already completed it.</li>
-<li><strong>Foreign police report</strong> appears mainly for foreign guests.</li>
-<li><strong>Completed</strong> means there is no regular next action for this reservation.</li>
-</ul>
-
-<p>Do not read workflow as decoration. It answers: <strong>What should I do with this reservation now?</strong></p>
-
-<h2>Overview: guest, dates, price, source</h2>
-
-<p>The <strong>Overview</strong> tab contains two main cards.</p>
-
-<p>In <strong>Guest information</strong>, you can check or edit:</p>
-
-<ul>
-<li>guest name</li>
-<li>email and phone, if available</li>
-<li>number of guests</li>
-<li>guest language for messages and forms</li>
-</ul>
-
-<p>Guest count matters. If it is set to <strong>0</strong>, the system warns you because registration links and complete domovní kniha data depend on the correct guest count.</p>
-
-<p>In <strong>Reservation details</strong>, you check:</p>
-
-<ul>
-<li>check-in date and time</li>
-<li>check-out date and time</li>
-<li>reservation source, such as Airbnb, Booking.com, or manual entry</li>
-<li>link to the original platform reservation, if available</li>
-<li>total reservation price</li>
-</ul>
-
-<p>You can edit the price directly in detail. This helps when iCal brought dates, but financial data arrived later through email forwarding or must be entered manually.</p>
-
-<h2>Guest message and registration links</h2>
-
-<p>When the reservation waits for guest data, detail shows the next steps. This is where you prepare the message for the guest.</p>
-
-<ul>
-<li>guest message preview</li>
-<li>copy message button</li>
-<li>option to edit message text for this reservation</li>
-<li>reservation confirmation link</li>
-<li>registration form link after confirmation</li>
-</ul>
-
-<p>Link types:</p>
-
-<ul>
-<li>confirmation link helps the guest confirm the reservation and continue to the next step</li>
-<li>registration form collects guest data for domovní kniha</li>
-<li>property permalink fits Airbnb automated messages so guests can find their reservations for that property</li>
-</ul>
-
-<p>If the property has automated message templates, detail can also show their preview for the selected guest language.</p>
-
-<p>You do not have to use only the default message text. For each property, you can prepare your own message templates and then check in reservation detail how the specific guest, dates, price, or registration link will be filled in.</p>
-
-<aside class="kb-article-callout">
-  <strong>Want to send messages automatically?</strong>
-  <p>If you do not want to copy the message manually for every reservation, set up message automation for the whole property. The template can then send the right link and instructions based on the specific reservation.</p>
-  <p><a href="./jak-funguji-automatizace-v-superhostem.html">Open guide: How automation works in Superhostem</a></p>
-</aside>
-
-<h2>Registered guests</h2>
-
-<p><strong>Registered guests</strong> shows how many forms are completed and what is still missing for each guest.</p>
-
-<p>The table includes:</p>
-
-<ul>
-<li>guest order in the reservation</li>
-<li>name and email</li>
-<li>date of birth</li>
-<li>address</li>
-<li>guest type, such as adult, child, or guest without fee</li>
-<li>nationality</li>
-<li>document type and document number</li>
-<li>document number photo, if uploaded</li>
-<li>completion status</li>
-</ul>
-
-<p>For a completed guest, you can open the form, copy the link, edit data, or delete the guest. If the guest has not filled in data yet, you see <strong>Pending</strong>.</p>
-
-<h2>Ubyport and foreign guests</h2>
-
-<p>If the reservation contains foreign guests, detail can show the Ubyport action. It depends on data from the guest form.</p>
-
-<p>Before sending to Ubyport, check:</p>
-
-<ul>
-<li>guest count matches reality</li>
-<li>foreign guests have nationality filled in</li>
-<li>date of birth is present</li>
-<li>document type and document number are present</li>
-<li>stay address and property data are correct</li>
-</ul>
-
-<p>If something is missing, fix the guest or property settings first. Export or submission makes sense only after that.</p>
-
-<h2>Emails</h2>
-
-<p>The <strong>Emails</strong> tab shows email history for the reservation.</p>
-
-<ul>
-<li>when the email was sent</li>
-<li>recipient</li>
-<li>subject</li>
-<li>email type, such as registration invite, edit link, or confirmation</li>
-<li>status, such as sent, delivered, failed, or bounced</li>
-</ul>
-
-<p>This tab helps when the guest says they did not receive anything, or when you need to verify that the system sent the message.</p>
-
-<h2>Fast reservation check</h2>
-
-<ol>
-<li>Verify guest, property, and stay dates.</li>
-<li>Check guest count and guest language.</li>
-<li>Read workflow and decide the next step.</li>
-<li>If the guest has not filled in data yet, copy the message or registration link.</li>
-<li>After forms are submitted, check the registered guests table.</li>
-<li>For foreign guests, check Ubyport data.</li>
-<li>If the guest says no message arrived, open the <strong>Emails</strong> tab.</li>
-<li>If date, price, or source does not match, check iCal and email forwarding.</li>
-</ol>
-
-<h2>What to do if something does not match</h2>
-
-<p>If dates or the reservation itself are missing, start with iCal connection. If price or financial data is missing, check email forwarding. If guest data is missing, send or copy the registration link from reservation detail.</p>
-
-<ul>
-<li><strong>Does the stay match?</strong> Check dates, property, and source.</li>
-<li><strong>Do I have guest data?</strong> Check guest count and registered guests table.</li>
-<li><strong>Was communication sent?</strong> Check message and emails tab.</li>
-<li><strong>Can I report to Ubyport?</strong> Check foreign guests and document completeness.</li>
-</ul>
-
-<ul class="kb-article-link-list">
-<li><a href="./jak-funguje-email-forwarding.html">Continue: How email forwarding works</a></li>
-<li><a href="./jak-funguje-napojeni-pres-ical.html">Continue: How iCal connection works</a></li>
-</ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Library</span>
-  <strong>Library</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html">
-  <span>Next</span>
-  <strong>How does email forwarding work?</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">What to do in reservation details</h1>
+      <p class="kb-article-lead">Open one stay and choose your task: check details, send a form, verify a message or inspect a report.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="overview">Check the guest, dates and source</h2><p>Check property, arrival, departure, guest count, contact and price. For imports, check the original source and available iCal status. Sync cannot add prices from a source that does not supply them.</p></section>
+<section><h2 id="guests">Send a form and correct guest details</h2><p>Distinguish reservation confirmation from the registration form. Check each person under Registered guests. Manually marking a status complete does not prove all guest details were supplied.</p><p><a href='./jak-poslat-online-check-in.html'>Send the correct link step by step</a></p></section>
+<section><h2 id="messages">Check communication</h2><p>A template preview shows rendered content, not actual sending. Verify recipient, time and result in Emails and automation history. Edit property templates at the property and one-off stay text using its available action.</p></section>
+<section><h2 id="ubyport">Verify Ubyport</h2><p>Check foreign guest details, submission and the latest report. Reservation status does not replace individual guest results. Open error details before retrying.</p></section>
+<section><h2 id="invoice">Issue a document and inspect changes</h2><p>Prepare an invoice from the stay and check its amount and customer. History and diagnostics depend on account permissions; advanced import screens may not be customer-accessible.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send an online check-in form and check every guest</strong></a>
+<a class="kb-article-related-card" href="./jak-odeslat-hosty-do-ubyportu.html"><span>Related guides</span><strong>Send guests to Ubyport and verify the result</strong></a>
+<a class="kb-article-related-card" href="./jak-vystavit-fakturu-z-rezervace.html"><span>Related guides</span><strong>Issue an invoice from a reservation</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -320,6 +137,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

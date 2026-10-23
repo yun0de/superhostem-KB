@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Co dělat, když nefunguje email forwarding – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Co dělat, když nefunguje email forwarding" />
-    <meta property="og:description" content="Co dělat, když nefunguje email forwarding – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-nefunguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-nefunguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html" />
+    <meta name="description" content="Zkontrolujte adresu, potvrzení v Gmailu a filtr. Pokud e-mail přišel, ale pobyt chybí, jde už o zpracování nebo přiřazení dat." />
+    <meta property="og:title" content="Co dělat, když nefunguje přeposílání e-mailů" />
+    <meta property="og:description" content="Zkontrolujte adresu, potvrzení v Gmailu a filtr. Pokud e-mail přišel, ale pobyt chybí, jde už o zpracování nebo přiřazení dat." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Co dělat, když nefunguje email forwarding" />
-    <meta name="twitter:description" content="Co dělat, když nefunguje email forwarding – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Co dělat, když nefunguje email forwarding</title>
+    <meta name="twitter:title" content="Co dělat, když nefunguje přeposílání e-mailů" />
+    <meta name="twitter:description" content="Zkontrolujte adresu, potvrzení v Gmailu a filtr. Pokud e-mail přišel, ale pobyt chybí, jde už o zpracování nebo přiřazení dat." />
+    <title>Co dělat, když nefunguje přeposílání e-mailů | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Co dělat, když nefunguje přeposílání e-mailů","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,104 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">FAQ a řešení problémů</p>
-          <h1 class="kb-article-title">Co dělat, když nefunguje email forwarding</h1>
-          <p class="kb-article-lead">Email forwarding začne fungovat až po správném zkopírování přidělené adresy, potvrzení adresy v Gmailu a vytvoření pravidla pro přeposílání.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./jak-funguje-email-forwarding.html">Email forwarding</a>
-            <a href="./co-delat-kdyz-chybi-rezervace.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block">
-<h2>Rychlá kontrola</h2>
-<p>
-          Pokud se rezervační e-maily do Superhostem neposílají, nejčastěji je
-          problém v jednom ze tří kroků: zkopírovaná adresa, potvrzení v Gmailu
-          nebo pravidlo pro přeposílání.
-        </p>
-<ol>
-          <li>Zkontrolujte, že je v Gmailu vložená přesně ta adresa, kterou vám Superhostem přidělil.</li>
-          <li>Potvrďte přeposílací adresu v e-mailu, který Gmail pošle pro ověření.</li>
-          <li>Až potom vytvořte filtr nebo pravidlo, které bude rezervační e-maily skutečně přeposílat.</li>
-        </ol>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>1. Špatně zkopírovaná přidělená adresa</h2>
-<p>
-          Gmail musí přeposílat zprávy na přesnou adresu ze Superhostem. Pokud
-          chybí jeden znak, je navíc mezera nebo je zkopírovaná stará adresa,
-          e-maily se do Superhostem nedostanou.
-        </p>
-<ul>
-          <li>zkopírujte adresu znovu přímo ze Superhostem</li>
-          <li>zkontrolujte začátek i konec adresy</li>
-          <li>nevkládejte adresu ručně, raději ji kopírujte</li>
-        </ul>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>2. Není potvrzená přeposílací adresa v Gmailu</h2>
-<p>
-          Gmail po přidání nové přeposílací adresy pošle ověřovací e-mail.
-          Dokud potvrzení neproběhne, Gmail na tuto adresu nic neposílá.
-        </p>
-<aside class="kb-article-callout">
-          Pokud máte na jednom počítači přihlášených více Gmail účtů, nejdřív
-          se ujistěte, že jste přepnutí do toho účtu, ze kterého forwarding
-          nastavujete.
-        </aside>
-<ul>
-          <li>otevřete správný Gmail účet</li>
-          <li>najděte ověřovací e-mail od Gmailu</li>
-          <li>potvrďte přeposílací adresu</li>
-        </ul>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>3. Chybí filtr nebo pravidlo pro přeposílání</h2>
-<p>
-          Potvrzení adresy samo o sobě nestačí. Po potvrzení ještě vytvořte
-          podmínku, která vybere rezervační e-maily a začne je přeposílat do
-          Superhostem.
-        </p>
-<ul>
-          <li>filtr vytvářejte až po potvrzení přeposílací adresy</li>
-          <li>ověřte, že filtr odpovídá e-mailům z Airbnb, Bookingu nebo dalšího zdroje</li>
-          <li>u filtru musí být zapnutá akce přeposlat na adresu ze Superhostem</li>
-        </ul>
-            </section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted">
-<h2>Co udělat, když to pořád nejde</h2>
-<p>
-          Pošlete si testovací rezervační e-mail nebo počkejte na další reálný
-          rezervační e-mail. Pokud se v Superhostem neobjeví, zkontrolujte v
-          Gmailu historii filtru a správný účet, ve kterém je forwarding
-          nastavený.
-        </p>
-            </section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html">
-  <span>Nastavení</span>
-  <strong>Jak funguje email forwarding</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html">
-  <span>Řešení problémů</span>
-  <strong>Co dělat, když chybí rezervace</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Co dělat, když nefunguje přeposílání e-mailů</h1>
+      <p class="kb-article-lead">Zkontrolujte adresu, potvrzení v Gmailu a filtr. Pokud e-mail přišel, ale pobyt chybí, jde už o zpracování nebo přiřazení dat.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Adresa</li>
+<li><span class="kb-article-flow-number">2</span>Potvrzení</li>
+<li><span class="kb-article-flow-number">3</span>Filtr</li>
+<li><span class="kb-article-flow-number">4</span>Výsledek</li></ol><section><h2 id="adresa">1. Zkopírujte správnou adresu</h2><p>V Superhostem otevřete E-mail přeposílání. Zkopírujte přidělenou adresu a porovnejte ji s cílem v poště. Ověřte, že nastavujete správný Gmail účet.</p></section>
+<section><h2 id="potvrzeni">2. Dokončete potvrzení Gmailu</h2><p>Gmail posílá ověřovací zprávu na přidanou cílovou adresu, nikoli do jiné osobní schránky. Potvrzení dokončete podle zobrazeného postupu v Superhostem. Potom se vraťte do nastavení správného Gmail účtu.</p></section>
+<section><h2 id="filtr">3. Ověřte filtr a přeposlání</h2><p>Zkontrolujte podmínky a akci přeposlat na adresu ze Superhostem. Filtr musí odpovídat skutečnému rezervačnímu e-mailu. Nepřeposílejte celou osobní schránku. Potvrzení cílové adresy samo filtr nevytvoří.</p></section>
+<section><h2 id="vysledek">4. E-mail se přeposlal, ale rezervace chybí</h2><p>Použijte původní podporovaný rezervační e-mail, ne vlastní testovací text. Ověřte platformu, nemovitost a referenci pobytu. Podpoře pošlete předmět, odesílatele a čas přeposlání; může zkontrolovat zpracování a párování v diagnostice správce.</p><p><a href='https://support.google.com/mail/answer/10957?hl=cs' target='_blank' rel='noreferrer'>Oficiální postup Gmailu</a></p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Související návody</span><strong>Jak nastavit přeposílání rezervačních e-mailů</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Související návody</span><strong>Co dělat, když chybí rezervace</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -209,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

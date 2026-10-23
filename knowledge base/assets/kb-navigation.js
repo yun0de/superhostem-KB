@@ -1,5 +1,5 @@
 (() => {
-  const storageKey = "superhostem-kb-theme";
+  const storageKey = "superhostem-kb-theme-v2";
   const media = window.matchMedia("(prefers-color-scheme: dark)");
   let tocObserver = null;
   let shortcutBound = false;
@@ -12,10 +12,13 @@
       .replace(/[\u0300-\u036f]/g, "");
 
   const getThemePreference = () => {
-    const saved = localStorage.getItem(storageKey);
-    if (saved === "light" || saved === "dark" || saved === "system") return saved;
-    localStorage.setItem(storageKey, "system");
-    return "system";
+    try {
+      const saved = localStorage.getItem(storageKey);
+      if (saved === "light" || saved === "dark" || saved === "system") return saved;
+    } catch {
+      // File previews and restricted browsers can disable storage.
+    }
+    return "light";
   };
 
   const applyTheme = (preference) => {
@@ -34,7 +37,11 @@
       if (button.dataset.kbThemeBound === "true") return;
       button.dataset.kbThemeBound = "true";
       button.addEventListener("click", () => {
-        localStorage.setItem(storageKey, button.dataset.themeOption);
+        try {
+          localStorage.setItem(storageKey, button.dataset.themeOption);
+        } catch {
+          // The selection still applies to this page when storage is unavailable.
+        }
         applyTheme(button.dataset.themeOption);
       });
     });

@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chuyển tiếp email hoạt động như thế nào? – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Chuyển tiếp email hoạt động như thế nào?" />
-    <meta property="og:description" content="Chuyển tiếp email hoạt động như thế nào? – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html" />
+    <meta name="description" content="Email đặt phòng được hỗ trợ có thể bổ sung tên, số khách, giá và thông tin iCal không có." />
+    <meta property="og:title" content="Thiết lập chuyển tiếp email đặt phòng" />
+    <meta property="og:description" content="Email đặt phòng được hỗ trợ có thể bổ sung tên, số khách, giá và thông tin iCal không có." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-email-forwarding.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Chuyển tiếp email hoạt động như thế nào?" />
-    <meta name="twitter:description" content="Chuyển tiếp email hoạt động như thế nào? – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Chuyển tiếp email hoạt động như thế nào?</title>
+    <meta name="twitter:title" content="Thiết lập chuyển tiếp email đặt phòng" />
+    <meta name="twitter:description" content="Email đặt phòng được hỗ trợ có thể bổ sung tên, số khách, giá và thông tin iCal không có." />
+    <title>Thiết lập chuyển tiếp email đặt phòng | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Thiết lập chuyển tiếp email đặt phòng","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-email-forwarding.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,82 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Truyền thông và tự động hóa</p>
-          <h1 class="kb-article-title">Chuyển tiếp email hoạt động như thế nào?</h1>
-          <p class="kb-article-lead">Việc chuyển tiếp email sẽ giúp bạn lấy dữ liệu từ email xác nhận đặt phòng về Superhostem. Nhờ đó, việc đặt phòng, số tiền và thông tin khác về kỳ nghỉ có thể được thêm chính xác.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./index.html#knihovna">Thư viện chủ đề</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Bài tiếp theo →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Nơi tìm chuyển tiếp</h2>
-<p>
-        Đăng nhập vào Superhost và mở trang <strong>Tổng quan</strong>.
-        Trong phần mở đầu, bạn sẽ tìm thấy một khối <strong>Tự động chuyển tiếp email</strong> với một địa chỉ duy nhất cho tài khoản của bạn.
-      </p>
-<h2>Làm thế nào để tiến hành</h2>
-<ol>
-        <li>đăng nhập vào Superhost</li>
-        <li>mở ở menu bên trái <strong>Tổng quan</strong>
-</li>
-        <li>tìm khối <strong>Tự động chuyển tiếp email</strong>
-</li>
-        <li>sao chép địa chỉ chuyển tiếp được hiển thị</li>
-        <li>đặt chuyển tiếp tự động đến địa chỉ này trong email nơi bạn nhận được xác nhận đặt phòng từ Airbnb</li>
-        <li>gửi cho chính bạn một email xác nhận để kiểm tra và xác minh rằng dữ liệu trong Superhost đã được điền chính xác</li>
-      </ol>
-<h2>Chuyển tiếp gì có thể giúp bạn với</h2>
-<p>
-        Từ các email xác nhận được chuyển tiếp, Superhostem có thể thêm thông tin bạn cần để xử lý vấn đề đặt chỗ và tài chính.
-      </p>
-<ul>
-        <li>giá đặt chỗ</li>
-        <li>phí và các khoản khác</li>
-        <li>nhận dạng đặt chỗ</li>
-        <li>thông tin bổ sung về khách hoặc thời gian lưu trú</li>
-      </ul>
-<h2>Hướng dẫn trực tiếp trong ứng dụng</h2>
-<p>Trong khối chuyển tiếp, bạn cũng sẽ tìm thấy hướng dẫn nhanh cho các hộp thư điện tử phổ biến nhất.</p>
-<ul>
-        <li>Thiết lập chuyển tiếp tự động trong Gmail</li>
-        <li>Cài đặt chuyển tiếp tự động trong Seznam.cz</li>
-      </ul>
-<h2>Điều gì là tốt để coi chừng</h2>
-<ul>
-        <li>Email xác nhận đặt phòng từ Airbnb thực sự được chuyển tiếp</li>
-        <li>bạn đang sử dụng địa chỉ chuyển tiếp chính xác mà bạn thấy trong tài khoản của mình</li>
-        <li>bạn đã thực hiện ít nhất một bài kiểm tra sau khi thiết lập</li>
-      </ul>
-<h2>Nếu bạn có nhiều căn hộ trong một tài khoản Airbnb</h2>
-<p>
-        Nếu bạn có nhiều căn hộ trong một tài khoản Airbnb, căn hộ mới có thể được tự động thêm vào Superhost
-        khi có yêu cầu đặt chỗ mới đến và email xác nhận của nó được chuyển tiếp đến địa chỉ chuyển tiếp của bạn.
-      </p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Thư viện</span>
-  <strong>Thư viện chủ đề</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html">
-  <span>Một cái khác</span>
-  <strong>Cách tự động liên lạc với khách</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Thiết lập chuyển tiếp email đặt phòng</h1>
+      <p class="kb-article-lead">Email đặt phòng được hỗ trợ có thể bổ sung tên, số khách, giá và thông tin iCal không có.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Địa chỉ tài khoản</li>
+<li><span class="kb-article-flow-number">2</span>Xác minh</li>
+<li><span class="kb-article-flow-number">3</span>Bộ lọc</li>
+<li><span class="kb-article-flow-number">4</span>Kiểm tra kỳ</li></ol><section><h2 id="address">1. Sao chép địa chỉ trong Superhostem</h2><p>Mở Chuyển tiếp email ở menu trái. Dùng địa chỉ riêng của tài khoản và hướng dẫn cho dịch vụ email của bạn. Kiểm tra tài khoản và chỗ ở sẽ nhận dữ liệu.</p></section>
+<section><h2 id="setup">2. Thiết lập xác minh và bộ lọc</h2><p>Trong Gmail, thêm địa chỉ đích và hoàn tất xác minh theo ứng dụng. Sau đó tạo bộ lọc cho tin đặt phòng Airbnb hoặc Booking được hỗ trợ và bật chuyển tiếp. Với dịch vụ email khác, dùng hướng dẫn tương ứng trong ứng dụng.</p><p>Thử bộ lọc với email thật trước. Một tên miền người gửi có thể có nhiều loại tin; không chuyển tiếp toàn bộ hộp thư cá nhân.</p></section>
+<section><h2 id="check">3. Kiểm tra đặt phòng thật</h2><p>Dùng xác nhận đặt phòng gốc thuộc loại được hỗ trợ. Kiểm tra mã, chỗ ở, ngày, khách và số tiền có sẵn trong tổng quan. Không tự tạo thêm kỳ nếu đã nhập qua iCal.</p><p>Kết quả phụ thuộc nội dung, loại email và ghép đúng dữ liệu. Nếu thiếu, xem khắc phục chuyển tiếp hoặc gửi hỗ trợ giờ và mã đặt phòng.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./co-delat-kdyz-nefunguje-email-forwarding.html"><span>Hướng dẫn liên quan</span><strong>Khắc phục chuyển tiếp email đặt phòng</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Hướng dẫn liên quan</span><strong>Cách kết nối lịch iCal</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Hướng dẫn liên quan</span><strong>Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -187,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="What to do if the calendar does not load – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="What to do if the calendar does not load" />
-    <meta property="og:description" content="What to do if the calendar does not load – guide for short-term rental hosts on Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <meta name="description" content="Distinguish an empty calendar, stale data and a broken shared link. Each needs a different check." />
+    <meta property="og:title" content="What to do when the calendar does not load" />
+    <meta property="og:description" content="Distinguish an empty calendar, stale data and a broken shared link. Each needs a different check." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-se-kalendar-nenacita.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="What to do if the calendar does not load" />
-    <meta name="twitter:description" content="What to do if the calendar does not load – guide for short-term rental hosts on Superhostem.cz." />
-    <title>What to do if the calendar does not load</title>
+    <meta name="twitter:title" content="What to do when the calendar does not load" />
+    <meta name="twitter:description" content="Distinguish an empty calendar, stale data and a broken shared link. Each needs a different check." />
+    <title>What to do when the calendar does not load | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"What to do when the calendar does not load","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-se-kalendar-nenacita.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,59 +103,18 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">FAQ and troubleshooting</p>
-          <h1 class="kb-article-title">What to do if the calendar does not load</h1>
-          <p class="kb-article-lead">Use this checklist to quickly check the most common reasons why calendar dates may not be displayed correctly.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./index.html#knihovna">Library</a>
-            <a href="./co-delat-kdyz-chybi-rezervace.html">Next article →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Checklist</h2>
-
-<ol>
-<li>verify that the calendar source is connected</li>
-<li>check the iCal link is correct</li>
-<li>verify that the source is sharing data</li>
-<li>check for a temporary sync delay</li>
-</ol>
-
-<h2>Possible causes</h2>
-
-<ul>
-<li>invalid or old link</li>
-<li>inactive calendar sharing</li>
-<li>error in assignment to property</li>
-</ul>
-
-<h2>When to contact support</h2>
-
-<p>When the connection is correct, the link is valid and the problem persists repeatedly for no apparent reason.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Library</span>
-  <strong>Library</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html">
-  <span>Another one</span>
-  <strong>What to do if a reservation is missing</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">What to do when the calendar does not load</h1>
+      <p class="kb-article-lead">Distinguish an empty calendar, stale data and a broken shared link. Each needs a different check.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="empty">The calendar is empty</h2><p>Check the month, filters, property and whether reservations appear in the list. If they are missing there too, follow the missing reservation guide.</p></section>
+<section><h2 id="stale">The data is old</h2><p>Check the export iCal URL and dates on the source platform. Run the available sync action. Google, Apple and other subscriptions refresh on their own schedules, so a change may not appear immediately.</p></section>
+<section><h2 id="link">The shared link does not work</h2><p>Check in your account that access has not been revoked and the correct properties are included. Copy the full current link again. Give support the time, exact error and whether this affects the dashboard, web link or calendar app.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Related guides</span><strong>How to connect an iCal calendar</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Related guides</span><strong>What to do when a reservation is missing</strong></a>
+<a class="kb-article-related-card" href="./jak-sdilet-webovy-kalendar-odkazem.html"><span>Related guides</span><strong>Share a web calendar link</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -164,6 +135,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

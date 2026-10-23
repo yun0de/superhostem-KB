@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="How does email forwarding work? – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How does email forwarding work?" />
-    <meta property="og:description" content="How does email forwarding work? – guide for short-term rental hosts on Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-email-forwarding.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html" />
+    <meta name="description" content="Supported reservation emails can add names, guest counts, prices and other details missing from iCal alone." />
+    <meta property="og:title" content="Set up reservation email forwarding" />
+    <meta property="og:description" content="Supported reservation emails can add names, guest counts, prices and other details missing from iCal alone." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-email-forwarding.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How does email forwarding work?" />
-    <meta name="twitter:description" content="How does email forwarding work? – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How does email forwarding work?</title>
+    <meta name="twitter:title" content="Set up reservation email forwarding" />
+    <meta name="twitter:description" content="Supported reservation emails can add names, guest counts, prices and other details missing from iCal alone." />
+    <title>Set up reservation email forwarding | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Set up reservation email forwarding","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-email-forwarding.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,82 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Communication and automation</p>
-          <h1 class="kb-article-title">How does email forwarding work?</h1>
-          <p class="kb-article-lead">Email forwarding will help you get data from reservation confirmation emails to Superhostem. Thanks to this, reservations, amounts and other information about the stay can be added correctly.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./index.html#knihovna">Library</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Next article →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Where to find forwarding</h2>
-<p>
-        Log in to Superhost and open the page <strong>Overview</strong>.
-        In the opening section you will find a block <strong>Automatic email forwarding</strong> with a unique address for your account.
-      </p>
-<h2>How to proceed</h2>
-<ol>
-        <li>log in to Superhost</li>
-        <li>open in the left menu <strong>Overview</strong>
-</li>
-        <li>find the block <strong>Automatic email forwarding</strong>
-</li>
-        <li>copy the forwarding address shown</li>
-        <li>set automatic forwarding to this address in the e-mail where you receive booking confirmations from Airbnb</li>
-        <li>send yourself one confirmation email as a test and verify that the data in Superhost has been filled in correctly</li>
-      </ol>
-<h2>What forwarding can help you with</h2>
-<p>
-        From the forwarded confirmation emails, Superhostem can add the information you need to work with reservations and finances.
-      </p>
-<ul>
-        <li>the price of the reservation</li>
-        <li>fees and other amounts</li>
-        <li>reservation identification</li>
-        <li>additional information about the guest or the stay</li>
-      </ul>
-<h2>Instructions directly in the application</h2>
-<p>In the block for forwarding you will also find quick instructions for the most common email boxes.</p>
-<ul>
-        <li>Setting up automatic forwarding in Gmail</li>
-        <li>Automatic forwarding settings in Seznam.cz</li>
-      </ul>
-<h2>What is good to watch out for</h2>
-<ul>
-        <li>Confirmation emails for bookings from Airbnb are really forwarded</li>
-        <li>you are using the exact forwarding address you see in your account</li>
-        <li>you have performed at least one test after setup</li>
-      </ul>
-<h2>If you have multiple apartments in one Airbnb account</h2>
-<p>
-        If you have multiple apartments under one Airbnb account, new apartments can be automatically added to Superhost
-        when a new reservation arrives and its confirmation email is forwarded to your forwarding address.
-      </p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Library</span>
-  <strong>Library</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html">
-  <span>Another one</span>
-  <strong>How to automate communications with guests</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Set up reservation email forwarding</h1>
+      <p class="kb-article-lead">Supported reservation emails can add names, guest counts, prices and other details missing from iCal alone.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Account address</li>
+<li><span class="kb-article-flow-number">2</span>Verification</li>
+<li><span class="kb-article-flow-number">3</span>Filter</li>
+<li><span class="kb-article-flow-number">4</span>Check stay</li></ol><section><h2 id="address">1. Copy the address in Superhostem</h2><p>Open Email forwarding in the left menu. Use your account's unique address and the instructions for your email service. Check which account and property should receive the data.</p></section>
+<section><h2 id="setup">2. Configure verification and a filter</h2><p>In Gmail, add the destination and complete verification using the app's instructions. Then create a filter for supported Airbnb or Booking reservation messages and enable forwarding for those messages. Use the matching in-app guide for another email service.</p><p>Test the filter against a real message first. A sender domain may include several message types; do not forward your whole personal inbox.</p></section>
+<section><h2 id="check">3. Check a real reservation</h2><p>Use an original supported reservation confirmation. Verify the reference, property, dates, guest and available amounts in the overview. Do not automatically create another stay if it already arrived through iCal.</p><p>Results depend on the message content, type and correct matching. If details are missing, follow forwarding troubleshooting or give support the time and reservation reference.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./co-delat-kdyz-nefunguje-email-forwarding.html"><span>Related guides</span><strong>Fix reservation email forwarding</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Related guides</span><strong>How to connect an iCal calendar</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send an online check-in form and check every guest</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -187,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

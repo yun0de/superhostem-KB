@@ -9,7 +9,21 @@ This repo is `superhostem-KB`, a static knowledge base for Superhostem.
 - HTML output lives in `knowledge base/html/`.
 - Shared CSS: `knowledge base/assets/superhostem.css`.
 - Shared JS: `knowledge base/assets/kb-navigation.js`.
-- Remote: `https://github.com/yun0de/superhostem-KB`.
+- Active `origin`: `https://github.com/vojtatranta/knowledgebase-superhostem.git`.
+- The old yun0de repository is `legacy`, with pushing disabled.
+
+## October 2026 Review
+
+- Review ledger: `knowledge base/article-review-2026-10-23.json`; covers all 33 topics in CZ/EN/VI, including seven new topics after the earlier workflow draft.
+- Evidence: application commit `79a08894609a36971763644696d5a3cb6f1a17be` and official external references, not every signed-in production screen.
+- Managed guide sources: `knowledge base/reviewed-guides.json` and `workflow-guides.json`.
+- Build: `node scripts/render-workflow-guides.mjs`, then `node scripts/review-reference-guides.mjs`, then `python3 scripts/generate-sitemap.py`.
+- Checks: `python3 scripts/check-kb-local.py`; browser audit `node scripts/check-kb-browser.mjs` requires a running root preview and Playwright session (`kb-review`, default port 8092).
+- HTML review report: `output/kb-review-2026-10-23.html`.
+- Light is the fresh-visit default, regardless of OS theme. Explicit user choices remain supported under `superhostem-kb-theme-v2`.
+- All 24 existing screenshot references retained. Managed illustrated HTML must not be deleted before regenerating: figures are preserved from existing files.
+- Current changes remain local on `codex/kb-refresh-2026-10`; no deployment was performed.
+- **Merge decision required:** upstream `9b3533e` migrates canonicals to `www.superhostem.cz`. Current user instructions explicitly require `knowledgebase.superhostem.cz`; this work preserves that base. Do not silently merge or override either direction without resolving the intended canonical deployment.
 
 ## Local Preview
 
@@ -51,9 +65,7 @@ node --check "knowledge base/assets/kb-navigation.js"
 bash scripts/check-kb-publish-safety.sh
 ```
 
-Known issue:
-
-- `scripts/check-kb-index-consistency.sh` may still fail because EN/VN articles are not all linked from public indexes.
+The index consistency check now passes in all three languages.
 
 ## Git Notes
 

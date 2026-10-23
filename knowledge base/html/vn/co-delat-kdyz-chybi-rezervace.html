@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Phải làm gì nếu thiếu lượt đặt chỗ – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Phải làm gì nếu thiếu lượt đặt chỗ" />
-    <meta property="og:description" content="Phải làm gì nếu thiếu lượt đặt chỗ – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-chybi-rezervace.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-chybi-rezervace.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-chybi-rezervace.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-chybi-rezervace.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-chybi-rezervace.html" />
+    <meta name="description" content="Kiểm tra chỗ ở và bộ lọc ngày trước, sau đó kiểm tra nguồn tạo đặt phòng." />
+    <meta property="og:title" content="Làm gì khi thiếu đặt phòng" />
+    <meta property="og:description" content="Kiểm tra chỗ ở và bộ lọc ngày trước, sau đó kiểm tra nguồn tạo đặt phòng." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-chybi-rezervace.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Phải làm gì nếu thiếu lượt đặt chỗ" />
-    <meta name="twitter:description" content="Phải làm gì nếu thiếu lượt đặt chỗ – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Phải làm gì nếu thiếu lượt đặt chỗ</title>
+    <meta name="twitter:title" content="Làm gì khi thiếu đặt phòng" />
+    <meta name="twitter:description" content="Kiểm tra chỗ ở và bộ lọc ngày trước, sau đó kiểm tra nguồn tạo đặt phòng." />
+    <title>Làm gì khi thiếu đặt phòng | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Làm gì khi thiếu đặt phòng","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-chybi-rezervace.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,59 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Câu hỏi thường gặp và khắc phục sự cố</p>
-          <h1 class="kb-article-title">Phải làm gì nếu thiếu lượt đặt chỗ</h1>
-          <p class="kb-article-lead">Với phần tổng quan này, bạn có thể nhanh chóng xác minh xem đó có phải là sự cố đồng bộ hóa, thiếu nguồn dữ liệu hay chỉ là một loại bản ghi khác.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./index.html#knihovna">Thư viện chủ đề</a>
-            <a href="./co-je-ical.html">Bài tiếp theo →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Chẩn đoán nhanh</h2>
-
-<ol>
-<li>việc đặt chỗ có thực sự nằm trong hệ thống nguồn không?</li>
-<li>đây có phải là đặt chỗ từ một nguồn được kết nối không?</li>
-<li>bạn đã đồng bộ chưa?</li>
-<li>nó không phải là một khối thời hạn sao?</li>
-</ol>
-
-<h2>Những lý do phổ biến nhất</h2>
-
-<ul>
-<li>đặt chỗ vẫn chưa được tải</li>
-<li>nguồn không được kết nối chính xác</li>
-<li>đó là một loại bản ghi khác với những gì người dùng mong đợi</li>
-</ul>
-
-<h2>Những gì cần kiểm tra chi tiết</h2>
-
-<p>Tên chỗ nghỉ, nguồn đặt phòng chính xác, trạng thái đồng bộ hóa và bất kỳ bộ lọc nào trong tổng quan đặt phòng.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Thư viện</span>
-  <strong>Thư viện chủ đề</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-je-ical.html">
-  <span>Một cái khác</span>
-  <strong>iCal là gì</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Làm gì khi thiếu đặt phòng</h1>
+      <p class="kb-article-lead">Kiểm tra chỗ ở và bộ lọc ngày trước, sau đó kiểm tra nguồn tạo đặt phòng.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Bộ lọc</li>
+<li><span class="kb-article-flow-number">2</span>Nguồn</li>
+<li><span class="kb-article-flow-number">3</span>Đồng bộ</li>
+<li><span class="kb-article-flow-number">4</span>Kiểm tra</li></ol><section><h2 id="filters">1. Kiểm tra bản ghi có bị ẩn không</h2><p>Xóa bộ lọc trạng thái trong Đặt phòng, kiểm tra ngày và chuyển giữa kỳ lưu trú đã qua và sắp tới. Kiểm tra đúng đơn vị và tổ chức đang chọn nếu có.</p></section>
+<section><h2 id="source">2. Kiểm tra nguồn</h2><ul><li><strong>iCal:</strong> nguồn phải có đúng ngày. Kiểm tra toàn bộ URL xuất của đúng đơn vị và chạy đồng bộ nếu có.</li><li><strong>Email:</strong> kiểm tra email đặt phòng gốc thuộc loại được hỗ trợ đã chuyển tới địa chỉ của tài khoản. Email thử tự viết không tạo đặt phòng.</li><li><strong>Khách trực tiếp:</strong> tạo đặt phòng thủ công nếu chưa được nhập từ nguồn khác.</li></ul></section>
+<section><h2 id="duplicates">3. Phân biệt đặt phòng và khóa ngày</h2><p>Ngày bận trên lịch chưa chắc là kỳ lưu trú của khách. Hai nguồn cũng có thể hiển thị cùng một kỳ. Kiểm tra ngày, khách và nguồn trước khi tạo thủ công để tránh trùng.</p></section>
+<section><h2 id="support">Nếu vẫn thiếu</h2><p>Gửi hỗ trợ chỗ ở, ngày, nguồn, giờ kiểm tra gần nhất và mã đặt phòng. Một số báo cáo nhập và màn hình chẩn đoán chỉ dành cho quản trị; nhờ hỗ trợ kiểm tra nếu bạn không thấy.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Hướng dẫn liên quan</span><strong>Cách kết nối lịch iCal</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Hướng dẫn liên quan</span><strong>Thiết lập chuyển tiếp email đặt phòng</strong></a>
+<a class="kb-article-related-card" href="./jak-pridat-rucni-rezervaci.html"><span>Hướng dẫn liên quan</span><strong>Tạo đặt phòng thủ công</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -164,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

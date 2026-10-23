@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="First login and account orientation – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="First login and account orientation" />
-    <meta property="og:description" content="First login and account orientation – guide for short-term rental hosts on Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/prvni-prihlaseni-a-orientace-v-uctu.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/prvni-prihlaseni-a-orientace-v-uctu.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/prvni-prihlaseni-a-orientace-v-uctu.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html" />
+    <meta name="description" content="Start with one property and one real reservation. Add more features after checking this complete workflow." />
+    <meta property="og:title" content="First login: from your property to your first stay" />
+    <meta property="og:description" content="Start with one property and one real reservation. Add more features after checking this complete workflow." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="First login and account orientation" />
-    <meta name="twitter:description" content="First login and account orientation – guide for short-term rental hosts on Superhostem.cz." />
-    <title>First login and account orientation</title>
+    <meta name="twitter:title" content="First login: from your property to your first stay" />
+    <meta name="twitter:description" content="Start with one property and one real reservation. Add more features after checking this complete workflow." />
+    <title>First login: from your property to your first stay | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"First login: from your property to your first stay","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/prvni-prihlaseni-a-orientace-v-uctu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,82 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Quick start</p>
-          <h1 class="kb-article-title">First login and account orientation</h1>
-          <p class="kb-article-lead">After logging in, the Overview section opens. If you do not have a property yet, you will see a welcome section to set up your first property.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./jak-pridat-novou-nemovitost.html">Next step →</a>
-          </div>
-          <div class="kb-article-intro-note">
-            <strong>The quickest path</strong>
-            <p>Overview → choose how to start → create a property → set up further connections later.</p>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>What you will see after logging in</h2>
-            <p>After logging in, the <strong>Overview</strong> section opens. If you do not have a property yet, you will see the onboarding for setting up your first one.</p>
-            <p>For the first few minutes, you only need two places: <strong>Overview</strong>, where you choose how to start, and <strong>Properties</strong>, where you complete your first property.</p>
-            <p>Leave <strong>Reservations</strong>, reports, imports, iCal export, and settings for later. They become useful after your property has been created.</p>
-
-            <section class="kb-setup-situation" aria-labelledby="setup-situation-title">
-              <div class="kb-setup-situation-heading">
-                <span>Before you create a property</span>
-                <h2 id="setup-situation-title">Before you continue, check legal requirements and registrations</h2>
-                <p>Not every host has the same registrations, payments, or reporting to handle. First check whether each step applies to you.</p>
-              </div>
-              <ol class="kb-setup-situation-flow" aria-label="Follow-up operations setup">
-                <li><span class="kb-setup-situation-number">1</span><strong>Legal readiness</strong><small>Check rules for your property.</small></li>
-                <li><span class="kb-setup-situation-number">2</span><strong>Ubyport</strong><small>Only if it applies to you.</small></li>
-                <li><span class="kb-setup-situation-number">3</span><strong>Local stay fee</strong><small>Only if your municipality requires it.</small></li>
-                <li><span class="kb-setup-situation-number">4</span><strong>Operational connections</strong><small>Set up iCal and emails later.</small></li>
-              </ol>
-              <p class="kb-setup-situation-note">Rules, exemptions, deadlines, forms, and reporting methods vary by situation and municipality. Superhostem does not replace verification with the relevant authority or a professional.</p>
-              <div class="kb-setup-situation-cards">
-                <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Not sure yet?</span><strong>Which obligations apply to me?</strong><small>Start with the basic overview for hosts.</small></a>
-                <a href="./jak-se-zaregistrovat-do-ubyportu.html"><span>If applicable</span><strong>My Ubyport or IDUB is missing</strong><small>Continue with registration and access details.</small></a>
-                <a href="./jak-funguje-poplatek-z-pobytu.html"><span>If applicable</span><strong>I am missing local fee details</strong><small>Check registration plus payment and reporting information.</small></a>
-                <a href="./jak-funguje-napojeni-pres-ical.html"><span>Only afterwards</span><strong>Connect operational data</strong><small>Continue with iCal; add email forwarding afterwards if useful.</small></a>
-              </div>
-            </section>
-            <h2>Create your first property</h2>
-            <p>Once legal requirements and registrations have been checked, decide whether you already have an iCal URL from a booking portal, such as Airbnb, Booking.com, or e‑Chalupy:</p>
-            <ol>
-              <li><strong>Have an iCal URL?</strong> Choose <strong>Import from Airbnb calendar</strong> and paste the URL from the portal you use.</li>
-              <li><strong>Do not have an iCal URL yet?</strong> Choose <strong>Create property manually</strong>.</li>
-            </ol>
-            <p>Set up <strong>automatic email forwarding</strong> later, once the property exists. It is an additional data source, not a required first step.</p>
-            <a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html">
-              <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span>
-              <span>
-                <strong>How to add a new property</strong>
-                <small>Proceed once legal requirements and registrations are checked.</small>
-              </span>
-              <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-            </a>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html">
-  <span>Next</span>
-  <strong>How to add your property</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Next</span>
-  <strong>How iCal works</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-upravit-profil-v-nastaveni.html">
-  <span>Account</span>
-  <strong>How to edit your profile</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">First login: from your property to your first stay</h1>
+      <p class="kb-article-lead">Start with one property and one real reservation. Add more features after checking this complete workflow.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Legal check</li>
+<li><span class="kb-article-flow-number">2</span>Property</li>
+<li><span class="kb-article-flow-number">3</span>Reservation</li>
+<li><span class="kb-article-flow-number">4</span>First check-in</li></ol><section><h2 id="legal">Before you start hosting</h2><p>Check operating permissions, local fees, guest records and foreign-guest reporting duties. Reuse existing registrations if you already have them. Creating an account does not confirm legal compliance.</p><p><a href='./zakladni-legislativni-povinnosti-hostitele-v-cr.html'>Check legal requirements and registrations</a></p></section>
+<section><h2 id="setup">Create one property</h2><p>On Overview, choose the source you actually use. If you have iCal, enter the export URL for the correct listing and a property name. Without an import, create a property manually under Properties. Instructions depend on the selected source; this is not limited to Airbnb.</p></section>
+<section><h2 id="first-stay">Verify the first reservation</h2><p>Open one stay in Reservations and check the property, dates and guest count. Add direct stays manually. Send the guest form, check completion, then verify any Ubyport reporting.</p><p>Add forwarding, guest guides, cleaning and automation gradually. Check each feature on one stay first.</p></section><a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Add your property</strong><small>Next step</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html"><span>Related guides</span><strong>Add your property</strong></a>
+<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Related guides</span><strong>Basic legislative obligations of the host in the Czech Republic</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send an online check-in form and check every guest</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -187,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

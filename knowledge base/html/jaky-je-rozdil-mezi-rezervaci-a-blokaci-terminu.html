@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
     <meta name="description" content="Jaký je rozdíl mezi rezervací a blokací termínu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
     <meta property="og:title" content="Jaký je rozdíl mezi rezervací a blokací termínu" />
     <meta property="og:description" content="Jaký je rozdíl mezi rezervací a blokací termínu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="Jaký je rozdíl mezi rezervací a blokací termínu" />
     <meta name="twitter:description" content="Jaký je rozdíl mezi rezervací a blokací termínu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
     <title>Jaký je rozdíl mezi rezervací a blokací termínu</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jaký je rozdíl mezi rezervací a blokací termínu","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -116,6 +130,8 @@
 <h2>Kdy se hodí to zkontrolovat</h2>
 
 <p>Pokud uživatel vidí v kalendáři obsazený termín, ale nevidí očekávanou rezervaci, je dobré nejprve ověřit, zda nejde právě o blokaci.</p>
+<section id="reviewed-workflow"><h2>Před vytvořením druhého pobytu</h2><p>Zkontrolujte zdroj události, nemovitost, termín a existující detail rezervace. Zrcadlený termín z druhé platformy nemusí znamenat dalšího hosta. Chybějící cenu nebo údaje nejprve doplňte ke správnému pobytu.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Související odkazy</h2>
@@ -153,6 +169,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

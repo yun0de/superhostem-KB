@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-nastavit-automaticke-emaily.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-nastavit-automaticke-emaily.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-nastavit-automaticke-emaily.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-nastavit-automaticke-emaily.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-nastavit-automaticke-emaily.html" />
+    <meta name="description" content="Create one message for arrival, departure or registration completion. Choose its recipient and timing, check the preview, then verify actual sending." />
+    <meta property="og:title" content="Set up automatic emails in Superhostem" />
+    <meta property="og:description" content="Create one message for arrival, departure or registration completion. Choose its recipient and timing, check the preview, then verify actual sending." />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-nastavit-automaticke-emaily.html" />
+    <meta property="og:site_name" content="Superhostem.cz - Help Center" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Set up automatic emails in Superhostem" />
+    <meta name="twitter:description" content="Create one message for arrival, departure or registration completion. Choose its recipient and timing, check the preview, then verify actual sending." />
+    <title>Set up automatic emails in Superhostem | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Set up automatic emails in Superhostem","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-nastavit-automaticke-emaily.html"}}</script>
+    <script>
+      (() => {
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const isDark = preference === "dark" || (preference === "system" && systemDark);
+        document.documentElement.classList.toggle("dark", isDark);
+        document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
+  </head>
+  <body id="page-top" class="kb-article-page">
+    <header class="kb-help-header">
+      <div class="kb-help-header-inner">
+        <a class="kb-help-brand" href="./index.html" aria-label="Superhostem.cz Help Center">
+          <span class="kb-help-brand-mark" aria-hidden="true">S</span>
+          <span>
+            <strong>Superhostem.cz</strong>
+            <small>Help Center</small>
+          </span>
+        </a>
+
+        <nav class="kb-help-nav" aria-label="Main navigation">
+          <a href="./index.html">Overview</a>
+          <a href="./index.html#knihovna">Library</a>
+          <a href="#kb-article-related">Related</a>
+        </nav>
+
+        <div class="kb-help-actions">
+<nav class="kb-language-switcher" aria-label="Language">
+            <button type="button" class="kb-language-switcher-toggle" aria-haspopup="menu" aria-expanded="false" aria-label="Language">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+          <path d="M2 12h20"></path>
+        </svg>
+        <span>EN</span>
+      </button>
+            <div class="kb-language-switcher-menu">
+              <a href="../jak-nastavit-automaticke-emaily.html">CZ</a>
+              <a href="./jak-nastavit-automaticke-emaily.html" class="is-active" aria-current="page">EN</a>
+              <a href="../vn/jak-nastavit-automaticke-emaily.html">VN</a>
+            </div>
+          </nav>
+
+          <div class="kb-theme-toggle" role="group" aria-label="Switch color mode">
+            <button type="button" class="kb-theme-toggle-trigger" aria-haspopup="menu" aria-expanded="false">
+              <svg class="kb-theme-icon-sun" aria-hidden="true" viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2"></path>
+                <path d="M12 20v2"></path>
+                <path d="m4.93 4.93 1.41 1.41"></path>
+                <path d="m17.66 17.66 1.41 1.41"></path>
+                <path d="M2 12h2"></path>
+                <path d="M20 12h2"></path>
+                <path d="m6.34 17.66-1.41 1.41"></path>
+                <path d="m19.07 4.93-1.41 1.41"></path>
+              </svg>
+              <svg class="kb-theme-icon-moon" aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+              </svg>
+              <span class="sr-only">Theme</span>
+            </button>
+            <div class="kb-theme-toggle-menu">
+              <button type="button" data-theme-option="light" aria-label="Light mode" title="Light mode">Light mode</button>
+              <button type="button" data-theme-option="system" aria-label="System mode" title="System mode">System mode</button>
+              <button type="button" data-theme-option="dark" aria-label="Dark mode" title="Dark mode">Dark mode</button>
+            </div>
+          </div>
+          <a class="kb-help-site-link" href="https://www.superhostem.cz/">To the main website <svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="kb-article-shell">
+      <div class="kb-article-container">
+        <article class="kb-article-main">
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Set up automatic emails in Superhostem</h1>
+      <p class="kb-article-lead">Create one message for arrival, departure or registration completion. Choose its recipient and timing, check the preview, then verify actual sending.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Choose the property</li>
+<li><span class="kb-article-flow-number">2</span>Set the event</li>
+<li><span class="kb-article-flow-number">3</span>Check the preview</li>
+<li><span class="kb-article-flow-number">4</span>Check send history</li></ol><section><h2 id="editor">1. Open the property's message automation</h2><p>Open the property and its <strong>Message automation</strong>. Switch to emails and create a rule. Give it a name you can recognise later.</p><p>This is an email sent by Superhostem. Messages inside Airbnb or Booking use <a href='./jak-funguji-automatizace-v-superhostem.html'>the platform's own settings</a>.</p></section>
+<section><h2 id="timing">2. Choose the event, timing and recipient</h2><ul><li><strong>Event:</strong> check-in, check-out or registration completion.</li><li><strong>Timing:</strong> the offset before/after the event and available time settings, including the time zone.</li><li><strong>Recipient:</strong> the reservation guest or a fixed email address.</li><li><strong>Language:</strong> the guest's language and any fallback version.</li></ul><aside class='kb-article-callout'><strong>Example first rule</strong><p>Arrival reminder one day before check-in → reservation guest → short arrival instructions. First check that the stay has a guest email address.</p></aside></section>
+<section><h2 id="preview">3. Write the message and check the preview</h2><p>Enter the subject and body. Select variables from the editor, such as <code>{{guestName}}</code>, <code>{{propertyName}}</code> and <code>{{checkInDate}}</code>. Check the preview for a specific reservation: recipient, dates, language and rendered content.</p><p>Save the automation and check that it is active. If a platform already sends the same message, check that you are not sending unnecessary duplicates.</p></section>
+<section><h2 id="history">4. Verify actual sending</h2><p>In automatic email history, find the reservation, recipient, time and status, then open the detail. A preview checks content; it <strong>does not confirm sending or delivery to the guest's inbox</strong>.</p><ul><li>No entry: check the active rule, property, event, timing and recipient contact.</li><li>Error: read the detail and correct the stated cause.</li><li>Sent but missing: check the email address and spam folder. A preview is not proof of delivery.</li></ul><p>For last-minute stays, compare the rule's time with the actual arrival. Send a message manually if the guest needs it now.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send online check-in</strong></a>
+<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html"><span>Related guides</span><strong>Platform communication</strong></a>
+<a class="kb-article-related-card" href="./co-vsechno-najdu-v-detailu-rezervace.html"><span>Related guides</span><strong>Reservation details</strong></a></div></section>
+    </article>
+
+        <aside class="kb-article-sidebar" id="kb-article-sidebar">
+          <div class="kb-article-sidebar-card">
+            <h2>On this page</h2>
+            <nav class="kb-article-toc" id="kb-article-toc"></nav>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="kb-article-footer">
+      <div class="kb-help-container">
+        <span>© Superhost.cz</span>
+        <a href="./index.html">Help Center</a>
+      </div>
+    </footer>
+
+    <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
+
+
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
+  </body>
+</html>

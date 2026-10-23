@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html" />
     <meta name="description" content="Cách kết nối lịch iCal – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
     <meta property="og:title" content="Cách kết nối lịch iCal" />
     <meta property="og:description" content="Cách kết nối lịch iCal – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="Cách kết nối lịch iCal" />
     <meta name="twitter:description" content="Cách kết nối lịch iCal – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
     <title>Cách kết nối lịch iCal</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Cách kết nối lịch iCal","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-napojeni-pres-ical.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -106,7 +120,10 @@
 
           <div class="kb-article-divider"></div>
           <div class="kb-article-prose" id="kb-article-content">
-            <h2>iCal sẽ chuyển gì</h2><p>iCal chủ yếu xử lý lịch. Nó đưa ngày đặt phòng và ngày bị chặn vào Superhostem.</p><ul><li>ngày đến và ngày đi</li><li>ngày đã đặt hoặc bị chặn</li><li>thông tin cơ bản của sự kiện</li></ul><aside class="kb-article-callout kb-article-callout-muted">iCal thường không chứa giá, phí, hoa hồng hoặc đầy đủ thông tin khách.</aside><h2>Quy trình kết nối</h2><ol class="kb-article-flow" aria-label="Quy trình kết nối iCal"><li><span class="kb-article-flow-number">1</span>Tìm iCal</li><li><span class="kb-article-flow-number">2</span>Sao chép URL</li><li><span class="kb-article-flow-number">3</span>Dán vào chỗ ở</li><li><span class="kb-article-flow-number">4</span>Kiểm tra đặt phòng</li></ol><h2>Tìm liên kết ở đâu</h2><section class="kb-property-decision" aria-label="Nơi tìm liên kết iCal"><ol class="kb-property-decision-flow"><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Calendar → Availability</strong><p>Mở lịch của đúng listing, tìm <b>Connect calendars</b> và chọn <b>Connect to another website</b>. Sao chép toàn bộ liên kết kết thúc bằng <b>.ics</b>.</p></div></li><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Calendar → Sync calendars</strong><p>Trong Extranet, mở lịch của đúng chỗ ở hoặc unit, chọn <b>Sync calendars</b> và dùng <b>Copy link</b>.</p></div></li></ol></section><div class="kb-article-visual-note"><strong>Ví dụ trong Airbnb</strong><div class="kb-article-media-grid"><figure class="kb-article-figure"><img src="../../assets/screens/ical1_cz.png" alt="Màn hình lịch Airbnb"><figcaption>Bắt đầu trong lịch của đúng listing.</figcaption></figure><figure class="kb-article-figure"><img src="../../assets/screens/ical3_eng.png" alt="Cài đặt Availability của Airbnb với Connect calendars"><figcaption>Trong cài đặt availability, tìm <strong>Connect calendars</strong>.</figcaption></figure></div></div><h2>Dán vào Superhostem</h2><ul><li>mở chỗ ở cụ thể</li><li>tìm phần lịch hoặc iCal</li><li>dán URL iCal đã sao chép</li><li>đặt tên nguồn, ví dụ Airbnb hoặc Booking</li><li>lưu cài đặt</li></ul><h2>Kiểm tra trước khi tiếp tục</h2><ul><li>bạn đã sao chép toàn bộ liên kết, không chỉ một phần</li><li>nếu có nhiều unit, lịch đúng được gắn với đúng chỗ ở</li><li>đặt phòng hoặc ngày bị chặn đã hiện trong Superhostem</li><li>ngày hiển thị khớp với cổng đặt phòng</li></ul><aside class="kb-article-callout">Nếu không có gì hiển thị, trước tiên kiểm tra liên kết có bị cũ, bị rút gọn hoặc lấy từ unit khác không.</aside><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Lịch và quy trình</strong><small>Tiếp tục bằng thiết lập tự động hóa cho tin nhắn và vận hành hằng ngày.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+            <h2>iCal sẽ chuyển gì</h2><p>iCal chủ yếu xử lý lịch. Nó đưa ngày đặt phòng và ngày bị chặn vào Superhostem.</p><ul><li>ngày đến và ngày đi</li><li>ngày đã đặt hoặc bị chặn</li><li>thông tin cơ bản của sự kiện</li></ul><aside class="kb-article-callout kb-article-callout-muted">iCal thường không chứa giá, phí, hoa hồng hoặc đầy đủ thông tin khách.</aside><h2>Quy trình kết nối</h2><ol class="kb-article-flow" aria-label="Quy trình kết nối iCal"><li><span class="kb-article-flow-number">1</span>Tìm iCal</li><li><span class="kb-article-flow-number">2</span>Sao chép URL</li><li><span class="kb-article-flow-number">3</span>Dán vào chỗ ở</li><li><span class="kb-article-flow-number">4</span>Kiểm tra đặt phòng</li></ol><h2>Tìm liên kết ở đâu</h2><section class="kb-property-decision" aria-label="Nơi tìm liên kết iCal"><ol class="kb-property-decision-flow"><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Calendar → Availability</strong><p>Mở lịch của đúng listing, tìm <b>Connect calendars</b> và chọn <b>Connect to another website</b>. Sao chép toàn bộ URL xuất, gồm cả tham số sau dấu hỏi nếu có.</p></div></li><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Calendar → Sync calendars</strong><p>Trong Extranet, mở lịch của đúng chỗ ở hoặc unit, chọn <b>Sync calendars</b> và dùng <b>Copy link</b>.</p></div></li></ol></section><div class="kb-article-visual-note"><strong>Ví dụ trong Airbnb</strong><div class="kb-article-media-grid"><figure class="kb-article-figure"><img src="../../assets/screens/ical1_cz.png" alt="Màn hình lịch Airbnb"><figcaption>Bắt đầu trong lịch của đúng listing.</figcaption></figure><figure class="kb-article-figure"><img src="../../assets/screens/ical3_eng.png" alt="Cài đặt Availability của Airbnb với Connect calendars"><figcaption>Trong cài đặt availability, tìm <strong>Connect calendars</strong>.</figcaption></figure></div></div><h2>Dán vào Superhostem</h2><ul><li>mở chỗ ở cụ thể</li><li>tìm phần lịch hoặc iCal</li><li>dán URL iCal đã sao chép</li><li>đặt tên nguồn, ví dụ Airbnb hoặc Booking</li><li>lưu cài đặt</li></ul><h2>Kiểm tra trước khi tiếp tục</h2><ul><li>bạn đã sao chép toàn bộ liên kết, không chỉ một phần</li><li>nếu có nhiều unit, lịch đúng được gắn với đúng chỗ ở</li><li>đặt phòng hoặc ngày bị chặn đã hiện trong Superhostem</li><li>ngày hiển thị khớp với cổng đặt phòng</li></ul><aside class="kb-article-callout">Nếu không có gì hiển thị, trước tiên kiểm tra liên kết có bị cũ, bị rút gọn hoặc lấy từ unit khác không.</aside><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Lịch và quy trình</strong><small>Tiếp tục bằng thiết lập tự động hóa cho tin nhắn và vận hành hằng ngày.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+            <div class="kb-article-visual-note"><strong>Cài đặt quan trọng trong Booking.com</strong><p>Trong <strong>Calendar → Sync calendars</strong>, sao chép liên kết, sau đó chọn <strong>Booked dates only</strong> trong <strong>Decide what to export</strong> và lưu. Cách này chỉ nhập đặt phòng, không nhập ngày bị đóng bởi quy tắc khác.</p><figure class="kb-article-figure kb-article-figure-phone"><img src="../../assets/screens/booking-export-booked-dates-only.png" alt="Cài đặt xuất Booking.com với Booked dates only được chọn"><figcaption>Chọn <strong>Booked dates only</strong> rồi nhấn <strong>Save</strong>.</figcaption></figure></div>
+<section id="reviewed-workflow"><h2>Kiểm tra sau nhập</h2><p>So sánh một khoảng ngày với nền tảng nguồn và đúng chỗ ở. Chọn nguồn khác được hỗ trợ theo lựa chọn hiện tại của ứng dụng. Nếu lỗi, xem <a href="./co-delat-kdyz-chybi-rezervace.html">kiểm tra thiếu đặt phòng</a> trước khi tạo kỳ trùng.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Liên kết liên quan</h2>
@@ -149,6 +166,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

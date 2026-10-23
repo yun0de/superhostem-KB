@@ -39,7 +39,10 @@ Booking.com:
 - v Extranetu otevřete kalendář správného objektu nebo jednotky
 - najděte `Sync calendars`
 - použijte `Copy link`
+- v části `Decide what to export` zvolte `Booked dates only` a nastavení uložte
 - u více jednotek zkontrolujte, že berete odkaz ke správné jednotce
+
+Volba `Booked dates only` je důležitá: do Superhostem se mají z Booking.com přenášet rezervace, ne uzavřené termíny vytvořené jinými pravidly.
 
 ## Před pokračováním zkontrolujte
 

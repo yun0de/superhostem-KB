@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html" />
     <meta name="description" content="What is the difference between a booking and a blocked date? – guide for short-term rental hosts on Superhostem.cz." />
     <meta property="og:title" content="What is the difference between a booking and a blocked date?" />
     <meta property="og:description" content="What is the difference between a booking and a blocked date? – guide for short-term rental hosts on Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="What is the difference between a booking and a blocked date?" />
     <meta name="twitter:description" content="What is the difference between a booking and a blocked date? – guide for short-term rental hosts on Superhostem.cz." />
     <title>What is the difference between a booking and a blocked date?</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"What is the difference between a booking and a blocked date?","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -116,6 +130,8 @@
 <h2>When is a good time to check it?</h2>
 
 <p>If the user sees a busy date in the calendar, but does not see the expected reservation, it is a good idea to first check whether it is a blocking issue.</p>
+<section id="reviewed-workflow"><h2>Before creating another stay</h2><p>Check the event source, property, dates and existing reservation detail. A mirrored date range from another platform does not necessarily mean another guest. Add missing price or details to the correct stay first.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Related links</h2>
@@ -153,6 +169,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

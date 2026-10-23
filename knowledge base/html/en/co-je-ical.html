@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-ical.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-ical.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-ical.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-je-ical.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-ical.html" />
     <meta name="description" content="What is iCal – guide for short-term rental hosts on Superhostem.cz." />
     <meta property="og:title" content="What is iCal" />
     <meta property="og:description" content="What is iCal – guide for short-term rental hosts on Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="What is iCal" />
     <meta name="twitter:description" content="What is iCal – guide for short-term rental hosts on Superhostem.cz." />
     <title>What is iCal</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"What is iCal","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-ical.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -121,6 +135,8 @@
 <li>fee breakdown</li>
 <li>complete financial data</li>
 </ul>
+<section id="reviewed-workflow"><h2>Import or export?</h2><p>Use <a href="./jak-funguje-napojeni-pres-ical.html">iCal connection</a> to load dates into Superhostem. Use <a href="./kalendar-airbnb-v-telefonu.html">calendar app subscriptions</a> to display Superhostem stays in a personal calendar. These are different directions.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Related links</h2>
@@ -163,6 +179,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jak sdílet webový kalendář odkazem – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-sdilet-webovy-kalendar-odkazem.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-sdilet-webovy-kalendar-odkazem.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html" />
+    <meta name="description" content="Sdílejte potřebné nemovitosti s týmem nebo dočasným spolupracovníkem. Určete viditelné údaje a přístup později zrušte." />
     <meta property="og:title" content="Jak sdílet webový kalendář odkazem" />
-    <meta property="og:description" content="Jak sdílet webový kalendář odkazem – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Sdílejte potřebné nemovitosti s týmem nebo dočasným spolupracovníkem. Určete viditelné údaje a přístup později zrušte." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jak sdílet webový kalendář odkazem" />
-    <meta name="twitter:description" content="Jak sdílet webový kalendář odkazem – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak sdílet webový kalendář odkazem</title>
+    <meta name="twitter:description" content="Sdílejte potřebné nemovitosti s týmem nebo dočasným spolupracovníkem. Určete viditelné údaje a přístup později zrušte." />
+    <title>Jak sdílet webový kalendář odkazem | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak sdílet webový kalendář odkazem","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,105 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Nemovitosti a kalendáře</p>
-          <h1 class="kb-article-title">Jak sdílet webový kalendář odkazem</h1>
-          <p class="kb-article-lead">Webový kalendář přes odkaz použijte pro lidi, kteří potřebují vidět obsazenost, ale nemají mít přístup do vašeho účtu. Typicky úklidový tým, správce, majitel nebo externí partner.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./jak-funguje-napojeni-pres-ical.html">Předchozí článek</a>
-            <a href="./kalendar-airbnb-v-telefonu.html">Další článek →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Kdy to použít</strong>
-          <p>
-            Když někomu stačí otevřít odkaz v prohlížeči a vidět termíny.
-            Není potřeba instalovat kalendářovou aplikaci ani vytvářet další
-            uživatelský účet. Hodí se i pro lidi, kterým potřebujete kalendář
-            nasdílet jen krátkodobě.
-          </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block">
-<h2>Co sdílený webový kalendář řeší</h2>
-<p>
-          Vytvoříte unikátní odkaz na kalendář. Člověk s odkazem uvidí webový
-          přehled obsazenosti podle toho, jaké údaje mu povolíte zobrazit.
-        </p>
-<ul>
-          <li>úklidový tým vidí, kdy má být nemovitost připravená</li>
-          <li>správce vidí obsazenost bez přístupu do administrace</li>
-          <li>majitel nebo partner může sledovat rezervace v prohlížeči</li>
-          <li>starý odkaz můžete kdykoliv zrušit</li>
-        </ul>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>Když v kalendáři chybí informace</h2>
-<aside class="kb-article-callout kb-article-callout-muted">
-          Pokud v kalendáři nevidíte jméno hosta, počet hostů, cenu nebo jiné
-          detaily, Superhostem je zatím nemá odkud načíst. Pro bleskové
-          doplňování těchto údajů zapněte e-mailovou synchronizaci rezervací.
-          Bez ní je potřeba údaje doplnit ručně: buď hostem, nebo vámi v
-          administraci.
-        </aside>
-            </section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted">
-<h2>Bezpečnost</h2>
-<ul>
-          <li>Odkaz může otevřít kdokoliv, kdo ho má.</li>
-          <li>Neposílejte odkaz do veřejných skupin nebo veřejných dokumentů.</li>
-          <li>U externích lidí sdílejte jen údaje, které nutně potřebují.</li>
-          <li>Staré nebo nepoužívané odkazy pravidelně rušte.</li>
-        </ul>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>Rozdíl proti kalendářové aplikaci</h2>
-<p>
-          Webový kalendář je obyčejný odkaz do prohlížeče. Příjemce nic
-          nenastavuje a nemusí používat Apple Calendar, Google Calendar ani
-          Outlook. Kalendářová aplikace je vhodnější, když si chce někdo termíny
-          přidat přímo do svého osobního kalendáře.
-        </p>
-<a class="kb-article-next-cta" href="./kalendar-airbnb-v-telefonu.html">
-          <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"></rect><path d="M12 18h.01"></path></svg></span>
-          <span>
-            <strong>Chci kalendář v aplikaci</strong>
-            <small>Návod pro Apple Calendar, Google Calendar a další aplikace přes iCal.</small>
-          </span>
-          <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-        </a>
-<a class="kb-article-next-cta" href="./jak-funguje-email-forwarding.html">
-          <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
-          <span>
-            <strong>Doplnit informace z e-mailů automaticky</strong>
-            <small>E-mailová synchronizace načítá detaily rezervací bez ručního přepisování.</small>
-          </span>
-          <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-        </a>
-            </section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Související</span>
-  <strong>Jak funguje napojení přes iCal</strong>
-</a>
-
-<a class="kb-article-related-card" href="./kalendar-airbnb-v-telefonu.html">
-  <span>Další</span>
-  <strong>Do kalendářové aplikace</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak sdílet webový kalendář odkazem</h1>
+      <p class="kb-article-lead">Sdílejte potřebné nemovitosti s týmem nebo dočasným spolupracovníkem. Určete viditelné údaje a přístup později zrušte.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Vybrat nemovitosti</li>
+<li><span class="kb-article-flow-number">2</span>Nastavit údaje</li>
+<li><span class="kb-article-flow-number">3</span>Sdílet</li>
+<li><span class="kb-article-flow-number">4</span>Spravovat přístup</li></ol><section><h2 id="nastaveni">Vytvořte pojmenovaný odkaz</h2><p>V iCal exportu otevřete Webový přehled. Pojmenujte odkaz a vyberte nemovitosti. Zvolte viditelnost jména hosta, počtu osob, ceny, nemovitosti a stavu rezervace podle dostupných voleb. U více nemovitostí vyberte vhodné výchozí zobrazení kalendáře nebo Ganttu.</p></section>
+<section><h2 id="pristup">Zkontrolujte a sdílejte</h2><p>Ověřte náhled a po vytvoření pošlete celý odkaz konkrétnímu příjemci. Účet příjemce ani instalace kalendářové aplikace nejsou potřeba. Každý, kdo odkaz získá, může otevřít povolený přehled; neposílejte ho veřejně.</p></section>
+<section><h2 id="zmeny">Změna a ukončení přístupu</h2><p>U spravovaného odkazu můžete upravit dostupné volby viditelnosti. Zkontrolujte výsledek na sdílené stránce. Nepotřebný přístup zrušte; pro jiný tým používejte samostatný odkaz. Režim úklidu zapněte jen tam, kde má příjemce plnit úklidové úkoly.</p></section>
+<section><h2 id="chybi">V kalendáři chybí jméno nebo cena</h2><p>Nejdřív ověřte, že jsou údaje povolené v odkazu a skutečně existují u rezervace. iCal je nemusí obsahovat; doplnit je mohou podporované rezervační e-maily nebo ruční úprava. Přeposílání negarantuje všechny údaje z každého e-mailu ani okamžitou aktualizaci.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-ridit-uklid.html"><span>Související návody</span><strong>Jak předat úklid týmu a zkontrolovat dokončení</strong></a>
+<a class="kb-article-related-card" href="./kalendar-airbnb-v-telefonu.html"><span>Související návody</span><strong>Jak přidat rezervace do kalendářové aplikace</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Související návody</span><strong>Jak nastavit přeposílání rezervačních e-mailů</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -210,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

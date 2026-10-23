@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem" />
-    <meta property="og:description" content="Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html" />
+    <meta name="description" content="Thu thập thông tin qua biểu mẫu kỳ lưu trú, kiểm tra từng khách và chuẩn bị hồ sơ cho kỳ đã chọn." />
+    <meta property="og:title" content="Lưu hồ sơ khách và kỳ lưu trú trong Superhostem" />
+    <meta property="og:description" content="Thu thập thông tin qua biểu mẫu kỳ lưu trú, kiểm tra từng khách và chuẩn bị hồ sơ cho kỳ đã chọn." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem" />
-    <meta name="twitter:description" content="Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem</title>
+    <meta name="twitter:title" content="Lưu hồ sơ khách và kỳ lưu trú trong Superhostem" />
+    <meta name="twitter:description" content="Thu thập thông tin qua biểu mẫu kỳ lưu trú, kiểm tra từng khách và chuẩn bị hồ sơ cho kỳ đã chọn." />
+    <title>Lưu hồ sơ khách và kỳ lưu trú trong Superhostem | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Lưu hồ sơ khách và kỳ lưu trú trong Superhostem","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,98 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Tự động hóa và truyền thông</p>
-          <h1 class="kb-article-title">Cách lưu trữ hồ sơ khách và lưu trú tại Superhostem</h1>
-          <p class="kb-article-lead">Trong Superhost, domovní kniha theo dõi việc đặt phòng, sổ lưu bút và thông tin mà khách điền trước khi đến. Nhờ đó, bạn không phải ghi lại dữ liệu theo cách thủ công trong một tài liệu riêng biệt và bạn đã liên kết chúng với một lần lưu trú cụ thể.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./proc-vest-evidenci-hostu-a-pobytu.html">Bài viết trước</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Bài tiếp theo →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Điều gì đang chờ đợi bạn tiếp theo?</strong>
-        <p>
-          Trước tiên, hãy kiểm tra xem bạn đã thiết lập sổ lưu bút và tính năng tự động hóa chính xác chưa,
-          sau đó bạn xác minh dữ liệu đã điền để đặt phòng và hồ sơ khách nhận được.
-        </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Việc gì phải làm trước</h2>
-
-      <h3>Đặt phòng trên hệ thống</h3>
-<p>domovní kniha trong Superhost dựa trên các đặt chỗ được tải chính xác và thông tin chi tiết của chúng.</p>
-      <h3>Sổ lưu bút hoặc mẫu khách</h3>
-<p>Bạn cần một cách để thu thập dữ liệu từ khách trước khi họ đến hoặc khi nhận phòng.</p>
-      <h3>Thiết lập truyền thông</h3>
-<p>Tự động hóa cần gửi cho khách đúng liên kết vào đúng thời điểm để họ điền thông tin.</p>
-
-<h2>Bắt đầu từ đâu trong Superhost</h2>
-<p>
-        Thực tế, bạn bắt đầu với việc đặt chỗ và liên lạc tiếp theo với khách. Trong đặt phòng bạn có thể thấy
-        nếu khách đã điền các thông tin cần thiết và bạn có thể theo dõi sổ lưu bút hoặc biểu mẫu,
-        đã được gửi cho anh ta.
-      </p>
-<ul>
-        <li>kiểm tra xem việc đặt phòng trong hệ thống có khớp với thời gian lưu trú thực tế không</li>
-        <li>xác minh rằng khách đã nhận được liên kết chính xác tới biểu mẫu hoặc sổ lưu bút</li>
-        <li>khi đặt chỗ, hãy đảm bảo rằng thông tin đã điền đầy đủ</li>
-        <li>bạn có thể tạo hồ sơ khách và lưu trú bất cứ lúc nào sau khi chọn khoảng thời gian <strong>từ–đến</strong>
-</li>
-      </ul>
-<h2>Nó hoạt động như thế nào trong thực tế</h2>
-
-      <h3>Gửi cho khách một liên kết thông qua tự động hóa</h3>
-<p>Khách sẽ nhận được liên kết đến biểu mẫu hoặc sổ lưu bút trước khi đến. Đây là nơi bắt đầu thu thập dữ liệu để đăng ký khách.</p>
-
-      <h3>Khách điền đầy đủ thông tin chi tiết về thời gian lưu trú</h3>
-<p>Sau khi khách điền vào biểu mẫu, dữ liệu sẽ được liên kết với một đặt phòng cụ thể. Bạn không cần phải tìm kiếm chúng bên ngoài hệ thống.</p>
-
-      <h3>Kiểm tra việc đặt chỗ và tính đầy đủ của dữ liệu</h3>
-<p>Đối với một đặt phòng cụ thể, hãy xác minh rằng dữ liệu bạn cần để đăng ký khách và các nghĩa vụ liên quan khác không bị thiếu. Sau đó, bạn có thể tạo cái nhìn tổng quan cho khoảng thời gian đã chọn theo ngày bất kỳ lúc nào <strong>từ–đến</strong>.</p>
-
-      <h3>Làm việc với các bản ghi liên tục, không hồi cứu</h3>
-<p>Ưu điểm lớn nhất của Superhost là bạn thu thập dữ liệu liên tục trong quá trình làm việc bình thường có đặt trước. Điều này giúp loại bỏ việc viết lại thủ công sau này thành một cuốn sổ riêng.</p>
-
-<h2>Những gì cần chú ý</h2>
-<ul>
-        <li>khách thực sự có liên kết phù hợp tới biểu mẫu hoặc sổ lưu bút</li>
-        <li>đặt phòng được chỉ định chính xác cho một chỗ nghỉ cụ thể trong hệ thống</li>
-        <li>thời gian lưu trú bao gồm dữ liệu bạn cần để đăng ký khách</li>
-        <li>tự động hóa khởi hành kịp thời để khách có thời gian hoàn thành dữ liệu trước khi đến</li>
-      </ul>
-<h2>Bài viết này tiếp tục vấn đề gì?</h2>
-<p>
-        Nếu trước tiên bạn cần làm rõ lý do tại sao bạn nên giải quyết vấn đề sổ nhà và nó nhằm mục đích gì,
-        bắt đầu với một bài viết giải thích. Để gửi liên kết chính xác cho khách, sau đây sẽ có bài viết về tự động hóa.
-      </p>
-<ul class="kb-article-link-list">
-<li><a href="./proc-vest-evidenci-hostu-a-pobytu.html">Tại sao phải lưu giữ hồ sơ khách và lưu trú</a></li>
-<li><a href="./jak-funguji-automatizace-v-superhostem.html">Cách tự động liên lạc với khách</a></li>
-</ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./proc-vest-evidenci-hostu-a-pobytu.html">
-  <span>trước đó</span>
-  <strong>Tại sao phải lưu giữ hồ sơ khách và lưu trú</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html">
-  <span>Một cái khác</span>
-  <strong>Cách tự động liên lạc với khách</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Lưu hồ sơ khách và kỳ lưu trú trong Superhostem</h1>
+      <p class="kb-article-lead">Thu thập thông tin qua biểu mẫu kỳ lưu trú, kiểm tra từng khách và chuẩn bị hồ sơ cho kỳ đã chọn.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Kỳ lưu trú</li>
+<li><span class="kb-article-flow-number">2</span>Biểu mẫu</li>
+<li><span class="kb-article-flow-number">3</span>Kiểm tra</li>
+<li><span class="kb-article-flow-number">4</span>Xuất</li></ol><section><h2 id="collect">1. Gửi biểu mẫu khách</h2><p>Kiểm tra ngày và số khách trong đặt phòng. Gửi liên kết đăng ký có sẵn. Có thể bắt đầu thủ công, không bắt buộc tự động hóa.</p><p><a href='./jak-poslat-online-check-in.html'>Hướng dẫn check-in thực tế</a></p></section>
+<section><h2 id="guests">2. Kiểm tra từng khách</h2><p>Trong Khách đã đăng ký, kiểm tra tất cả người và sửa lỗi. Hướng dẫn khách cung cấp chỉ dẫn lưu trú; không phải biểu mẫu đăng ký hay thay thế hồ sơ.</p></section>
+<section><h2 id="export">3. Chuẩn bị hồ sơ theo kỳ</h2><p>Mở Sổ đăng ký khách và chọn chỗ ở. Nếu chỉ có một chỗ ở, có thể được chuyển thẳng tới hồ sơ. Chọn ngày từ–đến và tạo PDF có sẵn. Kiểm tra người thiếu và thông tin sai trước khi lưu trữ hoặc in.</p></section>
+<section><h2 id="duties">4. Kiểm tra nghĩa vụ tiếp theo</h2><p>Điền xong biểu mẫu chưa xác nhận đã báo cảnh sát hay trả phí. Kiểm tra riêng kết quả Ubyport và hồ sơ địa phương. Xem hướng dẫn pháp lý liên quan về lưu hồ sơ và thời hạn.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Hướng dẫn liên quan</span><strong>Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách</strong></a>
+<a class="kb-article-related-card" href="./jak-odeslat-hosty-do-ubyportu.html"><span>Hướng dẫn liên quan</span><strong>Gửi khách lên Ubyport và kiểm tra kết quả</strong></a>
+<a class="kb-article-related-card" href="./proc-vest-evidenci-hostu-a-pobytu.html"><span>Hướng dẫn liên quan</span><strong>Sổ đăng ký khách lưu trú: vì sao cần lưu hồ sơ</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -203,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

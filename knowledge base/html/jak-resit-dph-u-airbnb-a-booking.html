@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-resit-dph-u-airbnb-a-booking.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-resit-dph-u-airbnb-a-booking.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-resit-dph-u-airbnb-a-booking.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-resit-dph-u-airbnb-a-booking.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-resit-dph-u-airbnb-a-booking.html" />
     <meta name="description" content="Jak řešit DPH u Airbnb a Bookingu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
     <meta property="og:title" content="Jak řešit DPH u Airbnb a Bookingu" />
     <meta property="og:description" content="Jak řešit DPH u Airbnb a Bookingu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="Jak řešit DPH u Airbnb a Bookingu" />
     <meta name="twitter:description" content="Jak řešit DPH u Airbnb a Bookingu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
     <title>Jak řešit DPH u Airbnb a Bookingu</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak řešit DPH u Airbnb a Bookingu","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-resit-dph-u-airbnb-a-booking.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -121,15 +135,15 @@
 <h2>Proč se DPH vůbec řeší</h2>
 <div class="kb-property-next-steps-grid">
   <div class="kb-property-next-card"><span>Služba z ciziny</span><strong>Platforma vám fakturuje službu</strong><small>Typicky jde o provizi nebo servisní poplatek od Airbnb či Booking.com.</small></div>
-  <div class="kb-property-next-card"><span>SRO</span><strong>DPH řeší firma</strong><small>Pokud ubytování provozuje s.r.o., řeší se povinnosti v účetnictví této firmy.</small></div>
-  <div class="kb-property-next-card"><span>Živnost / fyzická osoba</span><strong>Řešíte režim podle ZDPH</strong><small>U živnosti nebo fyzické osoby se ověřuje, zda nevzniká identifikovaná osoba nebo plátcovství.</small></div>
+  <div class="kb-property-next-card"><span>OSVČ i s.r.o.</span><strong>Rozhoduje váš režim DPH</strong><small>Také s.r.o. může být neplátcem nebo identifikovanou osobou. Právní forma sama o sobě neurčuje plátcovství.</small></div>
+  <div class="kb-property-next-card"><span>Provize a obrat</span><strong>Ověřte dvě různé povinnosti</strong><small>DPH z přijaté zahraniční služby řešte samostatně od registrace kvůli obratu.</small></div>
 </div>
-<h2>Doporučení v praxi</h2>
+<h2>Kdy musíte řešit registraci</h2>
 <div class="kb-property-next-steps-grid">
-  <div class="kb-property-next-card"><span>Začátek</span><strong>Většinou dává smysl nezačínat rovnou jako plátce</strong><small>Nejdřív si ověřte režim podle ZDPH, často hlavně identifikovanou osobu kvůli službě ze zahraničí.</small></div>
-  <div class="kb-property-next-card"><span>Vyšší obrat</span><strong>Nad 2 miliony řešte plátcovství</strong><small>Pokud se obrat dostává nad hranici 2 mil. Kč, začíná dávat smysl řešit registraci plátce DPH s účetní.</small></div>
+  <div class="kb-property-next-card"><span>Zahraniční služba</span><strong>Nečekejte na vysoký obrat</strong><small>Přijetí služby od zahraniční platformy může založit povinnost identifikované osoby i při nízkém obratu.</small></div>
+  <div class="kb-property-next-card"><span>Obrat v tuzemsku za kalendářní rok</span><strong>Sledujte oba limity</strong><small>Po překročení 2 000 000 Kč se plátcem zpravidla stáváte od 1. ledna následujícího roku; můžete zvolit dřívější vznik. Po překročení 2 536 500 Kč vzniká plátcovství následující den. U těchto obratových důvodů se přihláška podává do 10 pracovních dnů.</small></div>
 </div>
-<aside class="kb-article-callout kb-article-callout-muted"><strong>Rozhodujete vy</strong><p>Tohle je praktické doporučení, ne pokyn. Každý hostitel jedná na vlastní rozhodnutí a měl by si finální postup ověřit podle aktuálních pravidel a své situace.</p></aside>
+<p>Registrace při splnění zákonných podmínek je povinnost. Konkrétní obrat, výjimky a datum vzniku ověřte s účetní podle <a href="https://financnisprava.gov.cz/cs/financni-sprava/novinky/novinky-2025/informace-ke-zmenam-v-platcovstvi-dph-2025" target="_blank" rel="noreferrer">pravidel Finanční správy účinných od roku 2025</a>.</p>
 <aside class="kb-article-callout"><strong>Potřebujete to posoudit přesně?</strong><p>Napište nám. Podíváme se na vaši situaci a řekneme, jaký postup dává smysl právě pro vás.</p></aside>
 
 <h2 id="neplatce">Když nejste plátce DPH</h2>
@@ -221,6 +235,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

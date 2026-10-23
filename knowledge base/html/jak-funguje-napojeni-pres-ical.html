@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-napojeni-pres-ical.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html" />
     <meta name="description" content="Jak napojit iCal kalendář – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
     <meta property="og:title" content="Jak napojit iCal kalendář" />
     <meta property="og:description" content="Jak napojit iCal kalendář – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="Jak napojit iCal kalendář" />
     <meta name="twitter:description" content="Jak napojit iCal kalendář – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
     <title>Jak napojit iCal kalendář</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak napojit iCal kalendář","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -124,8 +138,8 @@
             <h2>Kde odkaz najít</h2>
             <section class="kb-property-decision" aria-label="Kde najít iCal odkaz">
               <ol class="kb-property-decision-flow">
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Calendar → Availability</strong><p>Otevřete kalendář konkrétní nabídky, najděte <b>Connect calendars</b> a zvolte <b>Connect to another website</b>. Zkopírujte celý odkaz končící na <b>.ics</b>.</p></div></li>
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Calendar → Sync calendars</strong><p>V Extranetu otevřete kalendář správného objektu nebo jednotky, zvolte <b>Sync calendars</b> a použijte <b>Copy link</b>.</p></div></li>
+                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Calendar → Availability</strong><p>Otevřete kalendář konkrétní nabídky, najděte <b>Connect calendars</b> a zvolte <b>Connect to another website</b>. Zkopírujte celý exportní odkaz včetně případných parametrů za otazníkem.</p></div></li>
+                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Calendar → Sync calendars</strong><p>V Extranetu otevřete kalendář správného objektu nebo jednotky, zvolte <b>Sync calendars</b> a použijte <b>Copy link</b>. V části <b>Decide what to export</b> vyberte <b>Booked dates only</b> a nastavení uložte.</p></div></li>
               </ol>
             </section>
             <div class="kb-article-visual-note">
@@ -136,6 +150,11 @@
               </div>
             </div>
             <h2>Vložení do Superhostem</h2>
+            <div class="kb-article-visual-note">
+              <strong>Důležité nastavení v Booking.com</strong>
+              <p>Zvolte <strong>Booked dates only</strong>. Do Superhostem se tak přenesou rezervace, ne uzavřené termíny vytvořené jinými pravidly.</p>
+              <figure class="kb-article-figure kb-article-figure-phone"><img src="../assets/screens/booking-export-booked-dates-only.png" alt="Booking.com nastavení exportu s vybranou volbou Booked dates only"><figcaption>V části <strong>Decide what to export</strong> označte <strong>Booked dates only</strong> a klikněte na <strong>Save</strong>.</figcaption></figure>
+            </div>
             <ul>
               <li>otevřete konkrétní nemovitost</li>
               <li>najděte část pro kalendáře nebo iCal</li>
@@ -156,6 +175,8 @@
               <span><strong>Kalendář a rutiny</strong><small>Pokračujte nastavením automatizací pro zprávy a běžný provoz.</small></span>
               <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
             </a>
+<section id="reviewed-workflow"><h2>Kontrola po importu</h2><p>Porovnejte konkrétní termín se zdrojovým portálem a správnou nemovitostí. Další podporované zdroje vybírejte podle aktuální nabídky aplikace. Při problému použijte <a href="./co-delat-kdyz-chybi-rezervace.html">diagnostiku chybějící rezervace</a>; nevytvářejte bez kontroly duplicitní pobyt.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Související odkazy</h2>
@@ -198,6 +219,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

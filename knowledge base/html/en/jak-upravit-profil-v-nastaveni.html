@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="How to edit profile in settings – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How to edit profile in settings" />
-    <meta property="og:description" content="How to edit profile in settings – guide for short-term rental hosts on Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-upravit-profil-v-nastaveni.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-upravit-profil-v-nastaveni.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-upravit-profil-v-nastaveni.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html" />
+    <meta name="description" content="Check personal account details and language. Manage property and billing details in their respective sections." />
+    <meta property="og:title" content="Edit your profile in settings" />
+    <meta property="og:description" content="Check personal account details and language. Manage property and billing details in their respective sections." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-upravit-profil-v-nastaveni.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to edit profile in settings" />
-    <meta name="twitter:description" content="How to edit profile in settings – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How to edit profile in settings</title>
+    <meta name="twitter:title" content="Edit your profile in settings" />
+    <meta name="twitter:description" content="Check personal account details and language. Manage property and billing details in their respective sections." />
+    <title>Edit your profile in settings | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Edit your profile in settings","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-upravit-profil-v-nastaveni.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,77 +103,16 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Help Center</p>
-          <h1 class="kb-article-title">How to edit profile in settings</h1>
-          <p class="kb-article-lead">In the profile settings, you edit your basic account information, such as name, phone or language.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./index.html#knihovna">Library</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Where to find the profile</h2>
-
-<ol>
-<li>in the left menu click on <strong>Settings</strong>
-</li>
-<li>the page opens <strong>Settings</strong>
-</li>
-<li>stay bookmarked <strong>Profile</strong>
-</li>
-</ol>
-
-<h2>What is available in the profile</h2>
-
-<ul>
-<li>Name and surname</li>
-<li>Email</li>
-<li>Phone</li>
-<li>Language</li>
-<li>Show iCal export banner</li>
-</ul>
-
-<h2>How to edit a profile step by step</h2>
-
-<ol>
-<li>open <strong>Settings</strong>
-</li>
-<li>make sure you are on the tab <strong>Profile</strong>
-</li>
-<li>edit the field <strong>Name and surname</strong>
-</li>
-<li>add or correct <strong>Phone</strong>
-</li>
-<li>check <strong>Language</strong>
-</li>
-<li>adjust the option as needed <strong>Show iCal export banner</strong>
-</li>
-<li>click on <strong>Save changes</strong>
-</li>
-</ol>
-
-<aside class="kb-article-callout kb-article-note">
-<strong>An important note</strong>
-<p>The email may say that it is managed through your account, so it may not be editable directly in this form.</p>
-</aside>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Library</span>
-  <strong>Library</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Edit your profile in settings</h1>
+      <p class="kb-article-lead">Check personal account details and language. Manage property and billing details in their respective sections.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="profile">Settings → Profile</h2><p>Open Settings and Profile. Edit the available name, phone and language fields and save. Verify the saved value. If email is not editable, use account management or contact support.</p></section>
+<section><h2 id="difference">Your profile is not operational settings</h2><p>Editing a personal profile does not itself change property addresses, municipality accounts, Ubyport or details on every issued document. Check those in the relevant feature settings. If using organisations, confirm the active one.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html"><span>Related guides</span><strong>First login: from your property to your first stay</strong></a>
+<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html"><span>Related guides</span><strong>Add your property</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -182,6 +133,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

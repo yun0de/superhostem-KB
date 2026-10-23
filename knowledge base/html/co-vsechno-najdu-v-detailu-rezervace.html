@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Co všechno najdu v detailu rezervace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Co všechno najdu v detailu rezervace" />
-    <meta property="og:description" content="Co všechno najdu v detailu rezervace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html" />
+    <meta name="description" content="Otevřete jeden pobyt a zvolte úkol: ověřit údaje, poslat formulář, zkontrolovat zprávu nebo hlášení." />
+    <meta property="og:title" content="Co vyřešíte v detailu rezervace" />
+    <meta property="og:description" content="Otevřete jeden pobyt a zvolte úkol: ověřit údaje, poslat formulář, zkontrolovat zprávu nebo hlášení." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Co všechno najdu v detailu rezervace" />
-    <meta name="twitter:description" content="Co všechno najdu v detailu rezervace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Co všechno najdu v detailu rezervace</title>
+    <meta name="twitter:title" content="Co vyřešíte v detailu rezervace" />
+    <meta name="twitter:description" content="Otevřete jeden pobyt a zvolte úkol: ověřit údaje, poslat formulář, zkontrolovat zprávu nebo hlášení." />
+    <title>Co vyřešíte v detailu rezervace | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Co vyřešíte v detailu rezervace","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-vsechno-najdu-v-detailu-rezervace.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,215 +103,20 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Správa rezervací a kalendář</p>
-          <h1 class="kb-article-title">Co všechno najdu v detailu rezervace</h1>
-          <p class="kb-article-lead">Detail rezervace je pracovní místo pro jeden konkrétní pobyt. Ověříte v něm data, zkopírujete zprávu pro hosta, zkontrolujete vyplněné formuláře a rychle poznáte, co je další krok.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-            <a href="./jak-funguje-email-forwarding.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-<h2>Kdy má smysl detail otevřít</h2>
-
-<ul>
-<li>když chcete ověřit, jestli rezervace sedí na správnou nemovitost a termín</li>
-<li>když potřebujete doplnit jméno hosta, počet hostů, jazyk nebo cenu</li>
-<li>když chcete poslat hostovi registrační odkaz nebo zkontrolovat text zprávy</li>
-<li>když kontrolujete, jestli hosté vyplnili formulář pro domovní knihu</li>
-<li>když potřebujete vidět, jaké e-maily systém k rezervaci odeslal</li>
-<li>když řešíte hlášení zahraničních hostů přes Ubyport</li>
-<li>když chcete vystavit fakturu nebo zkontrolovat cenu rezervace</li>
-</ul>
-
-<h2>Co zkontrolovat hned nahoře</h2>
-
-<p>V horní části detailu najdete rychlý souhrn rezervace: hosta, termín příjezdu a odjezdu, relativní informaci k příjezdu a název nemovitosti. Vedle toho je akce pro synchronizaci zdroje rezervace.</p>
-
-<ol>
-<li>ověřte hosta a nemovitost</li>
-<li>zkontrolujte datum příjezdu a odjezdu</li>
-<li>podívejte se, jestli rezervace není zrušená</li>
-<li>pokud data nesedí, použijte synchronizaci zdroje</li>
-</ol>
-
-<aside class="kb-article-callout">
-  Pokud systém zjistí, že chybí údaje v profilu nebo u nemovitosti, zobrazí nad obsahem upozornění. Typicky jde o data potřebná pro reporty, exporty nebo navazující administrativu.
-</aside>
-
-<h2>Jak číst workflow rezervace</h2>
-
-<p>Workflow nahoře ukazuje, v jaké fázi rezervace je a kdo má udělat další krok.</p>
-
-<ul>
-<li><strong>Import rezervace</strong> znamená, že rezervace už existuje v systému.</li>
-<li><strong>Příprava zprávy pro hosta</strong> je krok hostitele, kdy kopírujete nebo upravujete zprávu s odkazem.</li>
-<li><strong>Registrace hosta</strong> znamená, že host vyplňuje nebo už vyplnil formulář.</li>
-<li><strong>Hlášení cizinecké policii</strong> se zobrazí hlavně u zahraničních hostů.</li>
-<li><strong>Dokončeno</strong> znamená, že pro rezervaci není potřeba další běžná akce.</li>
-</ul>
-
-<p>Nejdůležitější je nečíst workflow jako dekoraci. Je to rychlá odpověď na otázku: <strong>Co mám s touhle rezervací udělat teď?</strong></p>
-
-<h2>Přehled: host, termín, cena a zdroj</h2>
-
-<p>V záložce <strong>Přehled</strong> jsou dvě hlavní karty.</p>
-
-<p>V části <strong>Informace o hostovi</strong> můžete kontrolovat nebo upravit:</p>
-
-<ul>
-<li>jméno hosta</li>
-<li>e-mail a telefon, pokud jsou k dispozici</li>
-<li>počet hostů</li>
-<li>jazyk hosta pro zprávu a formuláře</li>
-</ul>
-
-<p>Počet hostů je důležitý. Pokud je nastavený na <strong>0</strong>, systém vás upozorní, protože bez správného počtu hostů nedává smysl posílat registrační odkazy ani čekat kompletní domovní knihu.</p>
-
-<p>V části <strong>Detaily rezervace</strong> kontrolujete:</p>
-
-<ul>
-<li>datum a čas příjezdu</li>
-<li>datum a čas odjezdu</li>
-<li>zdroj rezervace, například Airbnb, Booking.com nebo ruční zadání</li>
-<li>odkaz na rezervaci na původní platformě, pokud existuje</li>
-<li>celkovou cenu rezervace</li>
-</ul>
-
-<p>Cenu lze upravit přímo v detailu. To se hodí hlavně tam, kde iCal přinesl termín, ale finanční data přišla později z email forwardingu nebo je potřebujete doplnit ručně.</p>
-
-<h2>Zpráva pro hosta a registrační odkazy</h2>
-
-<p>Když rezervace čeká na údaje od hosta, detail zobrazí další kroky. V této části řešíte zprávu, kterou hostovi pošlete.</p>
-
-<ul>
-<li>náhled zprávy pro hosta</li>
-<li>tlačítko pro zkopírování zprávy</li>
-<li>možnost upravit text zprávy pro konkrétní rezervaci</li>
-<li>odkaz pro potvrzení rezervace</li>
-<li>po potvrzení také registrační formulář pro hosty</li>
-</ul>
-
-<p>Rozdíl mezi odkazy:</p>
-
-<ul>
-<li>odkaz pro potvrzení rezervace pomáhá hostovi potvrdit rezervaci a dostat se k dalšímu kroku</li>
-<li>registrační formulář slouží pro vyplnění údajů hostů do domovní knihy</li>
-<li>permalink pro nemovitost se hodí do automatizovaných zpráv na Airbnb, aby hosté našli své rezervace pro danou nemovitost</li>
-</ul>
-
-<p>Pokud máte pro nemovitost nastavené automatizované šablony zpráv, detail umí ukázat i jejich náhled pro jazyk vybraný u rezervace.</p>
-
-<p>Šablony zpráv nemusíte používat jen ve výchozí podobě. U nemovitosti si můžete připravit vlastní texty zpráv a v detailu rezervace pak zkontrolovat, jak se do nich doplní konkrétní host, termín, cena nebo registrační odkaz.</p>
-
-<aside class="kb-article-callout">
-  <strong>Chcete zprávy posílat automaticky?</strong>
-  <p>Pokud nechcete zprávu kopírovat ručně u každé rezervace, nastavte si automatizaci zpráv pro celou nemovitost. Šablona pak může hostovi automaticky poslat správný odkaz i instrukce podle konkrétní rezervace.</p>
-  <p><a href="./jak-funguji-automatizace-v-superhostem.html">Přejít na návod: Jak fungují automatizace v Superhostem</a></p>
-</aside>
-
-<h2>Registrovaní hosté</h2>
-
-<p>Sekce <strong>Registrovaní hosté</strong> ukazuje, kolik formulářů je vyplněných a co u jednotlivých hostů chybí.</p>
-
-<p>V tabulce najdete zejména:</p>
-
-<ul>
-<li>pořadí hosta v rezervaci</li>
-<li>jméno a e-mail</li>
-<li>datum narození</li>
-<li>adresu</li>
-<li>typ hosta, například dospělý, dítě nebo host bez poplatku</li>
-<li>národnost</li>
-<li>typ a číslo dokladu</li>
-<li>fotku čísla dokladu, pokud ji host nahrál</li>
-<li>stav vyplnění</li>
-</ul>
-
-<p>U vyplněného hosta můžete otevřít formulář, zkopírovat odkaz, upravit údaje nebo hosta smazat. Pokud host ještě data nevyplnil, uvidíte stav <strong>Čeká na vyplnění</strong>.</p>
-
-<h2>Ubyport a zahraniční hosté</h2>
-
-<p>Pokud jsou v rezervaci zahraniční hosté, detail může zobrazit akci pro Ubyport. Ta navazuje na data vyplněná ve formuláři hosta.</p>
-
-<p>Před odesláním do Ubyport zkontrolujte hlavně:</p>
-
-<ul>
-<li>že počet hostů odpovídá realitě</li>
-<li>že zahraniční hosté mají vyplněnou národnost</li>
-<li>že nechybí datum narození</li>
-<li>že je doplněný typ a číslo dokladu</li>
-<li>že je správná adresa pobytu a údaje nemovitosti</li>
-</ul>
-
-<p>Pokud některé z těchto údajů chybí, nejdřív opravte hosta nebo nastavení nemovitosti. Až potom dává smysl řešit export nebo odeslání.</p>
-
-<h2>E-maily</h2>
-
-<p>Záložka <strong>E-maily</strong> ukazuje historii e-mailů odeslaných k rezervaci.</p>
-
-<ul>
-<li>kdy byl e-mail odeslán</li>
-<li>komu byl odeslán</li>
-<li>předmět</li>
-<li>typ e-mailu, například pozvánka k registraci, odkaz pro úpravu nebo potvrzení</li>
-<li>stav, například odesláno, doručeno, selhalo nebo vráceno</li>
-</ul>
-
-<p>Tahle záložka je užitečná ve chvíli, kdy host tvrdí, že nic nedostal, nebo když potřebujete ověřit, jestli systém zprávu opravdu odeslal.</p>
-
-<h2>Rychlý postup při kontrole rezervace</h2>
-
-<ol>
-<li>Ověřte hosta, nemovitost a termín pobytu.</li>
-<li>Zkontrolujte počet hostů a jazyk hosta.</li>
-<li>Podívejte se na workflow a určete další krok.</li>
-<li>Pokud host ještě nevyplnil údaje, zkopírujte zprávu nebo registrační odkaz.</li>
-<li>Po vyplnění formulářů zkontrolujte tabulku registrovaných hostů.</li>
-<li>U zahraničních hostů zkontrolujte data pro Ubyport.</li>
-<li>Pokud host tvrdí, že zpráva nepřišla, otevřete záložku <strong>E-maily</strong>.</li>
-<li>Pokud nesedí termín, cena nebo zdroj, zkontrolujte iCal a email forwarding.</li>
-</ol>
-
-<h2>Co dělat, když něco nesedí</h2>
-
-<p>Když chybí termín nebo rezervace vůbec nevznikla, začněte u iCal napojení. Když chybí cena, částka nebo finanční detail, zkontrolujte email forwarding. Když chybí údaje hostů, pošlete nebo zkopírujte registrační odkaz z detailu rezervace.</p>
-
-<ul>
-<li><strong>Sedí pobyt?</strong> Kontrolujte termín, nemovitost a zdroj.</li>
-<li><strong>Mám data hostů?</strong> Kontrolujte počet hostů a tabulku registrovaných hostů.</li>
-<li><strong>Odešla komunikace?</strong> Kontrolujte zprávu a záložku e-maily.</li>
-<li><strong>Můžu hlásit Ubyport?</strong> Kontrolujte zahraniční hosty a úplnost dokladů.</li>
-</ul>
-
-<ul class="kb-article-link-list">
-<li><a href="./jak-funguje-email-forwarding.html">Pokračovat: Jak funguje email forwarding</a></li>
-<li><a href="./jak-funguje-napojeni-pres-ical.html">Pokračovat: Jak funguje napojení přes iCal</a></li>
-</ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html">
-  <span>Další</span>
-  <strong>Jak funguje email forwarding</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Co vyřešíte v detailu rezervace</h1>
+      <p class="kb-article-lead">Otevřete jeden pobyt a zvolte úkol: ověřit údaje, poslat formulář, zkontrolovat zprávu nebo hlášení.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="prehled">Ověřit hosta, termín a zdroj</h2><p>Zkontrolujte nemovitost, příjezd, odjezd, počet hostů, kontakt a cenu. U importu ověřte původní zdroj a dostupný stav iCal. Chybějící cenu nevyřeší synchronizace zdroje, který cenu neposkytuje.</p></section>
+<section><h2 id="hoste">Poslat formulář a opravit hosty</h2><p>Rozlište potvrzení rezervace a registrační formulář. V Registrovaných hostech kontrolujte každou osobu. Úprava stavu na dokončeno sama neprokazuje, že hosté dodali všechny údaje.</p><p><a href='./jak-poslat-online-check-in.html'>Poslat správný odkaz krok za krokem</a></p></section>
+<section><h2 id="zpravy">Zkontrolovat komunikaci</h2><p>Náhled šablony ukazuje výsledný text, nikoli skutečné odeslání. V E-mailech a historii automatizací ověřte příjemce, čas a výsledek. Vlastní šablony upravujte u nemovitosti, jednorázový text u konkrétního pobytu podle dostupné akce.</p></section>
+<section><h2 id="ubyport">Ověřit Ubyport</h2><p>Zkontrolujte data zahraničních hostů, odeslání a poslední report. Stav rezervace nenahrazuje výsledek jednotlivých hostů. Při chybě otevřete detail před opakováním.</p></section>
+<section><h2 id="faktura">Vystavit doklad a dohledat změny</h2><p>Fakturu připravte z pobytu a ověřte cenu i odběratele. Historii změn a diagnostiku používejte podle oprávnění účtu; pokročilé importní obrazovky nemusí být zákazníkovi dostupné.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Související návody</span><strong>Jak poslat online check-in a zkontrolovat hosty</strong></a>
+<a class="kb-article-related-card" href="./jak-odeslat-hosty-do-ubyportu.html"><span>Související návody</span><strong>Jak odeslat hosty do Ubyportu a ověřit výsledek</strong></a>
+<a class="kb-article-related-card" href="./jak-vystavit-fakturu-z-rezervace.html"><span>Související návody</span><strong>Jak vystavit fakturu z rezervace</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -320,6 +137,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

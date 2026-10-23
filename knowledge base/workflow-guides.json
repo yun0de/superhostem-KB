@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "jak-poslat-online-check-in",
+    "cs": {
+      "title": "Jak poslat online check-in a zkontrolovat hosty",
+      "lead": "Pošlete hostům formulář ke správné rezervaci. Pak ověřte, že údaje vyplnil každý host, nejen ten, kdo pobyt rezervoval.",
+      "steps": ["Otevřít pobyt", "Poslat odkaz", "Zkontrolovat hosty", "Ověřit další povinnosti"],
+      "sections": [
+        {"id":"rezervace","title":"1. Otevřete správnou rezervaci","html":"<p>V <strong>Rezervace</strong> otevřete pobyt. Zkontrolujte nemovitost, datum příjezdu a odjezdu a počet hostů. Pokud pobyt chybí, nejdřív vyřešte <a href='./co-delat-kdyz-chybi-rezervace.html'>chybějící rezervaci</a>.</p>"},
+        {"id":"odkaz","title":"2. Zkopírujte odkaz pro hosty","html":"<p>V detailu najděte <strong>Registrační formulář</strong>. Ikonou kopírování zkopírujte odkaz a pošlete ho hostům ve zprávě. Host formulář otevře v prohlížeči, bez instalace aplikace.</p><aside class='kb-article-callout'><strong>Vidíte nejdřív potvrzení rezervace?</strong><p>Pošlete nabídnutý odkaz pro potvrzení pobytu. Registrační formulář použijte, až je pro tuto rezervaci dostupný. Odkaz ke konkrétnímu pobytu nezaměňujte za obecný odkaz nemovitosti.</p></aside><p>První odkaz můžete poslat ručně. Pro další pobyty nastavte <a href='./jak-funguji-automatizace-v-superhostem.html'>automatickou komunikaci</a>.</p>"},
+        {"id":"hoste","title":"3. Ověřte každého hosta","html":"<p>V části <strong>Registrovaní hosté</strong> zkontrolujte stavy <strong>Vyplněno</strong> a <strong>Čeká na vyplnění</strong>. Porovnejte počet vyplněných hostů s počtem osob u rezervace.</p><ul><li>Chybí spolucestující? Pošlete hostovi připomenutí s formulářem.</li><li>Nesedí počet osob nebo termín? Opravte nejdřív pobyt.</li><li>Údaje jsou chybné? Zkontrolujte a opravte konkrétního hosta.</li></ul>"},
+        {"id":"hotovo","title":"Jak poznáte, že je tento krok hotový","html":"<p>Údaje jsou vyplněné pro všechny očekávané hosty a souhlasí s pobytem. Tím končí sběr údajů; <strong>nepotvrzuje to odeslání hlášení policii</strong>. U zahraničních hostů pokračujte <a href='./jak-odeslat-hosty-do-ubyportu.html'>kontrolou Ubyportu</a>.</p><p>Pokud formulář nejde otevřít, znovu zkopírujte aktuální odkaz z dané rezervace a ověřte její stav. Podpoře pošlete ID pobytu, čas a přesné znění chyby.</p>"}
+      ],
+      "related": [["jak-odeslat-hosty-do-ubyportu","Odeslat hosty do Ubyportu"],["jak-nastavit-automaticke-emaily","Nastavit automatické e-maily"],["jak-vest-evidenci-hostu-a-pobytu-v-superhostem","Evidence hostů a pobytů"]]
+    },
+    "en": {
+      "title": "Send an online check-in form and check every guest",
+      "lead": "Send guests the form for the correct reservation. Then check that every guest has completed their details, including companions.",
+      "steps": ["Open the stay", "Send the link", "Check every guest", "Check reporting"],
+      "sections": [
+        {"id":"reservation","title":"1. Open the correct reservation","html":"<p>Open the stay in <strong>Reservations</strong>. Check the property, arrival and departure dates and guest count. If it is missing, first follow the <a href='./co-delat-kdyz-chybi-rezervace.html'>missing reservation guide</a>.</p>"},
+        {"id":"link","title":"2. Copy the guest link","html":"<p>Find <strong>Registration form</strong> in the reservation detail. Copy its link using the copy icon and send it to guests in a message. Guests open the form in their browser without installing an app.</p><aside class='kb-article-callout'><strong>Is reservation confirmation shown first?</strong><p>Send the confirmation link offered for the stay. Use the registration form when it becomes available. Do not confuse the link for this stay with the general property link.</p></aside><p>You can send the first link manually. For later stays, set up <a href='./jak-funguji-automatizace-v-superhostem.html'>automated communication</a>.</p>"},
+        {"id":"guests","title":"3. Check every guest","html":"<p>Under <strong>Registered guests</strong>, check the completed and awaiting-completion states. Compare the number of completed guests with the reservation's guest count.</p><ul><li>Missing companions? Send a reminder with the form.</li><li>Wrong guest count or dates? Correct the stay first.</li><li>Incorrect details? Check and edit the individual guest.</li></ul>"},
+        {"id":"done","title":"How to know this step is complete","html":"<p>Every expected guest has completed their details and they match the stay. This completes data collection; it <strong>does not confirm a police report</strong>. For foreign guests, continue with the <a href='./jak-odeslat-hosty-do-ubyportu.html'>Ubyport check</a>.</p><p>If the form does not open, copy the current link from the reservation again and check its status. Give support the stay ID, time and exact error message.</p>"}
+      ],
+      "related": [["jak-odeslat-hosty-do-ubyportu","Send guests to Ubyport"],["jak-nastavit-automaticke-emaily","Set up automatic emails"],["jak-vest-evidenci-hostu-a-pobytu-v-superhostem","Guest and stay records"]]
+    },
+    "vi": {
+      "title": "Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách",
+      "lead": "Gửi biểu mẫu của đúng đặt phòng cho khách. Sau đó kiểm tra thông tin của tất cả khách, kể cả người đi cùng.",
+      "steps": ["Mở kỳ lưu trú", "Gửi liên kết", "Kiểm tra khách", "Kiểm tra báo cáo"],
+      "sections": [
+        {"id":"reservation","title":"1. Mở đúng đặt phòng","html":"<p>Mở kỳ lưu trú trong <strong>Đặt phòng</strong>. Kiểm tra chỗ ở, ngày đến, ngày đi và số khách. Nếu chưa có, trước tiên xem <a href='./co-delat-kdyz-chybi-rezervace.html'>hướng dẫn khi thiếu đặt phòng</a>.</p>"},
+        {"id":"link","title":"2. Sao chép liên kết cho khách","html":"<p>Tìm phần <strong>Biểu mẫu đăng ký</strong> trong chi tiết đặt phòng. Dùng biểu tượng sao chép để lấy liên kết và gửi qua tin nhắn. Khách mở biểu mẫu trong trình duyệt, không cần cài ứng dụng.</p><aside class='kb-article-callout'><strong>Đang hiển thị bước xác nhận đặt phòng?</strong><p>Gửi liên kết xác nhận kỳ lưu trú được cung cấp. Dùng biểu mẫu đăng ký khi có thể truy cập. Không nhầm liên kết của kỳ lưu trú này với liên kết chung của chỗ ở.</p></aside><p>Bạn có thể gửi liên kết đầu tiên thủ công. Với các kỳ lưu trú tiếp theo, thiết lập <a href='./jak-funguji-automatizace-v-superhostem.html'>gửi tin tự động</a>.</p>"},
+        {"id":"guests","title":"3. Kiểm tra từng khách","html":"<p>Trong <strong>Khách đã đăng ký</strong>, kiểm tra trạng thái đã điền và chờ điền. So sánh số người đã điền với số khách của đặt phòng.</p><ul><li>Thiếu người đi cùng? Gửi nhắc nhở kèm biểu mẫu.</li><li>Sai số người hoặc ngày? Sửa kỳ lưu trú trước.</li><li>Sai thông tin? Kiểm tra và sửa từng khách.</li></ul>"},
+        {"id":"done","title":"Khi nào bước này hoàn tất","html":"<p>Tất cả khách dự kiến đã điền thông tin đúng với kỳ lưu trú. Đây là hoàn tất thu thập dữ liệu, <strong>không phải xác nhận đã báo cảnh sát</strong>. Với khách nước ngoài, tiếp tục <a href='./jak-odeslat-hosty-do-ubyportu.html'>kiểm tra Ubyport</a>.</p><p>Nếu biểu mẫu không mở, sao chép lại liên kết hiện tại từ đặt phòng và kiểm tra trạng thái. Gửi hỗ trợ mã kỳ lưu trú, thời gian và nội dung lỗi chính xác.</p>"}
+      ],
+      "related": [["jak-odeslat-hosty-do-ubyportu","Gửi khách lên Ubyport"],["jak-nastavit-automaticke-emaily","Thiết lập email tự động"],["jak-vest-evidenci-hostu-a-pobytu-v-superhostem","Hồ sơ khách và lưu trú"]]
+    }
+  },
+  {
+    "slug": "jak-odeslat-hosty-do-ubyportu",
+    "cs": {
+      "title": "Jak odeslat hosty do Ubyportu a ověřit výsledek",
+      "lead": "Vyplněný check-in není potvrzení hlášení. V detailu pobytu zkontrolujte zahraniční hosty, odešlete je a ověřte výsledek u každého z nich.",
+      "steps": ["Ověřit přístupy", "Zkontrolovat hosty", "Odeslat hlášení", "Přečíst výsledek"],
+      "sections": [
+        {"id":"pristupy","title":"1. Připravte přístupy konkrétní nemovitosti","html":"<p>Nemovitost musí mít nastavené IDUB a přístupy pro <strong>webové služby / robotické zasílání dat</strong>. Běžné přihlášení do Ubyportu je jiný účet. Pokud přístupy chybí, postupujte podle <a href='./jak-se-zaregistrovat-do-ubyportu.html'>registrace Ubyportu</a>.</p>"},
+        {"id":"hoste","title":"2. Otevřete pobyt a ověřte údaje","html":"<p>V <strong>Rezervace</strong> otevřete pobyt. Zkontrolujte termín a údaje všech zahraničních hostů: jméno, datum narození, státní příslušnost, adresu a typ a číslo dokladu. Chybějící údaje nejdřív doplňte.</p><p>V přehledu jednotlivých hostů aplikace rozlišuje <strong>Občan ČR — nehlásí se</strong>, <strong>Neodesláno</strong>, <strong>Odesláno</strong> a <strong>Chyba</strong>. Neznámá státní příslušnost není důkaz, že hlášení není potřeba.</p>"},
+        {"id":"odeslani","title":"3. Zkontrolujte a potvrďte odeslání","html":"<p>Použijte dostupnou akci pro odeslání do Ubyportu. V části <strong>Hlášení hostů – jednotlivě</strong> lze odeslat konkrétního hosta. Před potvrzením zkontrolujte zobrazené údaje.</p><aside class='kb-article-callout'><strong>Host je už označený jako odeslaný?</strong><p>Neopakujte stejné hlášení jen pro jistotu. Nejdřív otevřete poslední výsledek a zjistěte, zda opravdu potřebujete poslat opravu.</p></aside>"},
+        {"id":"vysledek","title":"4. Ověřte výsledek každého hosta","html":"<p>Po odeslání přečtěte <strong>Výsledek odeslání</strong>. Zkontrolujte stav jednotlivých hostů a dostupný report nebo doručenku PDF. Uložení údajů ani stisk tlačítka neznamená úspěšné přijetí.</p><ul><li><strong>Chyba údajů:</strong> otevřete detail chyby, opravte konkrétní pole hosta a potom opakujte příslušné odeslání.</li><li><strong>Chyba přístupů:</strong> ověřte IDUB a účet webových služeb u správné nemovitosti.</li><li><strong>Nejasný výsledek:</strong> nejdřív zkontrolujte poslední report. Podpoře pošlete ID rezervace, čas a chybovou zprávu; heslo neposílejte.</li></ul><p>Hotovo je až ve chvíli, kdy jste ověřili výsledek všech hostů, které jste měli hlásit.</p>"}
+      ],
+      "related": [["jak-se-zaregistrovat-do-ubyportu","Připravit přístupy Ubyport"],["jak-poslat-online-check-in","Poslat formulář hostům"],["jak-vest-evidenci-hostu-a-pobytu-v-superhostem","Vést evidenci hostů"]],
+      "source": {"url":"https://policie.gov.cz/reditelstvi-sluzby-cizinecke-policie/oznamovani-ubytovani-cizince-ubytovatelem","label":"Policie ČR: pravidla oznamování ubytování cizinců"}
+    },
+    "en": {
+      "title": "Send guests to Ubyport and verify the result",
+      "lead": "A completed check-in does not confirm a police report. Open the stay, check foreign guests, submit them and verify each result.",
+      "steps": ["Check credentials", "Check guest details", "Submit the report", "Read the result"],
+      "sections": [
+        {"id":"credentials","title":"1. Prepare credentials for this property","html":"<p>The property needs its IDUB and <strong>web-services / robotic data submission credentials</strong>. A regular Ubyport login is a different account. If these credentials are missing, follow the <a href='./jak-se-zaregistrovat-do-ubyportu.html'>Ubyport registration guide</a>.</p>"},
+        {"id":"guests","title":"2. Open the stay and check details","html":"<p>Open the stay in <strong>Reservations</strong>. Check dates and every foreign guest's name, date of birth, nationality, address and document type and number. Complete missing details first.</p><p>The individual guest overview distinguishes Czech citizens who are not reported, not sent, sent and error states. Unknown nationality does not prove reporting is unnecessary.</p>"},
+        {"id":"send","title":"3. Review and confirm submission","html":"<p>Use the available Ubyport submission action. The individual guest reporting section allows you to send a specific guest. Review the displayed details before confirming.</p><aside class='kb-article-callout'><strong>Already marked as sent?</strong><p>Do not repeat the same report just to be sure. Open the last result first and check whether a correction is actually needed.</p></aside>"},
+        {"id":"result","title":"4. Verify each guest's result","html":"<p>Read the <strong>Submission result</strong>. Check individual guest statuses and the available report or PDF receipt. Saving details or pressing send does not mean they were successfully accepted.</p><ul><li><strong>Data error:</strong> open the error detail, correct the guest field and retry that submission.</li><li><strong>Credentials error:</strong> check the IDUB and web-services account for the correct property.</li><li><strong>Unclear result:</strong> check the latest report first. Give support the reservation ID, time and error message; do not send your password.</li></ul><p>The task is complete when you have verified the result for every guest you needed to report.</p>"}
+      ],
+      "related": [["jak-se-zaregistrovat-do-ubyportu","Prepare Ubyport credentials"],["jak-poslat-online-check-in","Send the guest form"],["jak-vest-evidenci-hostu-a-pobytu-v-superhostem","Keep guest records"]],
+      "source": {"url":"https://policie.gov.cz/reditelstvi-sluzby-cizinecke-policie/oznamovani-ubytovani-cizince-ubytovatelem","label":"Czech Police: rules for reporting foreign guests"}
+    },
+    "vi": {
+      "title": "Gửi khách lên Ubyport và kiểm tra kết quả",
+      "lead": "Check-in hoàn tất không xác nhận đã báo cảnh sát. Mở kỳ lưu trú, kiểm tra khách nước ngoài, gửi báo cáo và kiểm tra kết quả của từng người.",
+      "steps": ["Kiểm tra tài khoản", "Kiểm tra khách", "Gửi báo cáo", "Đọc kết quả"],
+      "sections": [
+        {"id":"credentials","title":"1. Chuẩn bị tài khoản của đúng chỗ ở","html":"<p>Chỗ ở cần có IDUB và thông tin đăng nhập cho <strong>dịch vụ web / gửi dữ liệu tự động</strong>. Tài khoản đăng nhập Ubyport thông thường là tài khoản khác. Nếu thiếu, xem <a href='./jak-se-zaregistrovat-do-ubyportu.html'>hướng dẫn đăng ký Ubyport</a>.</p>"},
+        {"id":"guests","title":"2. Mở kỳ lưu trú và kiểm tra thông tin","html":"<p>Mở kỳ lưu trú trong <strong>Đặt phòng</strong>. Kiểm tra ngày và thông tin từng khách nước ngoài: tên, ngày sinh, quốc tịch, địa chỉ, loại và số giấy tờ. Bổ sung thông tin còn thiếu trước.</p><p>Bảng từng khách phân biệt công dân Séc không báo cáo, chưa gửi, đã gửi và lỗi. Chưa biết quốc tịch không có nghĩa là không cần báo cáo.</p>"},
+        {"id":"send","title":"3. Kiểm tra và xác nhận gửi","html":"<p>Dùng chức năng gửi Ubyport đang có. Phần báo cáo từng khách cho phép gửi một người cụ thể. Kiểm tra thông tin hiển thị trước khi xác nhận.</p><aside class='kb-article-callout'><strong>Khách đã được đánh dấu đã gửi?</strong><p>Không gửi lại chỉ để chắc chắn. Mở kết quả gần nhất trước và kiểm tra có thực sự cần gửi bản sửa hay không.</p></aside>"},
+        {"id":"result","title":"4. Kiểm tra kết quả từng khách","html":"<p>Đọc <strong>Kết quả gửi</strong>. Kiểm tra trạng thái từng khách và báo cáo hoặc biên nhận PDF nếu có. Lưu dữ liệu hoặc bấm gửi không có nghĩa là được tiếp nhận thành công.</p><ul><li><strong>Lỗi dữ liệu:</strong> mở chi tiết lỗi, sửa ô thông tin của khách rồi gửi lại phần tương ứng.</li><li><strong>Lỗi tài khoản:</strong> kiểm tra IDUB và tài khoản dịch vụ web của đúng chỗ ở.</li><li><strong>Kết quả chưa rõ:</strong> kiểm tra báo cáo gần nhất trước. Gửi hỗ trợ mã đặt phòng, thời gian và nội dung lỗi; không gửi mật khẩu.</li></ul><p>Hoàn tất khi đã kiểm tra kết quả của tất cả khách cần báo cáo.</p>"}
+      ],
+      "related": [["jak-se-zaregistrovat-do-ubyportu","Chuẩn bị tài khoản Ubyport"],["jak-poslat-online-check-in","Gửi biểu mẫu cho khách"],["jak-vest-evidenci-hostu-a-pobytu-v-superhostem","Lưu hồ sơ khách"]],
+      "source": {"url":"https://policie.gov.cz/reditelstvi-sluzby-cizinecke-policie/oznamovani-ubytovani-cizince-ubytovatelem","label":"Cảnh sát Séc: quy định báo cáo khách nước ngoài"}
+    }
+  },
+  {
+    "slug": "jak-nastavit-automaticke-emaily",
+    "cs": {
+      "title": "Jak nastavit automatické e-maily v Superhostem",
+      "lead": "Vytvořte jednu zprávu k příjezdu, odjezdu nebo dokončení registrace. Nastavte příjemce a čas, zkontrolujte náhled a potom skutečné odeslání.",
+      "steps": ["Vybrat nemovitost", "Nastavit událost", "Ověřit náhled", "Zkontrolovat historii"],
+      "sections": [
+        {"id":"editor","title":"1. Otevřete automatizaci nemovitosti","html":"<p>Otevřete konkrétní nemovitost a její <strong>Automatizace zpráv</strong>. Přepněte na část e-mailů a vytvořte pravidlo. Dejte mu název, podle kterého ho později poznáte.</p><p>Jde o e-mail odesílaný ze Superhostem. Zprávy uvnitř Airbnb nebo Bookingu mají <a href='./jak-funguji-automatizace-v-superhostem.html'>vlastní nastavení na platformě</a>.</p>"},
+        {"id":"cas","title":"2. Vyberte událost, čas a příjemce","html":"<ul><li><strong>Událost:</strong> příjezd, odjezd nebo dokončení registrace.</li><li><strong>Čas:</strong> posun před/po události a dostupné časové nastavení včetně časové zóny.</li><li><strong>Příjemce:</strong> host rezervace, nebo pevná e-mailová adresa.</li><li><strong>Jazyk:</strong> jazyk hosta a případná náhradní verze.</li></ul><aside class='kb-article-callout'><strong>Příklad prvního pravidla</strong><p>Připomenutí příjezdu jeden den před příjezdem → host rezervace → krátké pokyny k příjezdu. Nejdřív ověřte, že pobyt má dostupný e-mail hosta.</p></aside>"},
+        {"id":"nahled","title":"3. Napište zprávu a ověřte náhled","html":"<p>Vyplňte předmět a text. Proměnné vybírejte z nabídky editoru, například <code>{{guestName}}</code>, <code>{{propertyName}}</code> a <code>{{checkInDate}}</code>. Zkontrolujte náhled pro konkrétní rezervaci: příjemce, termín, jazyk i výsledný obsah.</p><p>Pravidlo uložte tlačítkem pro uložení automatizace a ověřte, že je aktivní. Pokud stejnou zprávu už posílá platforma, zkontrolujte, že host nebude dostávat zbytečné duplicity.</p>"},
+        {"id":"historie","title":"4. Zkontrolujte skutečné odeslání","html":"<p>V historii automatických e-mailů najděte rezervaci, příjemce, čas a stav. Otevřete detail. Náhled ověřuje obsah; <strong>nepotvrzuje odeslání ani doručení do schránky hosta</strong>.</p><ul><li>Bez záznamu: ověřte aktivní pravidlo, správnou nemovitost, událost, čas a kontakt příjemce.</li><li>Chyba: přečtěte detail a opravte uvedenou příčinu.</li><li>Odesláno, ale host zprávu nevidí: ověřte adresu a spam. Nepředpokládejte, že zpráva byla doručena jen podle náhledu.</li></ul><p>U last-minute pobytů zkontrolujte čas pravidla proti skutečnému příjezdu. Pokud potřebujete hosta oslovit hned, zprávu pošlete ručně.</p>"}
+      ],
+      "related": [["jak-poslat-online-check-in","Poslat online check-in"],["jak-funguji-automatizace-v-superhostem","Komunikace přes platformy"],["co-vsechno-najdu-v-detailu-rezervace","Otevřít detail rezervace"]]
+    },
+    "en": {
+      "title": "Set up automatic emails in Superhostem",
+      "lead": "Create one message for arrival, departure or registration completion. Choose its recipient and timing, check the preview, then verify actual sending.",
+      "steps": ["Choose the property", "Set the event", "Check the preview", "Check send history"],
+      "sections": [
+        {"id":"editor","title":"1. Open the property's message automation","html":"<p>Open the property and its <strong>Message automation</strong>. Switch to emails and create a rule. Give it a name you can recognise later.</p><p>This is an email sent by Superhostem. Messages inside Airbnb or Booking use <a href='./jak-funguji-automatizace-v-superhostem.html'>the platform's own settings</a>.</p>"},
+        {"id":"timing","title":"2. Choose the event, timing and recipient","html":"<ul><li><strong>Event:</strong> check-in, check-out or registration completion.</li><li><strong>Timing:</strong> the offset before/after the event and available time settings, including the time zone.</li><li><strong>Recipient:</strong> the reservation guest or a fixed email address.</li><li><strong>Language:</strong> the guest's language and any fallback version.</li></ul><aside class='kb-article-callout'><strong>Example first rule</strong><p>Arrival reminder one day before check-in → reservation guest → short arrival instructions. First check that the stay has a guest email address.</p></aside>"},
+        {"id":"preview","title":"3. Write the message and check the preview","html":"<p>Enter the subject and body. Select variables from the editor, such as <code>{{guestName}}</code>, <code>{{propertyName}}</code> and <code>{{checkInDate}}</code>. Check the preview for a specific reservation: recipient, dates, language and rendered content.</p><p>Save the automation and check that it is active. If a platform already sends the same message, check that you are not sending unnecessary duplicates.</p>"},
+        {"id":"history","title":"4. Verify actual sending","html":"<p>In automatic email history, find the reservation, recipient, time and status, then open the detail. A preview checks content; it <strong>does not confirm sending or delivery to the guest's inbox</strong>.</p><ul><li>No entry: check the active rule, property, event, timing and recipient contact.</li><li>Error: read the detail and correct the stated cause.</li><li>Sent but missing: check the email address and spam folder. A preview is not proof of delivery.</li></ul><p>For last-minute stays, compare the rule's time with the actual arrival. Send a message manually if the guest needs it now.</p>"}
+      ],
+      "related": [["jak-poslat-online-check-in","Send online check-in"],["jak-funguji-automatizace-v-superhostem","Platform communication"],["co-vsechno-najdu-v-detailu-rezervace","Reservation details"]]
+    },
+    "vi": {
+      "title": "Thiết lập email tự động trong Superhostem",
+      "lead": "Tạo một tin cho ngày đến, ngày đi hoặc khi hoàn tất đăng ký. Chọn người nhận và thời gian, kiểm tra bản xem trước rồi kiểm tra việc gửi thực tế.",
+      "steps": ["Chọn chỗ ở", "Chọn sự kiện", "Kiểm tra xem trước", "Kiểm tra lịch sử"],
+      "sections": [
+        {"id":"editor","title":"1. Mở tự động hóa tin nhắn của chỗ ở","html":"<p>Mở chỗ ở cụ thể và phần <strong>Tự động hóa tin nhắn</strong>. Chuyển sang email rồi tạo quy tắc. Đặt tên để dễ nhận biết về sau.</p><p>Đây là email do Superhostem gửi. Tin nhắn trong Airbnb hoặc Booking dùng <a href='./jak-funguji-automatizace-v-superhostem.html'>cài đặt riêng của nền tảng</a>.</p>"},
+        {"id":"timing","title":"2. Chọn sự kiện, thời gian và người nhận","html":"<ul><li><strong>Sự kiện:</strong> nhận phòng, trả phòng hoặc hoàn tất đăng ký.</li><li><strong>Thời gian:</strong> khoảng cách trước/sau sự kiện và cài đặt giờ có sẵn, gồm múi giờ.</li><li><strong>Người nhận:</strong> khách của đặt phòng hoặc địa chỉ email cố định.</li><li><strong>Ngôn ngữ:</strong> ngôn ngữ của khách và bản dự phòng nếu có.</li></ul><aside class='kb-article-callout'><strong>Ví dụ quy tắc đầu tiên</strong><p>Nhắc ngày đến trước một ngày → khách của đặt phòng → hướng dẫn đến ngắn gọn. Trước tiên kiểm tra kỳ lưu trú có email của khách.</p></aside>"},
+        {"id":"preview","title":"3. Viết tin và kiểm tra xem trước","html":"<p>Điền tiêu đề và nội dung. Chọn biến từ trình soạn thảo, ví dụ <code>{{guestName}}</code>, <code>{{propertyName}}</code> và <code>{{checkInDate}}</code>. Kiểm tra bản xem trước của một đặt phòng cụ thể: người nhận, ngày, ngôn ngữ và nội dung sau khi điền dữ liệu.</p><p>Lưu tự động hóa và kiểm tra quy tắc đang hoạt động. Nếu nền tảng đã gửi cùng tin, kiểm tra để khách không nhận trùng không cần thiết.</p>"},
+        {"id":"history","title":"4. Kiểm tra gửi thực tế","html":"<p>Trong lịch sử email tự động, tìm đặt phòng, người nhận, thời gian và trạng thái rồi mở chi tiết. Xem trước kiểm tra nội dung; <strong>không xác nhận đã gửi hay đã đến hộp thư khách</strong>.</p><ul><li>Không có bản ghi: kiểm tra quy tắc hoạt động, chỗ ở, sự kiện, thời gian và liên hệ người nhận.</li><li>Lỗi: đọc chi tiết và sửa nguyên nhân được nêu.</li><li>Đã gửi nhưng khách không thấy: kiểm tra địa chỉ email và thư rác. Xem trước không chứng minh đã nhận.</li></ul><p>Với đặt phòng sát giờ đến, so sánh thời gian quy tắc với ngày đến thực tế. Gửi thủ công nếu khách cần thông tin ngay.</p>"}
+      ],
+      "related": [["jak-poslat-online-check-in","Gửi check-in trực tuyến"],["jak-funguji-automatizace-v-superhostem","Liên lạc qua nền tảng"],["co-vsechno-najdu-v-detailu-rezervace","Chi tiết đặt phòng"]]
+    }
+  }
+]

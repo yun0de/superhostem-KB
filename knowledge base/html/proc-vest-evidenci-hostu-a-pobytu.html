@@ -3,27 +3,41 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Domovní kniha: proč vést evidenci hostů a pobytů – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Domovní kniha: proč vést evidenci hostů a pobytů" />
-    <meta property="og:description" content="Domovní kniha: proč vést evidenci hostů a pobytů – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/proc-vest-evidenci-hostu-a-pobytu.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/proc-vest-evidenci-hostu-a-pobytu.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/proc-vest-evidenci-hostu-a-pobytu.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/proc-vest-evidenci-hostu-a-pobytu.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/proc-vest-evidenci-hostu-a-pobytu.html" />
+    <meta name="description" content="Domovní kniha: kdo ji musí vést, jaké údaje obsahuje, jak dlouho ji uchovat a jak ji vést při ubytování cizinců." />
+    <meta property="og:title" content="Domovní kniha: kdo ji vede, co obsahuje a jak ji uchovat" />
+    <meta property="og:description" content="Praktický přehled domovní knihy pro ubytovatele: povinnost, údaje o hostech, listinná podoba a uchování." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/proc-vest-evidenci-hostu-a-pobytu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Domovní kniha: proč vést evidenci hostů a pobytů" />
-    <meta name="twitter:description" content="Domovní kniha: proč vést evidenci hostů a pobytů – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Domovní kniha: proč vést evidenci hostů a pobytů</title>
+    <meta name="twitter:title" content="Domovní kniha: kdo ji vede, co obsahuje a jak ji uchovat" />
+    <meta name="twitter:description" content="Praktický přehled domovní knihy pro ubytovatele: povinnost, údaje o hostech, listinná podoba a uchování." />
+    <title>Domovní kniha: kdo ji vede, co obsahuje a jak ji uchovat</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"Domovní kniha: kdo ji vede, co obsahuje a jak ji uchovat","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/proc-vest-evidenci-hostu-a-pobytu.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -92,8 +106,8 @@
       <div class="kb-article-container">
         <article class="kb-article-main">
           <p class="kb-article-kicker">Legislativa v ČR</p>
-          <h1 class="kb-article-title">Domovní kniha: proč vést evidenci hostů a pobytů</h1>
-          <p class="kb-article-lead">Domovní kniha slouží jako průběžná evidence hostů a jejich pobytů. Pomáhá vám mít v pořádku údaje, které můžete potřebovat při kontrole, při hlášení hostů nebo při dohledávání konkrétního pobytu.</p>
+          <h1 class="kb-article-title">Domovní kniha: kdo ji vede, co obsahuje a jak ji uchovat</h1>
+          <p class="kb-article-lead">Domovní kniha je zákonem stanovená evidence ubytovaných cizinců. Zjistěte, kdy se vás povinnost týká, které údaje zapisovat, proč musí být k dispozici v listinné podobě a jak ji vést bez zbytečné administrativy.</p>
           <div class="kb-article-jump">
             <a href="./index.html">Centrum pomoci</a>
             <a href="./jak-se-zaregistrovat-do-ubyportu.html">Předchozí článek</a>
@@ -113,53 +127,58 @@
 
         <h2>Řešíte evidenci hostů a pobytů přímo v Superhostem?</h2>
         <p>
-          V Superhostem se domovní kniha neopírá o ruční přepisování do samostatného dokumentu.
-          Navazuje na rezervace, guestbook a údaje, které hosté vyplňují v rámci běžného workflow.
+          Superhostem pomáhá připravit údaje z rezervací a guestbooku. Pro samotnou domovní knihu ale ověřte aktuální zákonné požadavky: při kontrole musí být předložena v listinné podobě.
         </p>
         <ul class="kb-article-link-list"><li><a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Jak vést evidenci hostů a pobytů v Superhostem</a></li></ul>
 
-<h2>K čemu domovní kniha slouží</h2>
+<h2>Co je domovní kniha a kdo ji musí vést</h2>
+<p>Domovní kniha je evidence ubytovaných cizinců podle zákona o pobytu cizinců. Ubytovatelem je pro tyto účely mimo jiné každý, kdo poskytuje ubytování za úhradu. Pokud ubytováváte cizince, ověřte si, že na vaši situaci dopadají povinnosti ubytovatele.</p>
+<p>Nejde jen o interní seznam rezervací. Při kontrole slouží jako doklad o aktuálně ubytovaných cizincích a musí být veden přehledně, srozumitelně a v časové posloupnosti.</p>
 
-      <h3>Evidence pobytů</h3>
-<p>Máte na jednom místě přehled, kdo se u vás ubytoval, kdy přijel a kdy odjel.</p>
-      <h3>Podklady pro kontroly</h3>
-<p>Pokud potřebujete něco doložit, nehledáte údaje zpětně po emailech a zprávách.</p>
-      <h3>Návaznost na další povinnosti</h3>
-<p>Správná evidence hostů pomáhá i s hlášením hostů a s další provozní administrativou.</p>
-
-<h2>Co byste měli evidovat</h2>
-<p>
-        Konkrétní rozsah údajů se může lišit podle toho, jakou povinnost zrovna plníte,
-        ale v praxi je důležité mít u každého pobytu správně dohledatelné základní údaje.
-      </p>
+<h2>Jaké údaje domovní kniha obsahuje</h2>
+<p>U každého ubytovaného cizince zapisujte údaje v rozsahu přihlašovacího tiskopisu a začátek i konec ubytování. V praxi jde zejména o:</p>
 <ul>
-        <li>jméno a identifikaci hosta</li>
-        <li>termín příjezdu a odjezdu</li>
-        <li>počet ubytovaných osob</li>
-        <li>vazbu na konkrétní nemovitost nebo rezervaci</li>
-        <li>další údaje, které potřebujete pro hlášení nebo interní evidenci</li>
-      </ul>
-<h2>Jak k tomu přistoupit v praxi</h2>
+  <li>jméno a příjmení,</li>
+  <li>den, měsíc a rok narození,</li>
+  <li>státní občanství,</li>
+  <li>číslo cestovního dokladu,</li>
+  <li>datum příjezdu a odjezdu.</li>
+</ul>
+
+<h2>Domovní kniha vs. evidenční kniha</h2>
+<p>Domovní kniha eviduje cizince pro povinnosti vůči policii. Evidenční kniha pro místní poplatek má vlastní zákonná pravidla a uchovává se 6 let od posledního zápisu. Obecní pravidla pro sazbu a splatnost nenahrazují zákonnou dobu uchování evidence.</p>
+<p>V jednom systému můžete pracovat se stejnými rezervačními údaji, ale neslučujte automaticky právní povinnosti ani doby uchování. Nastavte si pro každou evidenci vlastní kontrolní postup.</p>
+
+<h2>Papírová nebo elektronická domovní kniha?</h2>
+<p>Elektronický systém je užitečný pro sběr a kontrolu údajů. Pro účely kontroly však zákon vyžaduje předložení domovní knihy v listinné podobě. Máte-li data digitálně, zajistěte také průběžně aktualizovaný, přehledný tisk v časové posloupnosti.</p>
+
+<h2>Jak dlouho domovní knihu uchovávat</h2>
+<p>Domovní kniha se uchovává 6 let od provedení posledního zápisu. Proto si nastavte pravidelnou archivaci a přístup pouze pro osoby, které údaje skutečně potřebují. Pracujete s osobními údaji, proto myslete i na bezpečné uložení a omezení přístupu.</p>
+
+<h2>Jak ji vést v praxi</h2>
 
       <h3>Začněte evidenci řešit hned od prvních rezervací</h3>
-<p>Nečekejte až na chvíli, kdy po vás někdo bude chtít podklady zpětně. Nejvíc problémů vzniká ve chvíli, kdy se evidence hostů začíná řešit až dodatečně.</p>
+<p>Nečekejte až na kontrolu nebo hlášení cizince. Nejvíc problémů vzniká ve chvíli, kdy se evidence doplňuje až po několika pobytech.</p>
 
       <h3>Sjednoťte, odkud údaje získáváte</h3>
 <p>Nejčistší je mít jeden jasný postup, jak se údaje od hostů sbírají a kam se ukládají. Tím omezíte chyby a ruční dohledávání.</p>
 
       <h3>Kontrolujte úplnost údajů</h3>
-<p>Nestačí mít rezervaci. Potřebujete také ověřit, že u ní máte skutečně doplněné údaje, které pro evidenci hostů potřebujete.</p>
+<p>Nestačí mít rezervaci. Před příjezdem ověřte, že máte všechny údaje požadované pro domovní knihu i pro případné hlášení cizince.</p>
 
       <h3>Propojte evidenci s běžným provozem</h3>
 <p>Domovní kniha by neměla být izolovaná tabulka bokem. Dává smysl ve chvíli, kdy navazuje na rezervace, komunikaci s hosty a další administrativu.</p>
 
 <h2>Nejčastější chyby</h2>
 <ul>
-        <li>hostitel začne domovní knihu řešit až zpětně po několika měsících</li>
-        <li>údaje o hostech jsou roztroušené v různých systémech a zprávách</li>
-        <li>u rezervací chybí část údajů potřebných pro evidenci</li>
-        <li>evidence není navázaná na reálné rezervace a pobyty</li>
+        <li>zaměnění domovní knihy s evidencí pro místní poplatek z pobytu</li>
+        <li>doplňování údajů zpětně podle e-mailů a zpráv</li>
+        <li>chybějící údaje z cestovního dokladu nebo chybné datum pobytu</li>
+        <li>spoléhání jen na digitální záznam bez připravené listinné podoby</li>
       </ul>
+<p><small>Informace v článku mají praktický charakter. Před nastavením procesu ověřte aktuální znění zákona č. 326/1999 Sb. a požadavky Policie ČR.</small></p>
+<section id="reviewed-workflow"><h2>Kde připravit provozní evidenci</h2><p>Pro sběr údajů a PDF přehled pokračujte <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">praktickým postupem evidence</a>. Pravidla místního poplatku a jeho evidence ověřte také v <a href="https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005" target="_blank" rel="noreferrer">oficiálních informacích gov.cz</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Související odkazy</h2>
@@ -202,6 +221,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

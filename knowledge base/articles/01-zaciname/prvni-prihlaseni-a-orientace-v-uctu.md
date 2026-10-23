@@ -1,38 +1,22 @@
-# První přihlášení a orientace v účtu
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
 
-## Co uvidíte po přihlášení
+# První přihlášení: od nemovitosti k prvnímu pobytu
 
-Po přihlášení se otevře sekce `Přehled`. Pokud ještě nemáte žádnou nemovitost, uvidíte úvodní onboarding pro její nastavení.
+Začněte jednou nemovitostí a jednou skutečnou rezervací. Další funkce zapojujte až po ověření tohoto průchodu.
 
-V prvních minutách stačí pracovat se dvěma místy:
+1. Právní kontrola
+2. Nemovitost
+3. Rezervace
+4. První check-in
 
-- `Přehled`, kde zvolíte způsob začátku
-- `Nemovitosti`, kde svou první nemovitost dokončíte
+## Než začnete ubytovávat
 
-Ostatní položky menu zatím nechte být. `Rezervace`, reporty, importy, iCal export a nastavení dávají smysl až poté, co máte nemovitost založenou.
+<p>Ověřte oprávnění k provozu, místní poplatek a povinnosti evidence a hlášení cizinců. Pokud už máte registrace, použijte stávající údaje. Technické založení účtu samo nepotvrzuje splnění právních podmínek.</p><p><a href='./zakladni-legislativni-povinnosti-hostitele-v-cr.html'>Zkontrolovat právní náležitosti a registrace</a></p>
 
-## Než půjdete dál, ověřte právní náležitosti a registrace
+## Založte jednu nemovitost
 
-Než založíte první nemovitost, zkontrolujte si, co se týká právě vašeho provozu. Ne každý hostitel řeší stejné registrace, platby nebo hlášení.
+<p>Na Přehledu vyberte zdroj, který skutečně používáte. Pokud máte iCal, vložte exportní URL správné nabídky a název nemovitosti. Bez importu vytvořte nemovitost ručně přes Nemovitosti. Pokyny a pole se přizpůsobují zvolenému zdroji; nejde jen o Airbnb.</p>
 
-1. ověřte si základní právní připravenost pro svou nemovitost
-2. pokud se vás týká Ubyport, doplňte přístup a údaje `IDUB`
-3. pokud se vás týká místní poplatek, ověřte registraci a postup své obce
-4. až potom napojte iCal a případně automatické přeposílání emailů
+## Ověřte první rezervaci
 
-Pravidla, výjimky, termíny, formuláře i způsob hlášení se liší podle situace a obce. Superhostem nenahrazuje ověření u příslušného úřadu ani odborníka.
-
-Když nevíte, co se vás týká, začněte článkem `Základní legislativní povinnosti hostitele v ČR`. Chybí-li vám Ubyport nebo `IDUB`, pokračujte návodem `Jak se zaregistrovat do Ubyportu`. Pokud nemáte podklady k místnímu poplatku, otevřete `Jak se zaregistrovat k místnímu poplatku`.
-
-## Založte první nemovitost
-
-Teď se rozhodněte podle toho, zda už máte iCal URL z rezervačního portálu, například Airbnb, Booking.com nebo e‑Chalupy:
-
-1. Máte iCal URL: zvolte `Import z Airbnb kalendáře` a vložte URL z portálu, který používáte.
-2. iCal URL ještě nemáte: zvolte `Vytvořit nemovitost ručně`.
-
-`Automatické přeposílání emailů` nastavte až později, když už nemovitost existuje. Je to navazující zdroj dat, ne nutný první krok.
-
-Další postup: založte nemovitost → napojte iCal → zkontrolujte rezervace.
-
-Pokračujte článkem `Jak přidat novou nemovitost`, až máte právní náležitosti a registrace ověřené.
+<p>V Rezervacích otevřete jeden pobyt a ověřte nemovitost, termín a počet osob. Přímý pobyt můžete přidat ručně. Pošlete formulář hostům a zkontrolujte jejich vyplnění, potom případné hlášení Ubyportu.</p><p>E-mailové přeposílání, průvodce, úklid a automatizace přidávejte postupně. Každou funkci nejdřív ověřte na jednom pobytu.</p>

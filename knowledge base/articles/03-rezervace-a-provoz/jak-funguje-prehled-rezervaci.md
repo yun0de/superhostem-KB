@@ -1,78 +1,19 @@
-# Jak funguje přehled rezervací
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
 
-## Co tento článek řeší
+# Jak pracovat s přehledem rezervací
 
-Pomáhá pochopit skutečnou obrazovku `Rezervace` v Superhostem a ukazuje, jaké filtry a pohledy jsou v aktuální preview verzi dostupné.
+Najděte pobyty, které právě potřebují vaši pozornost. V detailu pak vyřešíte hosty, zprávy nebo hlášení.
 
-## Pro koho je článek určen
 
-- pro aktivní hostitele
-- pro uživatele, kteří pracují s více rezervacemi nebo více nemovitostmi
 
-## Kde přehled rezervací najdete
+## Vyberte období a nemovitost
 
-V levém menu klikněte na `Rezervace`.
+<p>Otevřete Rezervace. Ověřte minulá/nadcházející data, filtr stavu a nemovitost. Přepněte seznam nebo kalendář podle toho, zda hledáte konkrétní pobyt, nebo volné termíny.</p>
 
-Otevře se stránka s nadpisem:
+## Každodenní kontrola
 
-- `Rezervace`
-- `Přehled všech rezervací z Airbnb, Booking.com a manuálních`
+<ol><li>Projděte nejbližší příjezdy.</li><li>Otevřete pobyty s chybějícími údaji nebo potvrzením.</li><li>Zkontrolujte počet hostů a vyplnění formulářů.</li><li>U zahraničních hostů ověřte také výsledek Ubyportu.</li></ol><p>Stav rezervace, vyplnění hostů a přijetí hlášení nejsou totožná informace.</p>
 
-## Co je na stránce k dispozici
+## Nic nevidíte nebo data nesedí?
 
-V aktuálním rozhraní je na stránce `Rezervace` vidět:
-
-- tlačítko `Synchronizovat vše`
-- tlačítko `Nová rezervace`
-- přepínač `Seznam`
-- přepínač `Kalendář`
-- filtr `Zobrazit`
-- filtr `Stav`
-- filtr `Nemovitost`
-- pole `Od data`
-- pole `Do data`
-
-## Jak přehled rezervací používat v aktuální verzi
-
-Přehled rezervací slouží jako hlavní místo pro kontrolu:
-
-- jaké rezervace jsou aktuální
-- jaké rezervace přicházejí
-- jaké rezervace chcete filtrovat podle období nebo stavu
-- zda už v systému nějaké rezervace vůbec jsou
-
-## Jaké filtry jsou aktuálně dostupné
-
-Na obrazovce jsou ověřeně dostupné tyto volby:
-
-- `Zobrazit: Nadcházející / Minulé`
-- `Stav: Vše`
-- `Nemovitost: Vše`
-- `Od data`
-- `Do data`
-
-## Co uvidíte v prázdném stavu
-
-Pokud ještě nemáte žádná data, stránka zobrazí text:
-
-- `Zatím nemáte žádné rezervace`
-- `Připojte kalendáře z Airbnb a Booking.com nebo přidejte rezervaci ručně`
-
-## Co udělat, pokud je přehled prázdný
-
-Pokud v `Rezervacích` nic nevidíte, udělejte toto:
-
-1. ověřte, že už máte vytvořenou alespoň jednu nemovitost
-2. připojte Airbnb kalendář nebo jiný zdroj rezervací
-3. případně použijte `Nová rezervace`
-4. klikněte na `Synchronizovat vše`, pokud už nějaký zdroj připojený je
-
-## Nejčastější chyba
-
-Uživatel často otevře `Rezervace`, uvidí prázdnou stránku a myslí si, že něco nefunguje.
-
-V praxi to často jen znamená, že ještě nebyla přidaná nemovitost nebo nepřišel první import rezervací.
-
-## Doporučený další krok
-
-Pokračujte článkem `Jak přidat novou nemovitost` nebo `Co všechno najdu v detailu rezervace`.
+<p>Nejdřív zrušte filtry a ověřte zdroj. Synchronizace může obnovit importovaná data, ale sama nedoplní údaje, které zdroj neobsahuje. Přímý pobyt přidejte přes Nová rezervace a předem vylučte duplicitu.</p>

@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="How to process monthly fees for the municipality in Superhost – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How to process monthly fees for the municipality in Superhost" />
-    <meta property="og:description" content="How to process monthly fees for the municipality in Superhost – guide for short-term rental hosts on Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html" />
+    <meta name="description" content="Select the period required by your municipality, verify guests and the amount, then check filing and payment separately." />
+    <meta property="og:title" content="Check and remit municipality fees" />
+    <meta property="og:description" content="Select the period required by your municipality, verify guests and the amount, then check filing and payment separately." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to process monthly fees for the municipality in Superhost" />
-    <meta name="twitter:description" content="How to process monthly fees for the municipality in Superhost – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How to process monthly fees for the municipality in Superhost</title>
+    <meta name="twitter:title" content="Check and remit municipality fees" />
+    <meta name="twitter:description" content="Select the period required by your municipality, verify guests and the amount, then check filing and payment separately." />
+    <title>Check and remit municipality fees | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Check and remit municipality fees","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,105 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Automation and communication</p>
-          <h1 class="kb-article-title">How to process monthly fees for the municipality in Superhost</h1>
-          <p class="kb-article-lead">In the Municipal fees section, you can check the calculation for individual properties, download a PDF for verification, send a report via a data box and prepare a payment via a QR code.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Previous article</a>
-            <a href="./jak-funguje-poplatek-z-pobytu.html">Next article →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>What is important to know</strong>
-        <p>
-          You always pay for the fees <strong>the previous month</strong>, not for the current one. Therefore Superhost by default
-          displays the previous month to match the period that is normally being served and paid.
-        </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Before you start</h2>
-
-      <h3>Correctly set village data</h3>
-<p>You must have the rate, municipality account and other documents set in the details of the specific property.</p>
-      <h3>Correct month selected</h3>
-<p>Check the period for which you are actually reporting. By default, it is the previous month.</p>
-      <h3>Check before shipping</h3>
-<p>Download the PDF and check exactly what is being sent to the office even before the receipt or payment.</p>
-
-<h2>Where to start in the application</h2>
-<p>
-        Open in the left menu <strong>Fees to the municipality</strong>. At the top you will see the month selection, the submission deadline,
-        a summary for all properties and below that individual property cards.
-      </p>
-<ul>
-        <li>at the top, you choose the month for which you handle reporting and payment</li>
-        <li>in the summary you will quickly see the total amount for all properties</li>
-        <li>for each property you will then find a PDF, sending by date card and QR payment</li>
-      </ul>
-<h2>How to proceed each month</h2>
-
-      <h3>Make sure you are working with the previous month</h3>
-<p>Fees to the municipality are normally submitted and paid for the previous month. That's why Superhost displays the past period by default, not the current month.</p>
-<p>If you switch the month manually, always check that you are really dealing with the correct filing period.</p>
-
-      <h3>See a summary for all properties</h3>
-<p>At the top of the page, you will see the total amount for the selected month and the status of settlement. Thanks to this, you will quickly know how much is waiting for you to send and pay.</p>
-
-      <h3>Open the detail of a specific property</h3>
-<p>For each property, check the number of nights, paying guests, any exempt guests and the resulting amount. The monthly report for the municipality consists of this data.</p>
-
-      <h3>Download the PDF for verification</h3>
-<p>Please download before you post <strong>PDF</strong> and review what exactly will be sent to the office. It is the fastest check before sending the data card and before the payment itself.</p>
-
-      <h3>Send the report via databox</h3>
-<p>After checking, you can use the button <strong>Send by date</strong>. Superhost will prepare the message for you to send to the office, so you don't have to write everything manually from the beginning.</p>
-
-      <h3>Pay the fee via QR code</h3>
-<p>Use the button to pay <strong>QR payment</strong>. Your payment will open with your details ready, so you just check the amount and send it from your banking app.</p>
-
-      <h3>Check that everything is taken care of</h3>
-<p>After shipping and payment, check the status of the specific property. Thanks to this, you can immediately see what is already done and what still remains to be completed.</p>
-
-      <h3>If the amount does not match, adjust the property settings first</h3>
-<p>You set the rates and other data for calculating the fee in <strong>Property settings</strong>. If something doesn't fit, don't start fixing it until the monthly submission, but check the settings of the specific property first.</p>
-
-<h2>What to watch out for</h2>
-<ul>
-        <li>do not submit the current month if the municipality expects a submission for the previous month</li>
-        <li>always download the PDF and check the documents before the invoice and payment</li>
-        <li>if the amount does not match, check the rate in the specific property settings</li>
-        <li>for multiple properties, check each tab separately, not just the overall summary</li>
-      </ul>
-<h2>What does this procedure lead to?</h2>
-<p>
-        This article deals with practical monthly work in the application. If you still need to clarify the obligation itself,
-        registration and information from the municipality, start first with the article on the residence fee.
-      </p>
-<ul class="kb-article-link-list"><li><a href="./jak-funguje-poplatek-z-pobytu.html">How the stay fee works</a></li></ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html">
-  <span>Previous</span>
-  <strong>How to automate communications with guests</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-poplatek-z-pobytu.html">
-  <span>Another one</span>
-  <strong>How the stay fee works</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Check and remit municipality fees</h1>
+      <p class="kb-article-lead">Select the period required by your municipality, verify guests and the amount, then check filing and payment separately.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Period</li>
+<li><span class="kb-article-flow-number">2</span>Records</li>
+<li><span class="kb-article-flow-number">3</span>Filing</li>
+<li><span class="kb-article-flow-number">4</span>Payment</li></ol><section><h2 id="period">1. Select a month or custom period</h2><p>Open Municipality fees. Choose a month or Custom period. The previous month is a common default, not a universal legal deadline. Follow your municipality's rules.</p></section>
+<section><h2 id="amount">2. Check every property</h2><p>Check the rate, nights, people and exemptions. Download the PDF and compare it with stays. Correct discrepancies in guest details or property settings first.</p></section>
+<section><h2 id="filing">3. Review and submit the filing</h2><p>If data mailbox sending is available, review recipient, period and attachments before confirming. Availability depends on the enabled service. Preparing a PDF is not filing; keep a receipt if submitting outside the app.</p></section>
+<section><h2 id="payment">4. Pay and verify the result</h2><p>A payment QR prepares bank details but money moves only after you confirm in your bank. Check the account, payment reference, amount and bank result. Filing and payment require separate checks.</p><p>The separate feature for collecting municipality fees from guests is limited to enabled accounts. Do not confuse guest collection with remitting fees to the municipality.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-poplatek-z-pobytu.html"><span>Related guides</span><strong>Register for the local stay fee</strong></a>
+<a class="kb-article-related-card" href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html"><span>Related guides</span><strong>Keep guest and stay records in Superhostem</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -210,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

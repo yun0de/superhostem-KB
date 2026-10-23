@@ -1,35 +1,19 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Co dělat, když se kalendář nenačítá
 
-## Co tento článek řeší
+Rozlište prázdný kalendář, neaktuální data a nefunkční sdílený odkaz. Každá situace má jiný postup.
 
-Pomáhá rychle zkontrolovat nejčastější důvody, proč se kalendářová data nemusí v systému zobrazovat správně.
 
-## Jak postupovat
 
-Začněte tímto jednoduchým checklistem:
+## Kalendář je prázdný
 
-1. ověřte, že je zdroj kalendáře skutečně připojený
-2. zkontrolujte, zda je použitý správný iCal odkaz
-3. ověřte, že zdrojová platforma kalendář opravdu sdílí
-4. zkontrolujte, zda problém není jen dočasné zpoždění synchronizace
-5. ověřte, zda se problém týká jedné nemovitosti, nebo všech
+<p>Ověřte měsíc, filtry, nemovitost a dostupnost rezervací v seznamu. Pokud chybí i v seznamu, postupujte podle návodu pro chybějící rezervaci.</p>
 
-## Možné příčiny
+## Data jsou stará
 
-- neplatný nebo starý iCal odkaz
-- neaktivní sdílení kalendáře na zdrojové platformě
-- dočasné zpoždění synchronizace
-- chyba v přiřazení ke konkrétní nemovitosti
+<p>Zkontrolujte exportní iCal URL a termíny na zdrojové platformě. Spusťte dostupnou synchronizaci. Google, Apple a jiné odběry si data obnovují vlastním intervalem; změna v Superhostem se v nich nemusí ukázat hned.</p>
 
-## Jak poznat, že už je potřeba support
+## Sdílený odkaz nefunguje
 
-Support má smysl kontaktovat tehdy, když:
-
-- je zdroj připojený správně
-- odkaz je platný
-- problém trvá opakovaně
-- a stále se nenačítají žádná data nebo jsou zjevně neúplná
-
-## Doporučený další krok
-
-Pokud se kalendář načítá jen částečně, pokračujte kontrolou článku k chybějícím rezervacím.
+<p>V účtu zkontrolujte, že přístup nebyl zrušen a obsahuje správné nemovitosti. Zkopírujte znovu celý aktuální odkaz. Pokud se otevře chyba, pošlete podpoře čas, znění chyby a informaci, zda jde o administraci, webový odkaz nebo kalendářovou aplikaci.</p>

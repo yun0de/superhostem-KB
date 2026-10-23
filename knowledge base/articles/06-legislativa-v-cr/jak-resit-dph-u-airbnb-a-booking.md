@@ -10,20 +10,21 @@
 
 Airbnb nebo Booking.com vám typicky účtuje provizi nebo servisní poplatek. Z pohledu DPH nejde jen o technický poplatek platformě, ale o přijatou službu ze zahraničí.
 
-Režim se může lišit podle toho, kdo ubytování provozuje:
-
-- u `s.r.o.` se povinnosti řeší v účetnictví firmy
-- u živnosti nebo fyzické osoby se ověřuje režim podle ZDPH, typicky identifikovaná osoba nebo plátcovství
+U OSVČ i s.r.o. rozhoduje režim DPH. Také s.r.o. může být neplátcem nebo identifikovanou osobou. Právní forma sama o sobě neurčuje plátcovství.
 
 Pokud potřebujete postup posoudit přesně, kontaktujte nás a poradíme vám podle konkrétní situace.
 
-## Doporučení v praxi
+## Kdy musíte řešit registraci
 
-Většinou dává smysl nezačínat rovnou jako plátce DPH. Nejdřív si ověřte režim podle ZDPH, často hlavně identifikovanou osobu kvůli službě ze zahraničí.
+Přijetí zahraniční služby může založit povinnost identifikované osoby i při nízkém obratu.
 
-Pokud se obrat dostává nad hranici 2 mil. Kč, začíná dávat smysl řešit registraci plátce DPH s účetní.
+U obratové registrace sledujte obrat v tuzemsku za kalendářní rok:
 
-Disclaimer: jde o praktické doporučení, ne pokyn. Každý hostitel jedná na vlastní rozhodnutí a finální postup si má ověřit podle aktuálních pravidel a své situace.
+- po překročení 2 000 000 Kč vzniká plátcovství zpravidla od 1. ledna následujícího roku; lze zvolit dřívější vznik
+- po překročení 2 536 500 Kč vzniká plátcovství následující den
+- u těchto obratových důvodů se přihláška podává do 10 pracovních dnů
+
+Registrace při splnění zákonných podmínek je povinnost. Obrat, výjimky a datum vzniku ověřte s účetní podle [pravidel Finanční správy účinných od roku 2025](https://financnisprava.gov.cz/cs/financni-sprava/novinky/novinky-2025/informace-ke-zmenam-v-platcovstvi-dph-2025).
 
 ## Nejdřív si určete režim
 

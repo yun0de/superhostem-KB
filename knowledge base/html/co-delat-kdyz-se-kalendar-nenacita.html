@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Co dělat, když se kalendář nenačítá – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
+    <meta name="description" content="Rozlište prázdný kalendář, neaktuální data a nefunkční sdílený odkaz. Každá situace má jiný postup." />
     <meta property="og:title" content="Co dělat, když se kalendář nenačítá" />
-    <meta property="og:description" content="Co dělat, když se kalendář nenačítá – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Rozlište prázdný kalendář, neaktuální data a nefunkční sdílený odkaz. Každá situace má jiný postup." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Co dělat, když se kalendář nenačítá" />
-    <meta name="twitter:description" content="Co dělat, když se kalendář nenačítá – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Co dělat, když se kalendář nenačítá</title>
+    <meta name="twitter:description" content="Rozlište prázdný kalendář, neaktuální data a nefunkční sdílený odkaz. Každá situace má jiný postup." />
+    <title>Co dělat, když se kalendář nenačítá | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Co dělat, když se kalendář nenačítá","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,59 +103,18 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">FAQ a řešení problémů</p>
-          <h1 class="kb-article-title">Co dělat, když se kalendář nenačítá</h1>
-          <p class="kb-article-lead">Pomocí tohoto checklistu rychle zkontrolujete nejčastější důvody, proč se kalendářová data nemusí zobrazovat správně.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-            <a href="./co-delat-kdyz-chybi-rezervace.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Checklist</h2>
-
-<ol>
-<li>ověřte, že je zdroj kalendáře připojený</li>
-<li>zkontrolujte správnost iCal odkazu</li>
-<li>ověřte, že zdroj sdílí data</li>
-<li>zkontrolujte, zda nejde o dočasné zpoždění synchronizace</li>
-</ol>
-
-<h2>Možné příčiny</h2>
-
-<ul>
-<li>neplatný nebo starý odkaz</li>
-<li>neaktivní sdílení kalendáře</li>
-<li>chyba v přiřazení k nemovitosti</li>
-</ul>
-
-<h2>Kdy kontaktovat support</h2>
-
-<p>Když je napojení správné, odkaz platný a problém trvá opakovaně bez zjevné příčiny.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html">
-  <span>Další</span>
-  <strong>Co dělat, když chybí rezervace</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Co dělat, když se kalendář nenačítá</h1>
+      <p class="kb-article-lead">Rozlište prázdný kalendář, neaktuální data a nefunkční sdílený odkaz. Každá situace má jiný postup.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="prazdny">Kalendář je prázdný</h2><p>Ověřte měsíc, filtry, nemovitost a dostupnost rezervací v seznamu. Pokud chybí i v seznamu, postupujte podle návodu pro chybějící rezervaci.</p></section>
+<section><h2 id="stary">Data jsou stará</h2><p>Zkontrolujte exportní iCal URL a termíny na zdrojové platformě. Spusťte dostupnou synchronizaci. Google, Apple a jiné odběry si data obnovují vlastním intervalem; změna v Superhostem se v nich nemusí ukázat hned.</p></section>
+<section><h2 id="odkaz">Sdílený odkaz nefunguje</h2><p>V účtu zkontrolujte, že přístup nebyl zrušen a obsahuje správné nemovitosti. Zkopírujte znovu celý aktuální odkaz. Pokud se otevře chyba, pošlete podpoře čas, znění chyby a informaci, zda jde o administraci, webový odkaz nebo kalendářovou aplikaci.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Související návody</span><strong>Jak napojit iCal kalendář</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Související návody</span><strong>Co dělat, když chybí rezervace</strong></a>
+<a class="kb-article-related-card" href="./jak-sdilet-webovy-kalendar-odkazem.html"><span>Související návody</span><strong>Jak sdílet webový kalendář odkazem</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -164,6 +135,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

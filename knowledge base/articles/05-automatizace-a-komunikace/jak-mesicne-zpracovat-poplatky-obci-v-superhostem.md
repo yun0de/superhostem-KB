@@ -1,47 +1,26 @@
-# Jak měsíčně zpracovat poplatky obci v Superhostem
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
 
-## Co tento článek řeší
+# Jak zkontrolovat a odvést poplatky obci
 
-Tento článek ukazuje praktický měsíční postup v části `Poplatky obci`: kontrolu výpočtu, stažení PDF, odeslání hlášení přes datovou schránku a úhradu přes QR kód.
+Vyberte období požadované obcí, ověřte hosty a částku a odděleně zkontrolujte podání i platbu.
 
-## Co je důležité vědět
+1. Období
+2. Podklady
+3. Podání
+4. Úhrada
 
-Poplatky obci vždy řešíte za `předchozí měsíc`, ne za aktuální. Proto Superhostem standardně zobrazuje minulý měsíc, aby odpovídal období, které se běžně právě podává a platí.
+## 1. Vyberte měsíc nebo vlastní období
 
-## Kde v aplikaci začít
+<p>V menu otevřete Poplatky obci / Obecní poplatky. Zvolte měsíc nebo Vlastní období. Předchozí měsíc je běžný výchozí výběr, nikoli univerzální zákonný termín pro všechny obce. Řiďte se pravidly své obce.</p>
 
-V levém menu otevřete `Poplatky obci`.
+## 2. Ověřte každou nemovitost
 
-Nahoře uvidíte:
+<p>Zkontrolujte sazbu, noci, počet osob a osvobození. Stáhněte PDF a porovnejte podklady s pobyty. Pokud částka nesedí, opravte příčinu v údajích hosta nebo nastavení nemovitosti.</p>
 
-- výběr měsíce
-- termín pro podání
-- souhrn za všechny nemovitosti
-- pod tím jednotlivé karty nemovitostí
+## 3. Zkontrolujte a odešlete podání
 
-## Jak postupovat každý měsíc
+<p>Pokud je dostupné odesílání datovou schránkou, zkontrolujte příjemce, období a přílohy před potvrzením. Dostupnost odeslání závisí na zapnuté službě. Příprava PDF sama neznamená podání; při odeslání mimo aplikaci si uchovejte doklad.</p>
 
-1. zkontrolujte, že pracujete s předchozím měsícem
-2. podívejte se na souhrn za všechny nemovitosti
-3. otevřete detail konkrétní nemovitosti
-4. stáhněte si `PDF` pro ověření, co přesně se bude odesílat
-5. odešlete hlášení přes `Odeslat datovkou`
-6. zaplaťte poplatek přes `QR platba`
-7. zkontrolujte, že je vše vyřízené
+## 4. Zaplaťte a ověřte výsledek
 
-## Jak Superhostem pomůže
-
-- předpřipraví zprávu pro odeslání přes datovou schránku
-- připraví QR platbu s vyplněnými údaji
-- ukáže přehled za všechny nemovitosti i detail konkrétní nemovitosti
-- umožní stáhnout PDF pro kontrolu podkladů před odesláním
-
-## Když částka nesedí
-
-Sazby a další údaje pro výpočet poplatku nastavujete v `Nastavení nemovitosti`.
-
-Pokud vám částka nesedí, nezačínejte opravou až u měsíčního podání, ale zkontrolujte nejdřív nastavení konkrétní nemovitosti.
-
-## Doporučený další krok
-
-Pokračujte článkem `Jak funguje poplatek z pobytu`.
+<p>QR platba připraví bankovní údaje, ale peníze odejdou až po vašem potvrzení v bance. Ověřte účet, variabilní symbol, částku a bankovní výsledek. Podání a platba jsou dvě samostatné kontroly.</p><p>Samostatná funkce výběru obecního poplatku od hostů je dostupná jen zapnutým účtům. Nezaměňujte ji za odvod vybraných poplatků obci.</p>

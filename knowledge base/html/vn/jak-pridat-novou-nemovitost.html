@@ -3,27 +3,39 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cách thêm tài sản của bạn – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Cách thêm tài sản của bạn" />
-    <meta property="og:description" content="Cách thêm tài sản của bạn – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-pridat-novou-nemovitost.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-pridat-novou-nemovitost.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-pridat-novou-nemovitost.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html" />
+    <meta name="description" content="Tạo thủ công hoặc dùng nhập dữ liệu, rồi kiểm tra đúng chỗ ở và đặt phòng đầu tiên." />
+    <meta property="og:title" content="Thêm chỗ ở của bạn" />
+    <meta property="og:description" content="Tạo thủ công hoặc dùng nhập dữ liệu, rồi kiểm tra đúng chỗ ở và đặt phòng đầu tiên." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-pridat-novou-nemovitost.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Cách thêm tài sản của bạn" />
-    <meta name="twitter:description" content="Cách thêm tài sản của bạn – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Cách thêm tài sản của bạn</title>
+    <meta name="twitter:title" content="Thêm chỗ ở của bạn" />
+    <meta name="twitter:description" content="Tạo thủ công hoặc dùng nhập dữ liệu, rồi kiểm tra đúng chỗ ở và đặt phòng đầu tiên." />
+    <title>Thêm chỗ ở của bạn | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Thêm chỗ ở của bạn","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-pridat-novou-nemovitost.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=property-flow-stable">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -91,38 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Bắt đầu nhanh</p>
-          <h1 class="kb-article-title">Cách thêm tài sản của bạn</h1>
-          <p class="kb-article-lead">Bạn có thể tạo chỗ ở đầu tiên ngay cả khi chưa có liên kết iCal. Nếu đã có URL iCal từ cổng đặt phòng, bạn có thể dùng nó để nhập đặt chỗ ngay.</p>
-          <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Bước trước</a><a href="./jak-funguje-napojeni-pres-ical.html">Bước tiếp theo →</a></div>
-          <div class="kb-article-intro-note"><strong>Hãy bắt đầu bằng việc tạo chỗ ở.</strong><p>Chỉ bổ sung các cài đặt thực sự áp dụng cho chỗ ở của bạn.</p></div>
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Chọn lộ trình theo URL iCal</h2><p>URL iCal có thể đến từ Airbnb, Booking.com, e-Chalupy hoặc một cổng đặt phòng khác.</p>
-            <section class="kb-property-decision" aria-labelledby="property-decision-title"><h3 id="property-decision-title" class="sr-only">Hai cách để tạo chỗ ở</h3><ol class="kb-property-decision-flow"><li class="kb-property-decision-card is-primary"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">Bạn chưa có URL iCal</span><strong>Tạo chỗ ở trong mục Bất động sản</strong><p>Mở <b>Bất động sản</b> ở menu bên trái, chọn <b>Thêm chỗ ở</b>, rồi tiếp tục đến phần cài đặt.</p><a class="kb-property-decision-cta" href="https://www.superhostem.cz/dashboard/properties/new">Thêm chỗ ở <span aria-hidden="true">→</span></a></div></li><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">Bạn đã có URL iCal</span><strong>Dùng onboarding và nhập dữ liệu</strong><p>Trên trang <b>Tổng quan</b>, nhập tên chỗ ở và URL iCal. Sau đó chọn <b>Tạo chỗ ở và nhập đặt chỗ</b>.</p><a class="kb-property-decision-cta is-secondary" href="./jak-funguje-napojeni-pres-ical.html">Tiếp tục với nhập iCal <span aria-hidden="true">→</span></a></div></li></ol></section>
-            <section class="kb-property-next-steps" id="property-next-steps" aria-labelledby="property-next-steps-title"><div class="kb-property-next-steps-heading"><span>Sau khi tạo</span><h2 id="property-next-steps-title">Chỉ bổ sung những gì bạn cần</h2><p>Bạn không cần hoàn tất mọi cài đặt cùng lúc.</p></div><div class="kb-property-next-steps-grid"><a class="kb-property-next-card" href="./jak-funguje-poplatek-z-pobytu.html"><span>Nếu áp dụng</span><strong>Phí lưu trú địa phương</strong><small>Xem cách thiết lập trong ứng dụng.</small></a><a class="kb-property-next-card" href="./jak-se-zaregistrovat-do-ubyportu.html"><span>Nếu cần</span><strong>Ubyport</strong><small>Đăng ký và thông tin truy cập.</small></a><a class="kb-property-next-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Để nhập dữ liệu</span><strong>Kết nối iCal</strong><small>Kết nối hoặc thêm lịch từ cổng đặt phòng.</small></a><a class="kb-property-next-card" href="./jak-funguje-prehled-rezervaci.html"><span>Sau khi nhập</span><strong>Kiểm tra đặt chỗ</strong><small>Xác nhận các lượt lưu trú hiển thị trong phần tổng quan.</small></a></div><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Lịch và quy trình</strong><small>Tiếp tục bằng thiết lập tự động hóa cho tin nhắn và vận hành hằng ngày.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html">
-  <span>trước đó</span>
-  <strong>Hướng dẫn đăng nhập và tài khoản lần đầu</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Một cái khác</span>
-  <strong>Cách nhận và kết nối iCal từ Airbnb và Booking</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Thêm chỗ ở của bạn</h1>
+      <p class="kb-article-lead">Tạo thủ công hoặc dùng nhập dữ liệu, rồi kiểm tra đúng chỗ ở và đặt phòng đầu tiên.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Chọn cách</li>
+<li><span class="kb-article-flow-number">2</span>Điền thông tin</li>
+<li><span class="kb-article-flow-number">3</span>Lưu</li>
+<li><span class="kb-article-flow-number">4</span>Kiểm tra kỳ</li></ol><section><h2 id="method">Có liên kết nhập?</h2><p>Ở Tổng quan, chọn nguồn được hỗ trợ và điền theo các ô. iCal cần URL xuất của tin đăng cụ thể. Sau khi tạo, kiểm tra ngày nhập; email có thể bổ sung chi tiết.</p></section>
+<section><h2 id="manual">Không nhập: Chỗ ở → Thêm chỗ ở</h2><p>Nhập tên và địa chỉ bắt buộc. Chọn địa chỉ từ gợi ý rồi kiểm tra thành phố, mã bưu chính. Kiểm tra sức chứa và tiền tệ. Xác nhận tạo rồi mở chỗ ở đã lưu.</p></section>
+<section><h2 id="settings">Hoàn tất cài đặt vận hành</h2><p>Thêm phí địa phương, IDUB, tài khoản Ubyport, lịch và giờ nhận/trả phòng theo nhu cầu. Với khách sạn, đặt phòng và nguồn thuộc từng phòng, không thuộc nhóm khách sạn. Tính năng khách sạn cần quyền tài khoản.</p></section>
+<section><h2 id="done">Kiểm tra kỳ đầu tiên</h2><p>Kiểm tra chỗ ở, ngày và số khách trong đặt phòng đầu tiên rồi tiếp tục check-in và tự động hóa. Tạo chỗ ở không tự bổ sung mọi thông tin liên hệ hoặc tài chính.</p></section><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Tự động hóa liên lạc với khách</strong><small>Bước tiếp theo</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Hướng dẫn liên quan</span><strong>Cách kết nối lịch iCal</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Hướng dẫn liên quan</span><strong>Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách</strong></a>
+<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html"><span>Hướng dẫn liên quan</span><strong>Tự động hóa liên lạc với khách</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -143,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=property-cta"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

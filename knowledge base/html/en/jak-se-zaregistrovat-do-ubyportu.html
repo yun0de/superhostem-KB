@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-se-zaregistrovat-do-ubyportu.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-se-zaregistrovat-do-ubyportu.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-se-zaregistrovat-do-ubyportu.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-se-zaregistrovat-do-ubyportu.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-se-zaregistrovat-do-ubyportu.html" />
     <meta name="description" content="How to register for Ubyport – guide for short-term rental hosts on Superhostem.cz." />
     <meta property="og:title" content="How to register for Ubyport" />
     <meta property="og:description" content="How to register for Ubyport – guide for short-term rental hosts on Superhostem.cz." />
@@ -14,16 +20,24 @@
     <meta name="twitter:title" content="How to register for Ubyport" />
     <meta name="twitter:description" content="How to register for Ubyport – guide for short-term rental hosts on Superhostem.cz." />
     <title>How to register for Ubyport</title>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"TechArticle","headline":"How to register for Ubyport","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-se-zaregistrovat-do-ubyportu.html"}}
+    </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -167,6 +181,8 @@ Thank you.</pre><button class="kb-data-message-copy" type="button" data-copy-tar
 <aside class="kb-article-callout kb-article-callout-muted">
         <p><strong>Updated:</strong> 29 March 2026. Before sending, always check the specific method of submission, address and field names directly in the current Ubyport form and in the instructions of the Police of the Czech Republic.</p>
       </aside>
+<section id="reviewed-workflow"><h2>Have credentials? Check an actual report</h2><p>Reuse valid web-services credentials when moving from another system; avoid unnecessary duplicate registration. Continue with <a href="./jak-odeslat-hosty-do-ubyportu.html">guest submission and result checks</a>. Verify the current form and filing options directly on the <a href="https://ubyport.pcr.cz/UbyPort/Home/" target="_blank" rel="noreferrer">Ubyport portal</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Related links</h2>
@@ -209,6 +225,6 @@ Thank you.</pre><button class="kb-data-message-copy" type="button" data-copy-tar
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

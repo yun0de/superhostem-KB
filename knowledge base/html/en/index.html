@@ -3,7 +3,13 @@
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
+    <link rel="icon" href="https://www.superhostem.cz/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/index.html" />
+    <link rel="alternate" hreflang="cs" href="https://knowledgebase.superhostem.cz/knowledge-base/html/index.html" />
+    <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/index.html" />
+    <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/index.html" />
     <meta name="description" content="Help Center | Superhostem.cz – guide for short-term rental hosts on Superhostem.cz." />
     <meta property="og:title" content="Help Center | Superhostem.cz" />
     <meta property="og:description" content="Help Center | Superhostem.cz – guide for short-term rental hosts on Superhostem.cz." />
@@ -16,14 +22,19 @@
     <title>Help Center | Superhostem.cz</title>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-help">
     <header class="kb-help-header">
@@ -109,8 +120,9 @@
           <div class="kb-help-popular" aria-label="Popular searches">
             <span>Popular searches:</span>
             <a href="./jak-funguje-napojeni-pres-ical.html">iCal</a>
-            <a href="./jak-funguje-poplatek-z-pobytu.html">Local stay fee</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Automation</a>
+            <a href="./jak-funguje-poplatek-z-pobytu.html">Register for the local stay fee</a>
+            <a href="./jak-funguji-automatizace-v-superhostem.html">Automate guest communication</a>
+              <a href="./jak-nastavit-automaticke-emaily.html">Set up automatic emails in Superhostem</a>
           </div>
         </div>
       </section>
@@ -131,14 +143,16 @@
               <span>1</span>
               <h3>Starting point</h3>
               <p>Find your way around the account and see where to start after the first login.</p>
-              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Open guide</a>
+              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">First login: from your property to your first stay</a>
             </article>
 
             <article class="kb-help-step" data-search-text="nová nemovitost přidat první">
               <span>2</span>
               <h3>First property</h3>
               <p>Prepare the base for reservations, calendar, and further setup.</p>
-              <a href="./jak-pridat-novou-nemovitost.html">Add property</a>
+              <a href="./jak-pridat-novou-nemovitost.html">Add your property</a>
+              <a href="./jak-spravovat-hotel-a-pokoje.html">Work with hotels and rooms</a>
+              <a href="./jak-zverejnit-web-ubytovani.html">Prepare your accommodation website</a>
             </article>
 
             <article class="kb-help-step" data-search-text="ical kalendář napojení rezervací automatizace">
@@ -167,12 +181,14 @@
               <p>iCal connection, reservations, stay detail, and Airbnb calendar work.</p>
               <ul>
                 <li><a href="./jak-funguje-napojeni-pres-ical.html">How iCal connection works</a></li>
-                <li><a href="./jak-sdilet-webovy-kalendar-odkazem.html">How to share a web calendar by link</a></li>
-                <li><a href="./jak-funguje-prehled-rezervaci.html">How reservation overview works</a></li>
-                <li><a href="./co-vsechno-najdu-v-detailu-rezervace.html">What you can find in reservation detail</a></li>
-                <li><a href="./jak-funguje-email-forwarding.html">Email forwarding</a></li>
-                <li><a href="./proc-vest-evidenci-hostu-a-pobytu.html">domovní kniha: why keep guest and stay records</a></li>
-                <li><a href="./kalendar-airbnb-v-telefonu.html">To a calendar app</a></li>
+                <li><a href="./jak-sdilet-webovy-kalendar-odkazem.html">Share a web calendar link</a>
+              <a href="./jak-ridit-uklid.html">Give cleaners access and verify completion</a></li>
+                <li><a href="./jak-funguje-prehled-rezervaci.html">Work with the reservations overview</a>
+              <a href="./jak-pridat-rucni-rezervaci.html">Create a manual reservation</a></li>
+                <li><a href="./co-vsechno-najdu-v-detailu-rezervace.html">What to do in reservation details</a></li>
+                <li><a href="./jak-funguje-email-forwarding.html">Set up reservation email forwarding</a></li>
+                <li><a href="./proc-vest-evidenci-hostu-a-pobytu.html">Guest register: why keep guest and stay records</a></li>
+                <li><a href="./kalendar-airbnb-v-telefonu.html">Add reservations to a calendar app</a></li>
               </ul>
             </article>
 
@@ -180,17 +196,21 @@
               <div class="kb-help-topic-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.51a2 2 0 0 1 1-1.72l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2Z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
               <h3>Settings and account</h3>
               <p>Basic orientation and profile editing.</p>
-              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">First login</a>
-              <a href="./jak-upravit-profil-v-nastaveni.html">Edit profile</a>
+              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">First login: from your property to your first stay</a>
+              <a href="./jak-upravit-profil-v-nastaveni.html">Edit your profile in settings</a>
             </article>
 
             <article class="kb-help-topic" data-search-text="komunikace hosté automatizace evidence">
               <div class="kb-help-topic-icon kb-help-topic-icon-blue" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div>
               <h3>Guest communication</h3>
               <p>Messages, automation, and operating records.</p>
-              <a href="./jak-funguji-automatizace-v-superhostem.html">Automation</a>
-              <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Guest and stay records in Superhostem</a>
-              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Monthly municipal agenda</a>
+              <a href="./jak-funguji-automatizace-v-superhostem.html">Automate guest communication</a>
+              <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Keep guest and stay records in Superhostem</a>
+              <a href="./jak-vytvorit-pruvodce-pro-hosty.html">Prepare a guide for your guests</a>
+              <a href="./jak-pouzit-chytre-zamky.html">Prepare a smart lock for reservations</a>
+              <a href="./jak-poslat-online-check-in.html">Send an online check-in form and check every guest</a>
+              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Check and remit municipality fees</a>
+              <a href="./jak-vystavit-fakturu-z-rezervace.html">Issue an invoice from a reservation</a>
             </article>
 
             <article class="kb-help-topic" data-search-text="legislativa poplatky dph ubyport povinnosti superhostem">
@@ -198,11 +218,12 @@
               <h3>Legislation and duties</h3>
               <p>Czech host duties and monthly agenda.</p>
               <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Host duties</a>
-              <a href="./jak-funguje-poplatek-z-pobytu.html">How to register for the local stay fee</a>
-              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Monthly municipal agenda</a>
+              <a href="./jak-funguje-poplatek-z-pobytu.html">Register for the local stay fee</a>
+              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Check and remit municipality fees</a>
               <a href="./jak-se-zaregistrovat-do-ubyportu.html">Ubyport registration</a>
+              <a href="./jak-odeslat-hosty-do-ubyportu.html">Send guests to Ubyport and verify the result</a>
               <a href="./jak-resit-dph-u-airbnb-a-booking.html">VAT for Airbnb and Booking.com</a>
-              <a href="./co-je-superhostem-a-co-vam-pomuze-resit.html">What Superhostem is</a>
+              <a href="./co-je-superhostem-a-co-vam-pomuze-resit.html">What Superhostem helps you do</a>
             </article>
 
             <article class="kb-help-topic kb-help-topic-alert" data-search-text="problems calendar not loading reservation missing email forwarding gmail confirmation address filter rule faq terms ical blocked date">
@@ -211,9 +232,9 @@
               <p>Terms, common questions, and operating issues.</p>
               <a href="./co-je-ical.html">What iCal is</a>
               <a href="./jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html">Reservation vs. blocked date</a>
-              <a href="./co-delat-kdyz-se-kalendar-nenacita.html">When calendar does not load</a>
-              <a href="./co-delat-kdyz-chybi-rezervace.html">When a reservation is missing</a>
-              <a href="./co-delat-kdyz-nefunguje-email-forwarding.html">When email forwarding does not work</a>
+              <a href="./co-delat-kdyz-se-kalendar-nenacita.html">What to do when the calendar does not load</a>
+              <a href="./co-delat-kdyz-chybi-rezervace.html">What to do when a reservation is missing</a>
+              <a href="./co-delat-kdyz-nefunguje-email-forwarding.html">Fix reservation email forwarding</a>
             </article>
           </div>
         </section>
@@ -272,6 +293,6 @@
     </footer>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

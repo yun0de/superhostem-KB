@@ -1,41 +1,26 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Jak vést evidenci hostů a pobytů v Superhostem
 
-## Co tento článek řeší
+Údaje sbírejte přes formulář konkrétního pobytu, kontrolujte všechny hosty a pravidelně připravujte evidenci pro vybrané období.
 
-Tento článek ukazuje, jak v Superhostem navazuje evidence hostů na rezervace, guestbook a komunikaci s hosty a že evidenci můžete kdykoliv vygenerovat podle období `od–do`.
+1. Pobyt
+2. Formulář
+3. Kontrola
+4. Export
 
-## Co musí fungovat předem
+## 1. Pošlete formulář hostům
 
-- rezervace v systému
-- guestbook nebo formulář pro hosty
-- nastavená komunikace s hosty
+<p>V detailu rezervace ověřte termín a počet osob. Pošlete dostupný registrační odkaz. Začít můžete ručně; automatizace není podmínkou sběru údajů.</p><p><a href='./jak-poslat-online-check-in.html'>Praktický postup online check-inu</a></p>
 
-## Kde v Superhostem začít
+## 2. Zkontrolujte každého hosta
 
-Začínáte u rezervací a návazné komunikace s hostem.
+<p>V Registrovaných hostech ověřte vyplnění všech osob a opravte chyby. Průvodce pro hosty není registrační formulář: slouží k pokynům k pobytu, nikoli místo evidence.</p>
 
-Právě tam ověřujete:
+## 3. Připravte přehled za období
 
-- že rezervace sedí na reálné pobyty
-- že host dostal správný odkaz na formulář nebo guestbook
-- že vyplněné údaje jsou u rezervace kompletní
-- že si můžete kdykoliv vygenerovat evidenci za zvolené období `od–do`
+<p>V menu Domovní kniha vyberte nemovitost; při jediném objektu můžete být převedeni rovnou do jeho evidence. Vyberte období od–do a připravte dostupný PDF přehled. Ověřte chybějící osoby a správnost dat před archivací nebo tiskem.</p>
 
-## Jak to funguje v praxi
+## 4. Ověřte navazující povinnosti
 
-1. host dostane odkaz přes automatizaci
-2. host doplní údaje k pobytu
-3. údaje se navážou ke konkrétní rezervaci
-4. u rezervace zkontrolujete úplnost dat
-5. evidenci řešíte průběžně, ne až zpětně
-
-## Co si pohlídat
-
-- host dostal správný odkaz
-- rezervace je přiřazená ke správné nemovitosti
-- nechybí údaje potřebné pro evidenci hostů
-- automatizace odchází včas
-
-## Doporučený další krok
-
-Pokračujte článkem `Jak automatizovat komunikace s hosty`.
+<p>Vyplnění formuláře není potvrzení hlášení policii ani zaplacení poplatku. Výsledek Ubyportu a obecní podklady kontrolujte zvlášť. Požadavky na evidenci a uchování najdete v navazujícím právním návodu.</p>
