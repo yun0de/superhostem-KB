@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguji-automatizace-v-superhostem.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguji-automatizace-v-superhostem.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguji-automatizace-v-superhostem.html" />
-    <meta name="description" content="Cách tự động gửi tin nhắn cho khách – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Cách tự động gửi tin nhắn cho khách" />
-    <meta property="og:description" content="Cách tự động gửi tin nhắn cho khách – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <meta name="description" content="Chọn một kênh gửi và một tin đầu tiên. Phân biệt email Superhostem và tin trong nền tảng đặt phòng." />
+    <meta property="og:title" content="Tự động hóa liên lạc với khách" />
+    <meta property="og:description" content="Chọn một kênh gửi và một tin đầu tiên. Phân biệt email Superhostem và tin trong nền tảng đặt phòng." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguji-automatizace-v-superhostem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Cách tự động gửi tin nhắn cho khách" />
-    <meta name="twitter:description" content="Cách tự động gửi tin nhắn cho khách – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Cách tự động gửi tin nhắn cho khách</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Cách tự động gửi tin nhắn cho khách","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguji-automatizace-v-superhostem.html"}}
-    </script>
+    <meta name="twitter:title" content="Tự động hóa liên lạc với khách" />
+    <meta name="twitter:description" content="Chọn một kênh gửi và một tin đầu tiên. Phân biệt email Superhostem và tin trong nền tảng đặt phòng." />
+    <title>Tự động hóa liên lạc với khách | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Tự động hóa liên lạc với khách","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguji-automatizace-v-superhostem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,80 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Tự động hóa và truyền thông</p>
-          <h1 class="kb-article-title">Cách tự động gửi tin nhắn cho khách</h1>
-          <p class="kb-article-lead">Thiết lập một tin nhắn trước khi khách đến. Khách nhận đúng liên kết đúng thời điểm, bạn không phải gửi thủ công cho từng đặt phòng.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./jak-pridat-novou-nemovitost.html">Bài viết trước</a>
-            <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Bài tiếp theo →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Bước cuối của thiết lập</strong>
-        <p>Trong Superhostem, bạn đặt thời điểm liên kết bắt đầu dùng được. Hãy dùng cùng thời điểm đó cho tin nhắn tự động trong Airbnb hoặc Booking.com.</p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Bắt đầu bằng một tin nhắn trước khi đến</h2>
-            <p>Đừng tự động hóa mọi thứ ngay từ đầu. Chỉ cần một tin nhắn hữu ích: gửi liên kết biểu mẫu hoặc guestbook trước khi khách đến.</p>
-            <ol class="kb-article-flow" aria-label="Quy trình thiết lập tự động hóa">
-              <li><span class="kb-article-flow-number">1</span>Sao chép liên kết</li>
-              <li><span class="kb-article-flow-number">2</span>Đặt thời điểm khả dụng</li>
-              <li><span class="kb-article-flow-number">3</span>Đưa vào tin nhắn</li>
-              <li><span class="kb-article-flow-number">4</span>Kiểm tra kết quả</li>
-            </ol>
-            <h2>Bắt đầu ở đâu trong Superhostem</h2>
-            <p>Mở chi tiết chỗ nghỉ và vào phần <strong>Tự động hóa</strong>.</p>
-            <ul>
-              <li>sao chép liên kết dành cho khách</li>
-              <li>đặt số ngày trước khi đến mà đặt phòng có thể mở qua liên kết</li>
-              <li>lưu thiết lập</li>
-            </ul>
-            <aside class="kb-article-callout">Số ngày phải khớp với thời điểm gửi tin nhắn trong Airbnb hoặc Booking.com. Nếu Superhostem đặt 3 ngày trước khi đến, tin nhắn tự động cũng nên gửi 3 ngày trước khi đến.</aside>
-            <h2>Đưa liên kết vào đâu</h2>
-            <section class="kb-property-decision" aria-label="Nền tảng cho tin nhắn tự động">
-              <ol class="kb-property-decision-flow">
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Tin nhắn → cài đặt tin nhắn</strong><p>Tạo câu trả lời nhanh hoặc tin nhắn tự động. Thêm liên kết Superhostem và gán tin nhắn cho đúng chỗ nghỉ.</p></div></li>
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M6 4h12v16H6z"></path><path d="M9 8h6M9 12h6M9 16h4"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Extranet → cài đặt tin nhắn</strong><p>Tạo mẫu tin nhắn, dán liên kết Superhostem và lên lịch gửi trước khi khách đến.</p></div></li>
-              </ol>
-            </section>
-            <h2>Kiểm tra trước khi lưu</h2>
-            <ul>
-              <li>tin nhắn có liên kết đúng cho chỗ nghỉ hoặc căn đúng</li>
-              <li>mẫu tin nhắn được gán cho đúng chỗ nghỉ</li>
-              <li>thời điểm gửi khớp với số ngày đã đặt trong Superhostem</li>
-              <li>nội dung nói rõ khách cần làm gì sau khi bấm liên kết</li>
-            </ul>
-            <aside class="kb-article-callout kb-article-callout-muted">Với lưu trú ngắn ngày hoặc đặt sát ngày, hãy kiểm tra thời điểm gửi trước. Tin nhắn phải gửi khi đặt phòng đã mở được qua liên kết.</aside>
-            <h2>Bước tiếp theo</h2>
-            <p>Nếu tự động hóa gửi biểu mẫu hoặc guestbook, hãy tiếp tục với bài về lưu hồ sơ khách và lưu trú. Với công việc hàng tháng, tiếp tục bài về xử lý phí cho đô thị.</p>
-            <ul class="kb-article-link-list">
-              <li><a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Cách lưu hồ sơ khách và lưu trú trong Superhostem</a></li>
-              <li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Cách xử lý phí hàng tháng cho đô thị trong Superhostem</a></li>
-            </ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html">
-  <span>trước đó</span>
-  <strong>Cách thêm tài sản của bạn</strong>
-</a>
-
-<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">
-  <span>Tiếp theo</span>
-  <strong>Nghĩa vụ pháp lý cơ bản của chủ nhà tại Cộng hòa Séc</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Tự động hóa liên lạc với khách</h1>
+      <p class="kb-article-lead">Chọn một kênh gửi và một tin đầu tiên. Phân biệt email Superhostem và tin trong nền tảng đặt phòng.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Kênh</li>
+<li><span class="kb-article-flow-number">2</span>Liên kết và nội dung</li>
+<li><span class="kb-article-flow-number">3</span>Thời gian</li>
+<li><span class="kb-article-flow-number">4</span>Kết quả</li></ol><section><h2 id="email">Muốn gửi email từ Superhostem</h2><p>Mở Tự động hóa tin nhắn và phần email ở chỗ ở. Chọn sự kiện, thời gian, người nhận và ngôn ngữ. Kiểm tra xem trước cho đặt phòng cụ thể và lịch sử gửi.</p><p><a href='./jak-nastavit-automaticke-emaily.html'>Thiết lập email tự động từng bước</a></p></section>
+<section><h2 id="platform">Muốn gửi tin Airbnb hoặc Booking</h2><p>Tạo mẫu hoặc tin lên lịch trong cài đặt của nền tảng. Chèn đúng liên kết chỗ ở Superhostem và gán đúng tin đăng. Quyền truy cập đặt phòng qua liên kết phải bắt đầu chậm nhất lúc gửi; không bắt buộc số ngày giống hệt.</p></section>
+<section><h2 id="check">Trước khi bật tự động hóa</h2><ul><li>Liên kết và mẫu thuộc đúng chỗ ở.</li><li>Hướng dẫn rõ: xác nhận kỳ, điền đăng ký hay mở hướng dẫn.</li><li>Đã kiểm tra múi giờ, đặt sát giờ và thông tin liên hệ.</li><li>Hai quy tắc không gửi cùng tin.</li></ul><p>Bắt đầu bằng gửi thủ công biểu mẫu cho một kỳ. Bật tự động sau khi kiểm tra trọn hành trình rồi xác minh việc gửi thật.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-nastavit-automaticke-emaily.html"><span>Hướng dẫn liên quan</span><strong>Thiết lập email tự động trong Superhostem</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Hướng dẫn liên quan</span><strong>Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách</strong></a>
+<a class="kb-article-related-card" href="./jak-vytvorit-pruvodce-pro-hosty.html"><span>Hướng dẫn liên quan</span><strong>Chuẩn bị hướng dẫn cho khách</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -194,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -130,6 +135,8 @@
 <li>fee breakdown</li>
 <li>complete financial data</li>
 </ul>
+<section id="reviewed-workflow"><h2>Import or export?</h2><p>Use <a href="./jak-funguje-napojeni-pres-ical.html">iCal connection</a> to load dates into Superhostem. Use <a href="./kalendar-airbnb-v-telefonu.html">calendar app subscriptions</a> to display Superhostem stays in a personal calendar. These are different directions.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Related links</h2>
@@ -172,6 +179,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

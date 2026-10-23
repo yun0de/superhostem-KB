@@ -22,14 +22,19 @@
     <title>Trung tâm trợ giúp | Superhostem.cz</title>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-help">
     <header class="kb-help-header">
@@ -115,8 +120,9 @@
           <div class="kb-help-popular" aria-label="Tìm kiếm phổ biến">
             <span>Thường tìm:</span>
             <a href="./jak-funguje-napojeni-pres-ical.html">iCal</a>
-            <a href="./jak-funguje-poplatek-z-pobytu.html">Phí lưu trú</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Tự động hóa</a>
+            <a href="./jak-funguje-poplatek-z-pobytu.html">Đăng ký phí lưu trú địa phương</a>
+            <a href="./jak-funguji-automatizace-v-superhostem.html">Tự động hóa liên lạc với khách</a>
+              <a href="./jak-nastavit-automaticke-emaily.html">Thiết lập email tự động trong Superhostem</a>
           </div>
         </div>
       </section>
@@ -137,14 +143,16 @@
               <span>1</span>
               <h3>Làm quen với tài khoản</h3>
               <p>Quý khách xem các khu vực chính và biết nên bắt đầu từ đâu sau lần đăng nhập đầu tiên.</p>
-              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Mở hướng dẫn</a>
+              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên</a>
             </article>
 
             <article class="kb-help-step" data-search-text="nová nemovitost přidat první">
               <span>2</span>
               <h3>Chỗ ở đầu tiên</h3>
               <p>Chuẩn bị nền tảng cho đặt phòng, lịch và các thiết lập tiếp theo.</p>
-              <a href="./jak-pridat-novou-nemovitost.html">Thêm chỗ ở</a>
+              <a href="./jak-pridat-novou-nemovitost.html">Thêm chỗ ở của bạn</a>
+              <a href="./jak-spravovat-hotel-a-pokoje.html">Quản lý khách sạn và phòng</a>
+              <a href="./jak-zverejnit-web-ubytovani.html">Chuẩn bị website chỗ ở riêng</a>
             </article>
 
             <article class="kb-help-step" data-search-text="ical kalendář napojení rezervací automatizace">
@@ -173,12 +181,14 @@
               <p>Kết nối iCal, đặt phòng, chi tiết lưu trú và cách làm việc với lịch Airbnb.</p>
               <ul>
                 <li><a href="./jak-funguje-napojeni-pres-ical.html">Kết nối iCal hoạt động thế nào</a></li>
-                <li><a href="./jak-sdilet-webovy-kalendar-odkazem.html">Cách chia sẻ lịch web bằng liên kết</a></li>
-                <li><a href="./jak-funguje-prehled-rezervaci.html">Tổng quan đặt phòng hoạt động thế nào</a></li>
-                <li><a href="./co-vsechno-najdu-v-detailu-rezervace.html">Trong chi tiết đặt phòng có những gì</a></li>
-                <li><a href="./jak-funguje-email-forwarding.html">Chuyển tiếp email</a></li>
+                <li><a href="./jak-sdilet-webovy-kalendar-odkazem.html">Chia sẻ lịch web bằng liên kết</a>
+              <a href="./jak-ridit-uklid.html">Cấp quyền cho đội dọn dẹp và kiểm tra hoàn tất</a></li>
+                <li><a href="./jak-funguje-prehled-rezervaci.html">Sử dụng tổng quan đặt phòng</a>
+              <a href="./jak-pridat-rucni-rezervaci.html">Tạo đặt phòng thủ công</a></li>
+                <li><a href="./co-vsechno-najdu-v-detailu-rezervace.html">Giải quyết công việc trong chi tiết đặt phòng</a></li>
+                <li><a href="./jak-funguje-email-forwarding.html">Thiết lập chuyển tiếp email đặt phòng</a></li>
                 <li><a href="./proc-vest-evidenci-hostu-a-pobytu.html">Sổ đăng ký khách lưu trú: vì sao cần lưu hồ sơ</a></li>
-                <li><a href="./kalendar-airbnb-v-telefonu.html">Vào ứng dụng lịch</a></li>
+                <li><a href="./kalendar-airbnb-v-telefonu.html">Thêm đặt phòng vào ứng dụng lịch</a></li>
               </ul>
             </article>
 
@@ -186,17 +196,21 @@
               <div class="kb-help-topic-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.38a2 2 0 0 0-.73-2.73l-.15-.09a2 2 0 0 1-1-1.74v-.51a2 2 0 0 1 1-1.72l.15-.1a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2Z"></path><circle cx="12" cy="12" r="3"></circle></svg></div>
               <h3>Tài khoản và cài đặt</h3>
               <p>Làm quen tài khoản và chỉnh sửa hồ sơ cơ bản.</p>
-              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Đăng nhập lần đầu</a>
-              <a href="./jak-upravit-profil-v-nastaveni.html">Chỉnh sửa hồ sơ</a>
+              <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên</a>
+              <a href="./jak-upravit-profil-v-nastaveni.html">Sửa hồ sơ trong cài đặt</a>
             </article>
 
             <article class="kb-help-topic" data-search-text="komunikace hosté automatizace evidence">
               <div class="kb-help-topic-icon kb-help-topic-icon-blue" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></div>
               <h3>Giao tiếp với khách</h3>
               <p>Tin nhắn, tự động hóa và hồ sơ vận hành.</p>
-              <a href="./jak-funguji-automatizace-v-superhostem.html">Tự động hóa</a>
-              <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Hồ sơ khách và thời gian lưu trú trong Superhostem</a>
-              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Công việc hằng tháng với địa phương</a>
+              <a href="./jak-funguji-automatizace-v-superhostem.html">Tự động hóa liên lạc với khách</a>
+              <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Lưu hồ sơ khách và kỳ lưu trú trong Superhostem</a>
+              <a href="./jak-vytvorit-pruvodce-pro-hosty.html">Chuẩn bị hướng dẫn cho khách</a>
+              <a href="./jak-pouzit-chytre-zamky.html">Chuẩn bị khóa thông minh cho đặt phòng</a>
+              <a href="./jak-poslat-online-check-in.html">Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách</a>
+              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Kiểm tra và nộp phí cho địa phương</a>
+              <a href="./jak-vystavit-fakturu-z-rezervace.html">Xuất hóa đơn từ đặt phòng</a>
             </article>
 
             <article class="kb-help-topic" data-search-text="legislativa poplatky dph ubyport povinnosti superhostem">
@@ -204,11 +218,12 @@
               <h3>Pháp lý và nghĩa vụ</h3>
               <p>Các nghĩa vụ của host tại Séc và công việc hằng tháng.</p>
               <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Nghĩa vụ của host</a>
-              <a href="./jak-funguje-poplatek-z-pobytu.html">Cách đăng ký phí lưu trú địa phương</a>
-              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Công việc hằng tháng với địa phương</a>
+              <a href="./jak-funguje-poplatek-z-pobytu.html">Đăng ký phí lưu trú địa phương</a>
+              <a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Kiểm tra và nộp phí cho địa phương</a>
               <a href="./jak-se-zaregistrovat-do-ubyportu.html">Đăng ký Ubyport</a>
+              <a href="./jak-odeslat-hosty-do-ubyportu.html">Gửi khách lên Ubyport và kiểm tra kết quả</a>
               <a href="./jak-resit-dph-u-airbnb-a-booking.html">VAT với Airbnb và Booking.com</a>
-              <a href="./co-je-superhostem-a-co-vam-pomuze-resit.html">Superhostem là gì</a>
+              <a href="./co-je-superhostem-a-co-vam-pomuze-resit.html">Superhostem giúp bạn giải quyết gì</a>
             </article>
 
             <article class="kb-help-topic kb-help-topic-alert" data-search-text="sự cố lịch không tải thiếu đặt phòng email forwarding gmail xác nhận địa chỉ bộ lọc quy tắc faq thuật ngữ ical chặn ngày">
@@ -217,9 +232,9 @@
               <p>Thuật ngữ, câu hỏi thường gặp và lỗi trong vận hành.</p>
               <a href="./co-je-ical.html">iCal là gì</a>
               <a href="./jaky-je-rozdil-mezi-rezervaci-a-blokaci-terminu.html">Đặt phòng và chặn ngày khác nhau thế nào</a>
-              <a href="./co-delat-kdyz-se-kalendar-nenacita.html">Khi lịch không tải</a>
-              <a href="./co-delat-kdyz-chybi-rezervace.html">Khi thiếu đặt phòng</a>
-              <a href="./co-delat-kdyz-nefunguje-email-forwarding.html">Khi email forwarding không hoạt động</a>
+              <a href="./co-delat-kdyz-se-kalendar-nenacita.html">Làm gì khi lịch không tải</a>
+              <a href="./co-delat-kdyz-chybi-rezervace.html">Làm gì khi thiếu đặt phòng</a>
+              <a href="./co-delat-kdyz-nefunguje-email-forwarding.html">Khắc phục chuyển tiếp email đặt phòng</a>
             </article>
           </div>
         </section>
@@ -278,6 +293,6 @@
     </footer>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

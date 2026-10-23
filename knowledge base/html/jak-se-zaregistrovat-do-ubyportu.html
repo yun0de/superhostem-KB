@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -176,6 +181,8 @@ Děkuji.</pre><button class="kb-data-message-copy" type="button" data-copy-targe
 <aside class="kb-article-callout kb-article-callout-muted">
         <p><strong>Aktualizováno:</strong> 29. 3. 2026. Konkrétní způsob podání, adresy a názvy polí si před odesláním vždy ověřte přímo v aktuálním formuláři Ubyport a v pokynech Policie ČR.</p>
       </aside>
+<section id="reviewed-workflow"><h2>Máte přístupy? Ověřte skutečné hlášení</h2><p>Existující platné přístupy webových služeb při přechodu z jiného systému použijte dál. Nevytvářejte zbytečně druhou registraci. Po nastavení postupujte podle <a href="./jak-odeslat-hosty-do-ubyportu.html">odeslání hostů a kontroly výsledku</a>. Aktuální formulář a způsoby podání ověřte přímo na <a href="https://ubyport.pcr.cz/UbyPort/Home/" target="_blank" rel="noreferrer">portálu Ubyport</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Související odkazy</h2>
@@ -218,6 +225,6 @@ Děkuji.</pre><button class="kb-data-message-copy" type="button" data-copy-targe
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

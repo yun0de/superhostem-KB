@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-sdilet-webovy-kalendar-odkazem.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-sdilet-webovy-kalendar-odkazem.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html" />
-    <meta name="description" content="Cách chia sẻ lịch web bằng liên kết – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Cách chia sẻ lịch web bằng liên kết" />
-    <meta property="og:description" content="Cách chia sẻ lịch web bằng liên kết – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <meta name="description" content="Chia sẻ chỗ ở cần thiết cho đội hoặc cộng tác viên tạm thời, chọn thông tin hiển thị và thu hồi quyền khi cần." />
+    <meta property="og:title" content="Chia sẻ lịch web bằng liên kết" />
+    <meta property="og:description" content="Chia sẻ chỗ ở cần thiết cho đội hoặc cộng tác viên tạm thời, chọn thông tin hiển thị và thu hồi quyền khi cần." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-sdilet-webovy-kalendar-odkazem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Cách chia sẻ lịch web bằng liên kết" />
-    <meta name="twitter:description" content="Cách chia sẻ lịch web bằng liên kết – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Cách chia sẻ lịch web bằng liên kết</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Cách chia sẻ lịch web bằng liên kết","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-sdilet-webovy-kalendar-odkazem.html"}}
-    </script>
+    <meta name="twitter:title" content="Chia sẻ lịch web bằng liên kết" />
+    <meta name="twitter:description" content="Chia sẻ chỗ ở cần thiết cho đội hoặc cộng tác viên tạm thời, chọn thông tin hiển thị và thu hồi quyền khi cần." />
+    <title>Chia sẻ lịch web bằng liên kết | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Chia sẻ lịch web bằng liên kết","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-sdilet-webovy-kalendar-odkazem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,51 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Bất động sản và lịch</p>
-          <h1 class="kb-article-title">Cách chia sẻ lịch web bằng liên kết</h1>
-          <p class="kb-article-lead">Dùng liên kết lịch web cho người cần xem lịch đặt phòng nhưng không nên có quyền truy cập tài khoản Superhostem của bạn. Thường là đội dọn dẹp, quản lý, chủ sở hữu hoặc đối tác bên ngoài.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./jak-funguje-napojeni-pres-ical.html">Bài viết trước</a>
-            <a href="./kalendar-airbnb-v-telefonu.html">Bài tiếp theo →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Khi nào nên dùng</strong>
-          <p>
-            Dùng khi người nhận chỉ cần mở liên kết trong trình duyệt và xem ngày.
-            Họ không cần cài ứng dụng lịch và không cần tài khoản Superhostem.
-            Cách này cũng phù hợp khi bạn chỉ muốn chia sẻ lịch trong thời gian ngắn.
-          </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block"><h2>Lịch web chia sẻ dùng để làm gì</h2><p>Bạn tạo một liên kết lịch riêng. Người có liên kết sẽ thấy lịch web với đúng những thông tin bạn cho phép hiển thị.</p><ul><li>đội dọn dẹp biết khi nào cần chuẩn bị căn hộ</li><li>người quản lý xem được lịch mà không cần quyền quản trị</li><li>chủ sở hữu hoặc đối tác xem đặt phòng trong trình duyệt</li><li>bạn có thể hủy liên kết cũ bất cứ lúc nào</li></ul></section>
-            <section class="kb-article-topic-block"><h2>Khi lịch thiếu thông tin</h2><aside class="kb-article-callout kb-article-callout-muted">Nếu lịch chưa hiển thị tên khách, số khách, giá hoặc chi tiết khác, Superhostem chưa có dữ liệu đó để đọc. Hãy bật đồng bộ email đặt phòng để các thông tin này được cập nhật nhanh. Nếu không bật, thông tin phải được nhập thủ công bởi khách hoặc bởi bạn trong phần quản trị.</aside></section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted"><h2>Bảo mật</h2><ul><li>Bất kỳ ai có liên kết đều có thể mở.</li><li>Không đăng liên kết trong nhóm công khai hoặc tài liệu công khai.</li><li>Chỉ chia sẻ các trường dữ liệu người ngoài thật sự cần.</li><li>Thường xuyên hủy các liên kết cũ hoặc không còn dùng.</li></ul></section>
-            <section class="kb-article-topic-block"><h2>Khác gì so với ứng dụng lịch</h2><p>Lịch web là một liên kết mở trong trình duyệt. Người nhận không cần Apple Calendar, Google Calendar hoặc Outlook. Kết nối ứng dụng lịch phù hợp hơn khi ai đó muốn đưa ngày vào lịch cá nhân của họ.</p><a class="kb-article-next-cta" href="./kalendar-airbnb-v-telefonu.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"></rect><path d="M12 18h.01"></path></svg></span><span><strong>Tôi muốn lịch trong ứng dụng</strong><small>Hướng dẫn cho Apple Calendar, Google Calendar và các ứng dụng hỗ trợ iCal.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a><a class="kb-article-next-cta" href="./jak-funguje-email-forwarding.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span><span><strong>Tự động điền thông tin từ email</strong><small>Đồng bộ email đọc chi tiết đặt phòng mà không cần nhập tay.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Liên quan</span>
-  <strong>Kết nối iCal hoạt động thế nào</strong>
-</a>
-
-<a class="kb-article-related-card" href="./kalendar-airbnb-v-telefonu.html">
-  <span>Tiếp theo</span>
-  <strong>Vào ứng dụng lịch</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Chia sẻ lịch web bằng liên kết</h1>
+      <p class="kb-article-lead">Chia sẻ chỗ ở cần thiết cho đội hoặc cộng tác viên tạm thời, chọn thông tin hiển thị và thu hồi quyền khi cần.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Chọn chỗ ở</li>
+<li><span class="kb-article-flow-number">2</span>Chọn thông tin</li>
+<li><span class="kb-article-flow-number">3</span>Chia sẻ</li>
+<li><span class="kb-article-flow-number">4</span>Quản lý quyền</li></ol><section><h2 id="setup">Tạo liên kết có tên</h2><p>Mở Tổng quan web trong Xuất iCal. Đặt tên và chọn chỗ ở. Chọn quyền xem tên khách, số người, giá, chỗ ở và trạng thái đặt phòng theo tùy chọn có sẵn. Với nhiều chỗ ở, chọn mặc định lịch hoặc Gantt phù hợp.</p></section>
+<section><h2 id="access">Kiểm tra và chia sẻ</h2><p>Xem trước, tạo liên kết rồi gửi toàn bộ URL cho người nhận. Không cần tài khoản người nhận hoặc cài ứng dụng lịch. Ai có liên kết đều xem được phần được phép; không đăng công khai.</p></section>
+<section><h2 id="changes">Sửa hoặc kết thúc quyền</h2><p>Sửa tùy chọn hiển thị có sẵn ở liên kết đã tạo và kiểm tra trang chia sẻ. Thu hồi quyền không dùng và tạo liên kết riêng cho từng đội. Chỉ bật chế độ dọn dẹp khi người nhận cần thực hiện công việc dọn dẹp.</p></section>
+<section><h2 id="missing">Thiếu tên khách hoặc giá</h2><p>Kiểm tra liên kết cho phép xem và dữ liệu thực sự có trong đặt phòng. iCal có thể không chứa; email đặt phòng được hỗ trợ hoặc sửa thủ công có thể bổ sung. Chuyển tiếp không bảo đảm mọi ô từ mọi email hay cập nhật ngay.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-ridit-uklid.html"><span>Hướng dẫn liên quan</span><strong>Cấp quyền cho đội dọn dẹp và kiểm tra hoàn tất</strong></a>
+<a class="kb-article-related-card" href="./kalendar-airbnb-v-telefonu.html"><span>Hướng dẫn liên quan</span><strong>Thêm đặt phòng vào ứng dụng lịch</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Hướng dẫn liên quan</span><strong>Thiết lập chuyển tiếp email đặt phòng</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -165,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

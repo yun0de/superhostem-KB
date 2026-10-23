@@ -1,29 +1,26 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Jak přidat svou nemovitost
 
-## Co tento článek řeší
+Vytvořte nemovitost ručně nebo použijte import. Nejdřív ověřte správný objekt a první rezervaci.
 
-Ukazuje dvě rychlé cesty k první nemovitosti: s připravenou iCal URL rovnou přes onboarding, nebo bez ní přes sekci `Nemovitosti`.
+1. Zvolit cestu
+2. Vyplnit údaje
+3. Uložit
+4. Ověřit pobyt
 
-## Vyberte cestu podle iCal URL
+## Máte odkaz pro import?
 
-### Máte iCal URL z portálu
+<p>Na Přehledu zvolte podporovaný zdroj a vložte údaje podle jeho polí. Pro iCal potřebujete exportní URL konkrétní nabídky. Po vytvoření zkontrolujte importované termíny; e-mail může doplnit další údaje.</p>
 
-Pokud máte iCal URL z Airbnb, Booking.com, e-Chalupy nebo jiného portálu, otevřete onboarding na stránce `Přehled`. Vyplňte `Název nemovitosti` a iCal URL, potom použijte `Vytvořit nemovitost a naimportovat rezervace`.
+## Bez importu: Nemovitosti → Přidat nemovitost
 
-### iCal URL zatím nemáte
+<p>Vyplňte název a povinná pole adresy. Adresu vyberte z nabídky a ověřte město a PSČ. Zkontrolujte kapacitu a měnu. Potvrďte vytvoření a otevřete uloženou nemovitost.</p>
 
-V levém menu otevřete `Nemovitosti`, klikněte na `Přidat nemovitost` a založte ji se základními údaji. iCal můžete doplnit později v nastavení nemovitosti.
+## Doplňte nastavení svého provozu
 
-## Co udělat po vytvoření
+<p>Podle potřeby doplňte obecní poplatek, IDUB a přístupy Ubyportu, kalendáře a časy příjezdu/odjezdu. U hotelu patří rezervace a zdroje ke konkrétnímu pokoji, nikoli ke skupinovému hotelu. Hotelové funkce musí mít účet zpřístupněné.</p>
 
-Vyberte jen kroky, které se vás týkají:
+## Ověřte první pobyt
 
-- pokud u nemovitosti řešíte místní poplatek z pobytu, pokračujte článkem `Jak funguje poplatek z pobytu`
-- pokud pro daný pobyt potřebujete Ubyport a nemáte přístupové údaje, otevřete `Jak se zaregistrovat do Ubyportu`
-- pro připojení nebo doplnění iCalu použijte `Jak funguje napojení přes iCal`
-- po importu ověřte, že se rezervace zobrazily v přehledu, podle článku `Jak funguje přehled rezervací`
-- jako třetí krok přejděte na `Kalendář a rutiny` a nastavte automatizace pro zprávy a běžný provoz
-
-## Doporučený další krok
-
-Nejdřív vytvořte nemovitost. Pokud už máte iCal URL, navazujte importem; ostatní nastavení doplňujte podle toho, co pro danou nemovitost skutečně používáte.
+<p>Zkontrolujte nemovitost, termín a počet hostů v detailu první rezervace. Teprve pak pokračujte check-inem a automatizacemi. Vytvoření nemovitosti samo nepřenese všechny kontaktní nebo finanční údaje.</p>

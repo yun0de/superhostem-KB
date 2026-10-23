@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html" />
-    <meta name="description" content="Hướng dẫn đăng nhập và tài khoản lần đầu – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Hướng dẫn đăng nhập và tài khoản lần đầu" />
-    <meta property="og:description" content="Hướng dẫn đăng nhập và tài khoản lần đầu – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <meta name="description" content="Bắt đầu với một chỗ ở và một đặt phòng thật. Thêm chức năng sau khi kiểm tra trọn quy trình." />
+    <meta property="og:title" content="Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên" />
+    <meta property="og:description" content="Bắt đầu với một chỗ ở và một đặt phòng thật. Thêm chức năng sau khi kiểm tra trọn quy trình." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Hướng dẫn đăng nhập và tài khoản lần đầu" />
-    <meta name="twitter:description" content="Hướng dẫn đăng nhập và tài khoản lần đầu – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Hướng dẫn đăng nhập và tài khoản lần đầu</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Hướng dẫn đăng nhập và tài khoản lần đầu","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/prvni-prihlaseni-a-orientace-v-uctu.html"}}
-    </script>
+    <meta name="twitter:title" content="Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên" />
+    <meta name="twitter:description" content="Bắt đầu với một chỗ ở và một đặt phòng thật. Thêm chức năng sau khi kiểm tra trọn quy trình." />
+    <title>Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/prvni-prihlaseni-a-orientace-v-uctu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,82 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Bắt đầu nhanh</p>
-          <h1 class="kb-article-title">Hướng dẫn đăng nhập và tài khoản lần đầu</h1>
-          <p class="kb-article-lead">Sau khi đăng nhập, phần Tổng quan sẽ mở ra. Nếu bạn chưa đăng ký bất kỳ tài sản nào, bạn sẽ thấy khối chào mừng! Hãy thiết lập thuộc tính đầu tiên của bạn.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./jak-pridat-novou-nemovitost.html">Bước tiếp theo →</a>
-          </div>
-          <div class="kb-article-intro-note">
-            <strong>Cách nhanh nhất</strong>
-            <p>Tổng quan → chọn cách bắt đầu → tạo cơ sở lưu trú → thiết lập các kết nối khác sau đó.</p>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Bạn sẽ thấy gì sau khi đăng nhập</h2>
-            <p>Sau khi đăng nhập, phần <strong>Tổng quan</strong> sẽ mở ra. Nếu chưa có cơ sở lưu trú nào, bạn sẽ thấy phần hướng dẫn thiết lập cơ sở lưu trú đầu tiên.</p>
-            <p>Trong vài phút đầu, bạn chỉ cần dùng hai nơi: <strong>Tổng quan</strong>, nơi chọn cách bắt đầu, và <strong>Cơ sở lưu trú</strong>, nơi hoàn tất cơ sở lưu trú đầu tiên.</p>
-            <p>Hãy để <strong>Đặt chỗ</strong>, báo cáo, nhập dữ liệu, xuất iCal và cài đặt cho sau này. Chúng sẽ hữu ích sau khi bạn đã tạo cơ sở lưu trú.</p>
-
-            <section class="kb-setup-situation" aria-labelledby="setup-situation-title">
-              <div class="kb-setup-situation-heading">
-                <span>Trước khi tạo cơ sở lưu trú</span>
-                <h2 id="setup-situation-title">Trước khi tiếp tục, hãy kiểm tra các yêu cầu pháp lý và đăng ký</h2>
-                <p>Không phải mọi chủ nhà đều cần xử lý cùng một đăng ký, khoản thanh toán hoặc báo cáo. Trước tiên, hãy kiểm tra từng bước có áp dụng cho bạn không.</p>
-              </div>
-              <ol class="kb-setup-situation-flow" aria-label="Thiết lập vận hành tiếp theo">
-                <li><span class="kb-setup-situation-number">1</span><strong>Sẵn sàng pháp lý</strong><small>Kiểm tra quy định cho cơ sở của bạn.</small></li>
-                <li><span class="kb-setup-situation-number">2</span><strong>Ubyport</strong><small>Chỉ khi áp dụng cho bạn.</small></li>
-                <li><span class="kb-setup-situation-number">3</span><strong>Phí lưu trú địa phương</strong><small>Chỉ khi địa phương của bạn áp dụng.</small></li>
-                <li><span class="kb-setup-situation-number">4</span><strong>Kết nối vận hành</strong><small>Thiết lập iCal và email sau.</small></li>
-              </ol>
-              <p class="kb-setup-situation-note">Quy định, miễn trừ, thời hạn, biểu mẫu và cách báo cáo khác nhau theo tình huống và địa phương. Superhostem không thay thế việc xác minh với cơ quan có thẩm quyền hoặc chuyên gia.</p>
-              <div class="kb-setup-situation-cards">
-                <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Chưa chắc?</span><strong>Nghĩa vụ nào áp dụng cho tôi?</strong><small>Bắt đầu với phần tổng quan cơ bản cho chủ nhà.</small></a>
-                <a href="./jak-se-zaregistrovat-do-ubyportu.html"><span>Nếu áp dụng</span><strong>Tôi thiếu Ubyport hoặc IDUB</strong><small>Tiếp tục với thông tin đăng ký và truy cập.</small></a>
-                <a href="./jak-funguje-poplatek-z-pobytu.html"><span>Nếu áp dụng</span><strong>Tôi thiếu thông tin phí địa phương</strong><small>Kiểm tra đăng ký và thông tin thanh toán, báo cáo.</small></a>
-                <a href="./jak-funguje-napojeni-pres-ical.html"><span>Chỉ sau đó</span><strong>Kết nối dữ liệu vận hành</strong><small>Tiếp tục với iCal; thêm chuyển tiếp email sau nếu cần.</small></a>
-              </div>
-            </section>
-            <h2>Tạo cơ sở lưu trú đầu tiên</h2>
-            <p>Sau khi đã kiểm tra các yêu cầu pháp lý và đăng ký, hãy chọn cách bắt đầu dựa trên việc bạn đã có URL iCal từ cổng đặt phòng như Airbnb, Booking.com hoặc e‑Chalupy hay chưa:</p>
-            <ol>
-              <li><strong>Đã có URL iCal?</strong> Chọn <strong>Nhập từ lịch Airbnb</strong> và dán URL từ cổng bạn đang dùng.</li>
-              <li><strong>Chưa có URL iCal?</strong> Chọn <strong>Tạo cơ sở lưu trú thủ công</strong>.</li>
-            </ol>
-            <p>Hãy thiết lập <strong>tự động chuyển tiếp email</strong> sau, khi cơ sở lưu trú đã tồn tại. Đây là nguồn dữ liệu bổ sung, không phải bước đầu tiên bắt buộc.</p>
-            <a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html">
-              <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span>
-              <span>
-                <strong>Cách thêm cơ sở lưu trú mới</strong>
-                <small>Tiếp tục khi bạn đã kiểm tra các yêu cầu pháp lý và đăng ký.</small>
-              </span>
-              <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-            </a>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html">
-  <span>Tiếp theo</span>
-  <strong>Cách thêm tài sản của bạn</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Tiếp theo</span>
-  <strong>iCal hoạt động như thế nào</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-upravit-profil-v-nastaveni.html">
-  <span>Tài khoản</span>
-  <strong>Cách chỉnh sửa hồ sơ</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên</h1>
+      <p class="kb-article-lead">Bắt đầu với một chỗ ở và một đặt phòng thật. Thêm chức năng sau khi kiểm tra trọn quy trình.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Kiểm tra pháp lý</li>
+<li><span class="kb-article-flow-number">2</span>Chỗ ở</li>
+<li><span class="kb-article-flow-number">3</span>Đặt phòng</li>
+<li><span class="kb-article-flow-number">4</span>Check-in đầu</li></ol><section><h2 id="legal">Trước khi kinh doanh lưu trú</h2><p>Kiểm tra quyền vận hành, phí địa phương, hồ sơ khách và nghĩa vụ báo khách nước ngoài. Dùng lại đăng ký hiện có nếu đã đăng ký. Tạo tài khoản không xác nhận đủ điều kiện pháp lý.</p><p><a href='./zakladni-legislativni-povinnosti-hostitele-v-cr.html'>Kiểm tra điều kiện pháp lý và đăng ký</a></p></section>
+<section><h2 id="setup">Tạo một chỗ ở</h2><p>Ở Tổng quan, chọn nguồn bạn thật sự dùng. Nếu có iCal, nhập URL xuất của đúng tin đăng và tên chỗ ở. Nếu không nhập, tạo thủ công trong Chỗ ở. Hướng dẫn tùy theo nguồn, không chỉ Airbnb.</p></section>
+<section><h2 id="first-stay">Kiểm tra đặt phòng đầu tiên</h2><p>Mở một kỳ trong Đặt phòng và kiểm tra chỗ ở, ngày, số khách. Thêm thủ công khách trực tiếp. Gửi biểu mẫu, kiểm tra hoàn tất rồi kiểm tra Ubyport nếu cần.</p><p>Thêm chuyển tiếp email, hướng dẫn khách, dọn dẹp và tự động hóa dần. Thử mỗi chức năng với một kỳ trước.</p></section><a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Thêm chỗ ở của bạn</strong><small>Bước tiếp theo</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html"><span>Hướng dẫn liên quan</span><strong>Thêm chỗ ở của bạn</strong></a>
+<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Hướng dẫn liên quan</span><strong>Nghĩa vụ pháp lý cơ bản của chủ nhà tại Cộng hòa Séc</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Hướng dẫn liên quan</span><strong>Gửi biểu mẫu check-in trực tuyến và kiểm tra từng khách</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -196,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

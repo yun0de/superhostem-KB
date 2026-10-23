@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-upravit-profil-v-nastaveni.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-upravit-profil-v-nastaveni.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html" />
-    <meta name="description" content="Cách chỉnh sửa hồ sơ trong cài đặt – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Cách chỉnh sửa hồ sơ trong cài đặt" />
-    <meta property="og:description" content="Cách chỉnh sửa hồ sơ trong cài đặt – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <meta name="description" content="Kiểm tra thông tin cá nhân và ngôn ngữ tài khoản. Quản lý chỗ ở và thông tin hóa đơn ở phần tương ứng." />
+    <meta property="og:title" content="Sửa hồ sơ trong cài đặt" />
+    <meta property="og:description" content="Kiểm tra thông tin cá nhân và ngôn ngữ tài khoản. Quản lý chỗ ở và thông tin hóa đơn ở phần tương ứng." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-upravit-profil-v-nastaveni.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Cách chỉnh sửa hồ sơ trong cài đặt" />
-    <meta name="twitter:description" content="Cách chỉnh sửa hồ sơ trong cài đặt – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Cách chỉnh sửa hồ sơ trong cài đặt</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Cách chỉnh sửa hồ sơ trong cài đặt","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-upravit-profil-v-nastaveni.html"}}
-    </script>
+    <meta name="twitter:title" content="Sửa hồ sơ trong cài đặt" />
+    <meta name="twitter:description" content="Kiểm tra thông tin cá nhân và ngôn ngữ tài khoản. Quản lý chỗ ở và thông tin hóa đơn ở phần tương ứng." />
+    <title>Sửa hồ sơ trong cài đặt | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Sửa hồ sơ trong cài đặt","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-upravit-profil-v-nastaveni.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,77 +103,16 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Trung tâm trợ giúp</p>
-          <h1 class="kb-article-title">Cách chỉnh sửa hồ sơ trong cài đặt</h1>
-          <p class="kb-article-lead">Trong cài đặt hồ sơ, bạn chỉnh sửa thông tin tài khoản cơ bản của mình, chẳng hạn như tên, điện thoại hoặc ngôn ngữ.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./index.html#knihovna">Thư viện chủ đề</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Tìm hồ sơ ở đâu</h2>
-
-<ol>
-<li>trong menu bên trái bấm vào <strong>Cài đặt</strong>
-</li>
-<li>trang mở ra <strong>Cài đặt</strong>
-</li>
-<li>giữ dấu trang <strong>Hồ sơ</strong>
-</li>
-</ol>
-
-<h2>Những gì có sẵn trong hồ sơ</h2>
-
-<ul>
-<li>Tên và họ</li>
-<li>Email</li>
-<li>Điện thoại</li>
-<li>Ngôn ngữ</li>
-<li>Hiển thị biểu ngữ xuất iCal</li>
-</ul>
-
-<h2>Cách chỉnh sửa hồ sơ từng bước</h2>
-
-<ol>
-<li>mở <strong>Cài đặt</strong>
-</li>
-<li>hãy chắc chắn rằng bạn đang ở trên tab <strong>Hồ sơ</strong>
-</li>
-<li>chỉnh sửa trường <strong>Tên và họ</strong>
-</li>
-<li>thêm hoặc sửa <strong>Điện thoại</strong>
-</li>
-<li>kiểm tra <strong>Ngôn ngữ</strong>
-</li>
-<li>điều chỉnh tùy chọn khi cần thiết <strong>Hiển thị biểu ngữ xuất iCal</strong>
-</li>
-<li>bấm vào <strong>Lưu thay đổi</strong>
-</li>
-</ol>
-
-<aside class="kb-article-callout kb-article-note">
-<strong>Một lưu ý quan trọng</strong>
-<p>Email có thể nói rằng nó được quản lý thông qua tài khoản của bạn, vì vậy nó có thể không thể chỉnh sửa được trực tiếp trong biểu mẫu này.</p>
-</aside>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Thư viện</span>
-  <strong>Thư viện chủ đề</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Sửa hồ sơ trong cài đặt</h1>
+      <p class="kb-article-lead">Kiểm tra thông tin cá nhân và ngôn ngữ tài khoản. Quản lý chỗ ở và thông tin hóa đơn ở phần tương ứng.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="profile">Cài đặt → Hồ sơ</h2><p>Mở Cài đặt và Hồ sơ. Sửa các ô tên, điện thoại và ngôn ngữ có sẵn rồi lưu. Kiểm tra giá trị đã lưu. Nếu không sửa được email, dùng quản lý tài khoản hoặc liên hệ hỗ trợ.</p></section>
+<section><h2 id="difference">Hồ sơ không phải cài đặt vận hành</h2><p>Sửa hồ sơ cá nhân không tự đổi địa chỉ chỗ ở, tài khoản địa phương, Ubyport hoặc thông tin trên mọi chứng từ đã xuất. Kiểm tra ở chức năng tương ứng. Nếu dùng tổ chức, xác nhận tổ chức đang chọn.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html"><span>Hướng dẫn liên quan</span><strong>Đăng nhập lần đầu: từ chỗ ở đến kỳ lưu trú đầu tiên</strong></a>
+<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html"><span>Hướng dẫn liên quan</span><strong>Thêm chỗ ở của bạn</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -191,6 +133,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

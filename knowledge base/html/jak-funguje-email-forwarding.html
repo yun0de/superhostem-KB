@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-email-forwarding.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-email-forwarding.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html" />
-    <meta name="description" content="Jak funguje email forwarding – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Jak funguje email forwarding" />
-    <meta property="og:description" content="Jak funguje email forwarding – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Podporované rezervační e-maily mohou doplnit jméno, počet hostů, cenu a další údaje, které samotný iCal nemá." />
+    <meta property="og:title" content="Jak nastavit přeposílání rezervačních e-mailů" />
+    <meta property="og:description" content="Podporované rezervační e-maily mohou doplnit jméno, počet hostů, cenu a další údaje, které samotný iCal nemá." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Jak funguje email forwarding" />
-    <meta name="twitter:description" content="Jak funguje email forwarding – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak funguje email forwarding</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak funguje email forwarding","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html"}}
-    </script>
+    <meta name="twitter:title" content="Jak nastavit přeposílání rezervačních e-mailů" />
+    <meta name="twitter:description" content="Podporované rezervační e-maily mohou doplnit jméno, počet hostů, cenu a další údaje, které samotný iCal nemá." />
+    <title>Jak nastavit přeposílání rezervačních e-mailů | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak nastavit přeposílání rezervačních e-mailů","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-email-forwarding.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,92 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Komunikace a automatizace</p>
-          <h1 class="kb-article-title">Jak funguje email forwarding</h1>
-          <p class="kb-article-lead">Email forwarding vám pomůže dostat do Superhostem údaje z potvrzovacích emailů k rezervacím. Díky tomu se mohou správně doplnit rezervace, částky i další informace o pobytu.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-            <a href="./jak-funguji-automatizace-v-superhostem.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <nav class="kb-platform-tabs" aria-label="Vyberte rezervační platformu">
-              <a class="kb-platform-tab" href="#airbnb-forwarding">Airbnb</a>
-              <a class="kb-platform-tab" href="#booking-forwarding">Booking.com</a>
-            </nav>
-            <h2>Kde forwarding najdete</h2>
-<p>
-        Přihlaste se do Superhostem a otevřete stránku <strong>Přehled</strong>.
-        V úvodní části najdete blok <strong>Automatické přeposílání emailů</strong> s unikátní adresou pro váš účet.
-      </p>
-<h2>Jak postupovat</h2>
-<ol>
-        <li>přihlaste se do Superhostem</li>
-        <li>v levém menu otevřete <strong>Přehled</strong>
-</li>
-        <li>najděte blok <strong>Automatické přeposílání emailů</strong>
-</li>
-        <li>zkopírujte zobrazenou přeposílací adresu</li>
-        <li>vyberte níže postup pro Airbnb nebo Booking.com a nastavte automatické přeposílání na tuto adresu</li>
-        <li>pošlete si jeden potvrzovací email jako test a ověřte, že se data v Superhostem doplnila správně</li>
-      </ol>
-<h2 id="airbnb-forwarding">Airbnb</h2>
-<p>V Gmailu vytvořte filtr pro potvrzovací emaily Airbnb a jako akci nastavte přeposlání na unikátní adresu ze Superhostem.</p>
-<h2 id="booking-forwarding">Booking.com</h2>
-<p>Pro Booking.com stačí v Gmailu vytvořit filtr a do pole <strong>Od</strong> zadat přesně <code>@booking.com</code>. Jako akci filtru vyberte přeposlání na unikátní adresu ze Superhostem. Díky tomu se přepošlou rezervační emaily odeslané z domény Booking.com.</p>
-<aside class="kb-article-callout"><strong>Gmail filtr pro Booking.com:</strong> pole <strong>Od</strong> musí obsahovat <code>@booking.com</code>.</aside>
-<h2>S čím vám forwarding pomůže</h2>
-<p>
-        Z přeposlaných potvrzovacích emailů může Superhostem doplnit informace, které potřebujete pro práci s rezervacemi a financemi.
-      </p>
-<ul>
-        <li>cenu rezervace</li>
-        <li>poplatky a další částky</li>
-        <li>identifikaci rezervace</li>
-        <li>doplňující informace o hostovi nebo pobytu</li>
-      </ul>
-<h2>Návody přímo v aplikaci</h2>
-<p>V bloku pro forwarding najdete i rychlé návody pro nejběžnější emailové schránky.</p>
-<ul>
-        <li>Nastavení automatického přeposílání v Gmailu</li>
-        <li>Nastavení automatického přeposílání v Seznam.cz</li>
-      </ul>
-<h2>Co je dobré si pohlídat</h2>
-<ul>
-        <li>přeposílají se opravdu potvrzovací emaily k rezervacím z Airbnb nebo Booking.com</li>
-        <li>Booking.com filtr má v poli <strong>Od</strong> hodnotu <code>@booking.com</code></li>
-        <li>používáte přesně tu přeposílací adresu, kterou vidíte ve svém účtu</li>
-        <li>po nastavení jste provedli alespoň jeden test</li>
-      </ul>
-<h2>Pokud máte na jednom Airbnb účtu více bytů</h2>
-<p>
-        Pokud máte pod jedním Airbnb účtem více bytů, nové byty se mohou do Superhostem přidat automaticky
-        ve chvíli, kdy dorazí nová rezervace a její potvrzovací email se přepošle na vaši forwarding adresu.
-      </p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html">
-  <span>Další</span>
-  <strong>Jak automatizovat komunikace s hosty</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak nastavit přeposílání rezervačních e-mailů</h1>
+      <p class="kb-article-lead">Podporované rezervační e-maily mohou doplnit jméno, počet hostů, cenu a další údaje, které samotný iCal nemá.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Adresa z účtu</li>
+<li><span class="kb-article-flow-number">2</span>Potvrzení</li>
+<li><span class="kb-article-flow-number">3</span>Filtr</li>
+<li><span class="kb-article-flow-number">4</span>Kontrola pobytu</li></ol><section><h2 id="adresa">1. Zkopírujte adresu v Superhostem</h2><p>V levém menu otevřete E-mail přeposílání. Použijte unikátní adresu svého účtu a návod pro svůj e-mailový systém. Ověřte, do kterého účtu a nemovitosti mají data patřit.</p></section>
+<section><h2 id="nastaveni">2. Nastavte ověření a filtr</h2><p>V Gmailu přidejte cílovou adresu a dokončete ověření podle postupu aplikace. Potom vytvořte filtr pro podporované rezervační zprávy Airbnb nebo Bookingu a zapněte jejich přeposílání. Pro jinou schránku použijte odpovídající návod v aplikaci.</p><p>Filtr nejdřív vyzkoušejte na skutečné zprávě. Doména odesílatele nemusí rozlišit všechny druhy e-mailů; neposílejte celou osobní schránku.</p></section>
+<section><h2 id="kontrola">3. Ověřte skutečnou rezervaci</h2><p>Použijte původní podporované potvrzení rezervace. V přehledu zkontrolujte referenci, nemovitost, termín, hosta a dostupné částky. Nezakládejte automaticky druhý pobyt, pokud první už přišel přes iCal.</p><p>Výsledek závisí na obsahu a typu e-mailu i správném přiřazení. Pokud něco chybí, použijte diagnostiku přeposílání nebo kontaktujte podporu s časem a referencí pobytu.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./co-delat-kdyz-nefunguje-email-forwarding.html"><span>Související návody</span><strong>Co dělat, když nefunguje přeposílání e-mailů</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Související návody</span><strong>Jak napojit iCal kalendář</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Související návody</span><strong>Jak poslat online check-in a zkontrolovat hosty</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -206,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

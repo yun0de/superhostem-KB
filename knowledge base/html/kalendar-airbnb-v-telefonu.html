@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/kalendar-airbnb-v-telefonu.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/kalendar-airbnb-v-telefonu.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/kalendar-airbnb-v-telefonu.html" />
-    <meta name="description" content="Do kalendářové aplikace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Do kalendářové aplikace" />
-    <meta property="og:description" content="Do kalendářové aplikace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Odebírejte rezervace v Apple Calendar, Google Calendar nebo jiné aplikaci s podporou iCal. Jednorázový import souboru se sám neaktualizuje." />
+    <meta property="og:title" content="Jak přidat rezervace do kalendářové aplikace" />
+    <meta property="og:description" content="Odebírejte rezervace v Apple Calendar, Google Calendar nebo jiné aplikaci s podporou iCal. Jednorázový import souboru se sám neaktualizuje." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/kalendar-airbnb-v-telefonu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Do kalendářové aplikace" />
-    <meta name="twitter:description" content="Do kalendářové aplikace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Do kalendářové aplikace</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Do kalendářové aplikace","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/kalendar-airbnb-v-telefonu.html"}}
-    </script>
+    <meta name="twitter:title" content="Jak přidat rezervace do kalendářové aplikace" />
+    <meta name="twitter:description" content="Odebírejte rezervace v Apple Calendar, Google Calendar nebo jiné aplikaci s podporou iCal. Jednorázový import souboru se sám neaktualizuje." />
+    <title>Jak přidat rezervace do kalendářové aplikace | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak přidat rezervace do kalendářové aplikace","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/kalendar-airbnb-v-telefonu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,154 +103,31 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Nemovitosti a kalendáře</p>
-          <h1 class="kb-article-title">Do kalendářové aplikace</h1>
-          <p class="kb-article-lead">Přidejte si rezervace ze Superhostem do Apple Calendar, Google Calendar, Outlooku nebo jiné aplikace podporující iCal. Hodí se pro osobní přehled a vlastní notifikace.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./jak-funguje-napojeni-pres-ical.html">Předchozí článek</a>
-            <a href="./jak-funguje-prehled-rezervaci.html">Další článek →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>K čemu je to dobré</strong>
-          <p>
-            Rezervace uvidíte ve své běžné kalendářové aplikaci. Pro sdílení s
-            externími lidmi je ale často lepší webový kalendář přes odkaz,
-            protože přístup můžete snadno zrušit.
-          </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block">
-<h2>Kdy použít kalendář v telefonu</h2>
-<p>
-          iCal export použijte, když chcete mít rezervace ve vlastní
-          kalendářové aplikaci. Hodí se pro osobní přehled, týmový kalendář
-          nebo rychlou kontrolu termínů bez otevírání Superhostem.
-        </p>
-<ul>
-          <li>rezervace vidíte vedle svého osobního kalendáře</li>
-          <li>můžete použít Apple Calendar, Google Calendar, Outlook nebo jinou aplikaci s podporou iCal</li>
-          <li>není potřeba instalovat žádnou další speciální aplikaci</li>
-          <li>v aplikaci si můžete nastavit vlastní upozornění a notifikace</li>
-        </ul>
-<aside class="kb-article-callout">
-          Pokud chcete větší kontrolu nad tím, komu kalendář sdílíte a jak dlouho
-          má přístup fungovat, použijte raději webový kalendář přes odkaz.
-        </aside>
-<a class="kb-article-next-cta" href="./jak-sdilet-webovy-kalendar-odkazem.html">
-          <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 4.93"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L13 19.07"></path></svg></span>
-          <span>
-            <strong>Chci sdílet kalendář webovým odkazem</strong>
-            <small>Lepší volba pro úklid, správce nebo krátkodobý externí přístup.</small>
-          </span>
-          <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-        </a>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>Co potřebujete</h2>
-<p>
-          V Superhostem zkopírujete iCal URL a vložíte ji do kalendářové
-          aplikace. Aplikace pak rezervace načítá sama. Po změně nastavení
-          exportu je potřeba zkopírovat novou URL.
-        </p>
-<aside class="kb-article-callout kb-article-callout-muted">
-          Kalendářové aplikace si data obnovují podle vlastního intervalu.
-          Změna se proto nemusí propsat okamžitě.
-        </aside>
-<aside class="kb-article-callout kb-article-callout-muted">
-          Pokud v kalendáři nevidíte jméno hosta, počet hostů, cenu nebo jiné
-          detaily, Superhostem je zatím nemá odkud načíst. Pro rychlejší
-          doplňování těchto údajů zapněte e-mailové přeposílání rezervací.
-          Bez něj je potřeba údaje doplnit ručně: buď hostem, nebo vámi v
-          administraci.
-        </aside>
-<a class="kb-article-next-cta" href="./jak-funguje-email-forwarding.html">
-          <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span>
-          <span>
-            <strong>Doplnit informace z e-mailů automaticky</strong>
-            <small>E-mailové přeposílání načítá detaily rezervací bez ručního přepisování.</small>
-          </span>
-          <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-        </a>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>iPhone: Apple Calendar</h2>
-<ol>
-          <li>V Superhostem zkopírujte iCal URL.</li>
-          <li>Na iPhonu otevřete <strong>Nastavení → Kalendář → Účty</strong>.</li>
-          <li>Zvolte <strong>Přidat účet → Jiný → Přidat odebíraný kalendář</strong>.</li>
-          <li>Vložte URL, potvrďte přes <strong>Další</strong> a uložte.</li>
-          <li>V aplikaci Kalendář si případně nastavte upozornění pro události.</li>
-        </ol>
-<div class="kb-article-media-grid">
-        <figure class="kb-article-figure kb-article-figure-phone">
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak přidat rezervace do kalendářové aplikace</h1>
+      <p class="kb-article-lead">Odebírejte rezervace v Apple Calendar, Google Calendar nebo jiné aplikaci s podporou iCal. Jednorázový import souboru se sám neaktualizuje.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Export URL</li>
+<li><span class="kb-article-flow-number">2</span>Odběr</li>
+<li><span class="kb-article-flow-number">3</span>Kontrola</li>
+<li><span class="kb-article-flow-number">4</span>Upozornění</li></ol><section><h2 id="export">Nejdřív zkopírujte export ze Superhostem</h2><p>V iCal exportu vyberte potřebné nemovitosti a viditelné údaje a zkopírujte výslednou URL. Odkaz může zpřístupnit osobní údaje; sdílejte jen potřebný rozsah. Chybějící údaj ověřte v rezervaci, ne pouze v kalendáři.</p></section>
+<section><h2 id="apple">iPhone: přidejte odběr kalendáře</h2><p>V aplikaci Kalendář otevřete Kalendáře → Přidat kalendář → Přidat odebíraný kalendář. Vložte URL a dokončete nabídnuté kroky; v iOS 26 použijte vyhledání odběru, název a potvrzení. Přesné názvy se mohou lišit podle verze.</p><p><a href='https://support.apple.com/en-gb/102301' target='_blank' rel='noreferrer'>Aktuální postup Apple</a></p><figure class="kb-article-figure kb-article-figure-phone">
           <img src="../assets/screens/ical-phone-calendar-preview.png" alt="Rezervace ze Superhostem zobrazené v iPhone Kalendáři">
           <figcaption>Rezervace se po přidání iCal exportu zobrazí jako běžné události v kalendáři.</figcaption>
         </figure>
-        <figure class="kb-article-figure kb-article-figure-phone">
+<figure class="kb-article-figure kb-article-figure-phone">
           <img src="../assets/screens/ical-phone-calendars-list.png" alt="Seznam kalendářů v iPhone Kalendáři">
           <figcaption>V seznamu kalendářů zkontrolujete, že je nový odebíraný kalendář aktivní.</figcaption>
-        </figure>
-      </div>
-            </section>
-            <section class="kb-article-topic-block">
-<h2>Google Calendar a Android</h2>
-<aside class="kb-article-callout kb-article-note">
-          V Google Calendaru se kalendář z URL přidává přes počítačový
-          prohlížeč. V mobilní Android aplikaci nový iCal kalendář obvykle
-          nepřidáte přímo.
-        </aside>
-<ol>
-          <li>V Superhostem zkopírujte iCal URL.</li>
-          <li>Na počítači otevřete <a href="https://calendar.google.com/" target="_blank" rel="noreferrer"><strong>calendar.google.com</strong></a>.</li>
-          <li>Vedle <strong>Další kalendáře</strong> klikněte na <strong>+</strong> a vyberte <strong>Z URL</strong>.</li>
-          <li>Vložte iCal URL a potvrďte přes <strong>Přidat kalendář</strong>.</li>
-          <li>Na Androidu otevřete Google Calendar pod stejným účtem a počkejte na synchronizaci.</li>
-        </ol>
-<p>
-          Přímý odkaz:
-          <a href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noreferrer">Přidat kalendář z URL</a>
-        </p>
-<div class="kb-article-media-grid">
-        <figure class="kb-article-figure">
+        </figure></section>
+<section><h2 id="google">Google Calendar a Android</h2><p>Na počítači otevřete Google Calendar. U Další kalendáře zvolte + → Z URL a vložte exportní odkaz. V telefonu použijte stejný Google účet a ověřte, že je kalendář viditelný. Nový odběr přidávejte přes web, ne mobilní aplikaci.</p><figure class="kb-article-figure">
           <img src="../assets/screens/google-calendar-from-url-settings.png" alt="Google Calendar na počítači v sekci Add calendar a volbě From URL">
           <figcaption>Ve webovém Google Calendaru vložíte iCal odkaz přes <strong>Add calendar → From URL</strong>.</figcaption>
-        </figure>
-      </div>
-            </section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted">
-<h2>Na co si dát pozor</h2>
-<ul>
-          <li>iCal je hlavně pro přehled, ne pro úpravy rezervací.</li>
-          <li>Aktualizace v externí aplikaci může mít zpoždění.</li>
-          <li>Po změně obsahu exportu zkopírujte novou URL.</li>
-          <li>Pokud sdílíte kalendář někomu jinému, zvažte raději webový odkaz s možností zrušit přístup.</li>
-        </ul>
-            </section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Předchozí</span>
-  <strong>Jak získat a napojit iCal z Airbnb a Bookingu</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-prehled-rezervaci.html">
-  <span>Další</span>
-  <strong>Jak funguje přehled rezervací</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+        </figure></section>
+<section><h2 id="aktualizace">Aktualizace a upozornění</h2><p>Četnost obnovy a možnosti notifikací řídí kalendářová aplikace. Ověřte její nastavení; změny nemusí přijít okamžitě. Pro práci týmu a snadné zrušení přístupu použijte raději samostatný webový odkaz. Export slouží k přehledu, rezervaci upravujte v jejím zdroji nebo v příslušném detailu.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-sdilet-webovy-kalendar-odkazem.html"><span>Související návody</span><strong>Jak sdílet webový kalendář odkazem</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Související návody</span><strong>Jak napojit iCal kalendář</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -268,6 +148,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

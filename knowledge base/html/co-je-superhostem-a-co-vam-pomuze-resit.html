@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-superhostem-a-co-vam-pomuze-resit.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-je-superhostem-a-co-vam-pomuze-resit.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-superhostem-a-co-vam-pomuze-resit.html" />
-    <meta name="description" content="Co je Superhostem a co vám pomůže řešit – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Co je Superhostem a co vám pomůže řešit" />
-    <meta property="og:description" content="Co je Superhostem a co vám pomůže řešit – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Od rezervace po údaje hostů, hlášení a každodenní provoz pracujete se stejným pobytem." />
+    <meta property="og:title" content="Co vám Superhostem pomůže vyřešit" />
+    <meta property="og:description" content="Od rezervace po údaje hostů, hlášení a každodenní provoz pracujete se stejným pobytem." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-superhostem-a-co-vam-pomuze-resit.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Co je Superhostem a co vám pomůže řešit" />
-    <meta name="twitter:description" content="Co je Superhostem a co vám pomůže řešit – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Co je Superhostem a co vám pomůže řešit</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Co je Superhostem a co vám pomůže řešit","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-superhostem-a-co-vam-pomuze-resit.html"}}
-    </script>
+    <meta name="twitter:title" content="Co vám Superhostem pomůže vyřešit" />
+    <meta name="twitter:description" content="Od rezervace po údaje hostů, hlášení a každodenní provoz pracujete se stejným pobytem." />
+    <title>Co vám Superhostem pomůže vyřešit | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Co vám Superhostem pomůže vyřešit","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-superhostem-a-co-vam-pomuze-resit.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,63 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Začínáme</p>
-          <h1 class="kb-article-title">Co je Superhostem a co vám pomůže řešit</h1>
-          <p class="kb-article-lead">Zjistíte, k čemu Superhostem slouží, pro koho je určený a s čím vám pomůže při správě krátkodobých pronájmů.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-            <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Pro koho je článek určen</h2>
-
-<ul>
-<li>pro nové uživatele po registraci</li>
-<li>pro hostitele, kteří zvažují přechod z ruční správy</li>
-<li>pro uživatele, kteří si chtějí rychle ujasnit, co systém dělá</li>
-</ul>
-
-<h2>Co je Superhostem</h2>
-
-<p>Superhostem je platforma pro hostitele krátkodobých pronájmů v České republice, která pomáhá spojit provozní data, rezervace, přehled obsazenosti a finanční informace do jednoho systému.</p>
-
-<h2>Jaké problémy pomáhá řešit</h2>
-
-<ul>
-<li>přehled rezervací na jednom místě</li>
-<li>lepší kontrola obsazenosti</li>
-<li>viditelnost tržeb a finančních údajů</li>
-<li>jednodušší provoz a méně ruční administrativy</li>
-</ul>
-
-<h2>Jak systém funguje v základu</h2>
-
-<p>Superhostem kombinuje kalendářová data přes iCal, finanční a doplňující údaje z booking emailů a ručně doplněné informace od uživatele.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-<a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html">
-  <span>Další</span>
-  <strong>První přihlášení a orientace v účtu</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Co vám Superhostem pomůže vyřešit</h1>
+      <p class="kb-article-lead">Od rezervace po údaje hostů, hlášení a každodenní provoz pracujete se stejným pobytem.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Rezervace</li>
+<li><span class="kb-article-flow-number">2</span>Hosté</li>
+<li><span class="kb-article-flow-number">3</span>Evidence</li>
+<li><span class="kb-article-flow-number">4</span>Provoz</li></ol><section><h2 id="prutok">Začněte jedním skutečným pobytem</h2><p>Vytvořte nemovitost, připojte zdroj rezervací nebo přidejte přímý pobyt. Pošlete formulář všem hostům a ověřte údaje. Na stejný pobyt navážou evidence, Ubyport, poplatky, faktura a zprávy.</p></section>
+<section><h2 id="funkce">Zapojte další funkce podle potřeby</h2><p>Průvodce poskytne hostům příjezdové pokyny. Úklidový tým dostane vlastní přístup. Veřejný web může přijímat přímé poptávky. Pokročilé funkce, například chytré zámky nebo online platby, závisí na oprávnění účtu a nastavení.</p></section>
+<section><h2 id="kontrola">Kontrolujte výsledek</h2><p>Importovaný pobyt není kompletní evidence. Vyplněný formulář není doručenka policie. Vystavená faktura není potvrzení platby. Návody vás proto vedou až ke kontrole konkrétního výsledku.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html"><span>Související návody</span><strong>První přihlášení: od nemovitosti k prvnímu pobytu</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Související návody</span><strong>Jak poslat online check-in a zkontrolovat hosty</strong></a>
+<a class="kb-article-related-card" href="./jak-ridit-uklid.html"><span>Související návody</span><strong>Jak předat úklid týmu a zkontrolovat dokončení</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -177,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

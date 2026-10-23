@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -118,7 +123,12 @@
             <section class="kb-property-decision" aria-label="Choose VAT status"><ol class="kb-property-decision-flow"><li class="kb-property-decision-card is-primary"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5"></path></svg></span><div><span class="kb-property-decision-kicker">Most common</span><strong>I am not a VAT payer</strong><p>Platform commissions may require identified-person registration.</p><a class="kb-property-decision-cta" href="#non-payer">Show what to check <span aria-hidden="true">→</span></a></div></li><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg></span><div><span class="kb-property-decision-kicker">Different status</span><strong>I am a VAT payer</strong><p>You report the received service and discuss deduction with your accountant.</p><a class="kb-property-decision-cta is-secondary" href="#vat-payer">Go to VAT payer <span aria-hidden="true">→</span></a></div></li></ol></section>
 <h2>What matters</h2><div class="kb-property-next-steps-grid"><div class="kb-property-next-card"><span>1</span><strong>Commission is a service</strong><small>Airbnb or Booking usually charges you a service from a foreign platform.</small></div><div class="kb-property-next-card"><span>2</span><strong>It is not the stay fee</strong><small>Municipal stay fee and VAT on platform commission are separate topics.</small></div><div class="kb-property-next-card"><span>3</span><strong>You need documents</strong><small>Without commission and fee records, you cannot handle VAT correctly.</small></div></div>
 <h2>Why VAT comes up at all</h2><div class="kb-property-next-steps-grid"><div class="kb-property-next-card"><span>Service from abroad</span><strong>The platform invoices a service</strong><small>Typically a commission or service fee from Airbnb or Booking.com.</small></div><div class="kb-property-next-card"><span>Company</span><strong>The company handles VAT</strong><small>If the accommodation is operated by an s.r.o., duties are handled in that company accounting.</small></div><div class="kb-property-next-card"><span>Trade / individual</span><strong>Check the VAT Act status</strong><small>For a trade or individual, check whether identified person or VAT payer status applies.</small></div></div>
-<h2>Practical recommendation</h2><div class="kb-property-next-steps-grid"><div class="kb-property-next-card"><span>Start</span><strong>Usually, do not start as a full VAT payer by default</strong><small>First check the VAT Act status, often mainly identified person because of a foreign service.</small></div><div class="kb-property-next-card"><span>Higher turnover</span><strong>Above CZK 2 million, discuss VAT payer registration</strong><small>If turnover approaches or exceeds CZK 2 million, talk to your accountant about VAT payer registration.</small></div></div><aside class="kb-article-callout kb-article-callout-muted"><strong>Your decision</strong><p>This is a practical recommendation, not an instruction. Each host acts on their own decision and should verify the final approach against current rules and their own situation.</p></aside>
+<h2>When registration becomes mandatory</h2>
+<div class="kb-property-next-steps-grid">
+  <div class="kb-property-next-card"><span>Service from abroad</span><strong>Do not wait for high turnover</strong><small>Receiving a service from a foreign platform may require identified-person registration even with low turnover.</small></div>
+  <div class="kb-property-next-card"><span>Domestic turnover per calendar year</span><strong>Monitor both thresholds</strong><small>After exceeding CZK 2,000,000, VAT payer status generally starts on 1 January of the following year; an earlier start can be chosen. After exceeding CZK 2,536,500, status starts the following day. For these turnover-based grounds, apply within 10 working days.</small></div>
+</div>
+<p>Both sole traders and s.r.o. companies must check their VAT status. An s.r.o. can also be a non-payer or an identified person. Registration is mandatory when the legal conditions apply. Verify turnover, exceptions and the effective date with your accountant using the <a href="https://financnisprava.gov.cz/cs/financni-sprava/novinky/novinky-2025/informace-ke-zmenam-v-platcovstvi-dph-2025" target="_blank" rel="noreferrer">Financial Administration rules effective from 2025</a>.</p>
 <aside class="kb-article-callout"><strong>Need an exact answer?</strong><p>Contact us. We will look at your situation and suggest the approach that makes sense for you.</p></aside>
 <h2 id="non-payer">If you are not a VAT payer</h2><ol class="kb-article-flow" aria-label="Steps for VAT non-payers"><li><span class="kb-article-flow-number">1</span>Find platform commissions</li><li><span class="kb-article-flow-number">2</span>Check identified person status</li><li><span class="kb-article-flow-number">3</span>Solve registration in time</li><li><span class="kb-article-flow-number">4</span>Report VAT on the received service</li></ol><div class="kb-property-next-steps-grid"><div class="kb-property-next-card"><span>Non-payer</span><strong>Identified person is common</strong><small>This does not automatically mean full VAT payer status.</small></div><div class="kb-property-next-card"><span>Deduction</span><strong>Do not expect automatic deduction</strong><small>An identified person usually does not have standard input VAT deduction.</small></div></div>
 <h2 id="vat-payer">If you are already a VAT payer</h2><div class="kb-property-next-steps-grid"><div class="kb-property-next-card"><span>Return</span><strong>You still handle the received service</strong><small>The platform commission remains part of the VAT process.</small></div><div class="kb-property-next-card"><span>Deduction</span><strong>Only if conditions are met</strong><small>This belongs with your accountant or tax advisor.</small></div><div class="kb-property-next-card"><span>Separate</span><strong>Do not mix stay and commission</strong><small>Your accommodation service and platform fee are not the same thing.</small></div></div>
@@ -187,6 +197,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

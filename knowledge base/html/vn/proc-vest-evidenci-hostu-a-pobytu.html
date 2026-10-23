@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -141,7 +146,7 @@
 </ul>
 
 <h2>Sổ đăng ký khách và sổ thu phí lưu trú</h2>
-<p>Hai khái niệm này thường bị nhầm lẫn nhưng không giống nhau. Sổ đăng ký khách lưu trú liên quan đến hồ sơ người nước ngoài và nghĩa vụ với Cảnh sát Ngoại kiều. Sổ thu phí lưu trú thường dùng để ghi nhận khách cho mục đích thu phí lưu trú của địa phương; phạm vi và thời hạn lưu giữ có thể theo quy định của từng địa phương.</p>
+<p>Sổ khách nước ngoài phục vụ nghĩa vụ với cảnh sát. Sổ phí lưu trú có quy định luật định riêng và phải lưu 6 năm từ lần ghi cuối. Quy định địa phương về mức phí và hạn nộp không thay thế thời hạn lưu hồ sơ theo luật.</p>
 <p>Bạn có thể dùng cùng dữ liệu đặt phòng trong một hệ thống, nhưng không nên tự động gộp nghĩa vụ pháp lý hoặc thời hạn lưu giữ. Hãy thiết lập quy trình kiểm tra riêng cho từng loại sổ.</p>
 
 <h2>Sổ giấy hay sổ điện tử?</h2>
@@ -172,6 +177,8 @@
         <li>chỉ dựa vào hồ sơ điện tử mà không chuẩn bị sẵn bản giấy để thanh tra</li>
       </ul>
 <p><small>Bài viết này cung cấp thông tin thực tế. Trước khi thiết lập quy trình, hãy kiểm tra bản hiện hành của Luật số 326/1999 Sb. và yêu cầu của Cảnh sát Séc.</small></p>
+<section id="reviewed-workflow"><h2>Chuẩn bị hồ sơ vận hành</h2><p>Để thu thập dữ liệu và tạo PDF, dùng <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">hướng dẫn hồ sơ thực tế</a>. Kiểm tra quy định hồ sơ phí địa phương tại <a href="https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005" target="_blank" rel="noreferrer">thông tin chính thức gov.cz</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Liên kết liên quan</h2>
@@ -214,6 +221,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -119,6 +124,8 @@
             <section class="kb-property-decision" aria-label="Chọn tình huống"><ol class="kb-property-decision-flow"><li class="kb-property-decision-card is-primary"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5"></path></svg></span><div><span class="kb-property-decision-kicker">Bắt đầu</span><strong>Tôi chưa có đăng ký</strong><p>Bắt đầu với đô thị, Ubyport, hồ sơ và thuế.</p><a class="kb-property-decision-cta" href="#chua-co-dang-ky">Xem các bước <span aria-hidden="true">→</span></a></div></li><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M20 6 9 17l-5-5"></path></svg></span><div><span class="kb-property-decision-kicker">Đã sẵn sàng</span><strong>Tôi đã có đăng ký</strong><p>Kiểm tra dữ liệu cần lưu và dùng trong Superhostem.</p><a class="kb-property-decision-cta is-secondary" href="#da-co-dang-ky">Đi đến kiểm tra <span aria-hidden="true">→</span></a></div></li></ol></section>
             <h2 id="chua-co-dang-ky">Nếu bạn chưa có đăng ký</h2><ol class="kb-article-flow" aria-label="Thứ tự đăng ký đề xuất"><li><span class="kb-article-flow-number">1</span>Đô thị</li><li><span class="kb-article-flow-number">2</span>Ubyport</li><li><span class="kb-article-flow-number">3</span>Hồ sơ</li><li><span class="kb-article-flow-number">4</span>Thuế</li></ol><div class="kb-property-next-steps-grid"><a class="kb-property-next-card" href="./jak-funguje-poplatek-z-pobytu.html"><span>Đô thị</span><strong>Phí lưu trú địa phương</strong><small>Đăng ký, thông tin thanh toán và báo cáo.</small></a><a class="kb-property-next-card" href="./jak-se-zaregistrovat-do-ubyportu.html"><span>Cảnh sát ngoại kiều</span><strong>Ubyport và IDUB</strong><small>Đăng ký hoặc dữ liệu cho dịch vụ web.</small></a><a class="kb-property-next-card" href="./proc-vest-evidenci-hostu-a-pobytu.html"><span>Hồ sơ</span><strong>Dữ liệu khách và lưu trú</strong><small>Những gì cần lưu giữ sẵn.</small></a><a class="kb-property-next-card" href="./jak-resit-dph-u-airbnb-a-booking.html"><span>Thuế</span><strong>VAT cho Airbnb và Booking</strong><small>Hoa hồng nền tảng và nghĩa vụ thuế liên quan.</small></a></div>
             <h2 id="da-co-dang-ky">Nếu bạn đã có đăng ký</h2><p>Kiểm tra rằng bạn có dữ liệu cần thiết cho thiết lập chỗ ở và vận hành hằng ngày.</p><ul><li>mã biến, thông tin thanh toán và hạn nộp phí lưu trú</li><li>IDUB và nếu cần, thông tin dịch vụ web của Ubyport</li><li>quy trình rõ ràng để thu thập dữ liệu khách và lưu trú</li><li>nghĩa vụ thuế đã kiểm tra cho hoa hồng Airbnb hoặc Booking.com</li></ul><a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Tiếp tục bằng cách thêm chỗ ở</strong><small>Khi các đăng ký và nghĩa vụ pháp lý đã được kiểm tra.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a>
+<section id="reviewed-workflow"><h2>Tách đăng ký, hồ sơ và báo cáo</h2><p>Đăng ký cơ sở Ubyport không gửi từng khách. Thông báo địa phương, chuẩn bị hồ sơ và nộp phí cũng là các bước riêng. Sau thiết lập, kiểm tra một kỳ thật theo <a href="./jak-poslat-online-check-in.html">hướng dẫn check-in</a> và <a href="./jak-odeslat-hosty-do-ubyportu.html">kết quả Ubyport</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Liên kết liên quan</h2>
@@ -161,6 +168,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

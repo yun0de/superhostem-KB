@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-superhostem-a-co-vam-pomuze-resit.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-je-superhostem-a-co-vam-pomuze-resit.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-je-superhostem-a-co-vam-pomuze-resit.html" />
-    <meta name="description" content="What is a Superhost and what can it help you solve? – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="What is a Superhost and what can it help you solve?" />
-    <meta property="og:description" content="What is a Superhost and what can it help you solve? – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Use the same stay from reservation through guest details, reporting and daily operations." />
+    <meta property="og:title" content="What Superhostem helps you do" />
+    <meta property="og:description" content="Use the same stay from reservation through guest details, reporting and daily operations." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-superhostem-a-co-vam-pomuze-resit.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="What is a Superhost and what can it help you solve?" />
-    <meta name="twitter:description" content="What is a Superhost and what can it help you solve? – guide for short-term rental hosts on Superhostem.cz." />
-    <title>What is a Superhost and what can it help you solve?</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"What is a Superhost and what can it help you solve?","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-superhostem-a-co-vam-pomuze-resit.html"}}
-    </script>
+    <meta name="twitter:title" content="What Superhostem helps you do" />
+    <meta name="twitter:description" content="Use the same stay from reservation through guest details, reporting and daily operations." />
+    <title>What Superhostem helps you do | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"What Superhostem helps you do","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-je-superhostem-a-co-vam-pomuze-resit.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,63 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Quick start</p>
-          <h1 class="kb-article-title">What is a Superhost and what can it help you solve?</h1>
-          <p class="kb-article-lead">You will find out what Superhostem is for, who it is intended for and what it will help you with in managing short-term rentals.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./index.html#knihovna">Library</a>
-            <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Next article →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Who is the article intended for?</h2>
-
-<ul>
-<li>for new users after registration</li>
-<li>for hosts considering switching from manual management</li>
-<li>for users who want to quickly understand what the system is doing</li>
-</ul>
-
-<h2>What is a Superhost?</h2>
-
-<p>Superhostem is a platform for short-term rental hosts in the Czech Republic that helps combine operational data, reservations, occupancy overview and financial information into one system.</p>
-
-<h2>What problems does it help solve?</h2>
-
-<ul>
-<li>overview of reservations in one place</li>
-<li>better occupancy control</li>
-<li>visibility of sales and financial data</li>
-<li>simpler operation and less manual administration</li>
-</ul>
-
-<h2>How the system basically works</h2>
-
-<p>Superhost combines calendar data via iCal, financial and additional data from booking emails and manually added information from the user.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Library</span>
-  <strong>Library</strong>
-</a>
-
-<a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html">
-  <span>Another one</span>
-  <strong>First login and account orientation</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">What Superhostem helps you do</h1>
+      <p class="kb-article-lead">Use the same stay from reservation through guest details, reporting and daily operations.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Reservation</li>
+<li><span class="kb-article-flow-number">2</span>Guests</li>
+<li><span class="kb-article-flow-number">3</span>Records</li>
+<li><span class="kb-article-flow-number">4</span>Operations</li></ol><section><h2 id="flow">Start with one real stay</h2><p>Create a property, connect a reservation source or add a direct stay. Send the form to all guests and check their details. The same stay supports records, Ubyport, fees, invoices and messages.</p></section>
+<section><h2 id="features">Add features as needed</h2><p>A guest guide provides arrival instructions. Cleaners get their own access. The public website can accept direct inquiries. Advanced features such as smart locks or online payments depend on account access and setup.</p></section>
+<section><h2 id="check">Verify the result</h2><p>An imported stay is not a complete register. A completed form is not a police receipt. An invoice is not proof of payment. The guides therefore include checks for the actual outcome.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html"><span>Related guides</span><strong>First login: from your property to your first stay</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send an online check-in form and check every guest</strong></a>
+<a class="kb-article-related-card" href="./jak-ridit-uklid.html"><span>Related guides</span><strong>Give cleaners access and verify completion</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -177,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

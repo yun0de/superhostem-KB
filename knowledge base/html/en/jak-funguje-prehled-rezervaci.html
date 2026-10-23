@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-prehled-rezervaci.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-prehled-rezervaci.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-prehled-rezervaci.html" />
-    <meta name="description" content="How the booking overview works – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How the booking overview works" />
-    <meta property="og:description" content="How the booking overview works – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Find stays that need attention, then open their details to handle guests, messages or reporting." />
+    <meta property="og:title" content="Work with the reservations overview" />
+    <meta property="og:description" content="Find stays that need attention, then open their details to handle guests, messages or reporting." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-prehled-rezervaci.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How the booking overview works" />
-    <meta name="twitter:description" content="How the booking overview works – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How the booking overview works</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"How the booking overview works","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-prehled-rezervaci.html"}}
-    </script>
+    <meta name="twitter:title" content="Work with the reservations overview" />
+    <meta name="twitter:description" content="Find stays that need attention, then open their details to handle guests, messages or reporting." />
+    <title>Work with the reservations overview | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Work with the reservations overview","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-prehled-rezervaci.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,71 +103,18 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Reservation management and calendar</p>
-          <h1 class="kb-article-title">How the booking overview works</h1>
-          <p class="kb-article-lead">On the Reservations page, you'll see all reservations in one place and can filter them by date, status, or property.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./index.html#knihovna">Library</a>
-            <a href="./co-vsechno-najdu-v-detailu-rezervace.html">Next article →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Where you can find an overview of reservations</h2>
-
-<p>In the left menu, click on <strong>Reservation</strong>. A page with a subtitle will open <strong>Overview of all bookings from Airbnb, Booking.com and manual</strong>.</p>
-
-<h2>What is available on the site</h2>
-
-<ul>
-<li>Sync everything</li>
-<li>New reservation</li>
-<li>List</li>
-<li>Calendar</li>
-<li>View: Upcoming / Past</li>
-<li>Status: All</li>
-<li>Property: All</li>
-<li>From the date</li>
-<li>By date</li>
-</ul>
-
-<h2>What you will see in empty state</h2>
-
-<p>If you don't have any data yet, the page will display text <strong>You have no reservations yet</strong> and recommendations to connect calendars from Airbnb and Booking.com or add a reservation manually.</p>
-
-<h2>What to do if the overview is empty</h2>
-
-<ol>
-<li>verify that you already have at least one property created</li>
-<li>connect the reservation source</li>
-<li>use if applicable <strong>New reservation</strong>
-</li>
-<li>click on <strong>Sync everything</strong>
-</li>
-</ol>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Library</span>
-  <strong>Library</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-vsechno-najdu-v-detailu-rezervace.html">
-  <span>Another one</span>
-  <strong>What can I find in the reservation details?</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Work with the reservations overview</h1>
+      <p class="kb-article-lead">Find stays that need attention, then open their details to handle guests, messages or reporting.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="filter">Choose dates and property</h2><p>Open Reservations. Check past/upcoming dates, status and property filters. Use the list to find a stay or the calendar to compare dates.</p></section>
+<section><h2 id="check">Daily check</h2><ol><li>Review upcoming arrivals.</li><li>Open stays missing details or confirmation.</li><li>Check guest count and completed forms.</li><li>For foreign guests, also verify the Ubyport result.</li></ol><p>Reservation status, completed guest details and accepted reports are different information.</p></section>
+<section><h2 id="empty">Missing or incorrect data?</h2><p>Clear filters and check the source first. Sync can refresh imports but cannot supply data absent from the source. Use New reservation for a direct stay after ruling out duplicates.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-pridat-rucni-rezervaci.html"><span>Related guides</span><strong>Create a manual reservation</strong></a>
+<a class="kb-article-related-card" href="./co-vsechno-najdu-v-detailu-rezervace.html"><span>Related guides</span><strong>What to do in reservation details</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Related guides</span><strong>What to do when a reservation is missing</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -185,6 +135,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

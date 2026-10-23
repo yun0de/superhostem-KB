@@ -1,50 +1,22 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Jak automatizovat komunikaci s hosty
 
-## Kdy tento postup použít
+Vyberte jeden způsob odesílání a jednu první zprávu. Rozlište e-mail ze Superhostem a zprávu uvnitř rezervační platformy.
 
-Použijte ho, když chcete hostům před příjezdem automaticky posílat odkaz na formulář nebo guestbook. Cíl je jednoduchý: host dostane správný odkaz ve správný čas a vy ho neposíláte ručně u každé rezervace.
+1. Kanál
+2. Odkaz a obsah
+3. Čas
+4. Výsledek
 
-## Nastavte jen jednu věc
+## Chci e-mail ze Superhostem
 
-Na začátek neautomatizujte všechno. Stačí jedna zpráva před příjezdem.
+<p>V nemovitosti otevřete Automatizace zpráv a část e-mailů. Nastavte událost, čas, příjemce a jazyk. Zkontrolujte náhled pro konkrétní pobyt a historii po odeslání.</p><p><a href='./jak-nastavit-automaticke-emaily.html'>Nastavit automatické e-maily krok za krokem</a></p>
 
-Postup:
+## Chci zprávu v Airbnb nebo Bookingu
 
-1. v Superhostem otevřete konkrétní nemovitost
-2. přejděte do části `Automatizace`
-3. zkopírujte odkaz pro hosty
-4. nastavte, kolik dní před příjezdem má být rezervace přes odkaz dostupná
-5. stejný počet dní nastavte v automatické zprávě v Airbnb nebo Booking.com
+<p>V nastavení zpráv dané platformy vytvořte šablonu nebo plánovanou zprávu. Vložte správný odkaz nemovitosti ze Superhostem a přiřaďte ji ke správné nabídce. Přístupnost rezervace přes tento odkaz musí začít nejpozději při odeslání zprávy; nemusí mít přesně stejný počet dní.</p>
 
-## Kam odkaz vložit
+## Než automatizaci zapnete
 
-Airbnb:
-
-- otevřete `Zprávy`
-- přejděte do nastavení zpráv nebo rychlých odpovědí
-- vytvořte automatickou zprávu
-- vložte odkaz ze Superhostem
-- přiřaďte zprávu ke správné nabídce
-
-Booking.com:
-
-- v Extranetu otevřete `Nastavení zpráv`
-- vytvořte šablonu zprávy
-- vložte odkaz ze Superhostem
-- naplánujte odeslání před příjezdem
-- pokud máte více jednotek, zkontrolujte správnou jednotku
-
-## Před uložením zkontrolujte
-
-- odkaz patří ke správné nemovitosti nebo jednotce
-- šablona je přiřazená ke správné nabídce
-- čas odeslání odpovídá počtu dní nastavenému v Superhostem
-- text hostovi jasně říká, co má po kliknutí udělat
-
-U krátkých pobytů a last minute rezervací testujte hlavně načasování. Zpráva musí odejít ve chvíli, kdy už je rezervace přes odkaz dostupná.
-
-## Další krok
-
-Pokud automatizace posílá formulář nebo guestbook, navazuje na ni článek `Jak vést evidenci hostů a pobytů v Superhostem`.
-
-Pro měsíční provoz pokračujte článkem `Jak měsíčně zpracovat poplatky obci v Superhostem`.
+<ul><li>Odkaz a šablona patří ke správné nemovitosti.</li><li>Host dostane jasný pokyn: potvrdit pobyt, vyplnit registraci, nebo otevřít průvodce.</li><li>Ověřili jste časovou zónu, last-minute pobyt a dostupný kontakt.</li><li>Stejnou zprávu neposílají současně dvě pravidla.</li></ul><p>Začněte ručně poslaným formulářem u jednoho pobytu. Automatizaci zapněte až po ověření celého průchodu a potom zkontrolujte skutečné odeslání.</p>

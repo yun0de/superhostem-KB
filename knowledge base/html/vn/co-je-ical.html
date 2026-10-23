@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -130,6 +135,8 @@
 <li>chi tiết phí</li>
 <li>dữ liệu tài chính đầy đủ</li>
 </ul>
+<section id="reviewed-workflow"><h2>Nhập hay xuất?</h2><p>Dùng <a href="./jak-funguje-napojeni-pres-ical.html">kết nối iCal</a> để nhập ngày vào Superhostem. Dùng <a href="./kalendar-airbnb-v-telefonu.html">đăng ký lịch trong ứng dụng</a> để xem kỳ lưu trú trong lịch cá nhân. Đây là hai hướng khác nhau.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Liên kết liên quan</h2>
@@ -172,6 +179,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

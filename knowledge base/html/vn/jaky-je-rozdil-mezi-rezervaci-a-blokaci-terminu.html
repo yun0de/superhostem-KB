@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -125,6 +130,8 @@
 <h2>Khi nào là thời điểm tốt để kiểm tra nó?</h2>
 
 <p>Nếu người dùng thấy một ngày bận rộn trong lịch nhưng không thấy thời gian đặt chỗ dự kiến, thì trước tiên bạn nên kiểm tra xem đó có phải là sự cố chặn hay không.</p>
+<section id="reviewed-workflow"><h2>Trước khi tạo kỳ thứ hai</h2><p>Kiểm tra nguồn sự kiện, chỗ ở, ngày và chi tiết đặt phòng hiện có. Ngày phản chiếu từ nền tảng khác không nhất thiết là khách khác. Bổ sung giá hoặc thông tin vào đúng kỳ trước.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Liên kết liên quan</h2>
@@ -162,6 +169,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

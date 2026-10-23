@@ -1,58 +1,22 @@
-# Co je Superhostem a co vám pomůže řešit
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
 
-## Co tento článek řeší
+# Co vám Superhostem pomůže vyřešit
 
-Pomáhá rychle pochopit, co je Superhostem, pro koho je určený a jakou hodnotu přináší hostitelům krátkodobých pronájmů.
+Od rezervace po údaje hostů, hlášení a každodenní provoz pracujete se stejným pobytem.
 
-## Pro koho je článek určen
+1. Rezervace
+2. Hosté
+3. Evidence
+4. Provoz
 
-- pro nové uživatele po registraci
-- pro hostitele, kteří zvažují přechod z ruční správy
-- pro uživatele, kteří si chtějí rychle ujasnit, co systém dělá
+## Začněte jedním skutečným pobytem
 
-## Co je Superhostem
+<p>Vytvořte nemovitost, připojte zdroj rezervací nebo přidejte přímý pobyt. Pošlete formulář všem hostům a ověřte údaje. Na stejný pobyt navážou evidence, Ubyport, poplatky, faktura a zprávy.</p>
 
-Superhostem je platforma pro hostitele krátkodobých pronájmů v České republice, která pomáhá spojit provozní data, rezervace, přehled obsazenosti a finanční informace do jednoho systému.
+## Zapojte další funkce podle potřeby
 
-Místo práce v několika oddělených nástrojích dává hostiteli jednotný přehled o tom, co se děje napříč nemovitostmi a rezervacemi.
+<p>Průvodce poskytne hostům příjezdové pokyny. Úklidový tým dostane vlastní přístup. Veřejný web může přijímat přímé poptávky. Pokročilé funkce, například chytré zámky nebo online platby, závisí na oprávnění účtu a nastavení.</p>
 
-## Jaké problémy pomáhá řešit
+## Kontrolujte výsledek
 
-Superhostem pomáhá zejména s těmito oblastmi:
-
-- přehled rezervací na jednom místě
-- lepší kontrola obsazenosti
-- viditelnost tržeb a finančních údajů
-- jednodušší práce s provozem kolem hostů
-- snížení ruční administrativy
-- lepší orientace v povinnostech hostitele
-
-## Jak systém funguje v základu
-
-Superhostem kombinuje více zdrojů dat:
-
-1. kalendářová data přes iCal
-2. finanční a doplňující údaje z booking emailů
-3. ručně doplněné informace od uživatele
-
-Díky tomu může systém zobrazit nejen samotné rezervace, ale i širší finanční a provozní souvislosti.
-
-## Co od začátku očekávat
-
-Po založení účtu je ideální projít tyto kroky:
-
-1. nastavit základní údaje účtu
-2. přidat první nemovitost
-3. připojit první zdroj rezervací
-4. ověřit, že se správně načítají data
-5. případně doplnit další zdroje nebo nastavení
-
-## Nejčastější omyl
-
-Častým očekáváním je, že po registraci bude systém hned plně funkční bez dalšího nastavení.
-
-Ve skutečnosti je potřeba nejprve připojit zdroje dat a zkontrolovat, že synchronizace funguje správně.
-
-## Doporučený další krok
-
-Pokračujte článkem `První přihlášení a orientace v účtu`.
+<p>Importovaný pobyt není kompletní evidence. Vyplněný formulář není doručenka policie. Vystavená faktura není potvrzení platby. Návody vás proto vedou až ke kontrole konkrétního výsledku.</p>

@@ -1,51 +1,26 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Jak se zaregistrovat k místnímu poplatku
 
-## Co tento článek řeší
+Začněte u obce podle adresy ubytování. Získejte pravidla a platební údaje a potom je nastavte u nemovitosti.
 
-Pomáhá hostiteli pochopit, že poplatek z pobytu je jedna z typických lokálních povinností a že je potřeba ji řešit systematicky, ne nahodile.
+1. Ověřit obec
+2. Podat ohlášení
+3. Uložit údaje
+4. Nastavit aplikaci
 
-## Pro koho je článek určen
+## 1. Najděte správný úřad
 
-- pro začínající hostitele
-- pro hostitele, kteří si chtějí ověřit základní princip
+<p>Na oficiálním webu obce nebo městské části podle adresy ubytování ověřte, zda poplatek vybírá, sazbu, výjimky a termín ohlášení. Nespoléhejte na pravidla jiné obce.</p>
 
-## Důležitá poznámka
+## 2. Podejte požadované ohlášení
 
-Pravidla a konkrétní podmínky se mohou lišit podle města nebo obce.
+<p>Použijte aktuální formulář a způsob podání zveřejněný úřadem. Připravte identifikační údaje provozovatele a údaje o místě ubytování podle formuláře. Registrace k poplatku sama nenahrazuje ostatní oprávnění k provozu.</p>
 
-Vždy je potřeba ověřit aktuální pravidla na oficiálních zdrojích příslušné samosprávy.
+## 3. Uložte si podklady pro další období
 
-## Co poplatek z pobytu typicky znamená
+<p>Poznamenejte sazbu, účet, variabilní symbol, případné evidenční číslo a termíny odvodu. Ověřte také požadované podklady a způsob komunikace. Období nemusí být ve všech obcích měsíční.</p>
 
-Jde o lokální poplatek, který bývá spojený s ubytováním hostů.
+## 4. Nastavte konkrétní nemovitost
 
-Hostitel obvykle musí řešit:
-
-- registraci k poplatku
-- evidenci relevantních pobytů
-- průběžné odvádění nebo vykazování podle místních pravidel
-
-## Proč je důležité mít v datech pořádek
-
-Bez správné evidence hostů a pobytů je obtížné poplatek správně dopočítat a doložit.
-
-Proto má smysl, aby byl tento článek propojený s evidencí rezervací a hostů v systému.
-
-## Co si ověřit
-
-- zda se vás povinnost týká
-- jaké jsou místní sazby a podmínky
-- jaké termíny a forma podání platí
-- jaké výjimky mohou existovat
-
-## Jak vám s tím pomůže Superhostem
-
-Jakmile máte registraci i údaje od úřadu správně nastavené, můžete v Superhostem připravit úhradu přes `QR kód` a odeslat hlášení přes `datovou schránku` jedním klikem.
-
-Superhostem za vás zprávu předpřipraví k odeslání na úřad, takže už neřešíte celé hlášení ručně od začátku.
-
-Pokud chcete praktický postup přímo pro měsíční práci v aplikaci, navazuje na tento článek návod `Jak měsíčně zpracovat poplatky obci v Superhostem`.
-
-## Doporučený další krok
-
-Pokračujte článkem `Jak vést Ubytovací knihu`.
+<p>Údaje doplňte do nastavení poplatků nemovitosti. Ověřte první výpočet podle skutečných hostů, nocí a výjimek. Vygenerované PDF není automaticky podané hlášení a QR kód není potvrzení úhrady.</p><p><a href='https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005' target='_blank' rel='noreferrer'>Oficiální informace gov.cz</a></p>

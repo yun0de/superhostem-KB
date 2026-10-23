@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html" />
-    <meta name="description" content="What to do when email forwarding does not work – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="What to do when email forwarding does not work" />
-    <meta property="og:description" content="What to do when email forwarding does not work – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Check the address, Gmail verification and filter. If the email arrived but the stay is missing, check processing and matching." />
+    <meta property="og:title" content="Fix reservation email forwarding" />
+    <meta property="og:description" content="Check the address, Gmail verification and filter. If the email arrived but the stay is missing, check processing and matching." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="What to do when email forwarding does not work" />
-    <meta name="twitter:description" content="What to do when email forwarding does not work – guide for short-term rental hosts on Superhostem.cz." />
-    <title>What to do when email forwarding does not work</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"What to do when email forwarding does not work","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-nefunguje-email-forwarding.html"}}
-    </script>
+    <meta name="twitter:title" content="Fix reservation email forwarding" />
+    <meta name="twitter:description" content="Check the address, Gmail verification and filter. If the email arrived but the stay is missing, check processing and matching." />
+    <title>Fix reservation email forwarding | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Fix reservation email forwarding","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-nefunguje-email-forwarding.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,44 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">FAQ and troubleshooting</p>
-          <h1 class="kb-article-title">What to do when email forwarding does not work</h1>
-          <p class="kb-article-lead">Email forwarding starts working only after you copy the assigned address correctly, confirm it in Gmail, and create the forwarding rule.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./jak-funguje-email-forwarding.html">Email forwarding</a>
-            <a href="./co-delat-kdyz-chybi-rezervace.html">Next article →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block"><h2>Quick check</h2><p>If reservation emails are not reaching Superhostem, the issue is usually in one of three steps: the copied address, Gmail confirmation, or the forwarding rule.</p><ol><li>Check that Gmail contains the exact address assigned by Superhostem.</li><li>Confirm the forwarding address in the verification email sent by Gmail.</li><li>Only after that, create the filter or rule that actually forwards reservation emails.</li></ol></section>
-            <section class="kb-article-topic-block"><h2>1. The assigned address was copied incorrectly</h2><p>Gmail must forward messages to the exact address from Superhostem. If one character is missing, a space is added, or an old address is used, emails will not reach Superhostem.</p><ul><li>copy the address again directly from Superhostem</li><li>check both the start and end of the address</li><li>do not type the address manually, copy it instead</li></ul></section>
-            <section class="kb-article-topic-block"><h2>2. The forwarding address is not confirmed in Gmail</h2><p>After adding a new forwarding address, Gmail sends a verification email. Until it is confirmed, Gmail does not forward anything to that address.</p><aside class="kb-article-callout">If you use multiple Gmail accounts on one computer, first make sure you are switched to the account where you are setting up forwarding.</aside><ul><li>open the correct Gmail account</li><li>find the verification email from Gmail</li><li>confirm the forwarding address</li></ul></section>
-            <section class="kb-article-topic-block"><h2>3. The forwarding filter or rule is missing</h2><p>Confirming the address is not enough. After confirmation, create a condition that selects reservation emails and forwards them to Superhostem.</p><ul><li>create the filter only after confirming the forwarding address</li><li>check that the filter matches emails from Airbnb, Booking.com, or another source</li><li>the filter must use the action to forward to the Superhostem address</li></ul></section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted"><h2>If it still does not work</h2><p>Send a test reservation email or wait for the next real reservation email. If it does not appear in Superhostem, check the Gmail filter history and the correct Gmail account where forwarding is configured.</p></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html">
-  <span>Setup</span>
-  <strong>How email forwarding works</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html">
-  <span>Troubleshooting</span>
-  <strong>When a reservation is missing</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Fix reservation email forwarding</h1>
+      <p class="kb-article-lead">Check the address, Gmail verification and filter. If the email arrived but the stay is missing, check processing and matching.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Address</li>
+<li><span class="kb-article-flow-number">2</span>Verification</li>
+<li><span class="kb-article-flow-number">3</span>Filter</li>
+<li><span class="kb-article-flow-number">4</span>Result</li></ol><section><h2 id="address">1. Copy the correct address</h2><p>Open Email forwarding in Superhostem. Copy the assigned address and compare it with the destination in your mail settings. Make sure you are configuring the correct Gmail account.</p></section>
+<section><h2 id="verification">2. Finish Gmail verification</h2><p>Gmail sends verification to the added destination, not another personal inbox. Complete it using the instructions shown in Superhostem, then return to the correct Gmail account settings.</p></section>
+<section><h2 id="filter">3. Check the filter and forwarding action</h2><p>Check the conditions and the action to forward to your Superhostem address. The filter must match a real reservation email. Do not forward your entire personal inbox. Address verification does not create the filter.</p></section>
+<section><h2 id="result">4. Forwarded email, missing reservation</h2><p>Use an original supported reservation email, not self-written test text. Check the platform, property and reservation reference. Give support the subject, sender and forwarding time so they can check processing and matching in admin diagnostics.</p><p><a href='https://support.google.com/mail/answer/10957?hl=en' target='_blank' rel='noreferrer'>Official Gmail instructions</a></p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Related guides</span><strong>Set up reservation email forwarding</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Related guides</span><strong>What to do when a reservation is missing</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -158,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

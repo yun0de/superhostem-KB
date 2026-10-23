@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-nefunguje-email-forwarding.html" />
-    <meta name="description" content="Làm gì khi email forwarding không hoạt động – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Làm gì khi email forwarding không hoạt động" />
-    <meta property="og:description" content="Làm gì khi email forwarding không hoạt động – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <meta name="description" content="Kiểm tra địa chỉ, xác minh Gmail và bộ lọc. Nếu email đã đến nhưng thiếu kỳ lưu trú, cần kiểm tra xử lý và ghép dữ liệu." />
+    <meta property="og:title" content="Khắc phục chuyển tiếp email đặt phòng" />
+    <meta property="og:description" content="Kiểm tra địa chỉ, xác minh Gmail và bộ lọc. Nếu email đã đến nhưng thiếu kỳ lưu trú, cần kiểm tra xử lý và ghép dữ liệu." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-nefunguje-email-forwarding.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Làm gì khi email forwarding không hoạt động" />
-    <meta name="twitter:description" content="Làm gì khi email forwarding không hoạt động – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Làm gì khi email forwarding không hoạt động</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Làm gì khi email forwarding không hoạt động","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-nefunguje-email-forwarding.html"}}
-    </script>
+    <meta name="twitter:title" content="Khắc phục chuyển tiếp email đặt phòng" />
+    <meta name="twitter:description" content="Kiểm tra địa chỉ, xác minh Gmail và bộ lọc. Nếu email đã đến nhưng thiếu kỳ lưu trú, cần kiểm tra xử lý và ghép dữ liệu." />
+    <title>Khắc phục chuyển tiếp email đặt phòng | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Khắc phục chuyển tiếp email đặt phòng","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-nefunguje-email-forwarding.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,44 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Câu hỏi thường gặp và khắc phục sự cố</p>
-          <h1 class="kb-article-title">Làm gì khi email forwarding không hoạt động</h1>
-          <p class="kb-article-lead">Email forwarding chỉ bắt đầu hoạt động sau khi bạn sao chép đúng địa chỉ được cấp, xác nhận trong Gmail và tạo quy tắc chuyển tiếp.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./jak-funguje-email-forwarding.html">Chuyển tiếp email</a>
-            <a href="./co-delat-kdyz-chybi-rezervace.html">Bài tiếp theo →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block"><h2>Kiểm tra nhanh</h2><p>Nếu email đặt phòng không vào Superhostem, lỗi thường nằm ở một trong ba bước: địa chỉ đã sao chép, xác nhận trong Gmail hoặc quy tắc chuyển tiếp.</p><ol><li>Kiểm tra Gmail đang dùng đúng địa chỉ Superhostem đã cấp.</li><li>Xác nhận địa chỉ chuyển tiếp trong email xác minh do Gmail gửi.</li><li>Sau đó mới tạo bộ lọc hoặc quy tắc để chuyển tiếp email đặt phòng.</li></ol></section>
-            <section class="kb-article-topic-block"><h2>1. Sao chép sai địa chỉ được cấp</h2><p>Gmail phải chuyển tiếp thư đến đúng địa chỉ trong Superhostem. Nếu thiếu một ký tự, có thêm khoảng trắng hoặc dùng địa chỉ cũ, email sẽ không tới Superhostem.</p><ul><li>sao chép lại địa chỉ trực tiếp từ Superhostem</li><li>kiểm tra cả đầu và cuối địa chỉ</li><li>không gõ tay địa chỉ, hãy sao chép</li></ul></section>
-            <section class="kb-article-topic-block"><h2>2. Chưa xác nhận địa chỉ chuyển tiếp trong Gmail</h2><p>Sau khi thêm địa chỉ chuyển tiếp mới, Gmail gửi email xác minh. Nếu chưa xác nhận, Gmail sẽ không chuyển tiếp gì tới địa chỉ đó.</p><aside class="kb-article-callout">Nếu trên một máy tính có nhiều tài khoản Gmail, trước tiên hãy chắc chắn bạn đang ở đúng tài khoản dùng để thiết lập forwarding.</aside><ul><li>mở đúng tài khoản Gmail</li><li>tìm email xác minh từ Gmail</li><li>xác nhận địa chỉ chuyển tiếp</li></ul></section>
-            <section class="kb-article-topic-block"><h2>3. Thiếu bộ lọc hoặc quy tắc chuyển tiếp</h2><p>Chỉ xác nhận địa chỉ là chưa đủ. Sau khi xác nhận, hãy tạo điều kiện chọn email đặt phòng và chuyển tiếp chúng vào Superhostem.</p><ul><li>chỉ tạo bộ lọc sau khi đã xác nhận địa chỉ chuyển tiếp</li><li>kiểm tra bộ lọc khớp với email từ Airbnb, Booking.com hoặc nguồn khác</li><li>bộ lọc phải bật hành động chuyển tiếp tới địa chỉ Superhostem</li></ul></section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted"><h2>Nếu vẫn không hoạt động</h2><p>Hãy gửi thử một email đặt phòng hoặc chờ email đặt phòng thật tiếp theo. Nếu vẫn không xuất hiện trong Superhostem, kiểm tra lịch sử bộ lọc Gmail và đúng tài khoản Gmail đang cấu hình forwarding.</p></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html">
-  <span>Cài đặt</span>
-  <strong>Chuyển tiếp email hoạt động thế nào</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html">
-  <span>Xử lý sự cố</span>
-  <strong>Khi thiếu đặt phòng</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Khắc phục chuyển tiếp email đặt phòng</h1>
+      <p class="kb-article-lead">Kiểm tra địa chỉ, xác minh Gmail và bộ lọc. Nếu email đã đến nhưng thiếu kỳ lưu trú, cần kiểm tra xử lý và ghép dữ liệu.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Địa chỉ</li>
+<li><span class="kb-article-flow-number">2</span>Xác minh</li>
+<li><span class="kb-article-flow-number">3</span>Bộ lọc</li>
+<li><span class="kb-article-flow-number">4</span>Kết quả</li></ol><section><h2 id="address">1. Sao chép đúng địa chỉ</h2><p>Mở Chuyển tiếp email trong Superhostem. Sao chép địa chỉ được cấp và so sánh với đích trong cài đặt thư. Kiểm tra đang cấu hình đúng tài khoản Gmail.</p></section>
+<section><h2 id="verification">2. Hoàn tất xác minh Gmail</h2><p>Gmail gửi xác minh tới địa chỉ đích vừa thêm, không phải hộp thư cá nhân khác. Hoàn tất theo hướng dẫn hiển thị trong Superhostem rồi quay về cài đặt đúng Gmail.</p></section>
+<section><h2 id="filter">3. Kiểm tra bộ lọc và thao tác chuyển tiếp</h2><p>Kiểm tra điều kiện và thao tác chuyển tới địa chỉ Superhostem. Bộ lọc phải khớp email đặt phòng thật. Không chuyển tiếp toàn bộ hộp thư cá nhân. Xác minh địa chỉ không tự tạo bộ lọc.</p></section>
+<section><h2 id="result">4. Đã chuyển email nhưng thiếu đặt phòng</h2><p>Dùng email đặt phòng gốc thuộc loại được hỗ trợ, không dùng nội dung thử tự viết. Kiểm tra nền tảng, chỗ ở và mã đặt phòng. Gửi hỗ trợ tiêu đề, người gửi và giờ chuyển để kiểm tra xử lý và ghép dữ liệu trong phần quản trị.</p><p><a href='https://support.google.com/mail/answer/10957?hl=vi' target='_blank' rel='noreferrer'>Hướng dẫn chính thức của Gmail</a></p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Hướng dẫn liên quan</span><strong>Thiết lập chuyển tiếp email đặt phòng</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Hướng dẫn liên quan</span><strong>Làm gì khi thiếu đặt phòng</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -158,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

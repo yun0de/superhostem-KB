@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-poplatek-z-pobytu.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-poplatek-z-pobytu.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-poplatek-z-pobytu.html" />
-    <meta name="description" content="How to register for the local stay fee – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How to register for the local stay fee" />
-    <meta property="og:description" content="How to register for the local stay fee – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Start with the municipality for the property's address. Obtain its rules and payment details, then configure the property." />
+    <meta property="og:title" content="Register for the local stay fee" />
+    <meta property="og:description" content="Start with the municipality for the property's address. Obtain its rules and payment details, then configure the property." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-poplatek-z-pobytu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to register for the local stay fee" />
-    <meta name="twitter:description" content="How to register for the local stay fee – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How to register for the local stay fee</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"How to register for the local stay fee","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-poplatek-z-pobytu.html"}}
-    </script>
+    <meta name="twitter:title" content="Register for the local stay fee" />
+    <meta name="twitter:description" content="Start with the municipality for the property's address. Obtain its rules and payment details, then configure the property." />
+    <title>Register for the local stay fee | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Register for the local stay fee","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-poplatek-z-pobytu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,143 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Legislation in the Czech Republic</p>
-          <h1 class="kb-article-title">How to register for the local stay fee</h1>
-          <p class="kb-article-lead">If you are hosting guests on a short-term basis, knowing the rate is not enough. First of all, you need to register correctly with the city or district, get the necessary data for payment, and only then deal with monthly reports and levies.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Previous article</a>
-            <a href="./co-delat-kdyz-se-kalendar-nenacita.html">Next article →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>What awaits you next?</strong>
-        <p>You find the right office, file a residence fee report, get a variable symbol, and then save this data to Superhost so that it can be followed up by a monthly report.</p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-
-
-        <h2>Have you already registered?</h2>
-        <p>
-          This article mainly explains <strong>obligation and registration</strong>
-          towards the village. If you have already arranged everything and are looking directly for the workflow
-          in Superhost, continue here:
-        </p>
-        <ul class="kb-article-link-list"><li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">How to process monthly fees for the municipality in Superhost</a></li></ul>
-
-<h2>Briefly: what you need to do</h2>
-
-      <h3>Sign up</h3>
-<p>Register the accommodation for the local residence tax at the relevant authority according to the address of the property.</p>
-      <h3>Get payment information</h3>
-<p>After registration, save the variable symbol, possibly also the constant symbol, and the rules according to which you will report and pay.</p>
-      <h3>Enter them into Superhost</h3>
-<p>Without this data, the application cannot properly follow up on them during the monthly reporting for the city.</p>
-
-<h2>What to prepare in advance</h2>
-<ul>
-        <li>valid trade license for the corresponding free trade</li>
-        <li>reported establishment for a specific property</li>
-        <li>the address of the accommodation facility and, ideally, details of the apartment or floor, if required by the authority</li>
-        <li>number of beds intended for accommodation</li>
-        <li>your identification data, typically your ID card, social security number and IČO, if you run a business</li>
-        <li>access to the data box if you do not want to deal with the registration in person</li>
-        <li>information to which account you receive payments from the accommodation, if requested by the authority</li>
-      </ul>
-<aside class="kb-article-callout">
-        The specific form, rate, reporting deadline and payment method vary by city or district. It is always necessary to start from the official website of the relevant authority.
-      </aside>
-<h2>How to proceed step by step</h2>
-
-      <h3>First, make sure that you have your business and place of business resolved</h3>
-<p>Do not treat registration for the residence fee as the very first administrative step. First you should have it ready <strong>business card</strong> for corresponding free trade and also <strong>reported establishment</strong> for a specific property.</p>
-<p>Only then does it make sense to connect the registration to the local residence fee.</p>
-
-      <h3>Find the right office by property address</h3>
-<p>You do not pay the residence fee according to your place of residence, but according to where the property is actually located. So start on the website of the relevant city or borough and look for the section on local fees.</p>
-<p>This will usually be the finance department or local tax department.</p>
-
-      <h3>Fill in the notification for the stay fee</h3>
-<p>At the office or via their form, you submit a notification that you have an obligation to collect and pay the fee. This completes the basic registration step.</p>
-<ul>
-          <li>enter your identification data</li>
-          <li>fill in the accommodation address</li>
-          <li>enter the number of beds</li>
-          <li>check whether the office wants additional data</li>
-        </ul>
-
-      <h3>Solve the submission in person or via the data box</h3>
-<p>If you do not want to go to the office in person, most offices will allow you to fill out the form electronically and send it via data mailbox. A regular email is usually not enough for this step.</p>
-<p>Once the registration is accepted, the office will assign you data for further communication and payments.</p>
-
-      <h3>Save the variable symbol and terms</h3>
-<p>Make a note immediately after registration <strong>variable symbol</strong>, deadlines for reporting and how the fee is sent. Some authorities may require it as well <strong>constant symbol</strong>, so check this information as well. This is the most common place where mistakes are made.</p>
-<p>Without this data, at the end of the month you will needlessly search for information that you once already had available from the office.</p>
-
-      <h3>Enter the data in Superhost</h3>
-<p>Once you have completed the registration, fill in the details for the stay fee and the property settings in Superhostem. These data are then followed up by a monthly report that is sent to the city.</p>
-<p>So in practice, you are not only dealing with a one-time registration, but you are also preparing the documents so that the reporting will work for you for months to come.</p>
-
-      <h3>Review your statement and payment each month</h3>
-<p>Registration alone is not enough. After each period determined by your municipality or district, you must check the report and submit the fee according to their rules.</p>
-<p>In Superhost you can then prepare a payment via <strong>QR code</strong> and send the report via <strong>data box</strong> with one click. Superhost will prepare the message for you to be sent to the office.</p>
-<p>Always check whether your municipality works with exceptions, a different filing frequency or a custom form.</p>
-
-<h2>The most common mistakes</h2>
-<ul>
-        <li>the host only deals with the rate, but forgets about the registration itself</li>
-        <li>registers at the wrong office</li>
-        <li>does not save the variable symbol and reporting dates</li>
-        <li>assumes that all municipalities have the same form and the same procedure</li>
-        <li>does not enter data into Superhost, so there is no continuity for monthly reporting</li>
-      </ul>
-<h2>What is better to deal with right away when setting up the property</h2>
-<p>
-        Once you're adding your first property, it's a good idea to have your occupancy tax sorted out as soon as possible. It is one of three key areas,
-        which in our onboarding flow follow after the establishment of the property together with <strong>Ubyport</strong> a <strong>iCal connection</strong>.
-      </p>
-<ul class="kb-article-link-list">
-<li><a href="./jak-pridat-novou-nemovitost.html">Back to property settings</a></li>
-<li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">How to solve municipal fees every month in Superhost</a></li>
-<li><a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">View legislative summary</a></li>
-</ul>
-<h2>Verification and sources</h2>
-<p>This article is a practical guide for hosts, not legal or tax advice. We built the last check on official sources.</p>
-<ul>
-                <li><a href="https://portal.gov.cz/formulare/mistni-poplatek-z-pobytu" target="_blank" rel="noreferrer">gov.cz: Local stay fee</a></li>
-      </ul>
-<aside class="kb-article-callout kb-article-callout-muted">
-        <p><strong>Updated:</strong> 29 March 2026. Rates, exceptions and deadlines are always governed by the current ordinance of your municipality or district.</p>
-      </aside>
-<h2>Next step in the application</h2>
-<p>
-        Once you have completed the registration for the residence fee and the data stored in
-        real estate, follows the monthly workflow directly in Superhostem.
-      </p>
-<ul class="kb-article-link-list"><li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Open procedure: How to process monthly fees to the municipality in Superhost</a></li></ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">
-  <span>Previous</span>
-  <strong>Basic legislative obligations of the host in the Czech Republic</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-se-kalendar-nenacita.html">
-  <span>Another one</span>
-  <strong>What to do if the calendar does not load</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Register for the local stay fee</h1>
+      <p class="kb-article-lead">Start with the municipality for the property's address. Obtain its rules and payment details, then configure the property.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Check municipality</li>
+<li><span class="kb-article-flow-number">2</span>File notification</li>
+<li><span class="kb-article-flow-number">3</span>Keep details</li>
+<li><span class="kb-article-flow-number">4</span>Set up app</li></ol><section><h2 id="municipality">1. Find the correct authority</h2><p>Use the official municipality or district website for the accommodation address to check whether the fee is charged, its rate, exemptions and notification deadline. Do not use another municipality's rules.</p></section>
+<section><h2 id="notification">2. File the required notification</h2><p>Use the current form and submission method published by the authority. Prepare operator and accommodation details requested in the form. Fee registration does not replace other operating permissions.</p></section>
+<section><h2 id="details">3. Keep details for future periods</h2><p>Record the rate, bank account, payment reference, any registration number and payment deadlines. Check required records and communication method. Not every municipality uses monthly periods.</p></section>
+<section><h2 id="app">4. Configure the property</h2><p>Enter the details in the property's fee settings. Verify the first calculation against actual guests, nights and exemptions. A generated PDF is not automatically a filed report and a QR code is not proof of payment.</p><p><a href='https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005' target='_blank' rel='noreferrer'>Official gov.cz information</a></p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html"><span>Related guides</span><strong>Check and remit municipality fees</strong></a>
+<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Related guides</span><strong>Basic legislative obligations of the host in the Czech Republic</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -257,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

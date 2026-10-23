@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html" />
-    <meta name="description" content="První přihlášení a orientace v účtu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="První přihlášení a orientace v účtu" />
-    <meta property="og:description" content="První přihlášení a orientace v účtu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Začněte jednou nemovitostí a jednou skutečnou rezervací. Další funkce zapojujte až po ověření tohoto průchodu." />
+    <meta property="og:title" content="První přihlášení: od nemovitosti k prvnímu pobytu" />
+    <meta property="og:description" content="Začněte jednou nemovitostí a jednou skutečnou rezervací. Další funkce zapojujte až po ověření tohoto průchodu." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="První přihlášení a orientace v účtu" />
-    <meta name="twitter:description" content="První přihlášení a orientace v účtu – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>První přihlášení a orientace v účtu</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"První přihlášení a orientace v účtu","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html"}}
-    </script>
+    <meta name="twitter:title" content="První přihlášení: od nemovitosti k prvnímu pobytu" />
+    <meta name="twitter:description" content="Začněte jednou nemovitostí a jednou skutečnou rezervací. Další funkce zapojujte až po ověření tohoto průchodu." />
+    <title>První přihlášení: od nemovitosti k prvnímu pobytu | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"První přihlášení: od nemovitosti k prvnímu pobytu","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/prvni-prihlaseni-a-orientace-v-uctu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,85 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Začínáme</p>
-          <h1 class="kb-article-title">První přihlášení a orientace v účtu</h1>
-          <p class="kb-article-lead">Po přihlášení se otevře sekce Přehled. Pokud ještě nemáte založenou žádnou nemovitost, uvidíte úvodní blok Vítejte! Pojďme nastavit vaši první nemovitost.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./jak-pridat-novou-nemovitost.html">Další krok →</a>
-          </div>
-          <div class="kb-article-intro-note">
-            <strong>Nejrychlejší cesta</strong>
-            <p>Přehled → vyberte způsob začátku → založte nemovitost → další napojení řešte až potom.</p>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Co uvidíte po přihlášení</h2>
-            <p>Po přihlášení se otevře sekce <strong>Přehled</strong>. Pokud ještě nemáte žádnou nemovitost, uvidíte úvodní onboarding pro její nastavení.</p>
-            <p>V prvních minutách stačí pracovat se dvěma místy: <strong>Přehled</strong>, kde zvolíte způsob začátku, a <strong>Nemovitosti</strong>, kde svou první nemovitost dokončíte.</p>
-            <p><strong>Rezervace</strong>, reporty, importy, iCal export a nastavení zatím nechte být. Přijdou na řadu až poté, co máte nemovitost založenou.</p>
-
-            <section class="kb-setup-situation" aria-labelledby="setup-situation-title">
-              <div class="kb-setup-situation-heading">
-                <span>Než půjdete dál</span>
-                <h2 id="setup-situation-title">Ověřte právní náležitosti a registrace</h2>
-                <p>Než založíte první nemovitost, zkontrolujte si, co se týká právě vašeho provozu. Pravidla se liší podle nemovitosti a obce.</p>
-              </div>
-              <ol class="kb-setup-situation-flow" aria-label="Kontrola právní připravenosti">
-                <li><span class="kb-setup-situation-number">1</span><strong>Právní připravenost</strong><small>Ověřte pravidla pro svou nemovitost.</small></li>
-                <li><span class="kb-setup-situation-number">2</span><strong>Ubyport</strong><small>Jen pokud se vás týká.</small></li>
-                <li><span class="kb-setup-situation-number">3</span><strong>Místní poplatek</strong><small>Jen pokud ho řeší vaše obec.</small></li>
-                <li><span class="kb-setup-situation-number">4</span><strong>Provozní napojení</strong><small>iCal a emaily nastavte až potom.</small></li>
-              </ol>
-              <p class="kb-setup-situation-note">Pravidla, výjimky, termíny, formuláře i způsob hlášení se liší podle situace a obce. Superhostem nenahrazuje ověření u příslušného úřadu ani odborníka.</p>
-              <div class="kb-setup-situation-cards">
-                <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Nejsem si jistý/á</span><strong>Které povinnosti se mě týkají?</strong><small>Začněte základním přehledem pro hostitele.</small></a>
-                <a href="./jak-se-zaregistrovat-do-ubyportu.html"><span>Pokud se týká</span><strong>Chybí mi Ubyport nebo IDUB</strong><small>Navazující postup pro registraci a přístupové údaje.</small></a>
-                <a href="./jak-funguje-poplatek-z-pobytu.html"><span>Pokud se týká</span><strong>Chybí mi údaje k místnímu poplatku</strong><small>Ověřte registraci, podklady pro platbu a hlášení.</small></a>
-                <a href="./jak-funguje-napojeni-pres-ical.html"><span>Až potom</span><strong>Napojit provozní data</strong><small>Pokračujte iCalem; email forwarding můžete doplnit následně.</small></a>
-              </div>
-            </section>
-
-            <h2>Založte první nemovitost</h2>
-            <p>Teď vyberte způsob začátku podle toho, zda už máte iCal URL z rezervačního portálu, například Airbnb, Booking.com nebo e‑Chalupy:</p>
-            <ol>
-              <li><strong>Máte iCal URL?</strong> Zvolte <strong>Import z Airbnb kalendáře</strong> a vložte URL z portálu, který používáte.</li>
-              <li><strong>iCal URL ještě nemáte?</strong> Zvolte <strong>Vytvořit nemovitost ručně</strong>.</li>
-            </ol>
-            <p><strong>Automatické přeposílání emailů</strong> nastavte až později, když už nemovitost existuje. Je to navazující zdroj dat, ne nutný první krok.</p>
-            <ol class="kb-article-flow" aria-label="Další kroky po ověření registrací">
-              <li><span class="kb-article-flow-number">1</span><span>Založit nemovitost</span></li>
-              <li><span class="kb-article-flow-number">2</span><span>Napojit iCal</span></li>
-              <li><span class="kb-article-flow-number">3</span><span>Zkontrolovat rezervace</span></li>
-            </ol>
-            <a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html">
-              <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span>
-              <span><strong>Jak přidat novou nemovitost</strong><small>Pokračujte, až máte právní náležitosti a registrace ověřené.</small></span>
-              <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-            </a>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html">
-  <span>Další krok</span>
-  <strong>Jak přidat svou nemovitost</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Navazující</span>
-  <strong>Jak funguje iCal</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-upravit-profil-v-nastaveni.html">
-  <span>Účet</span>
-  <strong>Jak upravit profil</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">První přihlášení: od nemovitosti k prvnímu pobytu</h1>
+      <p class="kb-article-lead">Začněte jednou nemovitostí a jednou skutečnou rezervací. Další funkce zapojujte až po ověření tohoto průchodu.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Právní kontrola</li>
+<li><span class="kb-article-flow-number">2</span>Nemovitost</li>
+<li><span class="kb-article-flow-number">3</span>Rezervace</li>
+<li><span class="kb-article-flow-number">4</span>První check-in</li></ol><section><h2 id="pravni">Než začnete ubytovávat</h2><p>Ověřte oprávnění k provozu, místní poplatek a povinnosti evidence a hlášení cizinců. Pokud už máte registrace, použijte stávající údaje. Technické založení účtu samo nepotvrzuje splnění právních podmínek.</p><p><a href='./zakladni-legislativni-povinnosti-hostitele-v-cr.html'>Zkontrolovat právní náležitosti a registrace</a></p></section>
+<section><h2 id="nastaveni">Založte jednu nemovitost</h2><p>Na Přehledu vyberte zdroj, který skutečně používáte. Pokud máte iCal, vložte exportní URL správné nabídky a název nemovitosti. Bez importu vytvořte nemovitost ručně přes Nemovitosti. Pokyny a pole se přizpůsobují zvolenému zdroji; nejde jen o Airbnb.</p></section>
+<section><h2 id="prvni-pobyt">Ověřte první rezervaci</h2><p>V Rezervacích otevřete jeden pobyt a ověřte nemovitost, termín a počet osob. Přímý pobyt můžete přidat ručně. Pošlete formulář hostům a zkontrolujte jejich vyplnění, potom případné hlášení Ubyportu.</p><p>E-mailové přeposílání, průvodce, úklid a automatizace přidávejte postupně. Každou funkci nejdřív ověřte na jednom pobytu.</p></section><a class="kb-article-next-cta" href="./jak-pridat-novou-nemovitost.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Jak přidat svou nemovitost</strong><small>Další krok</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html"><span>Související návody</span><strong>Jak přidat svou nemovitost</strong></a>
+<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Související návody</span><strong>Základní legislativní povinnosti hostitele v ČR</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Související návody</span><strong>Jak poslat online check-in a zkontrolovat hosty</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -199,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

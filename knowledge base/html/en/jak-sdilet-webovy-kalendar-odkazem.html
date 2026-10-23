@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-sdilet-webovy-kalendar-odkazem.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-sdilet-webovy-kalendar-odkazem.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-sdilet-webovy-kalendar-odkazem.html" />
-    <meta name="description" content="How to share a web calendar by link – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How to share a web calendar by link" />
-    <meta property="og:description" content="How to share a web calendar by link – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Share selected properties with a team or temporary collaborator, control visible details and revoke access later." />
+    <meta property="og:title" content="Share a web calendar link" />
+    <meta property="og:description" content="Share selected properties with a team or temporary collaborator, control visible details and revoke access later." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-sdilet-webovy-kalendar-odkazem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to share a web calendar by link" />
-    <meta name="twitter:description" content="How to share a web calendar by link – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How to share a web calendar by link</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"How to share a web calendar by link","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-sdilet-webovy-kalendar-odkazem.html"}}
-    </script>
+    <meta name="twitter:title" content="Share a web calendar link" />
+    <meta name="twitter:description" content="Share selected properties with a team or temporary collaborator, control visible details and revoke access later." />
+    <title>Share a web calendar link | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Share a web calendar link","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-sdilet-webovy-kalendar-odkazem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,51 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Properties and calendars</p>
-          <h1 class="kb-article-title">How to share a web calendar by link</h1>
-          <p class="kb-article-lead">Use a web calendar link for people who need to see occupancy but should not have access to your Superhostem account. Typical use cases are cleaners, property managers, owners, or external partners.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./jak-funguje-napojeni-pres-ical.html">Previous article</a>
-            <a href="./kalendar-airbnb-v-telefonu.html">Next article →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>When to use it</strong>
-          <p>
-            Use it when someone only needs to open a browser link and see dates.
-            They do not need a calendar app setup or a Superhostem user account.
-            It also works well for people who only need temporary calendar access.
-          </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block"><h2>What the shared web calendar is for</h2><p>You create a unique calendar link. Anyone with the link sees the web occupancy view with only the details you allow.</p><ul><li>cleaners see when the property needs to be ready</li><li>a manager sees occupancy without admin access</li><li>an owner or partner can check reservations in a browser</li><li>you can revoke an old link at any time</li></ul></section>
-            <section class="kb-article-topic-block"><h2>When details are missing in the calendar</h2><aside class="kb-article-callout kb-article-callout-muted">If guest name, guest count, price, or other details are missing in the calendar, Superhostem does not have that data yet. Enable reservation email synchronization to fill these details quickly. Without it, the details must be entered manually by the guest or by you in the admin.</aside></section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted"><h2>Security</h2><ul><li>Anyone with the link can open it.</li><li>Do not post the link in public groups or public documents.</li><li>Share only the fields external people truly need.</li><li>Regularly revoke old or unused links.</li></ul></section>
-            <section class="kb-article-topic-block"><h2>Difference from a calendar app</h2><p>The web calendar is a normal browser link. The recipient does not need Apple Calendar, Google Calendar, or Outlook. A calendar app connection is better when someone wants the dates inside their personal calendar.</p><a class="kb-article-next-cta" href="./kalendar-airbnb-v-telefonu.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"></rect><path d="M12 18h.01"></path></svg></span><span><strong>I want the calendar in an app</strong><small>Guide for Apple Calendar, Google Calendar, and other iCal-compatible apps.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a><a class="kb-article-next-cta" href="./jak-funguje-email-forwarding.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span><span><strong>Fill details from emails automatically</strong><small>Email synchronization loads reservation details without manual copying.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Related</span>
-  <strong>How iCal connection works</strong>
-</a>
-
-<a class="kb-article-related-card" href="./kalendar-airbnb-v-telefonu.html">
-  <span>Next</span>
-  <strong>To a calendar app</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Share a web calendar link</h1>
+      <p class="kb-article-lead">Share selected properties with a team or temporary collaborator, control visible details and revoke access later.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Select properties</li>
+<li><span class="kb-article-flow-number">2</span>Choose details</li>
+<li><span class="kb-article-flow-number">3</span>Share</li>
+<li><span class="kb-article-flow-number">4</span>Manage access</li></ol><section><h2 id="setup">Create a named link</h2><p>Open Web overview in iCal export. Name the link and select properties. Choose the available visibility options for guest name, guest count, price, property and reservation status. For multiple properties, choose a suitable calendar or Gantt default view.</p></section>
+<section><h2 id="access">Review and share</h2><p>Check the preview, create the link and send the complete URL to its recipient. No recipient account or calendar app installation is needed. Anyone holding the link can see the permitted overview; do not publish it openly.</p></section>
+<section><h2 id="changes">Change or end access</h2><p>Edit the available visibility options on an existing managed link and verify the shared page. Revoke unused access and use separate links for different teams. Enable cleaning mode only where the recipient should perform cleaning tasks.</p></section>
+<section><h2 id="missing">Missing guest name or price</h2><p>Check that the link permits the details and that they exist in the reservation. iCal may not include them; supported reservation emails or manual edits can add them. Forwarding does not guarantee every field from every email or immediate updates.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-ridit-uklid.html"><span>Related guides</span><strong>Give cleaners access and verify completion</strong></a>
+<a class="kb-article-related-card" href="./kalendar-airbnb-v-telefonu.html"><span>Related guides</span><strong>Add reservations to a calendar app</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Related guides</span><strong>Set up reservation email forwarding</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -165,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

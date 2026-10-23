@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-prehled-rezervaci.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-prehled-rezervaci.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-prehled-rezervaci.html" />
-    <meta name="description" content="Jak funguje přehled rezervací – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <meta property="og:title" content="Jak funguje přehled rezervací" />
-    <meta property="og:description" content="Jak funguje přehled rezervací – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Najděte pobyty, které právě potřebují vaši pozornost. V detailu pak vyřešíte hosty, zprávy nebo hlášení." />
+    <meta property="og:title" content="Jak pracovat s přehledem rezervací" />
+    <meta property="og:description" content="Najděte pobyty, které právě potřebují vaši pozornost. V detailu pak vyřešíte hosty, zprávy nebo hlášení." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-prehled-rezervaci.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Jak funguje přehled rezervací" />
-    <meta name="twitter:description" content="Jak funguje přehled rezervací – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak funguje přehled rezervací</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak funguje přehled rezervací","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-prehled-rezervaci.html"}}
-    </script>
+    <meta name="twitter:title" content="Jak pracovat s přehledem rezervací" />
+    <meta name="twitter:description" content="Najděte pobyty, které právě potřebují vaši pozornost. V detailu pak vyřešíte hosty, zprávy nebo hlášení." />
+    <title>Jak pracovat s přehledem rezervací | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak pracovat s přehledem rezervací","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-prehled-rezervaci.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,71 +103,18 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Správa rezervací a kalendář</p>
-          <h1 class="kb-article-title">Jak funguje přehled rezervací</h1>
-          <p class="kb-article-lead">Na stránce Rezervace uvidíte všechny rezervace na jednom místě a můžete je filtrovat podle data, stavu nebo nemovitosti.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-            <a href="./co-vsechno-najdu-v-detailu-rezervace.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Kde přehled rezervací najdete</h2>
-
-<p>V levém menu klikněte na <strong>Rezervace</strong>. Otevře se stránka s podnadpisem <strong>Přehled všech rezervací z Airbnb, Booking.com a manuálních</strong>.</p>
-
-<h2>Co je na stránce k dispozici</h2>
-
-<ul>
-<li>Synchronizovat vše</li>
-<li>Nová rezervace</li>
-<li>Seznam</li>
-<li>Kalendář</li>
-<li>Zobrazit: Nadcházející / Minulé</li>
-<li>Stav: Vše</li>
-<li>Nemovitost: Vše</li>
-<li>Od data</li>
-<li>Do data</li>
-</ul>
-
-<h2>Co uvidíte v prázdném stavu</h2>
-
-<p>Pokud ještě nemáte žádná data, stránka zobrazí text <strong>Zatím nemáte žádné rezervace</strong> a doporučení připojit kalendáře z Airbnb a Booking.com nebo přidat rezervaci ručně.</p>
-
-<h2>Co udělat, pokud je přehled prázdný</h2>
-
-<ol>
-<li>ověřte, že už máte vytvořenou alespoň jednu nemovitost</li>
-<li>připojte zdroj rezervací</li>
-<li>případně použijte <strong>Nová rezervace</strong>
-</li>
-<li>klikněte na <strong>Synchronizovat vše</strong>
-</li>
-</ol>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-vsechno-najdu-v-detailu-rezervace.html">
-  <span>Další</span>
-  <strong>Co všechno najdu v detailu rezervace</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak pracovat s přehledem rezervací</h1>
+      <p class="kb-article-lead">Najděte pobyty, které právě potřebují vaši pozornost. V detailu pak vyřešíte hosty, zprávy nebo hlášení.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="vyber">Vyberte období a nemovitost</h2><p>Otevřete Rezervace. Ověřte minulá/nadcházející data, filtr stavu a nemovitost. Přepněte seznam nebo kalendář podle toho, zda hledáte konkrétní pobyt, nebo volné termíny.</p></section>
+<section><h2 id="kontrola">Každodenní kontrola</h2><ol><li>Projděte nejbližší příjezdy.</li><li>Otevřete pobyty s chybějícími údaji nebo potvrzením.</li><li>Zkontrolujte počet hostů a vyplnění formulářů.</li><li>U zahraničních hostů ověřte také výsledek Ubyportu.</li></ol><p>Stav rezervace, vyplnění hostů a přijetí hlášení nejsou totožná informace.</p></section>
+<section><h2 id="prazdno">Nic nevidíte nebo data nesedí?</h2><p>Nejdřív zrušte filtry a ověřte zdroj. Synchronizace může obnovit importovaná data, ale sama nedoplní údaje, které zdroj neobsahuje. Přímý pobyt přidejte přes Nová rezervace a předem vylučte duplicitu.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-pridat-rucni-rezervaci.html"><span>Související návody</span><strong>Jak přidat ruční rezervaci</strong></a>
+<a class="kb-article-related-card" href="./co-vsechno-najdu-v-detailu-rezervace.html"><span>Související návody</span><strong>Co vyřešíte v detailu rezervace</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Související návody</span><strong>Co dělat, když chybí rezervace</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -185,6 +135,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

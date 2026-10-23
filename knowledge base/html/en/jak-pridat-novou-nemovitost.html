@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-pridat-novou-nemovitost.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-pridat-novou-nemovitost.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html" />
-    <meta name="description" content="How to add your property – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How to add your property" />
-    <meta property="og:description" content="How to add your property – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Create a property manually or use an import, then verify the correct property and first reservation." />
+    <meta property="og:title" content="Add your property" />
+    <meta property="og:description" content="Create a property manually or use an import, then verify the correct property and first reservation." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-pridat-novou-nemovitost.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to add your property" />
-    <meta name="twitter:description" content="How to add your property – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How to add your property</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"How to add your property","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-pridat-novou-nemovitost.html"}}
-    </script>
+    <meta name="twitter:title" content="Add your property" />
+    <meta name="twitter:description" content="Create a property manually or use an import, then verify the correct property and first reservation." />
+    <title>Add your property | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Add your property","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-pridat-novou-nemovitost.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=property-flow-stable">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,38 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Quick start</p>
-          <h1 class="kb-article-title">How to add your property</h1>
-          <p class="kb-article-lead">You can create your first property without an iCal link. If you already have an iCal URL from a booking portal, use it to import reservations straight away.</p>
-          <div class="kb-article-jump"><a href="./index.html">Help Center</a><a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Previous step</a><a href="./jak-funguje-napojeni-pres-ical.html">Next step →</a></div>
-          <div class="kb-article-intro-note"><strong>Start by creating the property.</strong><p>Choose the remaining settings only when they apply to the property.</p></div>
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Choose a route based on your iCal URL</h2><p>An iCal URL can come from Airbnb, Booking.com, e-Chalupy, or another booking portal.</p>
-            <section class="kb-property-decision" aria-labelledby="property-decision-title"><h3 id="property-decision-title" class="sr-only">Two routes for creating a property</h3><ol class="kb-property-decision-flow"><li class="kb-property-decision-card is-primary"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">You do not have an iCal URL yet</span><strong>Create the property from Properties</strong><p>Open <b>Properties</b> in the left menu, select <b>Add property</b>, then continue to its settings.</p><a class="kb-property-decision-cta" href="https://www.superhostem.cz/dashboard/properties/new">Add property <span aria-hidden="true">→</span></a></div></li><li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">You already have an iCal URL</span><strong>Use onboarding and import</strong><p>On the <b>Overview</b> page, enter the property name and iCal URL. Then select <b>Create property and import reservations</b>.</p><a class="kb-property-decision-cta is-secondary" href="./jak-funguje-napojeni-pres-ical.html">Continue with iCal import <span aria-hidden="true">→</span></a></div></li></ol></section>
-            <section class="kb-property-next-steps" id="property-next-steps" aria-labelledby="property-next-steps-title"><div class="kb-property-next-steps-heading"><span>After creation</span><h2 id="property-next-steps-title">Add only what applies to you</h2><p>You do not need to complete every setting at once.</p></div><div class="kb-property-next-steps-grid"><a class="kb-property-next-card" href="./jak-funguje-poplatek-z-pobytu.html"><span>If applicable</span><strong>Local stay fee</strong><small>See how to set it up in the app.</small></a><a class="kb-property-next-card" href="./jak-se-zaregistrovat-do-ubyportu.html"><span>If needed</span><strong>Ubyport</strong><small>Registration and access details.</small></a><a class="kb-property-next-card" href="./jak-funguje-napojeni-pres-ical.html"><span>For import</span><strong>Connect iCal</strong><small>Connect or add a calendar from a portal.</small></a><a class="kb-property-next-card" href="./jak-funguje-prehled-rezervaci.html"><span>After import</span><strong>Check reservations</strong><small>Confirm that stays appear in the overview.</small></a></div><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Calendar and routines</strong><small>Continue by setting up automations for messages and routine operations.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html">
-  <span>Previous</span>
-  <strong>First login and account orientation</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Another one</span>
-  <strong>How to get and connect iCal from Airbnb and Booking</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Add your property</h1>
+      <p class="kb-article-lead">Create a property manually or use an import, then verify the correct property and first reservation.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Choose method</li>
+<li><span class="kb-article-flow-number">2</span>Enter details</li>
+<li><span class="kb-article-flow-number">3</span>Save</li>
+<li><span class="kb-article-flow-number">4</span>Verify stay</li></ol><section><h2 id="method">Have an import link?</h2><p>On Overview, select the supported source and complete its fields. iCal needs the export URL for the specific listing. After creation, check imported dates; email may add further details.</p></section>
+<section><h2 id="manual">Without an import: Properties → Add property</h2><p>Enter the name and required address fields. Select an address suggestion and check city and postal code. Check capacity and currency. Confirm creation and open the saved property.</p></section>
+<section><h2 id="settings">Complete settings for your operation</h2><p>Add local fees, IDUB and Ubyport credentials, calendars and arrival/departure times as needed. For a hotel, reservations and sources belong to individual rooms, not the hotel container. Hotel features require account access.</p></section>
+<section><h2 id="done">Verify the first stay</h2><p>Check property, dates and guest count in the first reservation. Then continue with check-in and automation. Creating a property does not itself supply every contact or financial detail.</p></section><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Automate guest communication</strong><small>Next step</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Related guides</span><strong>How to connect an iCal calendar</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send an online check-in form and check every guest</strong></a>
+<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html"><span>Related guides</span><strong>Automate guest communication</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -152,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=property-cta"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

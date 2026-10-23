@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-chybi-rezervace.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-chybi-rezervace.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-chybi-rezervace.html" />
-    <meta name="description" content="Co dělat, když chybí rezervace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Nejdřív ověřte správnou nemovitost a období. Potom postupujte podle toho, odkud má rezervace přijít." />
     <meta property="og:title" content="Co dělat, když chybí rezervace" />
-    <meta property="og:description" content="Co dělat, když chybí rezervace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Nejdřív ověřte správnou nemovitost a období. Potom postupujte podle toho, odkud má rezervace přijít." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-chybi-rezervace.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Co dělat, když chybí rezervace" />
-    <meta name="twitter:description" content="Co dělat, když chybí rezervace – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Co dělat, když chybí rezervace</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Co dělat, když chybí rezervace","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-chybi-rezervace.html"}}
-    </script>
+    <meta name="twitter:description" content="Nejdřív ověřte správnou nemovitost a období. Potom postupujte podle toho, odkud má rezervace přijít." />
+    <title>Co dělat, když chybí rezervace | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Co dělat, když chybí rezervace","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-chybi-rezervace.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,59 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">FAQ a řešení problémů</p>
-          <h1 class="kb-article-title">Co dělat, když chybí rezervace</h1>
-          <p class="kb-article-lead">Podle tohoto přehledu rychle ověříte, jestli jde o problém synchronizace, chybějící zdroj dat nebo jen jiný typ záznamu.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-            <a href="./co-je-ical.html">Další článek →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Rychlá diagnostika</h2>
-
-<ol>
-<li>je rezervace skutečně ve zdrojovém systému?</li>
-<li>jde o rezervaci z připojeného zdroje?</li>
-<li>proběhla už synchronizace?</li>
-<li>nejde o blokaci termínu?</li>
-</ol>
-
-<h2>Nejčastější důvody</h2>
-
-<ul>
-<li>rezervace ještě nebyla načtená</li>
-<li>zdroj není správně připojený</li>
-<li>jde o jiný typ záznamu, než uživatel čeká</li>
-</ul>
-
-<h2>Co zkontrolovat v detailu</h2>
-
-<p>Název nemovitosti, správný zdroj rezervací, stav synchronizace a případné filtry v přehledu rezervací.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-je-ical.html">
-  <span>Další</span>
-  <strong>Co je iCal</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Co dělat, když chybí rezervace</h1>
+      <p class="kb-article-lead">Nejdřív ověřte správnou nemovitost a období. Potom postupujte podle toho, odkud má rezervace přijít.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Filtry</li>
+<li><span class="kb-article-flow-number">2</span>Zdroj</li>
+<li><span class="kb-article-flow-number">3</span>Synchronizace</li>
+<li><span class="kb-article-flow-number">4</span>Kontrola</li></ol><section><h2 id="filtry">1. Vylučte skrytý záznam</h2><p>V Rezervacích zrušte filtr stavu, zkontrolujte datum a přepněte mezi minulými a nadcházejícími pobyty. U více nemovitostí ověřte správnou jednotku i aktivní organizaci, pokud ji používáte.</p></section>
+<section><h2 id="zdroj">2. Ověřte zdroj</h2><ul><li><strong>iCal:</strong> musí obsahovat daný termín. Zkontrolujte celý exportní odkaz správné jednotky a spusťte dostupnou synchronizaci.</li><li><strong>E-mail:</strong> ověřte přeposlání původního podporovaného rezervačního e-mailu na adresu ze svého účtu. Prostý vlastní testovací text rezervaci nevytvoří.</li><li><strong>Přímý pobyt:</strong> založte ruční rezervaci, pokud není z jiného zdroje již importovaná.</li></ul></section>
+<section><h2 id="duplicity">3. Rozlište rezervaci a blokaci</h2><p>Obsazený termín v kalendáři nemusí být samostatný pobyt hosta. Dva zdroje mohou také zobrazovat stejný pobyt. Před ručním vytvořením ověřte termín, hosta a zdroj, abyste nepřidali duplicitu.</p></section>
+<section><h2 id="podpora">Když pobyt stále chybí</h2><p>Podpoře pošlete nemovitost, termín, zdroj, čas poslední kontroly a referenci rezervace. Importní reporty a některé diagnostické obrazovky jsou přístupné jen správci; pokud je nevidíte, požádejte podporu o kontrolu.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Související návody</span><strong>Jak napojit iCal kalendář</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-email-forwarding.html"><span>Související návody</span><strong>Jak nastavit přeposílání rezervačních e-mailů</strong></a>
+<a class="kb-article-related-card" href="./jak-pridat-rucni-rezervaci.html"><span>Související návody</span><strong>Jak přidat ruční rezervaci</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -173,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

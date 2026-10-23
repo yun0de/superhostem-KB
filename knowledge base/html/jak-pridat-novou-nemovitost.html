@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-pridat-novou-nemovitost.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-pridat-novou-nemovitost.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html" />
-    <meta name="description" content="Jak přidat svou nemovitost – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Vytvořte nemovitost ručně nebo použijte import. Nejdřív ověřte správný objekt a první rezervaci." />
     <meta property="og:title" content="Jak přidat svou nemovitost" />
-    <meta property="og:description" content="Jak přidat svou nemovitost – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Vytvořte nemovitost ručně nebo použijte import. Nejdřív ověřte správný objekt a první rezervaci." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jak přidat svou nemovitost" />
-    <meta name="twitter:description" content="Jak přidat svou nemovitost – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak přidat svou nemovitost</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak přidat svou nemovitost","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html"}}
-    </script>
+    <meta name="twitter:description" content="Vytvořte nemovitost ručně nebo použijte import. Nejdřív ověřte správný objekt a první rezervaci." />
+    <title>Jak přidat svou nemovitost | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak přidat svou nemovitost","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-pridat-novou-nemovitost.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=property-flow-stable">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,64 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Začínáme</p>
-          <h1 class="kb-article-title">Jak přidat svou nemovitost</h1>
-          <p class="kb-article-lead">První nemovitost založíte i bez iCalu. Pokud už máte iCal URL z rezervačního portálu, můžete ji rovnou použít pro import rezervací.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./prvni-prihlaseni-a-orientace-v-uctu.html">Předchozí krok</a>
-            <a href="./jak-funguje-napojeni-pres-ical.html">Další krok →</a>
-          </div>
-          <div class="kb-article-intro-note"><strong>Začněte vytvořením nemovitosti.</strong><p>Další nastavení vybírejte až podle toho, co u ní skutečně používáte.</p></div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Vyberte cestu podle iCal URL</h2>
-            <p>iCal URL může být z Airbnb, Booking.com, e-Chalupy nebo jiného rezervačního portálu.</p>
-            <section class="kb-property-decision" aria-labelledby="property-decision-title">
-              <h3 id="property-decision-title" class="sr-only">Dvě cesty k vytvoření nemovitosti</h3>
-              <ol class="kb-property-decision-flow">
-                <li class="kb-property-decision-card is-primary"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 3v4M17 3v4M4 10h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"></path><path d="M8 14h8M8 17h5"></path></svg></span><div><span class="kb-property-decision-kicker">iCal URL zatím nemáte</span><strong>Vytvořte nemovitost přes Nemovitosti</strong><p>V levém menu otevřete <b>Nemovitosti</b>, klikněte na <b>Přidat nemovitost</b> a potom pokračujte do nastavení.</p><a class="kb-property-decision-cta" href="https://www.superhostem.cz/dashboard/properties/new">Přidat nemovitost <span aria-hidden="true">→</span></a></div></li>
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"></path><path d="M8 8h8M8 12h5M8 16h7"></path></svg></span><div><span class="kb-property-decision-kicker">iCal URL už máte</span><strong>Použijte onboarding a import</strong><p>Na stránce <b>Přehled</b> vyplňte název nemovitosti a iCal URL. Potom zvolte <b>Vytvořit nemovitost a naimportovat rezervace</b>.</p><a class="kb-property-decision-cta is-secondary" href="./jak-funguje-napojeni-pres-ical.html">Navázat iCal import <span aria-hidden="true">→</span></a></div></li>
-              </ol>
-            </section>
-            <section class="kb-property-next-steps" id="property-next-steps" aria-labelledby="property-next-steps-title">
-              <div class="kb-property-next-steps-heading"><span>Po vytvoření</span><h2 id="property-next-steps-title">Doplňte jen to, co se vás týká</h2><p>Nastavení nemusíte řešit všechna najednou.</p></div>
-              <div class="kb-property-next-steps-grid">
-                <a class="kb-property-next-card" href="./jak-funguje-poplatek-z-pobytu.html"><span>Pokud se vás týká</span><strong>Místní poplatek z pobytu</strong><small>Podívejte se, jak jej v aplikaci nastavit.</small></a>
-                <a class="kb-property-next-card" href="./jak-se-zaregistrovat-do-ubyportu.html"><span>Pokud potřebujete</span><strong>Ubyport</strong><small>Postup pro registraci a přístupové údaje.</small></a>
-                <a class="kb-property-next-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Pro import</span><strong>Připojit iCal</strong><small>Napojte nebo doplňte kalendář z portálu.</small></a>
-                <a class="kb-property-next-card" href="./jak-funguje-prehled-rezervaci.html"><span>Po importu</span><strong>Ověřit rezervace</strong><small>Zkontrolujte, že se pobyty zobrazily v přehledu.</small></a>
-              </div>
-              <a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html">
-                <span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span>
-                <span><strong>Kalendář a rutiny</strong><small>Pokračujte nastavením automatizací pro zprávy a běžný provoz.</small></span>
-                <svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
-              </a>
-            </section>
-
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html">
-  <span>Předchozí</span>
-  <strong>První přihlášení a orientace v účtu</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Další</span>
-  <strong>Jak získat a napojit iCal z Airbnb a Bookingu</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak přidat svou nemovitost</h1>
+      <p class="kb-article-lead">Vytvořte nemovitost ručně nebo použijte import. Nejdřív ověřte správný objekt a první rezervaci.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Zvolit cestu</li>
+<li><span class="kb-article-flow-number">2</span>Vyplnit údaje</li>
+<li><span class="kb-article-flow-number">3</span>Uložit</li>
+<li><span class="kb-article-flow-number">4</span>Ověřit pobyt</li></ol><section><h2 id="cesta">Máte odkaz pro import?</h2><p>Na Přehledu zvolte podporovaný zdroj a vložte údaje podle jeho polí. Pro iCal potřebujete exportní URL konkrétní nabídky. Po vytvoření zkontrolujte importované termíny; e-mail může doplnit další údaje.</p></section>
+<section><h2 id="rucne">Bez importu: Nemovitosti → Přidat nemovitost</h2><p>Vyplňte název a povinná pole adresy. Adresu vyberte z nabídky a ověřte město a PSČ. Zkontrolujte kapacitu a měnu. Potvrďte vytvoření a otevřete uloženou nemovitost.</p></section>
+<section><h2 id="nastaveni">Doplňte nastavení svého provozu</h2><p>Podle potřeby doplňte obecní poplatek, IDUB a přístupy Ubyportu, kalendáře a časy příjezdu/odjezdu. U hotelu patří rezervace a zdroje ke konkrétnímu pokoji, nikoli ke skupinovému hotelu. Hotelové funkce musí mít účet zpřístupněné.</p></section>
+<section><h2 id="hotovo">Ověřte první pobyt</h2><p>Zkontrolujte nemovitost, termín a počet hostů v detailu první rezervace. Teprve pak pokračujte check-inem a automatizacemi. Vytvoření nemovitosti samo nepřenese všechny kontaktní nebo finanční údaje.</p></section><a class="kb-article-next-cta" href="./jak-funguji-automatizace-v-superhostem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 5v14"></path><path d="m5 12 7 7 7-7"></path></svg></span><span><strong>Jak automatizovat komunikaci s hosty</strong><small>Další krok</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Související návody</span><strong>Jak napojit iCal kalendář</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Související návody</span><strong>Jak poslat online check-in a zkontrolovat hosty</strong></a>
+<a class="kb-article-related-card" href="./jak-funguji-automatizace-v-superhostem.html"><span>Související návody</span><strong>Jak automatizovat komunikaci s hosty</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -178,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=property-cta"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

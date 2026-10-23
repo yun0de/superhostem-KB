@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -141,7 +146,7 @@
 </ul>
 
 <h2>Domovní kniha vs. evidenční kniha</h2>
-<p>Tyto pojmy se často zaměňují, ale neznamenají totéž. Domovní kniha se týká evidence cizinců a navazuje na povinnosti vůči cizinecké policii. Evidenční kniha se obvykle používá pro evidenci hostů pro účely místního poplatku z pobytu; její rozsah i uchování se mohou řídit pravidly konkrétní obce.</p>
+<p>Domovní kniha eviduje cizince pro povinnosti vůči policii. Evidenční kniha pro místní poplatek má vlastní zákonná pravidla a uchovává se 6 let od posledního zápisu. Obecní pravidla pro sazbu a splatnost nenahrazují zákonnou dobu uchování evidence.</p>
 <p>V jednom systému můžete pracovat se stejnými rezervačními údaji, ale neslučujte automaticky právní povinnosti ani doby uchování. Nastavte si pro každou evidenci vlastní kontrolní postup.</p>
 
 <h2>Papírová nebo elektronická domovní kniha?</h2>
@@ -172,6 +177,8 @@
         <li>spoléhání jen na digitální záznam bez připravené listinné podoby</li>
       </ul>
 <p><small>Informace v článku mají praktický charakter. Před nastavením procesu ověřte aktuální znění zákona č. 326/1999 Sb. a požadavky Policie ČR.</small></p>
+<section id="reviewed-workflow"><h2>Kde připravit provozní evidenci</h2><p>Pro sběr údajů a PDF přehled pokračujte <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">praktickým postupem evidence</a>. Pravidla místního poplatku a jeho evidence ověřte také v <a href="https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005" target="_blank" rel="noreferrer">oficiálních informacích gov.cz</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Související odkazy</h2>
@@ -214,6 +221,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

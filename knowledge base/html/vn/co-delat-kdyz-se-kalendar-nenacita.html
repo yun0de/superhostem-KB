@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/co-delat-kdyz-se-kalendar-nenacita.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-se-kalendar-nenacita.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/co-delat-kdyz-se-kalendar-nenacita.html" />
-    <meta name="description" content="Phải làm gì nếu lịch không tải – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <meta property="og:title" content="Phải làm gì nếu lịch không tải" />
-    <meta property="og:description" content="Phải làm gì nếu lịch không tải – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
+    <meta name="description" content="Phân biệt lịch trống, dữ liệu cũ và liên kết chia sẻ lỗi. Mỗi trường hợp cần kiểm tra khác nhau." />
+    <meta property="og:title" content="Làm gì khi lịch không tải" />
+    <meta property="og:description" content="Phân biệt lịch trống, dữ liệu cũ và liên kết chia sẻ lỗi. Mỗi trường hợp cần kiểm tra khác nhau." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-se-kalendar-nenacita.html" />
     <meta property="og:site_name" content="Superhostem.cz - Trung tâm trợ giúp" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Phải làm gì nếu lịch không tải" />
-    <meta name="twitter:description" content="Phải làm gì nếu lịch không tải – hướng dẫn cho chủ nhà cho thuê ngắn hạn trên Superhostem.cz." />
-    <title>Phải làm gì nếu lịch không tải</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Phải làm gì nếu lịch không tải","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-se-kalendar-nenacita.html"}}
-    </script>
+    <meta name="twitter:title" content="Làm gì khi lịch không tải" />
+    <meta name="twitter:description" content="Phân biệt lịch trống, dữ liệu cũ và liên kết chia sẻ lỗi. Mỗi trường hợp cần kiểm tra khác nhau." />
+    <title>Làm gì khi lịch không tải | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Làm gì khi lịch không tải","inLanguage":"vi","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/vn/co-delat-kdyz-se-kalendar-nenacita.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,59 +103,18 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Câu hỏi thường gặp và khắc phục sự cố</p>
-          <h1 class="kb-article-title">Phải làm gì nếu lịch không tải</h1>
-          <p class="kb-article-lead">Sử dụng danh sách kiểm tra này để nhanh chóng kiểm tra những lý do phổ biến nhất khiến ngày theo lịch có thể không được hiển thị chính xác.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Trung tâm trợ giúp</a>
-            <a href="./index.html#knihovna">Thư viện chủ đề</a>
-            <a href="./co-delat-kdyz-chybi-rezervace.html">Bài tiếp theo →</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Danh sách kiểm tra</h2>
-
-<ol>
-<li>xác minh rằng nguồn lịch được kết nối</li>
-<li>kiểm tra liên kết iCal có chính xác không</li>
-<li>xác minh rằng nguồn đang chia sẻ dữ liệu</li>
-<li>kiểm tra độ trễ đồng bộ hóa tạm thời</li>
-</ol>
-
-<h2>Nguyên nhân có thể</h2>
-
-<ul>
-<li>liên kết không hợp lệ hoặc cũ</li>
-<li>chia sẻ lịch không hoạt động</li>
-<li>lỗi khi gán thuộc tính</li>
-</ul>
-
-<h2>Khi nào cần liên hệ với bộ phận hỗ trợ</h2>
-
-<p>Khi kết nối chính xác, liên kết hợp lệ và sự cố vẫn tiếp diễn nhiều lần mà không có lý do rõ ràng.</p>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Liên kết liên quan</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Tổng quan</span>
-  <strong>Trung tâm trợ giúp</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Thư viện</span>
-  <strong>Thư viện chủ đề</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html">
-  <span>Một cái khác</span>
-  <strong>Phải làm gì nếu thiếu lượt đặt chỗ</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Hướng dẫn thực tế</p>
+      <h1 class="kb-article-title">Làm gì khi lịch không tải</h1>
+      <p class="kb-article-lead">Phân biệt lịch trống, dữ liệu cũ và liên kết chia sẻ lỗi. Mỗi trường hợp cần kiểm tra khác nhau.</p>
+      <div class="kb-article-jump"><a href="./index.html">Trung tâm trợ giúp</a><a href="./index.html#knihovna">Thư viện</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="empty">Lịch trống</h2><p>Kiểm tra tháng, bộ lọc, chỗ ở và xem danh sách có đặt phòng không. Nếu danh sách cũng thiếu, dùng hướng dẫn khi thiếu đặt phòng.</p></section>
+<section><h2 id="stale">Dữ liệu cũ</h2><p>Kiểm tra URL iCal xuất và ngày trên nền tảng nguồn. Chạy đồng bộ nếu có. Google, Apple và các ứng dụng khác làm mới theo lịch riêng, nên thay đổi có thể chưa xuất hiện ngay.</p></section>
+<section><h2 id="link">Liên kết chia sẻ không hoạt động</h2><p>Trong tài khoản, kiểm tra quyền chưa bị thu hồi và có đúng chỗ ở. Sao chép lại toàn bộ liên kết hiện tại. Gửi hỗ trợ giờ, lỗi chính xác và cho biết lỗi ở quản trị, liên kết web hay ứng dụng lịch.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Hướng dẫn liên quan</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Hướng dẫn liên quan</span><strong>Cách kết nối lịch iCal</strong></a>
+<a class="kb-article-related-card" href="./co-delat-kdyz-chybi-rezervace.html"><span>Hướng dẫn liên quan</span><strong>Làm gì khi thiếu đặt phòng</strong></a>
+<a class="kb-article-related-card" href="./jak-sdilet-webovy-kalendar-odkazem.html"><span>Hướng dẫn liên quan</span><strong>Chia sẻ lịch web bằng liên kết</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -173,6 +135,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Quay lại đầu trang" title="Hướng lên">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

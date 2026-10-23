@@ -1,31 +1,26 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Jak sdílet webový kalendář odkazem
 
-Webový kalendář přes odkaz použijte pro lidi, kteří potřebují vidět obsazenost, ale nemají mít přístup do vašeho účtu. Typicky úklidový tým, správce, majitel nebo externí partner.
+Sdílejte potřebné nemovitosti s týmem nebo dočasným spolupracovníkem. Určete viditelné údaje a přístup později zrušte.
 
-## Kdy to použít
+1. Vybrat nemovitosti
+2. Nastavit údaje
+3. Sdílet
+4. Spravovat přístup
 
-Když někomu stačí otevřít odkaz v prohlížeči a vidět termíny. Není potřeba instalovat kalendářovou aplikaci ani vytvářet další uživatelský účet. Hodí se i pro lidi, kterým potřebujete kalendář nasdílet jen krátkodobě.
+## Vytvořte pojmenovaný odkaz
 
-## Co sdílený webový kalendář řeší
+<p>V iCal exportu otevřete Webový přehled. Pojmenujte odkaz a vyberte nemovitosti. Zvolte viditelnost jména hosta, počtu osob, ceny, nemovitosti a stavu rezervace podle dostupných voleb. U více nemovitostí vyberte vhodné výchozí zobrazení kalendáře nebo Ganttu.</p>
 
-Vytvoříte unikátní odkaz na kalendář. Člověk s odkazem uvidí webový přehled obsazenosti podle toho, jaké údaje mu povolíte zobrazit.
+## Zkontrolujte a sdílejte
 
-- úklidový tým vidí, kdy má být nemovitost připravená
-- správce vidí obsazenost bez přístupu do administrace
-- majitel nebo partner může sledovat rezervace v prohlížeči
-- starý odkaz můžete kdykoliv zrušit
+<p>Ověřte náhled a po vytvoření pošlete celý odkaz konkrétnímu příjemci. Účet příjemce ani instalace kalendářové aplikace nejsou potřeba. Každý, kdo odkaz získá, může otevřít povolený přehled; neposílejte ho veřejně.</p>
 
-## Když v kalendáři chybí informace
+## Změna a ukončení přístupu
 
-Pokud v kalendáři nevidíte jméno hosta, počet hostů, cenu nebo jiné detaily, Superhostem je zatím nemá odkud načíst. Pro bleskové doplňování těchto údajů zapněte e-mailovou synchronizaci rezervací. Bez ní je potřeba údaje doplnit ručně: buď hostem, nebo vámi v administraci.
+<p>U spravovaného odkazu můžete upravit dostupné volby viditelnosti. Zkontrolujte výsledek na sdílené stránce. Nepotřebný přístup zrušte; pro jiný tým používejte samostatný odkaz. Režim úklidu zapněte jen tam, kde má příjemce plnit úklidové úkoly.</p>
 
-## Bezpečnost
+## V kalendáři chybí jméno nebo cena
 
-- Odkaz může otevřít kdokoliv, kdo ho má.
-- Neposílejte odkaz do veřejných skupin nebo veřejných dokumentů.
-- U externích lidí sdílejte jen údaje, které nutně potřebují.
-- Staré nebo nepoužívané odkazy pravidelně rušte.
-
-## Rozdíl proti kalendářové aplikaci
-
-Webový kalendář je obyčejný odkaz do prohlížeče. Příjemce nic nenastavuje a nemusí používat Apple Calendar, Google Calendar ani Outlook. Kalendářová aplikace je vhodnější, když si chce někdo termíny přidat přímo do svého osobního kalendáře.
+<p>Nejdřív ověřte, že jsou údaje povolené v odkazu a skutečně existují u rezervace. iCal je nemusí obsahovat; doplnit je mohou podporované rezervační e-maily nebo ruční úprava. Přeposílání negarantuje všechny údaje z každého e-mailu ani okamžitou aktualizaci.</p>

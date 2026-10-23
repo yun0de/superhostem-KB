@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguji-automatizace-v-superhostem.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguji-automatizace-v-superhostem.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguji-automatizace-v-superhostem.html" />
-    <meta name="description" content="Jak automatizovat komunikaci s hosty – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Vyberte jeden způsob odesílání a jednu první zprávu. Rozlište e-mail ze Superhostem a zprávu uvnitř rezervační platformy." />
     <meta property="og:title" content="Jak automatizovat komunikaci s hosty" />
-    <meta property="og:description" content="Jak automatizovat komunikaci s hosty – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Vyberte jeden způsob odesílání a jednu první zprávu. Rozlište e-mail ze Superhostem a zprávu uvnitř rezervační platformy." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguji-automatizace-v-superhostem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jak automatizovat komunikaci s hosty" />
-    <meta name="twitter:description" content="Jak automatizovat komunikaci s hosty – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak automatizovat komunikaci s hosty</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak automatizovat komunikaci s hosty","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguji-automatizace-v-superhostem.html"}}
-    </script>
+    <meta name="twitter:description" content="Vyberte jeden způsob odesílání a jednu první zprávu. Rozlište e-mail ze Superhostem a zprávu uvnitř rezervační platformy." />
+    <title>Jak automatizovat komunikaci s hosty | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak automatizovat komunikaci s hosty","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguji-automatizace-v-superhostem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,80 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Automatizace a komunikace</p>
-          <h1 class="kb-article-title">Jak automatizovat komunikaci s hosty</h1>
-          <p class="kb-article-lead">Nastavte jednu automatickou zprávu před příjezdem. Host dostane správný odkaz ve správný čas a vy ho nemusíte posílat ručně u každé rezervace.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./jak-pridat-novou-nemovitost.html">Předchozí článek</a>
-            <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Další článek →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Finální krok nastavení</strong>
-        <p>V Superhostem nastavíte, kdy má být odkaz hostovi dostupný. Stejný čas pak nastavíte v automatické zprávě na Airbnb nebo Booking.com.</p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Nastavte jen jednu věc: zprávu před příjezdem</h2>
-            <p>Na začátek neautomatizujte všechno. Stačí zpráva, která hostovi před příjezdem pošle odkaz na formulář nebo guestbook.</p>
-            <ol class="kb-article-flow" aria-label="Postup nastavení automatizace">
-              <li><span class="kb-article-flow-number">1</span>Zkopírovat odkaz</li>
-              <li><span class="kb-article-flow-number">2</span>Nastavit dostupnost</li>
-              <li><span class="kb-article-flow-number">3</span>Vložit do zprávy</li>
-              <li><span class="kb-article-flow-number">4</span>Ověřit výsledek</li>
-            </ol>
-            <h2>Kde začít v Superhostem</h2>
-            <p>Otevřete detail konkrétní nemovitosti a část <strong>Automatizace</strong>.</p>
-            <ul>
-              <li>zkopírujte odkaz pro hosty</li>
-              <li>nastavte, kolik dní před příjezdem má být rezervace přes odkaz dostupná</li>
-              <li>nastavení uložte</li>
-            </ul>
-            <aside class="kb-article-callout">Počet dní musí sedět s časem odeslání zprávy v Airbnb nebo Booking.com. Když v Superhostem nastavíte 3 dny před příjezdem, automatická zpráva má odejít také 3 dny před příjezdem.</aside>
-            <h2>Kam odkaz vložit</h2>
-            <section class="kb-property-decision" aria-label="Platformy pro automatickou zprávu">
-              <ol class="kb-property-decision-flow">
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Zprávy → nastavení zpráv</strong><p>Vytvořte rychlou odpověď nebo automatickou zprávu. Do textu vložte odkaz ze Superhostem a přiřaďte ji ke správné nabídce.</p></div></li>
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M6 4h12v16H6z"></path><path d="M9 8h6M9 12h6M9 16h4"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Extranet → nastavení zpráv</strong><p>Vytvořte šablonu zprávy, vložte odkaz ze Superhostem a naplánujte odeslání před příjezdem.</p></div></li>
-              </ol>
-            </section>
-            <h2>Před uložením zkontrolujte</h2>
-            <ul>
-              <li>ve zprávě je odkaz pro správnou nemovitost nebo jednotku</li>
-              <li>šablona je přiřazená ke správné nabídce</li>
-              <li>čas odeslání odpovídá počtu dní nastavenému v Superhostem</li>
-              <li>text jasně říká hostovi, co má po kliknutí udělat</li>
-            </ul>
-            <aside class="kb-article-callout kb-article-callout-muted">U krátkých pobytů a last minute rezervací testujte hlavně načasování. Zpráva musí odejít ve chvíli, kdy už je rezervace přes odkaz dostupná.</aside>
-            <h2>Další krok</h2>
-            <p>Pokud automatizace posílá formulář nebo guestbook, navazuje na ni evidence hostů. Pro měsíční provoz pokračujte zpracováním poplatků obci.</p>
-            <ul class="kb-article-link-list">
-              <li><a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">Jak vést evidenci hostů a pobytů v Superhostem</a></li>
-              <li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Jak měsíčně zpracovat poplatky obci v Superhostem</a></li>
-            </ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html">
-  <span>Předchozí</span>
-  <strong>Jak přidat svou nemovitost</strong>
-</a>
-
-<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">
-  <span>Další</span>
-  <strong>Základní legislativní povinnosti hostitele v ČR</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak automatizovat komunikaci s hosty</h1>
+      <p class="kb-article-lead">Vyberte jeden způsob odesílání a jednu první zprávu. Rozlište e-mail ze Superhostem a zprávu uvnitř rezervační platformy.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Kanál</li>
+<li><span class="kb-article-flow-number">2</span>Odkaz a obsah</li>
+<li><span class="kb-article-flow-number">3</span>Čas</li>
+<li><span class="kb-article-flow-number">4</span>Výsledek</li></ol><section><h2 id="email">Chci e-mail ze Superhostem</h2><p>V nemovitosti otevřete Automatizace zpráv a část e-mailů. Nastavte událost, čas, příjemce a jazyk. Zkontrolujte náhled pro konkrétní pobyt a historii po odeslání.</p><p><a href='./jak-nastavit-automaticke-emaily.html'>Nastavit automatické e-maily krok za krokem</a></p></section>
+<section><h2 id="platforma">Chci zprávu v Airbnb nebo Bookingu</h2><p>V nastavení zpráv dané platformy vytvořte šablonu nebo plánovanou zprávu. Vložte správný odkaz nemovitosti ze Superhostem a přiřaďte ji ke správné nabídce. Přístupnost rezervace přes tento odkaz musí začít nejpozději při odeslání zprávy; nemusí mít přesně stejný počet dní.</p></section>
+<section><h2 id="kontrola">Než automatizaci zapnete</h2><ul><li>Odkaz a šablona patří ke správné nemovitosti.</li><li>Host dostane jasný pokyn: potvrdit pobyt, vyplnit registraci, nebo otevřít průvodce.</li><li>Ověřili jste časovou zónu, last-minute pobyt a dostupný kontakt.</li><li>Stejnou zprávu neposílají současně dvě pravidla.</li></ul><p>Začněte ručně poslaným formulářem u jednoho pobytu. Automatizaci zapněte až po ověření celého průchodu a potom zkontrolujte skutečné odeslání.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-nastavit-automaticke-emaily.html"><span>Související návody</span><strong>Jak nastavit automatické e-maily v Superhostem</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Související návody</span><strong>Jak poslat online check-in a zkontrolovat hosty</strong></a>
+<a class="kb-article-related-card" href="./jak-vytvorit-pruvodce-pro-hosty.html"><span>Související návody</span><strong>Jak připravit průvodce pro hosty</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -194,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -25,14 +25,19 @@
     </script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -141,7 +146,7 @@
 </ul>
 
 <h2>Guest register vs. local-fee register</h2>
-<p>These terms are often confused, but they do not mean the same thing. A guest register concerns records of foreign nationals and duties towards the Foreign Police. A local-fee register is generally used to record guests for the municipal stay fee; its scope and retention may be governed by the rules of the particular municipality.</p>
+<p>The foreign-guest register supports duties towards the police. The local-fee register has its own statutory rules and must be retained for 6 years after its last entry. Municipality rules for rates and payment dates do not replace the statutory retention period.</p>
 <p>You may work with the same reservation data in one system, but do not automatically combine the legal duties or retention periods. Set a separate control process for each register.</p>
 
 <h2>Paper or electronic guest register?</h2>
@@ -172,6 +177,8 @@
         <li>relying solely on a digital record without a paper version ready for inspection</li>
       </ul>
 <p><small>This article provides practical information. Before setting up your process, check the current wording of Act No. 326/1999 Coll. and the requirements of the Czech Police.</small></p>
+<section id="reviewed-workflow"><h2>Prepare operational records</h2><p>For collection and PDF records, use the <a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">practical recordkeeping guide</a>. Also verify local-fee record rules in the <a href="https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005" target="_blank" rel="noreferrer">official gov.cz information</a>.</p></section>
+
           </div>
           <section class="kb-article-related" id="kb-article-related">
             <h2>Related links</h2>
@@ -214,6 +221,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -1,36 +1,26 @@
+<!-- Generated from reviewed-guides.json / workflow-guides.json. Edit the JSON source. -->
+
 # Co dělat, když chybí rezervace
 
-## Co tento článek řeší
+Nejdřív ověřte správnou nemovitost a období. Potom postupujte podle toho, odkud má rezervace přijít.
 
-Pomáhá odlišit, zda jde o problém synchronizace, chybějící zdroj dat, nebo jen o odlišné očekávání, co má být v systému vidět.
+1. Filtry
+2. Zdroj
+3. Synchronizace
+4. Kontrola
 
-## Rychlá diagnostika
+## 1. Vylučte skrytý záznam
 
-Položte si tyto otázky:
+<p>V Rezervacích zrušte filtr stavu, zkontrolujte datum a přepněte mezi minulými a nadcházejícími pobyty. U více nemovitostí ověřte správnou jednotku i aktivní organizaci, pokud ji používáte.</p>
 
-1. je rezervace skutečně ve zdrojovém systému?
-2. jde o rezervaci z připojeného zdroje?
-3. proběhla už synchronizace?
-4. není rezervace evidovaná jako blokace nebo jiný typ záznamu?
+## 2. Ověřte zdroj
 
-## Nejčastější důvody
+<ul><li><strong>iCal:</strong> musí obsahovat daný termín. Zkontrolujte celý exportní odkaz správné jednotky a spusťte dostupnou synchronizaci.</li><li><strong>E-mail:</strong> ověřte přeposlání původního podporovaného rezervačního e-mailu na adresu ze svého účtu. Prostý vlastní testovací text rezervaci nevytvoří.</li><li><strong>Přímý pobyt:</strong> založte ruční rezervaci, pokud není z jiného zdroje již importovaná.</li></ul>
 
-- rezervace ještě nebyla načtená
-- zdroj není správně připojený
-- rezervace není ve zdrojových datech dostupná tak, jak uživatel očekává
-- došlo k chybě v párování nebo přiřazení nemovitosti
+## 3. Rozlište rezervaci a blokaci
 
-## Co zkontrolovat v detailu
+<p>Obsazený termín v kalendáři nemusí být samostatný pobyt hosta. Dva zdroje mohou také zobrazovat stejný pobyt. Před ručním vytvořením ověřte termín, hosta a zdroj, abyste nepřidali duplicitu.</p>
 
-- název nemovitosti
-- správný zdroj rezervací
-- stav synchronizace
-- případné filtry nebo omezení v přehledu rezervací
+## Když pobyt stále chybí
 
-## Kdy je potřeba jít dál
-
-Pokud rezervace dlouhodobě chybí a ve zdrojových datech prokazatelně existuje, je vhodné přejít na podrobnější troubleshooting nebo kontaktovat support.
-
-## Doporučený další krok
-
-Pokračujte kontrolou detailu napojení kalendáře a správnosti zdrojového odkazu.
+<p>Podpoře pošlete nemovitost, termín, zdroj, čas poslední kontroly a referenci rezervace. Importní reporty a některé diagnostické obrazovky jsou přístupné jen správci; pokud je nevidíte, požádejte podporu o kontrolu.</p>

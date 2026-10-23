@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguji-automatizace-v-superhostem.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguji-automatizace-v-superhostem.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguji-automatizace-v-superhostem.html" />
-    <meta name="description" content="How to automate guest messages – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="How to automate guest messages" />
-    <meta property="og:description" content="How to automate guest messages – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Choose one sending channel and one first message. Distinguish Superhostem emails from messages inside a booking platform." />
+    <meta property="og:title" content="Automate guest communication" />
+    <meta property="og:description" content="Choose one sending channel and one first message. Distinguish Superhostem emails from messages inside a booking platform." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguji-automatizace-v-superhostem.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to automate guest messages" />
-    <meta name="twitter:description" content="How to automate guest messages – guide for short-term rental hosts on Superhostem.cz." />
-    <title>How to automate guest messages</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"How to automate guest messages","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguji-automatizace-v-superhostem.html"}}
-    </script>
+    <meta name="twitter:title" content="Automate guest communication" />
+    <meta name="twitter:description" content="Choose one sending channel and one first message. Distinguish Superhostem emails from messages inside a booking platform." />
+    <title>Automate guest communication | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Automate guest communication","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguji-automatizace-v-superhostem.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,80 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Automation and communication</p>
-          <h1 class="kb-article-title">How to automate guest messages</h1>
-          <p class="kb-article-lead">Set up one pre-arrival message. The guest gets the right link at the right time, and you do not send it manually for every booking.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./jak-pridat-novou-nemovitost.html">Previous article</a>
-            <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Next article →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Final setup step</strong>
-        <p>In Superhostem, you decide when the guest link becomes available. Use the same timing for the automated message in Airbnb or Booking.com.</p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Start with one message before arrival</h2>
-            <p>Do not automate everything at the beginning. One useful message is enough: it sends the form or guestbook link before arrival.</p>
-            <ol class="kb-article-flow" aria-label="Automation setup flow">
-              <li><span class="kb-article-flow-number">1</span>Copy the link</li>
-              <li><span class="kb-article-flow-number">2</span>Set availability</li>
-              <li><span class="kb-article-flow-number">3</span>Add it to the message</li>
-              <li><span class="kb-article-flow-number">4</span>Check the result</li>
-            </ol>
-            <h2>Where to start in Superhostem</h2>
-            <p>Open the property detail and go to <strong>Automation</strong>.</p>
-            <ul>
-              <li>copy the guest link</li>
-              <li>set how many days before arrival the booking should be available through the link</li>
-              <li>save the setting</li>
-            </ul>
-            <aside class="kb-article-callout">The number of days must match the message timing in Airbnb or Booking.com. If Superhostem is set to 3 days before arrival, the automated message should also go out 3 days before arrival.</aside>
-            <h2>Where to place the link</h2>
-            <section class="kb-property-decision" aria-label="Platforms for the automated message">
-              <ol class="kb-property-decision-flow">
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5"></path></svg></span><div><span class="kb-property-decision-kicker">Airbnb</span><strong>Messages → message settings</strong><p>Create a quick reply or automated message. Add the Superhostem link and assign the message to the correct listing.</p></div></li>
-                <li class="kb-property-decision-card"><span class="kb-property-decision-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M6 4h12v16H6z"></path><path d="M9 8h6M9 12h6M9 16h4"></path></svg></span><div><span class="kb-property-decision-kicker">Booking.com</span><strong>Extranet → message settings</strong><p>Create a message template, paste the Superhostem link, and schedule it before arrival.</p></div></li>
-              </ol>
-            </section>
-            <h2>Check before saving</h2>
-            <ul>
-              <li>the message contains the link for the correct property or unit</li>
-              <li>the template is assigned to the correct listing</li>
-              <li>the send time matches the number of days set in Superhostem</li>
-              <li>the text clearly tells the guest what to do after clicking</li>
-            </ul>
-            <aside class="kb-article-callout kb-article-callout-muted">For short stays and last-minute bookings, test the timing first. The message must be sent when the booking is already available through the link.</aside>
-            <h2>Next step</h2>
-            <p>If the automation sends a form or guestbook, continue with guest and stay records. For monthly operations, continue with municipal fee processing.</p>
-            <ul class="kb-article-link-list">
-              <li><a href="./jak-vest-evidenci-hostu-a-pobytu-v-superhostem.html">How to keep guest and stay records in Superhostem</a></li>
-              <li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">How to process monthly municipal fees in Superhostem</a></li>
-            </ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html">
-  <span>Previous</span>
-  <strong>How to add your property</strong>
-</a>
-
-<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">
-  <span>Next</span>
-  <strong>Basic legislative obligations of the host in the Czech Republic</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Automate guest communication</h1>
+      <p class="kb-article-lead">Choose one sending channel and one first message. Distinguish Superhostem emails from messages inside a booking platform.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Channel</li>
+<li><span class="kb-article-flow-number">2</span>Link and content</li>
+<li><span class="kb-article-flow-number">3</span>Timing</li>
+<li><span class="kb-article-flow-number">4</span>Result</li></ol><section><h2 id="email">I want an email from Superhostem</h2><p>Open Message automation and emails at the property. Set the event, timing, recipient and language. Check a reservation-specific preview and send history.</p><p><a href='./jak-nastavit-automaticke-emaily.html'>Set up automatic emails step by step</a></p></section>
+<section><h2 id="platform">I want an Airbnb or Booking message</h2><p>Create a template or scheduled message in the platform's messaging settings. Insert the correct Superhostem property link and assign it to the correct listing. Access to the reservation through that link must start no later than sending; the number of days does not have to be identical.</p></section>
+<section><h2 id="check">Before enabling automation</h2><ul><li>The link and template belong to the correct property.</li><li>The instruction is clear: confirm the stay, complete registration or open the guide.</li><li>You checked time zone, last-minute stays and available contact.</li><li>Two rules do not send the same message.</li></ul><p>Start by sending one stay's form manually. Enable automation after checking the full journey, then verify actual sending.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-nastavit-automaticke-emaily.html"><span>Related guides</span><strong>Set up automatic emails in Superhostem</strong></a>
+<a class="kb-article-related-card" href="./jak-poslat-online-check-in.html"><span>Related guides</span><strong>Send an online check-in form and check every guest</strong></a>
+<a class="kb-article-related-card" href="./jak-vytvorit-pruvodce-pro-hosty.html"><span>Related guides</span><strong>Prepare a guide for your guests</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -194,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-funguje-poplatek-z-pobytu.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-funguje-poplatek-z-pobytu.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-poplatek-z-pobytu.html" />
-    <meta name="description" content="Jak se zaregistrovat k místnímu poplatku – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Začněte u obce podle adresy ubytování. Získejte pravidla a platební údaje a potom je nastavte u nemovitosti." />
     <meta property="og:title" content="Jak se zaregistrovat k místnímu poplatku" />
-    <meta property="og:description" content="Jak se zaregistrovat k místnímu poplatku – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Začněte u obce podle adresy ubytování. Získejte pravidla a platební údaje a potom je nastavte u nemovitosti." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-poplatek-z-pobytu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jak se zaregistrovat k místnímu poplatku" />
-    <meta name="twitter:description" content="Jak se zaregistrovat k místnímu poplatku – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak se zaregistrovat k místnímu poplatku</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak se zaregistrovat k místnímu poplatku","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-poplatek-z-pobytu.html"}}
-    </script>
+    <meta name="twitter:description" content="Začněte u obce podle adresy ubytování. Získejte pravidla a platební údaje a potom je nastavte u nemovitosti." />
+    <title>Jak se zaregistrovat k místnímu poplatku | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak se zaregistrovat k místnímu poplatku","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-poplatek-z-pobytu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,143 +103,21 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Legislativa v ČR</p>
-          <h1 class="kb-article-title">Jak se zaregistrovat k místnímu poplatku</h1>
-          <p class="kb-article-lead">Pokud krátkodobě ubytováváte hosty, nestačí jen vědět sazbu. Nejdřív je potřeba se správně zaregistrovat u města nebo městské části, získat potřebné údaje pro platbu a teprve potom řešit měsíční hlášení a odvody.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Předchozí článek</a>
-            <a href="./co-delat-kdyz-se-kalendar-nenacita.html">Další článek →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>Co vás čeká dál</strong>
-        <p>Najdete správný úřad, podáte ohlášení k poplatku z pobytu, získáte variabilní symbol a tyto údaje pak uložíte do Superhostem, aby na ně mohlo navázat měsíční hlášení.</p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-
-
-        <h2>Už máte registraci hotovou?</h2>
-        <p>
-          Tento článek vysvětluje hlavně <strong>povinnost a registraci</strong>
-          vůči obci. Pokud už máte vše vyřízené a hledáte přímo pracovní postup
-          v Superhostem, pokračujte sem:
-        </p>
-        <ul class="kb-article-link-list"><li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Jak měsíčně zpracovat poplatky obci v Superhostem</a></li></ul>
-
-<h2>Stručně: co musíte udělat</h2>
-
-      <h3>Zaregistrovat se</h3>
-<p>Přihlaste ubytování k místnímu poplatku z pobytu na příslušném úřadě podle adresy nemovitosti.</p>
-      <h3>Získat platební údaje</h3>
-<p>Po registraci si uložte variabilní symbol, případně i konstantní symbol, a pravidla, podle kterých budete podávat hlášení a platit.</p>
-      <h3>Zadat je do Superhostem</h3>
-<p>Bez těchto údajů na ně nemůže aplikace správně navázat při měsíčním reportingu pro město.</p>
-
-<h2>Co si připravit předem</h2>
-<ul>
-        <li>platný živnostenský list pro odpovídající volnou živnost</li>
-        <li>nahlášenou provozovnu pro konkrétní nemovitost</li>
-        <li>adresu ubytovacího zařízení a ideálně i upřesnění bytu nebo patra, pokud je úřad vyžaduje</li>
-        <li>počet lůžek určených k ubytování</li>
-        <li>své identifikační údaje, typicky občanský průkaz, rodné číslo a IČO, pokud podnikáte</li>
-        <li>přístup do datové schránky, pokud nechcete řešit registraci osobně</li>
-        <li>informaci, na který účet přijímáte platby z ubytování, pokud si ji úřad vyžádá</li>
-      </ul>
-<aside class="kb-article-callout">
-        Konkrétní formulář, sazba, termín hlášení i způsob platby se liší podle města nebo městské části. Vždy je potřeba vycházet z oficiálního webu příslušného úřadu.
-      </aside>
-<h2>Jak postupovat krok za krokem</h2>
-
-      <h3>Nejdřív si ověřte, že máte vyřešenou živnost a provozovnu</h3>
-<p>Registraci k poplatku z pobytu neřešte jako úplně první administrativní krok. Nejprve byste měli mít hotový <strong>živnostenský list</strong> pro odpovídající volnou živnost a také <strong>nahlášenou provozovnu</strong> pro konkrétní nemovitost.</p>
-<p>Teprve potom dává smysl navazovat registrací k místnímu poplatku z pobytu.</p>
-
-      <h3>Najděte správný úřad podle adresy nemovitosti</h3>
-<p>Poplatek z pobytu neřešíte podle svého bydliště, ale podle toho, kde se nemovitost skutečně nachází. Začněte tedy na webu příslušného města nebo městské části a hledejte sekci k místním poplatkům.</p>
-<p>Obvykle půjde o finanční odbor nebo oddělení místních poplatků.</p>
-
-      <h3>Vyplňte ohlášení k poplatku z pobytu</h3>
-<p>Na úřadě nebo přes jejich formulář podáte ohlášení, že máte povinnost poplatek vybírat a odvádět. Tím splníte základní registrační krok.</p>
-<ul>
-          <li>uveďte svoje identifikační údaje</li>
-          <li>doplňte adresu ubytování</li>
-          <li>zadejte počet lůžek</li>
-          <li>ověřte, zda úřad nechce i další doplňující údaje</li>
-        </ul>
-
-      <h3>Podání vyřešte osobně nebo přes datovou schránku</h3>
-<p>Pokud nechcete jít na úřad osobně, většina úřadů umožní formulář vyplnit elektronicky a odeslat ho přes datovou schránku. Běžný email pro tento krok zpravidla nestačí.</p>
-<p>Jakmile je registrace přijatá, úřad vám přidělí údaje pro další komunikaci a platby.</p>
-
-      <h3>Uložte si variabilní symbol a termíny</h3>
-<p>Po registraci si hned poznamenejte <strong>variabilní symbol</strong>, termíny pro hlášení a způsob, jakým se poplatek posílá. Některé úřady mohou vyžadovat také <strong>konstantní symbol</strong>, proto si ověřte i tuto informaci. Tohle je nejčastější místo, kde se pak dělají chyby.</p>
-<p>Bez těchto údajů budete na konci měsíce zbytečně dohledávat informace, které už jste jednou měli od úřadu k dispozici.</p>
-
-      <h3>Zadejte údaje do Superhostem</h3>
-<p>Jakmile máte registraci hotovou, doplňte údaje k poplatku z pobytu i do nastavení nemovitosti v Superhostem. Právě na tyto údaje pak navazuje měsíční hlášení, které se posílá městu.</p>
-<p>V praxi tedy neřešíte jen jednorázovou registraci, ale připravujete si podklady pro to, aby vám reporting fungoval i další měsíce.</p>
-
-      <h3>Každý měsíc zkontrolujte hlášení a platbu</h3>
-<p>Samotná registrace nestačí. Po každém období, které určuje vaše obec nebo městská část, musíte zkontrolovat hlášení a odeslat poplatek podle jejich pravidel.</p>
-<p>V Superhostem si pak můžete připravit úhradu přes <strong>QR kód</strong> a odeslat hlášení přes <strong>datovou schránku</strong> jedním klikem. Superhostem za vás zprávu předpřipraví k odeslání na úřad.</p>
-<p>Vždy si ověřte, zda vaše obec nepracuje s výjimkami, jinou frekvencí podání nebo vlastním formulářem.</p>
-
-<h2>Nejčastější chyby</h2>
-<ul>
-        <li>hostitel řeší jen sazbu, ale zapomene na samotnou registraci</li>
-        <li>registraci podává na špatném úřadě</li>
-        <li>neuloží si variabilní symbol a termíny pro hlášení</li>
-        <li>počítá s tím, že všechny obce mají stejný formulář a stejný postup</li>
-        <li>nezadá údaje do Superhostem, takže pak chybí návaznost pro měsíční reporting</li>
-      </ul>
-<h2>Co je na tom lepší řešit hned při setupu nemovitosti</h2>
-<p>
-        Jakmile přidáváte první nemovitost, je dobré mít poplatek z pobytu vyřešený co nejdřív. Je to jedna ze tří klíčových oblastí,
-        které u nás v onboarding flow navazují po založení nemovitosti spolu s <strong>Ubyportem</strong> a <strong>iCal napojením</strong>.
-      </p>
-<ul class="kb-article-link-list">
-<li><a href="./jak-pridat-novou-nemovitost.html">Zpět na nastavení nemovitosti</a></li>
-<li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Jak poplatky obci řešit každý měsíc v Superhostem</a></li>
-<li><a href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">Zobrazit legislativní přehled</a></li>
-</ul>
-<h2>Ověření a zdroje</h2>
-<p>Tento článek je praktický návod pro hostitele, ne právní nebo daňové poradenství. Poslední kontrolu jsme stavěli nad oficiálními zdroji.</p>
-<ul>
-                <li><a href="https://portal.gov.cz/formulare/mistni-poplatek-z-pobytu" target="_blank" rel="noreferrer">gov.cz: Místní poplatek z pobytu</a></li>
-      </ul>
-<aside class="kb-article-callout kb-article-callout-muted">
-        <p><strong>Aktualizováno:</strong> 29. 3. 2026. U sazeb, výjimek a termínů vždy rozhoduje aktuální vyhláška vaší obce nebo městské části.</p>
-      </aside>
-<h2>Další krok v aplikaci</h2>
-<p>
-        Jakmile máte registraci k poplatku z pobytu hotovou a údaje uložené v
-        nemovitosti, navazuje měsíční workflow přímo v Superhostem.
-      </p>
-<ul class="kb-article-link-list"><li><a href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html">Otevřít postup: Jak měsíčně zpracovat poplatky obci v Superhostem</a></li></ul>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html">
-  <span>Předchozí</span>
-  <strong>Základní legislativní povinnosti hostitele v ČR</strong>
-</a>
-
-<a class="kb-article-related-card" href="./co-delat-kdyz-se-kalendar-nenacita.html">
-  <span>Další</span>
-  <strong>Co dělat, když se kalendář nenačítá</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak se zaregistrovat k místnímu poplatku</h1>
+      <p class="kb-article-lead">Začněte u obce podle adresy ubytování. Získejte pravidla a platební údaje a potom je nastavte u nemovitosti.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Ověřit obec</li>
+<li><span class="kb-article-flow-number">2</span>Podat ohlášení</li>
+<li><span class="kb-article-flow-number">3</span>Uložit údaje</li>
+<li><span class="kb-article-flow-number">4</span>Nastavit aplikaci</li></ol><section><h2 id="obec">1. Najděte správný úřad</h2><p>Na oficiálním webu obce nebo městské části podle adresy ubytování ověřte, zda poplatek vybírá, sazbu, výjimky a termín ohlášení. Nespoléhejte na pravidla jiné obce.</p></section>
+<section><h2 id="ohlaseni">2. Podejte požadované ohlášení</h2><p>Použijte aktuální formulář a způsob podání zveřejněný úřadem. Připravte identifikační údaje provozovatele a údaje o místě ubytování podle formuláře. Registrace k poplatku sama nenahrazuje ostatní oprávnění k provozu.</p></section>
+<section><h2 id="udaje">3. Uložte si podklady pro další období</h2><p>Poznamenejte sazbu, účet, variabilní symbol, případné evidenční číslo a termíny odvodu. Ověřte také požadované podklady a způsob komunikace. Období nemusí být ve všech obcích měsíční.</p></section>
+<section><h2 id="aplikace">4. Nastavte konkrétní nemovitost</h2><p>Údaje doplňte do nastavení poplatků nemovitosti. Ověřte první výpočet podle skutečných hostů, nocí a výjimek. Vygenerované PDF není automaticky podané hlášení a QR kód není potvrzení úhrady.</p><p><a href='https://portal.gov.cz/sluzby-vs/poplatek-z-pobytu-S1005' target='_blank' rel='noreferrer'>Oficiální informace gov.cz</a></p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-mesicne-zpracovat-poplatky-obci-v-superhostem.html"><span>Související návody</span><strong>Jak zkontrolovat a odvést poplatky obci</strong></a>
+<a class="kb-article-related-card" href="./zakladni-legislativni-povinnosti-hostitele-v-cr.html"><span>Související návody</span><strong>Základní legislativní povinnosti hostitele v ČR</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -257,6 +138,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/kalendar-airbnb-v-telefonu.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/kalendar-airbnb-v-telefonu.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/kalendar-airbnb-v-telefonu.html" />
-    <meta name="description" content="To a calendar app – guide for short-term rental hosts on Superhostem.cz." />
-    <meta property="og:title" content="To a calendar app" />
-    <meta property="og:description" content="To a calendar app – guide for short-term rental hosts on Superhostem.cz." />
+    <meta name="description" content="Subscribe in Apple Calendar, Google Calendar or another iCal-compatible app. A one-off file import does not update itself." />
+    <meta property="og:title" content="Add reservations to a calendar app" />
+    <meta property="og:description" content="Subscribe in Apple Calendar, Google Calendar or another iCal-compatible app. A one-off file import does not update itself." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/en/kalendar-airbnb-v-telefonu.html" />
     <meta property="og:site_name" content="Superhostem.cz - Help Center" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="To a calendar app" />
-    <meta name="twitter:description" content="To a calendar app – guide for short-term rental hosts on Superhostem.cz." />
-    <title>To a calendar app</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"To a calendar app","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/kalendar-airbnb-v-telefonu.html"}}
-    </script>
+    <meta name="twitter:title" content="Add reservations to a calendar app" />
+    <meta name="twitter:description" content="Subscribe in Apple Calendar, Google Calendar or another iCal-compatible app. A one-off file import does not update itself." />
+    <title>Add reservations to a calendar app | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Add reservations to a calendar app","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/en/kalendar-airbnb-v-telefonu.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,52 +103,22 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Properties and calendars</p>
-          <h1 class="kb-article-title">To a calendar app</h1>
-          <p class="kb-article-lead">Add reservations from Superhostem to Apple Calendar, Google Calendar, Outlook, or another iCal-compatible app. Use it for your own overview and calendar notifications.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Help Center</a>
-            <a href="./jak-funguje-napojeni-pres-ical.html">Previous article</a>
-            <a href="./jak-funguje-prehled-rezervaci.html">Next article →</a>
-          </div>
-          <div class="kb-article-intro-note">
-  <strong>What it is good for</strong>
-          <p>
-            You see reservations in the calendar app you already use. For
-            sharing with external people, the web calendar link is often better
-            because access can be revoked.
-          </p>
-</div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <section class="kb-article-topic-block"><h2>When to use a phone calendar</h2><p>Use the iCal export when you want reservations in your own calendar app. It is useful for a personal overview, a team calendar, or quick date checks without opening Superhostem.</p><ul><li>you see reservations next to your personal calendar</li><li>you can use Apple Calendar, Google Calendar, Outlook, or any app that supports iCal</li><li>you do not need to install another special app</li><li>you can set your own event alerts and notifications in the calendar app</li></ul><aside class="kb-article-callout">If you need more control over who can see the calendar and how long access should work, use the web calendar link instead.</aside><a class="kb-article-next-cta" href="./jak-sdilet-webovy-kalendar-odkazem.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 4.93"></path><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L13 19.07"></path></svg></span><span><strong>I want to share a web calendar link</strong><small>Better for cleaners, managers, or temporary external access.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></section>
-            <section class="kb-article-topic-block"><h2>What you need</h2><p>Copy the iCal URL in Superhostem and paste it into your calendar app. The app then loads reservations automatically. If you change export settings, copy the new URL again.</p><aside class="kb-article-callout kb-article-callout-muted">Calendar apps refresh data on their own schedule, so changes may not appear immediately.</aside><aside class="kb-article-callout kb-article-callout-muted">If guest name, guest count, price, or other details are missing in the calendar, Superhostem does not have that data yet. Enable reservation email forwarding to fill these details faster. Without it, the details must be entered manually by the guest or by you in the admin.</aside><a class="kb-article-next-cta" href="./jak-funguje-email-forwarding.html"><span class="kb-article-next-cta-icon" aria-hidden="true"><svg viewbox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span><span><strong>Fill details from emails automatically</strong><small>Email forwarding loads reservation details without manual copying.</small></span><svg class="kb-article-next-cta-arrow" aria-hidden="true" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg></a></section>
-            <section class="kb-article-topic-block"><h2>iPhone: Apple Calendar</h2><ol><li>Copy the iCal URL in Superhostem.</li><li>On iPhone, open <strong>Settings → Calendar → Accounts</strong>.</li><li>Select <strong>Add Account → Other → Add Subscribed Calendar</strong>.</li><li>Paste the URL, continue with <strong>Next</strong>, and save.</li><li>In the Calendar app, set event alerts if needed.</li></ol><div class="kb-article-media-grid"><figure class="kb-article-figure kb-article-figure-phone"><img src="../../assets/screens/ical-phone-calendar-preview.png" alt="Reservations from Superhostem displayed in iPhone Calendar"><figcaption>After adding the iCal export, reservations appear as normal calendar events.</figcaption></figure><figure class="kb-article-figure kb-article-figure-phone"><img src="../../assets/screens/ical-phone-calendars-list.png" alt="Calendar list in iPhone Calendar"><figcaption>Use the calendar list to check that the subscribed calendar is active.</figcaption></figure></div></section>
-            <section class="kb-article-topic-block"><h2>Google Calendar and Android</h2><aside class="kb-article-callout kb-article-note">In Google Calendar, add a calendar from URL in the desktop browser. The Android mobile app usually does not add a new iCal calendar directly.</aside><ol><li>Copy the iCal URL in Superhostem.</li><li>On a computer, open <a href="https://calendar.google.com/" target="_blank" rel="noreferrer"><strong>calendar.google.com</strong></a>.</li><li>Next to <strong>Other calendars</strong>, click <strong>+</strong> and choose <strong>From URL</strong>.</li><li>Paste the iCal URL and confirm with <strong>Add calendar</strong>.</li><li>On Android, open Google Calendar with the same account and wait for sync.</li></ol><p>Direct link: <a href="https://calendar.google.com/calendar/u/0/r/settings/addbyurl" target="_blank" rel="noreferrer">Add calendar from URL</a></p><div class="kb-article-media-grid"><figure class="kb-article-figure"><img src="../../assets/screens/google-calendar-from-url-settings.png" alt="Google Calendar desktop Add calendar from URL settings"><figcaption>In Google Calendar on desktop, paste the iCal link through <strong>Add calendar → From URL</strong>.</figcaption></figure></div></section>
-            <section class="kb-article-topic-block kb-article-topic-block-muted"><h2>What to watch out for</h2><ul><li>iCal is mainly for viewing, not editing reservations.</li><li>Updates in the external app can be delayed.</li><li>After changing export content, copy the new URL.</li><li>If you share the calendar with someone else, consider the web link because access can be revoked.</li></ul></section>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Related links</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Overview</span>
-  <strong>Help Center</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html">
-  <span>Previous</span>
-  <strong>How to get and connect iCal from Airbnb and Booking</strong>
-</a>
-
-<a class="kb-article-related-card" href="./jak-funguje-prehled-rezervaci.html">
-  <span>Another one</span>
-  <strong>How the booking overview works</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Practical guides</p>
+      <h1 class="kb-article-title">Add reservations to a calendar app</h1>
+      <p class="kb-article-lead">Subscribe in Apple Calendar, Google Calendar or another iCal-compatible app. A one-off file import does not update itself.</p>
+      <div class="kb-article-jump"><a href="./index.html">Help centre</a><a href="./index.html#knihovna">Library</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><ol class="kb-article-flow"><li><span class="kb-article-flow-number">1</span>Export URL</li>
+<li><span class="kb-article-flow-number">2</span>Subscribe</li>
+<li><span class="kb-article-flow-number">3</span>Check</li>
+<li><span class="kb-article-flow-number">4</span>Alerts</li></ol><section><h2 id="export">Copy the Superhostem export first</h2><p>In iCal export, select properties and visible details, then copy the generated URL. The link can expose personal details; share only what is needed. Check missing data in the reservation itself.</p></section>
+<section><h2 id="apple">iPhone: add a calendar subscription</h2><p>In Calendar, open Calendars → Add Calendar → Add Subscription Calendar. Enter the URL and follow the prompts; in iOS 26 find the subscription, name it and confirm. Labels may vary by version.</p><p><a href='https://support.apple.com/en-gb/102301' target='_blank' rel='noreferrer'>Current Apple instructions</a></p><figure class="kb-article-figure kb-article-figure-phone"><img src="../../assets/screens/ical-phone-calendar-preview.png" alt="Reservations from Superhostem displayed in iPhone Calendar"><figcaption>After adding the iCal export, reservations appear as normal calendar events.</figcaption></figure>
+<figure class="kb-article-figure kb-article-figure-phone"><img src="../../assets/screens/ical-phone-calendars-list.png" alt="Calendar list in iPhone Calendar"><figcaption>Use the calendar list to check that the subscribed calendar is active.</figcaption></figure></section>
+<section><h2 id="google">Google Calendar and Android</h2><p>On a computer, open Google Calendar. Next to Other calendars, choose + → From URL and paste the export link. Use the same Google account on your phone and check calendar visibility. Add a new subscription through the website, not the mobile app.</p><figure class="kb-article-figure"><img src="../../assets/screens/google-calendar-from-url-settings.png" alt="Google Calendar desktop Add calendar from URL settings"><figcaption>In Google Calendar on desktop, paste the iCal link through <strong>Add calendar → From URL</strong>.</figcaption></figure></section>
+<section><h2 id="updates">Updates and alerts</h2><p>The calendar app controls refresh timing and notification options. Check its settings; changes may not appear immediately. For team use and easy revocation, use a separate web link instead. The export is an overview; edit reservations in their source or relevant detail.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Related guides</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./jak-sdilet-webovy-kalendar-odkazem.html"><span>Related guides</span><strong>Share a web calendar link</strong></a>
+<a class="kb-article-related-card" href="./jak-funguje-napojeni-pres-ical.html"><span>Related guides</span><strong>How to connect an iCal calendar</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -166,6 +139,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Back to top" title="Up">↑</a>
 
 
-      <script src="../../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>

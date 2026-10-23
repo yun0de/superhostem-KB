@@ -10,29 +10,32 @@
     <link rel="alternate" hreflang="en" href="https://knowledgebase.superhostem.cz/knowledge-base/html/en/jak-upravit-profil-v-nastaveni.html" />
     <link rel="alternate" hreflang="vi" href="https://knowledgebase.superhostem.cz/knowledge-base/html/vn/jak-upravit-profil-v-nastaveni.html" />
     <link rel="alternate" hreflang="x-default" href="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html" />
-    <meta name="description" content="Jak upravit profil v nastavení – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta name="description" content="Zkontrolujte osobní údaje a jazyk svého účtu. Nastavení nemovitosti a fakturační údaje řešte v příslušné části." />
     <meta property="og:title" content="Jak upravit profil v nastavení" />
-    <meta property="og:description" content="Jak upravit profil v nastavení – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
+    <meta property="og:description" content="Zkontrolujte osobní údaje a jazyk svého účtu. Nastavení nemovitosti a fakturační údaje řešte v příslušné části." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html" />
     <meta property="og:site_name" content="Superhostem.cz - Centrum nápovědy" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jak upravit profil v nastavení" />
-    <meta name="twitter:description" content="Jak upravit profil v nastavení – návod pro hostitele krátkodobých pronájmů na Superhostem.cz." />
-    <title>Jak upravit profil v nastavení</title>
-    <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"TechArticle","headline":"Jak upravit profil v nastavení","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html"}}
-    </script>
+    <meta name="twitter:description" content="Zkontrolujte osobní údaje a jazyk svého účtu. Nastavení nemovitosti a fakturační údaje řešte v příslušné části." />
+    <title>Jak upravit profil v nastavení | Superhostem</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Jak upravit profil v nastavení","inLanguage":"cs","mainEntityOfPage":{"@type":"WebPage","@id":"https://knowledgebase.superhostem.cz/knowledge-base/html/jak-upravit-profil-v-nastaveni.html"}}</script>
     <script>
       (() => {
-        const preference = localStorage.getItem("superhostem-kb-theme") || "system";
+        let preference = "light";
+        try {
+          preference = localStorage.getItem("superhostem-kb-theme-v2") || "light";
+        } catch {
+          // Keep the light default when browser storage is unavailable.
+        }
         const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
         const isDark = preference === "dark" || (preference === "system" && systemDark);
         document.documentElement.classList.toggle("dark", isDark);
         document.documentElement.style.colorScheme = isDark ? "dark" : "light";
       })();
     </script>
-    <link rel="stylesheet" href="../assets/superhostem.css?v=header-menus">
+    <link rel="stylesheet" href="../assets/superhostem.css?v=kb-review-20261023">
   </head>
   <body id="page-top" class="kb-article-page">
     <header class="kb-help-header">
@@ -100,77 +103,16 @@
     <main class="kb-article-shell">
       <div class="kb-article-container">
         <article class="kb-article-main">
-          <p class="kb-article-kicker">Centrum nápovědy</p>
-          <h1 class="kb-article-title">Jak upravit profil v nastavení</h1>
-          <p class="kb-article-lead">V nastavení profilu upravíte své základní údaje účtu, jako je jméno, telefon nebo jazyk.</p>
-          <div class="kb-article-jump">
-            <a href="./index.html">Centrum pomoci</a>
-            <a href="./index.html#knihovna">Knihovna témat</a>
-          </div>
-
-          <div class="kb-article-divider"></div>
-          <div class="kb-article-prose" id="kb-article-content">
-            <h2>Kde profil najdete</h2>
-
-<ol>
-<li>v levém menu klikněte na <strong>Nastavení</strong>
-</li>
-<li>otevře se stránka <strong>Nastavení</strong>
-</li>
-<li>zůstaňte v záložce <strong>Profil</strong>
-</li>
-</ol>
-
-<h2>Co je v profilu k dispozici</h2>
-
-<ul>
-<li>Jméno a příjmení</li>
-<li>E-mail</li>
-<li>Telefon</li>
-<li>Jazyk</li>
-<li>Zobrazit iCal export banner</li>
-</ul>
-
-<h2>Jak profil upravit krok za krokem</h2>
-
-<ol>
-<li>otevřete <strong>Nastavení</strong>
-</li>
-<li>zkontrolujte, že jste v záložce <strong>Profil</strong>
-</li>
-<li>upravte pole <strong>Jméno a příjmení</strong>
-</li>
-<li>doplňte nebo opravte <strong>Telefon</strong>
-</li>
-<li>zkontrolujte <strong>Jazyk</strong>
-</li>
-<li>podle potřeby upravte volbu <strong>Zobrazit iCal export banner</strong>
-</li>
-<li>klikněte na <strong>Uložit změny</strong>
-</li>
-</ol>
-
-<aside class="kb-article-callout kb-article-note">
-<strong>Důležitá poznámka</strong>
-<p>U e-mailu může být uvedeno, že je spravován přes váš účet, takže nemusí být upravitelný přímo v tomto formuláři.</p>
-</aside>
-          </div>
-          <section class="kb-article-related" id="kb-article-related">
-            <h2>Související odkazy</h2>
-            <div class="kb-article-related-grid">
-              <a class="kb-article-related-card" href="./index.html">
-  <span>Přehled</span>
-  <strong>Centrum pomoci</strong>
-</a>
-
-<a class="kb-article-related-card" href="./index.html#knihovna">
-  <span>Knihovna</span>
-  <strong>Knihovna témat</strong>
-</a>
-
-            </div>
-          </section>
-        </article>
+      <p class="kb-article-kicker">Praktické návody</p>
+      <h1 class="kb-article-title">Jak upravit profil v nastavení</h1>
+      <p class="kb-article-lead">Zkontrolujte osobní údaje a jazyk svého účtu. Nastavení nemovitosti a fakturační údaje řešte v příslušné části.</p>
+      <div class="kb-article-jump"><a href="./index.html">Centrum nápovědy</a><a href="./index.html#knihovna">Knihovna</a></div>
+      <div class="kb-article-divider"></div>
+      <div class="kb-article-prose" id="kb-article-content"><section><h2 id="profil">Nastavení → Profil</h2><p>Otevřete Nastavení a Profil. Upravte dostupná pole jména, telefonu a jazyka a změny uložte. Potom ověřte uloženou hodnotu. Pokud není e-mail upravitelný, použijte správu účtu nebo kontaktujte podporu.</p></section>
+<section><h2 id="rozliseni">Profil není nastavení provozu</h2><p>Úprava osobního profilu sama nemění adresu nemovitosti, účet obce, Ubyport ani údaje na všech vystavených dokladech. Tyto údaje zkontrolujte v nastavení dané funkce. U organizací ověřte, ve které právě pracujete.</p></section></div>
+      <section class="kb-article-related" id="kb-article-related"><h2>Související návody</h2><div class="kb-article-related-grid"><a class="kb-article-related-card" href="./prvni-prihlaseni-a-orientace-v-uctu.html"><span>Související návody</span><strong>První přihlášení: od nemovitosti k prvnímu pobytu</strong></a>
+<a class="kb-article-related-card" href="./jak-pridat-novou-nemovitost.html"><span>Související návody</span><strong>Jak přidat svou nemovitost</strong></a></div></section>
+    </article>
 
         <aside class="kb-article-sidebar" id="kb-article-sidebar">
           <div class="kb-article-sidebar-card">
@@ -191,6 +133,6 @@
     <a class="back-to-top" href="#page-top" aria-label="Zpět nahoru" title="Nahoru">↑</a>
 
 
-      <script src="../assets/kb-navigation.js?v=header-menus"></script>
+      <script src="../assets/kb-navigation.js?v=kb-review-20261023"></script>
   </body>
 </html>
