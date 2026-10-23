@@ -7,7 +7,7 @@ const htmlRoot = path.join(root, 'knowledge base/html');
 const articles = ['workflow-guides.json', 'reviewed-guides.json']
   .filter(file => fs.existsSync(path.join(root, 'knowledge base', file)))
   .flatMap(file => JSON.parse(fs.readFileSync(path.join(root, 'knowledge base', file), 'utf8')));
-const base = 'https://knowledgebase.superhostem.cz/knowledge-base/html/';
+const base = 'https://www.superhostem.cz/knowledge-base/html/';
 const locales = { cs: '', en: 'en/', vi: 'vn/' };
 const labels = {
   cs: { category: 'Praktické návody', home: 'Centrum nápovědy', library: 'Knihovna', related: 'Související návody', next: 'Další krok' },

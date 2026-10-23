@@ -7,7 +7,7 @@ Instructions for AI agents and coding assistants working in this repository.
 The production site is deployed at:
 
 ```
-https://knowledgebase.superhostem.cz
+https://www.superhostem.cz
 ```
 
 ## URL structure
@@ -15,7 +15,7 @@ https://knowledgebase.superhostem.cz
 All HTML pages are served under the `/knowledge-base/html/` path prefix. Always use this base when constructing absolute URLs (e.g. in `og:url` meta tags, sitemaps, redirects, or any other references):
 
 ```
-https://knowledgebase.superhostem.cz/knowledge-base/html/<filename>.html
+https://www.superhostem.cz/knowledge-base/html/<filename>.html
 ```
 
 ### Language subfolders
@@ -29,10 +29,10 @@ https://knowledgebase.superhostem.cz/knowledge-base/html/<filename>.html
 ### Examples
 
 ```
-https://knowledgebase.superhostem.cz/knowledge-base/html/index.html
-https://knowledgebase.superhostem.cz/knowledge-base/html/en/index.html
-https://knowledgebase.superhostem.cz/knowledge-base/html/vn/index.html
-https://knowledgebase.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html
+https://www.superhostem.cz/knowledge-base/html/index.html
+https://www.superhostem.cz/knowledge-base/html/en/index.html
+https://www.superhostem.cz/knowledge-base/html/vn/index.html
+https://www.superhostem.cz/knowledge-base/html/jak-funguje-napojeni-pres-ical.html
 ```
 
 ## What NOT to do

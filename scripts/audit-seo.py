@@ -16,8 +16,8 @@ from urllib.parse import urldefrag, urljoin, urlparse
 from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 
-DEFAULT_SITEMAP = "https://knowledgebase.superhostem.cz/sitemap.xml"
-USER_AGENT = "SuperhostemSEOAudit/1.0 (+https://knowledgebase.superhostem.cz/)"
+DEFAULT_SITEMAP = "https://www.superhostem.cz/sitemap.xml"
+USER_AGENT = "SuperhostemSEOAudit/1.0 (+https://www.superhostem.cz/)"
 
 
 class NoRedirect(HTTPRedirectHandler):

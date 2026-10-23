@@ -2,8 +2,8 @@
   "reviewedAt":"2026-10-23",
   "applicationCommit":"79a08894609a36971763644696d5a3cb6f1a17be",
   "applicationRepository":"vojtatranta/superhostem",
-  "canonicalBase":"https://knowledgebase.superhostem.cz/knowledge-base/html/",
-  "limits":["Checked committed application code and public sources, not every signed-in production screen or enabled account configuration.","Upstream KB commit 9b3533e migrates canonicals to www.superhostem.cz; this branch retains the domain required by the current user instructions.","Smart locks and hotel features require account access. Online payments remain a separate beta feature."],
+  "canonicalBase":"https://www.superhostem.cz/knowledge-base/html/",
+  "limits":["Checked committed application code and public sources, not every signed-in production screen or enabled account configuration.","Canonical URLs and sitemaps are migrated to www.superhostem.cz as established in upstream 9b3533e.","Smart locks and hotel features require account access. Online payments remain a separate beta feature."],
   "sourceGroups":{
     "onboarding":["app/dashboard/_components/onboarding-guide.tsx","app/dashboard/properties/new/property-create-form.tsx"],
     "reservations":["app/dashboard/reservations/new/page.tsx","app/dashboard/reservations/[reservationId]/_components/reservation-detail-client.tsx","components/dashboard/sidebar.tsx"],

@@ -95,7 +95,7 @@ def main():
                 continue
             site_path = unquote(parsed.path)
             if site_path.startswith('/knowledge-base/'):
-                target = ROOT / 'knowledge base' / site_path.removeprefix('/knowledge-base/')
+                target = ROOT / 'knowledge base' / (site_path[len('/knowledge-base/'):] if site_path.startswith('/knowledge-base/') else site_path)
             else:
                 target = ROOT / site_path.lstrip('/')
             if not target.exists():
@@ -105,7 +105,7 @@ def main():
             else:
                 links_checked += 1
                 if fragment and site_path.startswith('/knowledge-base/html/'):
-                    target_page = pages.get(site_path.removeprefix('/knowledge-base/html/'))
+                    target_page = pages.get(site_path[len('/knowledge-base/html/'):] if site_path.startswith('/knowledge-base/html/') else site_path)
                     if target_page and fragment not in target_page.ids:
                         errors.append(f'{file}: missing fragment {link}')
     for source in ['workflow-guides.json', 'reviewed-guides.json']:

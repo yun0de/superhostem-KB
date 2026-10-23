@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://knowledgebase.superhostem.cz/sitemap.xml
+Sitemap: https://www.superhostem.cz/sitemap.xml

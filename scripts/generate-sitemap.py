@@ -5,7 +5,7 @@ import subprocess
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 KB_DIR = REPO_ROOT / "knowledge base"
-SITE = "https://knowledgebase.superhostem.cz"
+SITE = "https://www.superhostem.cz"
 SITEMAP_PATH = REPO_ROOT / "sitemap.xml"
 
 def url_path_from_file(rel_path: str) -> str:

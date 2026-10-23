@@ -23,7 +23,7 @@ This repo is `superhostem-KB`, a static knowledge base for Superhostem.
 - Light is the fresh-visit default, regardless of OS theme. Explicit user choices remain supported under `superhostem-kb-theme-v2`.
 - All 24 existing screenshot references retained. Managed illustrated HTML must not be deleted before regenerating: figures are preserved from existing files.
 - Current changes remain local on `codex/kb-refresh-2026-10`; no deployment was performed.
-- **Merge decision required:** upstream `9b3533e` migrates canonicals to `www.superhostem.cz`. Current user instructions explicitly require `knowledgebase.superhostem.cz`; this work preserves that base. Do not silently merge or override either direction without resolving the intended canonical deployment.
+- **Canonical deployment:** canonical URLs, sitemaps, robots.txt and SEO audit are aligned to `https://www.superhostem.cz`, completing the migration from upstream `9b3533e` across all refreshed and new multilingual guides.
 
 ## Local Preview
 

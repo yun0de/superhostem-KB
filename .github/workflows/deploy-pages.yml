@@ -56,7 +56,7 @@ jobs:
           cp index.html _site/index.html
 
           # robots.txt
-          printf 'User-agent: *\nAllow: /\nSitemap: https://knowledgebase.superhostem.cz/sitemap.xml\n' > _site/robots.txt
+          printf 'User-agent: *\nAllow: /\nSitemap: https://www.superhostem.cz/sitemap.xml\n' > _site/robots.txt
 
           # sitemap.xml — regenerate from repo and copy to _site
           python3 scripts/generate-sitemap.py
