@@ -24,6 +24,8 @@ class Page(HTMLParser):
         self.links, self.assets, self.ids = [], [], []
         self.language = ''
         self.h1 = 0
+        self.product_ctas = 0
+        self.product_links = []
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):
@@ -34,6 +36,10 @@ class Page(HTMLParser):
             self.language = attrs.get('lang')
         if tag == 'h1':
             self.h1 += 1
+        if 'data-product-cta' in attrs:
+            self.product_ctas += 1
+        if tag == 'a' and 'kb-product-cta-button' in attrs.get('class', '').split():
+            self.product_links.append(attrs.get('href'))
         if tag == 'link':
             if attrs.get('rel') == 'canonical':
                 self.canonical.append(attrs.get('href'))
@@ -84,7 +90,18 @@ def main():
             'html lang': page.language == locale,
             'single h1': page.h1 == 1,
             'unique IDs': len(page.ids) == len(set(page.ids)),
+            'product CTA coverage': page.product_ctas == (0 if Path(file).name == 'index.html' else 1),
         }
+        if page.product_ctas:
+            checks['product CTA destination'] = len(page.product_links) == 1 and page.product_links[0] in {
+                'https://www.superhostem.cz/funkce',
+                'https://www.superhostem.cz/funkce/domovni-kniha-online',
+                'https://www.superhostem.cz/funkce/import-rezervaci-z-emailu',
+                'https://www.superhostem.cz/funkce/automaticke-zpravy-hostum',
+                'https://www.superhostem.cz/funkce/sdileny-kalendar',
+            }
+        if Path(file).stem == 'proc-vest-evidenci-hostu-a-pobytu':
+            checks['guest-register CTA target'] = page.product_links == ['https://www.superhostem.cz/funkce/domovni-kniha-online']
         for check, passed in checks.items():
             if not passed:
                 errors.append(f'{file}: {check}')
@@ -94,6 +111,10 @@ def main():
             if parsed.netloc != urlparse(BASE).netloc:
                 continue
             site_path = unquote(parsed.path)
+            # The main app shares our host, but its feature pages are not KB files.
+            # Their live HTTP responses are checked separately before publication.
+            if site_path != '/' and not site_path.startswith('/knowledge-base/'):
+                continue
             if site_path.startswith('/knowledge-base/'):
                 target = ROOT / 'knowledge base' / (site_path[len('/knowledge-base/'):] if site_path.startswith('/knowledge-base/') else site_path)
             else:

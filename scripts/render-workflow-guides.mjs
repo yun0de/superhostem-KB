@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { updateArticleCta } from './lib/article-cta.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const htmlRoot = path.join(root, 'knowledge base/html');
@@ -66,7 +67,7 @@ for (const article of articles) {
       <section class="kb-article-related" id="kb-article-related"><h2>${labels[locale].related}</h2><div class="kb-article-related-grid">${related}</div></section>
     </article>`;
     template = template.replace(/<article class="kb-article-main">[\s\S]*?<\/article>/, articleHtml);
-    fs.writeFileSync(destination, template);
+    fs.writeFileSync(destination, updateArticleCta(template, article.slug, locale));
     const anchorSlugs = {
       'jak-poslat-online-check-in': 'jak-vest-evidenci-hostu-a-pobytu-v-superhostem',
       'jak-odeslat-hosty-do-ubyportu': 'jak-se-zaregistrovat-do-ubyportu',

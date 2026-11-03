@@ -5,6 +5,9 @@
 Published pages live in `../html/`, including `en/` and `vn/` translations.
 For managed guides, edit `../reviewed-guides.json` or `../workflow-guides.json`,
 then run `node scripts/render-workflow-guides.mjs` from the repository root.
+Main-site CTAs are defined in `scripts/lib/article-cta.mjs`. Run
+`node scripts/render-article-ctas.mjs` to update all article pages, including
+non-generated reference guides. Managed guides retain their CTA on regeneration.
 The renderer also synchronizes existing Czech Markdown drafts for these guides.
 Screenshots remain in the HTML figures and are preserved during rendering.
 Do not delete an existing illustrated HTML page before regenerating it.

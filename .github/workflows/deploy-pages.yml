@@ -37,6 +37,9 @@ jobs:
         shell: bash
         run: ./scripts/check-kb-index-consistency.sh
 
+      - name: Check light theme default and manual preferences
+        run: node scripts/check-kb-theme.mjs
+
       - name: Build static site
         shell: bash
         run: |

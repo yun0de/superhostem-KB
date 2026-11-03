@@ -29,10 +29,13 @@ const code = `async (page) => {
         overflow: document.documentElement.scrollWidth > innerWidth + 1,
         brokenImages: [...document.images].filter(image => !image.naturalWidth).map(image => image.getAttribute('src')),
         badNumberBadges: [...document.querySelectorAll('.kb-ubyport-flow-number')].filter(element => getComputedStyle(element).display !== 'grid').length,
+        productCtas: document.querySelectorAll('[data-product-cta]').length,
+        badCtaButtons: [...document.querySelectorAll('.kb-product-cta-button')].filter(element => element.getBoundingClientRect().height < 44 || !element.textContent.trim()).length,
         headings: document.querySelectorAll('h1').length
       }));
       checked++;
-      if (response.status() !== 200 || result.dark || result.overflow || result.brokenImages.length || result.badNumberBadges || result.headings !== 1) failures.push({ file, width, status: response.status(), ...result });
+      const expectedCtas = file.endsWith('index.html') ? 0 : 1;
+      if (response.status() !== 200 || result.dark || result.overflow || result.brokenImages.length || result.badNumberBadges || result.headings !== 1 || result.productCtas !== expectedCtas || result.badCtaButtons) failures.push({ file, width, status: response.status(), ...result });
     }
   }
   await page.goto(${JSON.stringify(origin)} + '/knowledge-base/html/jak-se-zaregistrovat-do-ubyportu.html');
